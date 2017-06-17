@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="datasheet.xsl"?>
+<datasheet>
+  <header>CU_TOP</header>
+  <project-settings>
+    <fam>ProASIC3</fam>
+    <die>A3P250</die>
+    <package>100 VQFP</package>
+    <speed-grade>STD</speed-grade>
+    <voltage>1.5</voltage>
+    <hdl-type>VHDL</hdl-type>
+    <project-description>Simple test program to be used during droptest of CU. The program activates to cutter for a specified number of seconds, after the rocket pin has been removed. After that it goes in to sleep mode.</project-description>
+    <location>C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_TOP</location>
+    <state>GENERATED ( Fri Jun 16 21:22:34 2017 )</state>
+    <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
+  </project-settings>
+  <site-map>
+  </site-map>
+  <fileset>
+    <name>HDL File(s)</name>
+    <file>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\CU_TOP.vhd</file>
+    <file>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd</file>
+    <file>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\components.vhd</file>
+    <file>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd</file>
+    <file>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\coreuart_pkg.vhd</file>
+    <file>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\fifo_256x8_pa3.vhd</file>
+    <file>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd</file>
+    <file>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd</file>
+    <file>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd</file>
+    <file>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\System_clock.vhd</file>
+    <file>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd</file>
+  </fileset>
+  <io>
+    <port-name>LED2</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>SAT_PWR</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>FPGA_UART_TX</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>CLK</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>PRESSURE_PWR</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>L1_GPS_PWR</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>LED1</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>VHF_PWR</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>PWRONRESET</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>SENS_MEM_L5_PWR</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>CUTTER</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>FPGA_UART_RX</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <core type="AdlibModule">
+    <core-type>AdlibModule</core-type>
+    <core-exttype>CLKINT</core-exttype>
+    <core-name>CLKINT_0</core-name>
+  </core>
+  <core type="AdlibModule">
+    <core-type>AdlibModule</core-type>
+    <core-exttype>CLKINT</core-exttype>
+    <core-name>CLKINT_1</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>CUTTER_PWM</core-exttype>
+    <core-location>hdl\CUTTER_PWM.vhd</core-location>
+    <core-name>CUTTER_PWM</core-name>
+  </core>
+  <core type="SpiritModule">
+    <core-exttype>IP</core-exttype>
+    <core-type>SpiritModule</core-type>
+    <core-vendor>Actel</core-vendor>
+    <core-lib>DirectCore</core-lib>
+    <core-intname>COREUART</core-intname>
+    <core-ver>5.6.102</core-ver>
+    <core-desc>CoreUART is a serial communication controller with a flexible serial data interface that is intended primarily for embedded systems. The controller operates in an asynchronous (UART)  The core includes a user testbench to show sample UART operation.</core-desc>
+    <core-param>
+      <param-name>Enabled Extra Precision:</param-name>
+      <param-value>true</param-value>
+      <param-hdlname>BAUD_VAL_FRCTN_EN</param-hdlname>
+      <param-hdlvalue>1</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>FPGA Family:</param-name>
+      <param-value>ProASIC3</param-value>
+      <param-hdlname>FAMILY</param-hdlname>
+      <param-hdlvalue>15</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>RX FIFO:</param-name>
+      <param-value>Disable RX FIFO</param-value>
+      <param-hdlname>RX_FIFO</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>RX Legacy Mode:</param-name>
+      <param-value>Disabled</param-value>
+      <param-hdlname>RX_LEGACY_MODE</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>TX FIFO:</param-name>
+      <param-value>Disable TX FIFO</param-value>
+      <param-hdlname>TX_FIFO</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-name>FPGA_UART</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>system_clock</core-exttype>
+    <core-location>hdl\System_clock.vhd</core-location>
+    <core-name>system_clock</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>WOLF_CONTROLLER</core-exttype>
+    <core-location>hdl\WOLF_CONTROLLER.vhd</core-location>
+    <core-name>WOLF_CONTROLLER</core-name>
+  </core>
+  <memorysystem>
+    <title>Memory Map for CU_TOP</title>
+    <description>The project does not contain any subsystems.</description>
+  </memorysystem>
+</datasheet>

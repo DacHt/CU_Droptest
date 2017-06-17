@@ -1,0 +1,2 @@
+CKID0001:@|S:clk_1hz@|E:sec_since_eject[0]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:clk_main@|E:cutter_en@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

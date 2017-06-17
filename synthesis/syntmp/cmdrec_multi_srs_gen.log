@@ -1,0 +1,7 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\bin64\syn_nfilter.exe  -link  -top  work.CU_TOP  -multisrs  C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synwork\CU_TOP_comp.srs  -osyn  C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synwork\CU_TOP_mult.srs  -log  C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synlog\CU_TOP_multi_srs_gen.srr 
+rc:0 success:1
+C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synwork\CU_TOP_comp.srs|i|1497640966|30472
+C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synwork\CU_TOP_mult.srs|o|1497640968|7775
+C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synlog\CU_TOP_multi_srs_gen.srr|o|1497640968|494
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\bin\syn_nfilter.exe|i|1449254124|3007488
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\bin64\syn_nfilter.exe|i|1449254126|3974144

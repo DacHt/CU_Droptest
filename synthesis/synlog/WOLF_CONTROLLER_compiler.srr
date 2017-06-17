@@ -1,0 +1,47 @@
+Synopsys HDL Compiler, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\vhd2008\std.vhd":146:18:146:21|Setting time resolution to ns
+@N:"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":22:7:22:21|Top entity is set to WOLF_CONTROLLER.
+Options changed - recompiling
+VHDL syntax check successful!
+Options changed - recompiling
+@N: CD231 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus ('U'="1000000000")
+@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":22:7:22:21|Synthesizing work.wolf_controller.architecture_wolf_controller 
+@N: CD231 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":59:11:59:12|Using onehot encoding for type state (start="100000")
+@W: CD434 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":75:34:75:43|Signal rocket_pin in the sensitivity list is not used in the process
+@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":139:8:139:21|OTHERS clause is not synthesized 
+@W: CD434 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":91:78:91:84|Signal clk_1hz in the sensitivity list is not used in the process
+Post processing for work.wolf_controller.architecture_wolf_controller
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":95:4:95:5|Pruning register rocket_pin_old_4  
+@A: CL282 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":95:4:95:5|Feedback mux created for signal next_state[0:5] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@W: CL159 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":30:4:30:13|Input rocket_pin is unused
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Jun 07 11:28:38 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Jun 07 11:28:38 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Jun 07 11:28:38 2017
+
+###########################################################]

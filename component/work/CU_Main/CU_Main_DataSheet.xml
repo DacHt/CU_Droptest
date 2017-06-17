@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="datasheet.xsl"?>
+<datasheet>
+  <header>CU_Main</header>
+  <project-settings>
+    <fam>ProASIC3</fam>
+    <die>A3P250</die>
+    <package>100 VQFP</package>
+    <speed-grade>STD</speed-grade>
+    <voltage>1.5</voltage>
+    <hdl-type>VHDL</hdl-type>
+    <project-description>Simple test program to be used during droptest of CU. The program activates to cutter for a specified number of seconds, after the rocket pin has been removed. After that it goes in to sleep mode.</project-description>
+    <location>C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main</location>
+    <state>GENERATED ( Thu Jun 08 17:28:38 2017 )</state>
+    <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
+  </project-settings>
+  <site-map>
+  </site-map>
+  <fileset>
+    <name>HDL File(s)</name>
+    <file>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_Main\CU_Main.vhd</file>
+    <file>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd</file>
+    <file>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\System_clock.vhd</file>
+    <file>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd</file>
+  </fileset>
+  <io>
+    <port-name>BEACON_PWR</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>STX_PWR</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>PWRONRESET</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>LED2</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>PR_OP_PWR</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>LDO_FRONTEND_PWR</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>V3_LINEAR_PWR</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>CLK</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>LED1</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <core type="AdlibModule">
+    <core-type>AdlibModule</core-type>
+    <core-exttype>CLKINT</core-exttype>
+    <core-name>CLKINT_0</core-name>
+  </core>
+  <core type="AdlibModule">
+    <core-type>AdlibModule</core-type>
+    <core-exttype>CLKINT</core-exttype>
+    <core-name>CLKINT_1</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>CUTTER_PWM</core-exttype>
+    <core-location>hdl\CUTTER_PWM.vhd</core-location>
+    <core-name>CUTTER_PWM</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>system_clock</core-exttype>
+    <core-location>hdl\System_clock.vhd</core-location>
+    <core-name>system_clock</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>WOLF_CONTROLLER</core-exttype>
+    <core-location>hdl\WOLF_CONTROLLER.vhd</core-location>
+    <core-name>WOLF_CONTROLLER</core-name>
+  </core>
+  <memorysystem>
+    <title>Memory Map for CU_Main</title>
+    <description>The project does not contain any subsystems.</description>
+  </memorysystem>
+</datasheet>

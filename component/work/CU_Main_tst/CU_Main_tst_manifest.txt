@@ -1,0 +1,11 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
+
+Date      :  Fri Apr 14 17:30:23 2017
+Project   :  C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest
+Component :  CU_Main_tst
+Family    :  ProASIC3
+
+
+Stimulus files for all Simulation tools:
+    C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tst/CU_Main_tst.vhd
+

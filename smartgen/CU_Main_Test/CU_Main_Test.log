@@ -1,0 +1,38 @@
+ ** Message System Log
+ ** Database: 
+ ** Date:   Thu Apr 13 12:57:06 2017
+
+
+****************
+Macro Parameters
+****************
+
+Name                            : CU_Main_Test
+Family                          : PA3LC
+Output Format                   : VHDL
+Type                            : Input Buffers
+Variation                       : Regular
+Width                           : 1
+
+**************
+Compile Report
+**************
+
+
+Netlist Resource Report
+=======================
+
+    CORE                       Used:      0  Total:   6144   (0.00%)
+    IO (W/ clocks)             Used:      1  Total:     68   (1.47%)
+    Differential IO            Used:      0  Total:     13   (0.00%)
+    GLOBAL (Chip+Quadrant)     Used:      0  Total:     18   (0.00%)
+    PLL                        Used:      0  Total:      1   (0.00%)
+    RAM/FIFO                   Used:      0  Total:      8   (0.00%)
+    Low Static ICC             Used:      0  Total:      1   (0.00%)
+    FlashROM                   Used:      0  Total:      1   (0.00%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
+
+Wrote VHDL netlist to C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/smartgen\CU_Main_Test\CU_Main_Test.vhd.
+
+ ** Log Ended:   Thu Apr 13 12:57:07 2017
+

@@ -1,0 +1,16 @@
+Project Name: CU_Droptest
+Location: C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest
+Description: Simple test program to be used during droptest of CU. The program activates to cutter for a specified number of seconds, after the rocket pin has been removed. After that it goes in to sleep mode.
+Preferred HDL Type: VHDL
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : A3P250-VQ100
+Family         : ProASIC3
+Die            : A3P250
+Package        : 100 VQFP
+Speed          : STD
+Core Voltage   : 1.5
+Range          : COM

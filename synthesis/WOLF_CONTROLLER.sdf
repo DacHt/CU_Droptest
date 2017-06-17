@@ -1,0 +1,214 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "WOLF_CONTROLLER")
+(DATE "123")
+(VENDOR "ProASIC3")
+(PROGRAM "Synplify")
+(VERSION "mapact, Build 1659R")
+(DIVIDER /)
+(VOLTAGE 2.500000:2.500000:2.500000)
+(PROCESS "TYPICAL")
+(TEMPERATURE 70.000000:70.000000:70.000000)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "WOLF_CONTROLLER")
+  (INSTANCE)
+  (TIMINGCHECK
+
+    (PATHCONSTRAINT sec_since_eject\[0\]/CLK  sec_since_eject\[0\]/Q  sec_since_eject_RNIT0F3\[1\]/B  sec_since_eject_RNIT0F3\[1\]/Y  sec_since_eject_RNI3FDA\[5\]/B  sec_since_eject_RNI3FDA\[5\]/Y  sec_since_eject_RNICSSD\[6\]/B  sec_since_eject_RNICSSD\[6\]/Y  sec_since_eject_RNIPDCH\[9\]/B  sec_since_eject_RNIPDCH\[9\]/Y  sec_since_eject_RNO\[11\]/B  sec_since_eject_RNO\[11\]/Y  sec_since_eject\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[1\]/CLK  sec_since_eject\[1\]/Q  sec_since_eject_RNIT0F3\[1\]/A  sec_since_eject_RNIT0F3\[1\]/Y  sec_since_eject_RNI3FDA\[5\]/B  sec_since_eject_RNI3FDA\[5\]/Y  sec_since_eject_RNICSSD\[6\]/B  sec_since_eject_RNICSSD\[6\]/Y  sec_since_eject_RNIPDCH\[9\]/B  sec_since_eject_RNIPDCH\[9\]/Y  sec_since_eject_RNO\[11\]/B  sec_since_eject_RNO\[11\]/Y  sec_since_eject\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[3\]/CLK  sec_since_eject\[3\]/Q  sec_since_eject_RNI15F3\[3\]/B  sec_since_eject_RNI15F3\[3\]/Y  sec_since_eject_RNI3P65\[4\]/A  sec_since_eject_RNI3P65\[4\]/Y  sec_since_eject_RNI3FDA\[5\]/A  sec_since_eject_RNI3FDA\[5\]/Y  sec_since_eject_RNICSSD\[6\]/B  sec_since_eject_RNICSSD\[6\]/Y  sec_since_eject_RNIPDCH\[9\]/B  sec_since_eject_RNIPDCH\[9\]/Y  sec_since_eject_RNO\[11\]/B  sec_since_eject_RNO\[11\]/Y  sec_since_eject\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[2\]/CLK  sec_since_eject\[2\]/Q  sec_since_eject_RNI15F3\[3\]/A  sec_since_eject_RNI15F3\[3\]/Y  sec_since_eject_RNI3P65\[4\]/A  sec_since_eject_RNI3P65\[4\]/Y  sec_since_eject_RNI3FDA\[5\]/A  sec_since_eject_RNI3FDA\[5\]/Y  sec_since_eject_RNICSSD\[6\]/B  sec_since_eject_RNICSSD\[6\]/Y  sec_since_eject_RNIPDCH\[9\]/B  sec_since_eject_RNIPDCH\[9\]/Y  sec_since_eject_RNO\[11\]/B  sec_since_eject_RNO\[11\]/Y  sec_since_eject\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[0\]/CLK  sec_since_eject\[0\]/Q  sec_since_eject_RNIT0F3\[1\]/B  sec_since_eject_RNIT0F3\[1\]/Y  sec_since_eject_RNI3FDA\[5\]/B  sec_since_eject_RNI3FDA\[5\]/Y  sec_since_eject_RNICSSD\[6\]/B  sec_since_eject_RNICSSD\[6\]/Y  sec_since_eject_RNIPDCH\[9\]/B  sec_since_eject_RNIPDCH\[9\]/Y  sec_since_eject_RNO\[10\]/A  sec_since_eject_RNO\[10\]/Y  sec_since_eject\[10\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[0\]/CLK  sec_since_eject\[0\]/Q  sec_since_eject_RNIT0F3\[1\]/B  sec_since_eject_RNIT0F3\[1\]/Y  sec_since_eject_RNI3FDA\[5\]/B  sec_since_eject_RNI3FDA\[5\]/Y  sec_since_eject_RNICSSD\[6\]/B  sec_since_eject_RNICSSD\[6\]/Y  sec_since_eject_RNO\[9\]/B  sec_since_eject_RNO\[9\]/Y  sec_since_eject\[9\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[4\]/CLK  sec_since_eject\[4\]/Q  sec_since_eject_RNI3P65\[4\]/B  sec_since_eject_RNI3P65\[4\]/Y  sec_since_eject_RNI3FDA\[5\]/A  sec_since_eject_RNI3FDA\[5\]/Y  sec_since_eject_RNICSSD\[6\]/B  sec_since_eject_RNICSSD\[6\]/Y  sec_since_eject_RNIPDCH\[9\]/B  sec_since_eject_RNIPDCH\[9\]/Y  sec_since_eject_RNO\[11\]/B  sec_since_eject_RNO\[11\]/Y  sec_since_eject\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[0\]/CLK  sec_since_eject\[0\]/Q  sec_since_eject_RNIT0F3\[1\]/B  sec_since_eject_RNIT0F3\[1\]/Y  sec_since_eject_RNI3FDA\[5\]/B  sec_since_eject_RNI3FDA\[5\]/Y  sec_since_eject_RNICSSD\[6\]/B  sec_since_eject_RNICSSD\[6\]/Y  sec_since_eject_RNO\[8\]/A  sec_since_eject_RNO\[8\]/Y  sec_since_eject\[8\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[5\]/CLK  sec_since_eject\[5\]/Q  sec_since_eject_RNI3FDA\[5\]/C  sec_since_eject_RNI3FDA\[5\]/Y  sec_since_eject_RNICSSD\[6\]/B  sec_since_eject_RNICSSD\[6\]/Y  sec_since_eject_RNIPDCH\[9\]/B  sec_since_eject_RNIPDCH\[9\]/Y  sec_since_eject_RNO\[11\]/B  sec_since_eject_RNO\[11\]/Y  sec_since_eject\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[0\]/CLK  sec_since_eject\[0\]/Q  sec_since_eject_RNIT0F3\[1\]/B  sec_since_eject_RNIT0F3\[1\]/Y  sec_since_eject_RNI3FDA\[5\]/B  sec_since_eject_RNI3FDA\[5\]/Y  sec_since_eject_RNO\[7\]/B  sec_since_eject_RNO\[7\]/Y  sec_since_eject\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[8\]/CLK  sec_since_eject\[8\]/Q  sec_since_eject_RNO_4\[12\]/B  sec_since_eject_RNO_4\[12\]/Y  sec_since_eject_RNO_3\[12\]/C  sec_since_eject_RNO_3\[12\]/Y  sec_since_eject_RNO_0\[12\]/C  sec_since_eject_RNO_0\[12\]/Y  sec_since_eject_RNO\[12\]/B  sec_since_eject_RNO\[12\]/Y  sec_since_eject\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[0\]/CLK  sec_since_eject\[0\]/Q  sec_since_eject_RNIT0F3\[1\]/B  sec_since_eject_RNIT0F3\[1\]/Y  sec_since_eject_RNI3FDA\[5\]/B  sec_since_eject_RNI3FDA\[5\]/Y  sec_since_eject_RNO\[6\]/A  sec_since_eject_RNO\[6\]/Y  sec_since_eject\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[0\]/CLK  sec_since_eject\[0\]/Q  sec_since_eject_RNIT0F3\[1\]/B  sec_since_eject_RNIT0F3\[1\]/Y  sec_since_eject_RNIU5U6\[3\]/A  sec_since_eject_RNIU5U6\[3\]/Y  sec_since_eject_RNO\[12\]/A  sec_since_eject_RNO\[12\]/Y  sec_since_eject\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[9\]/CLK  sec_since_eject\[9\]/Q  sec_since_eject_RNO_4\[12\]/A  sec_since_eject_RNO_4\[12\]/Y  sec_since_eject_RNO_3\[12\]/C  sec_since_eject_RNO_3\[12\]/Y  sec_since_eject_RNO_0\[12\]/C  sec_since_eject_RNO_0\[12\]/Y  sec_since_eject_RNO\[12\]/B  sec_since_eject_RNO\[12\]/Y  sec_since_eject\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[7\]/CLK  sec_since_eject\[7\]/Q  sec_since_eject_RNICSSD\[6\]/C  sec_since_eject_RNICSSD\[6\]/Y  sec_since_eject_RNIPDCH\[9\]/B  sec_since_eject_RNIPDCH\[9\]/Y  sec_since_eject_RNO\[11\]/B  sec_since_eject_RNO\[11\]/Y  sec_since_eject\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[0\]/CLK  sec_since_eject\[0\]/Q  sec_since_eject_RNIT0F3\[1\]/B  sec_since_eject_RNIT0F3\[1\]/Y  sec_since_eject_RNIU5U6\[3\]/A  sec_since_eject_RNIU5U6\[3\]/Y  sec_since_eject_RNO\[4\]/A  sec_since_eject_RNO\[4\]/Y  sec_since_eject\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[6\]/CLK  sec_since_eject\[6\]/Q  sec_since_eject_RNICSSD\[6\]/A  sec_since_eject_RNICSSD\[6\]/Y  sec_since_eject_RNIPDCH\[9\]/B  sec_since_eject_RNIPDCH\[9\]/Y  sec_since_eject_RNO\[11\]/B  sec_since_eject_RNO\[11\]/Y  sec_since_eject\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[0\]/CLK  sec_since_eject\[0\]/Q  sec_since_eject_RNIT0F3\[1\]/B  sec_since_eject_RNIT0F3\[1\]/Y  sec_since_eject_RNO\[3\]/B  sec_since_eject_RNO\[3\]/Y  sec_since_eject\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[0\]/CLK  sec_since_eject\[0\]/Q  sec_since_eject_RNIT0F3\[1\]/B  sec_since_eject_RNIT0F3\[1\]/Y  sec_since_eject_RNO\[5\]/B  sec_since_eject_RNO\[5\]/Y  sec_since_eject\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[3\]/CLK  sec_since_eject\[3\]/Q  sec_since_eject_RNI15F3\[3\]/B  sec_since_eject_RNI15F3\[3\]/Y  sec_since_eject_RNIU5U6\[3\]/B  sec_since_eject_RNIU5U6\[3\]/Y  sec_since_eject_RNO\[12\]/A  sec_since_eject_RNO\[12\]/Y  sec_since_eject\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[4\]/CLK  sec_since_eject\[4\]/Q  sec_since_eject_RNO_3\[12\]/B  sec_since_eject_RNO_3\[12\]/Y  sec_since_eject_RNO_0\[12\]/C  sec_since_eject_RNO_0\[12\]/Y  sec_since_eject_RNO\[12\]/B  sec_since_eject_RNO\[12\]/Y  sec_since_eject\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[7\]/CLK  sec_since_eject\[7\]/Q  sec_since_eject_RNO_2\[12\]/B  sec_since_eject_RNO_2\[12\]/Y  sec_since_eject_RNO_0\[12\]/B  sec_since_eject_RNO_0\[12\]/Y  sec_since_eject_RNO\[12\]/B  sec_since_eject_RNO\[12\]/Y  sec_since_eject\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[3\]/CLK  sec_since_eject\[3\]/Q  sec_since_eject_RNI15F3\[3\]/B  sec_since_eject_RNI15F3\[3\]/Y  sec_since_eject_RNI3P65\[4\]/A  sec_since_eject_RNI3P65\[4\]/Y  sec_since_eject_RNO\[5\]/A  sec_since_eject_RNO\[5\]/Y  sec_since_eject\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[1\]/CLK  current_state\[1\]/Q  current_state_RNI0SR72\[0\]/B  current_state_RNI0SR72\[0\]/Y  current_state_RNINRA24\[3\]/C  current_state_RNINRA24\[3\]/Y  next_state_9\[3\]/S  next_state_9\[3\]/Y  next_state\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[1\]/CLK  current_state\[1\]/Q  current_state_RNI0SR72\[0\]/B  current_state_RNI0SR72\[0\]/Y  current_state_RNINRA24\[3\]/C  current_state_RNINRA24\[3\]/Y  next_state_9_iv\[0\]/A  next_state_9_iv\[0\]/Y  next_state\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[11\]/CLK  sec_since_eject\[11\]/Q  sec_since_eject_RNO_2\[12\]/A  sec_since_eject_RNO_2\[12\]/Y  sec_since_eject_RNO_0\[12\]/B  sec_since_eject_RNO_0\[12\]/Y  sec_since_eject_RNO\[12\]/B  sec_since_eject_RNO\[12\]/Y  sec_since_eject\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[10\]/CLK  sec_since_eject\[10\]/Q  sec_since_eject_RNO_3\[12\]/A  sec_since_eject_RNO_3\[12\]/Y  sec_since_eject_RNO_0\[12\]/C  sec_since_eject_RNO_0\[12\]/Y  sec_since_eject_RNO\[12\]/B  sec_since_eject_RNO\[12\]/Y  sec_since_eject\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[5\]/CLK  sec_since_eject\[5\]/Q  sec_since_eject_RNO_1\[12\]/B  sec_since_eject_RNO_1\[12\]/Y  sec_since_eject_RNO_0\[12\]/A  sec_since_eject_RNO_0\[12\]/Y  sec_since_eject_RNO\[12\]/B  sec_since_eject_RNO\[12\]/Y  sec_since_eject\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[6\]/CLK  sec_since_eject\[6\]/Q  sec_since_eject_RNO_1\[12\]/A  sec_since_eject_RNO_1\[12\]/Y  sec_since_eject_RNO_0\[12\]/A  sec_since_eject_RNO_0\[12\]/Y  sec_since_eject_RNO\[12\]/B  sec_since_eject_RNO\[12\]/Y  sec_since_eject\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[0\]/CLK  current_state\[0\]/Q  current_state_RNI0SR72\[0\]/C  current_state_RNI0SR72\[0\]/Y  current_state_RNINRA24\[3\]/C  current_state_RNINRA24\[3\]/Y  next_state_9\[3\]/S  next_state_9\[3\]/Y  next_state\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[0\]/CLK  sec_since_eject\[0\]/Q  sec_since_eject_RNIT0F3\[1\]/B  sec_since_eject_RNIT0F3\[1\]/Y  sec_since_eject_RNO\[2\]/A  sec_since_eject_RNO\[2\]/Y  sec_since_eject\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[8\]/CLK  sec_since_eject\[8\]/Q  sec_since_eject_RNIPDCH\[9\]/A  sec_since_eject_RNIPDCH\[9\]/Y  sec_since_eject_RNO\[11\]/B  sec_since_eject_RNO\[11\]/Y  sec_since_eject\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[9\]/CLK  sec_since_eject\[9\]/Q  sec_since_eject_RNIPDCH\[9\]/C  sec_since_eject_RNIPDCH\[9\]/Y  sec_since_eject_RNO\[11\]/B  sec_since_eject_RNO\[11\]/Y  sec_since_eject\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[3\]/CLK  current_state\[3\]/Q  current_state_RNINRA24\[3\]/B  current_state_RNINRA24\[3\]/Y  next_state_9\[3\]/S  next_state_9\[3\]/Y  next_state\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[3\]/CLK  current_state\[3\]/Q  current_state_RNINRA24\[3\]/B  current_state_RNINRA24\[3\]/Y  next_state_9_iv\[1\]/S  next_state_9_iv\[1\]/Y  next_state\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[3\]/CLK  current_state\[3\]/Q  cutter_en_RNO_0/C  cutter_en_RNO_0/Y  cutter_en_RNO/C  cutter_en_RNO/Y  cutter_en/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT sec_since_eject\[8\]/CLK  sec_since_eject\[8\]/Q  sec_since_eject_RNO\[9\]/A  sec_since_eject_RNO\[9\]/Y  sec_since_eject\[9\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[8\]/CLK  sec_since_eject\[8\]/Q  sec_since_eject_RNO\[8\]/B  sec_since_eject_RNO\[8\]/Y  sec_since_eject\[8\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[0\]/CLK  current_state\[0\]/Q  cutter_en_RNO_0/A  cutter_en_RNO_0/Y  cutter_en_RNO/C  cutter_en_RNO/Y  cutter_en/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT sec_since_eject\[2\]/CLK  sec_since_eject\[2\]/Q  sec_since_eject_RNO\[3\]/A  sec_since_eject_RNO\[3\]/Y  sec_since_eject\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[6\]/CLK  sec_since_eject\[6\]/Q  sec_since_eject_RNO\[7\]/A  sec_since_eject_RNO\[7\]/Y  sec_since_eject\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[0\]/CLK  sec_since_eject\[0\]/Q  sec_since_eject_RNO\[1\]/B  sec_since_eject_RNO\[1\]/Y  sec_since_eject\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[2\]/CLK  sec_since_eject\[2\]/Q  sec_since_eject_RNO\[2\]/B  sec_since_eject_RNO\[2\]/Y  sec_since_eject\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[4\]/CLK  sec_since_eject\[4\]/Q  sec_since_eject_RNO\[4\]/B  sec_since_eject_RNO\[4\]/Y  sec_since_eject\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[6\]/CLK  sec_since_eject\[6\]/Q  sec_since_eject_RNO\[6\]/B  sec_since_eject_RNO\[6\]/Y  sec_since_eject\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[10\]/CLK  sec_since_eject\[10\]/Q  sec_since_eject_RNO\[11\]/A  sec_since_eject_RNO\[11\]/Y  sec_since_eject\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[4\]/CLK  current_state\[4\]/Q  cutter_en_RNO_0/B  cutter_en_RNO_0/Y  cutter_en_RNO/C  cutter_en_RNO/Y  cutter_en/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT sec_since_eject\[10\]/CLK  sec_since_eject\[10\]/Q  sec_since_eject_RNO\[10\]/B  sec_since_eject_RNO\[10\]/Y  sec_since_eject\[10\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[1\]/CLK  current_state\[1\]/Q  cutter_en_RNO/B  cutter_en_RNO/Y  cutter_en/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT current_state\[3\]/CLK  current_state\[3\]/Q  next_state_RNO\[2\]/A  next_state_RNO\[2\]/Y  next_state\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[1\]/CLK  current_state\[1\]/Q  next_state_9_iv\[0\]/B  next_state_9_iv\[0\]/Y  next_state\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[1\]/CLK  current_state\[1\]/Q  next_state_9_iv\[1\]/B  next_state_9_iv\[1\]/Y  next_state\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[3\]/CLK  current_state\[3\]/Q  next_state_9\[3\]/B  next_state_9\[3\]/Y  next_state\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[0\]/CLK  sec_since_eject\[0\]/Q  sec_since_eject_RNO\[0\]/A  sec_since_eject_RNO\[0\]/Y  sec_since_eject\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[7\]/CLK  sec_since_eject\[7\]/Q  sec_since_eject_RNO\[7\]/C  sec_since_eject_RNO\[7\]/Y  sec_since_eject\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[1\]/CLK  sec_since_eject\[1\]/Q  sec_since_eject_RNO\[1\]/A  sec_since_eject_RNO\[1\]/Y  sec_since_eject\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[3\]/CLK  sec_since_eject\[3\]/Q  sec_since_eject_RNO\[3\]/C  sec_since_eject_RNO\[3\]/Y  sec_since_eject\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[5\]/CLK  sec_since_eject\[5\]/Q  sec_since_eject_RNO\[5\]/C  sec_since_eject_RNO\[5\]/Y  sec_since_eject\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[9\]/CLK  sec_since_eject\[9\]/Q  sec_since_eject_RNO\[9\]/C  sec_since_eject_RNO\[9\]/Y  sec_since_eject\[9\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[11\]/CLK  sec_since_eject\[11\]/Q  sec_since_eject_RNO\[11\]/C  sec_since_eject_RNO\[11\]/Y  sec_since_eject\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[0\]/CLK  current_state\[0\]/Q  next_state_9_iv\[0\]/C  next_state_9_iv\[0\]/Y  next_state\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[12\]/CLK  sec_since_eject\[12\]/Q  sec_since_eject_RNO\[12\]/C  sec_since_eject_RNO\[12\]/Y  sec_since_eject\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[2\]/CLK  current_state\[2\]/Q  next_state_9_iv\[1\]/A  next_state_9_iv\[1\]/Y  next_state\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[4\]/CLK  current_state\[4\]/Q  next_state_9\[3\]/A  next_state_9\[3\]/Y  next_state\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT next_state\[5\]/CLK  next_state\[5\]/Q  next_state_RNO\[5\]/A  next_state_RNO\[5\]/Y  next_state\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT next_state\[5\]/CLK  next_state\[5\]/Q  current_state\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT next_state\[4\]/CLK  next_state\[4\]/Q  current_state\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT next_state\[3\]/CLK  next_state\[3\]/Q  current_state\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT next_state\[2\]/CLK  next_state\[2\]/Q  current_state\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT next_state\[1\]/CLK  next_state\[1\]/Q  current_state\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT next_state\[0\]/CLK  next_state\[0\]/Q  current_state\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[5\]/CLK  current_state\[5\]/Q  next_state\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT current_state\[2\]/CLK  current_state\[2\]/Q  cutter_en/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT sec_since_eject\[8\]/CLK  sec_since_eject\[8\]/Q  sec_since_eject_RNIIQU6\[7\]/B  sec_since_eject_RNIIQU6\[7\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[8\]/CLK  sec_since_eject\[8\]/Q  sec_since_eject_RNIABLN\[7\]/B  sec_since_eject_RNIABLN\[7\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[0\]/CLK  sec_since_eject\[0\]/Q  sec_since_eject_RNITI65\[1\]/A  sec_since_eject_RNITI65\[1\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[0\]/CLK  sec_since_eject\[0\]/Q  sec_since_eject_RNIVR5K\[12\]/C  sec_since_eject_RNIVR5K\[12\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[2\]/CLK  sec_since_eject\[2\]/Q  sec_since_eject_RNITI65\[1\]/C  sec_since_eject_RNITI65\[1\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[2\]/CLK  sec_since_eject\[2\]/Q  sec_since_eject_RNIL0EE\[1\]/B  sec_since_eject_RNIL0EE\[1\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[4\]/CLK  sec_since_eject\[4\]/Q  sec_since_eject_RNI0QL8\[3\]/B  sec_since_eject_RNI0QL8\[3\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[4\]/CLK  sec_since_eject\[4\]/Q  sec_since_eject_RNIAIU6\[3\]/B  sec_since_eject_RNIAIU6\[3\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[7\]/CLK  sec_since_eject\[7\]/Q  sec_since_eject_RNIIQU6\[7\]/C  sec_since_eject_RNIIQU6\[7\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[7\]/CLK  sec_since_eject\[7\]/Q  sec_since_eject_RNIABLN\[7\]/C  sec_since_eject_RNIABLN\[7\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[6\]/CLK  sec_since_eject\[6\]/Q  sec_since_eject_RNI7BF3\[5\]/B  sec_since_eject_RNI7BF3\[5\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[0\]/CLK  sec_since_eject\[0\]/Q  sec_since_eject_RNITI65\[1\]/A  sec_since_eject_RNITI65\[1\]/Y  sec_since_eject_RNI0QL8\[3\]/A  sec_since_eject_RNI0QL8\[3\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[1\]/CLK  sec_since_eject\[1\]/Q  sec_since_eject_RNITI65\[1\]/B  sec_since_eject_RNITI65\[1\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[1\]/CLK  sec_since_eject\[1\]/Q  sec_since_eject_RNIL0EE\[1\]/C  sec_since_eject_RNIL0EE\[1\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[3\]/CLK  sec_since_eject\[3\]/Q  sec_since_eject_RNI0QL8\[3\]/C  sec_since_eject_RNI0QL8\[3\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[3\]/CLK  sec_since_eject\[3\]/Q  sec_since_eject_RNIAIU6\[3\]/C  sec_since_eject_RNIAIU6\[3\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[5\]/CLK  sec_since_eject\[5\]/Q  sec_since_eject_RNI7BF3\[5\]/A  sec_since_eject_RNI7BF3\[5\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[9\]/CLK  sec_since_eject\[9\]/Q  sec_since_eject_RNIMTUA\[9\]/A  sec_since_eject_RNIMTUA\[9\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[9\]/CLK  sec_since_eject\[9\]/Q  sec_since_eject_RNIMTUA\[9\]/A  sec_since_eject_RNIMTUA\[9\]/Y  sec_since_eject_RNIL0EE\[1\]/A  sec_since_eject_RNIL0EE\[1\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[11\]/CLK  sec_since_eject\[11\]/Q  sec_since_eject_RNIN9DT\[12\]/B  sec_since_eject_RNIN9DT\[12\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[11\]/CLK  sec_since_eject\[11\]/Q  sec_since_eject_RNIVR5K\[12\]/A  sec_since_eject_RNIVR5K\[12\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[10\]/CLK  sec_since_eject\[10\]/Q  sec_since_eject_RNIMTUA\[9\]/B  sec_since_eject_RNIMTUA\[9\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[12\]/CLK  sec_since_eject\[12\]/Q  sec_since_eject_RNIN9DT\[12\]/C  sec_since_eject_RNIN9DT\[12\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT sec_since_eject\[12\]/CLK  sec_since_eject\[12\]/Q  sec_since_eject_RNIVR5K\[12\]/B  sec_since_eject_RNIVR5K\[12\]/Y  	(10.0:10.0:10.0) )
+
+  )
+)
+)

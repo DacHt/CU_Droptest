@@ -1,0 +1,24 @@
+*****************************************************************
+Pin Report - Date: Fri Jun 16 21:23:16 2017 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.8
+Version: 11.8.0.26
+Design Name: CU_TOP
+Family: ProASIC3
+Die: A3P250
+Package: 100 VQFP
+*****************************************************************
+Port            |Pin |Fixed |Function      |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+----------------|----|------|--------------|--------|------------------|-----|--------------|-----|-----------------|------------|--------------|
+CLK              43   Yes    GDC2/IO63RSB2  LVTTL    ---                ---   None           ---   ---               No           No
+CUTTER           34   Yes    IO86RSB2       LVTTL    12                 High  None           No    35                No           No
+FPGA_UART_RX     44   Yes    GDB2/IO62RSB2  LVTTL    ---                ---   None           ---   ---               No           No
+FPGA_UART_TX     45   Yes    GDA2/IO61RSB2  LVTTL    12                 High  None           No    35                No           No
+L1_GPS_PWR       69   Yes    IO43NDB1       LVTTL    12                 High  None           No    35                No           No
+LED1             23   Yes    GEA0/IO98NDB3  LVTTL    12                 High  None           No    35                No           No
+LED2             65   Yes    GCC1/IO48PDB1  LVTTL    12                 High  None           No    35                No           No
+PRESSURE_PWR     41   Yes    IO74RSB2       LVTTL    12                 High  None           No    35                No           No
+PWRONRESET       76   Yes    GBA1/IO40RSB0  LVTTL    ---                ---   None           ---   ---               No           No
+SAT_PWR          97   Yes    GAA1/IO01RSB0  LVTTL    12                 High  None           No    35                No           No
+SENS_MEM_L5_PWR  90   Yes    IO15RSB0       LVTTL    12                 High  None           No    35                No           No
+VHF_PWR          35   Yes    IO85RSB2       LVTTL    12                 High  None           No    35                No           No

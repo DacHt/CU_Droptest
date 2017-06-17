@@ -1,0 +1,2 @@
+CKID0001:@|S:system_clock_inst_0.s_time_0[7]@|E:WOLF_CONTROLLER_inst_0.sec_since_res[12]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:CLK@|E:WOLF_CONTROLLER_inst_0.uart_next_state[0]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

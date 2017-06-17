@@ -1,0 +1,3286 @@
+; HEADER
+; FILEID ADL C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.dtf\netlist.afl c01abacb
+; CHECKSUM c01abacb
+; ASC 80804c3b
+; PROGRAM Microsemi Libero Software
+; VERSION v11.8 11.8.0.26
+; ALSMAJORREV 11
+; ALSMINORREV 8
+; ALSPATCHREV 0
+; VAR DESIGN CU_TOP
+; VAR FAM ProASIC3
+; VAR FAMILY PA3LC
+; VAR DIE IS4X4M1
+; VAR PACKAGE vq100
+; VAR IFIKEEPER <NOT-SET>
+; VAR RESTRICTTRSTPIN YES
+; VAR UNCLAMP_UNUSED_IOS 0
+; VAR RESERVE_PROGRAMMING_PINS 1
+; VAR RESTRICTPROBEPINS 1
+; VAR RESTRICTJTAGPINS YES
+; VAR SPEED STD
+; VAR TEMPR COM
+; VAR VOLTR COM
+; VAR SI_SECURITY_KEY 
+; VAR SIG 
+; VAR FUSCHECKSUM <NOT-SET>
+; VAR PROGSECFUSE <NOT-SET>
+; VAR PINCHECKSUM <NOT-SET>
+; VAR ACT1_special_IO_pins_used NO
+; VAR AXPROGRAMMING_USE_UMA <NOT-SET>
+; ENDHEADER
+DEF CU_TOP; CLK, FPGA_UART_RX, PWRONRESET, CUTTER, FPGA_UART_TX, 
+  L1_GPS_PWR, LED1, LED2, PRESSURE_PWR, SAT_PWR, SENS_MEM_L5_PWR, 
+  VHF_PWR.
+PIN CLK; DIRECTION:INPUT.
+PIN FPGA_UART_RX; DIRECTION:INPUT.
+PIN PWRONRESET; DIRECTION:INPUT.
+PIN CUTTER; DIRECTION:OUTPUT.
+PIN FPGA_UART_TX; DIRECTION:OUTPUT.
+PIN L1_GPS_PWR; DIRECTION:OUTPUT.
+PIN LED1; DIRECTION:OUTPUT.
+PIN LED2; DIRECTION:OUTPUT.
+PIN PRESSURE_PWR; DIRECTION:OUTPUT.
+PIN SAT_PWR; DIRECTION:OUTPUT.
+PIN SENS_MEM_L5_PWR; DIRECTION:OUTPUT.
+PIN VHF_PWR; DIRECTION:OUTPUT.
+USE ADLIB:NOR2A; FPGA_UART/make_RX/rx_state_RNIT726_0[0].
+USE ADLIB:OR2B; 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNIIJMV5[1].
+USE ADLIB:IOPAD_TRI; PRESSURE_PWR_pad/U0/U0; PRESERVE, CLS_ID:
+  2%HARD%IO%0%0, CLS_NAME:PRESSURE_PWR_pad.
+PIN PRESSURE_PWR_pad/U0/U0:PAD; O_P:FLATSOFT%PRESSURE_PWR_pad/PAD.
+USE ADLIB:DFN1E1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[2].
+USE ADLIB:NOR3C; system_clock_inst_0/s_time_0_RNIM98R[7].
+USE ADLIB:DFN1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[3].
+USE ADLIB:UIO_IOTRI_OB_EB; FPGA_UART_TX_pad/U0/U1/U0; CLS_NAME:
+  FPGA_UART_TX_pad, CLS_ID:5%HARD%IO%1%0, LEAFDEF:
+  'ADLIB:IOTRI_OB_EB', LEAFINST:FPGA_UART_TX_pad/U0/U1, PRESERVE.
+PIN FPGA_UART_TX_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%FPGA_UART_TX_pad/U0/U1/DOUT.
+PIN FPGA_UART_TX_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%FPGA_UART_TX_pad/U0/U1/EOUT.
+USE ADLIB:OR2A; FPGA_UART/rxrdy_xhdl4_RNO.
+USE ADLIB:NOR2B; FPGA_UART/make_RX/rx_bit_cnt_RNI1CPP[1].
+USE ADLIB:AOI1; FPGA_UART/make_RX/receive_count_RNO[3].
+USE ADLIB:NOR3B; FPGA_UART/make_RX/rx_state_RNO_2[0].
+USE ADLIB:NOR2B; system_clock_inst_0/l_time_RNIPOUI2[12].
+USE ADLIB:XA1C; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[7].
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[7]:A; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_20/A.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[7]:B; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_20/B.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[7]:C; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[7]/B.
+USE ADLIB:NOR3B; WOLF_CONTROLLER_inst_0/sec_since_res_RNI4ODS2[2].
+USE ADLIB:OR2A; system_clock_inst_0/l_time_RNITDHQ2[6].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/sec_since_res[10].
+USE ADLIB:OR2B; FPGA_UART/make_TX/xmit_bit_sel_RNIJN8I[0].
+USE ADLIB:MX2C; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[0].
+USE ADLIB:NOR3B; system_clock_inst_0/l_time_RNI0HHQ2[5].
+USE ADLIB:DFN1E1; WOLF_CONTROLLER_inst_0/uart_data_buffer_in[7].
+USE ADLIB:DFN0E1C1; system_clock_inst_0/s_time_0[7].
+USE ADLIB:DFN0E0C1; system_clock_inst_0/l_time[15].
+USE ADLIB:NOR2A; FPGA_UART/make_RX/rx_shift_RNO[1].
+USE ADLIB:DFN1E1; WOLF_CONTROLLER_inst_0/uart_data_buffer_in[0].
+USE ADLIB:OR3B; WOLF_CONTROLLER_inst_0/sec_since_res_RNIJFQB3[6].
+USE ADLIB:OR2; FPGA_UART/make_RX/rx_state_RNO_1[1].
+USE ADLIB:DFN1E1C1; WOLF_CONTROLLER_inst_0/main_next_state[0].
+USE ADLIB:UAUX_IOIN_IB; FPGA_UART_RX_pad/U0/U1/U1; CLS_NAME:
+  FPGA_UART_RX_pad, CLS_ID:12%HARD%IO%2%0, LEAFDEF:'ADLIB:IOIN_IB', 
+  LEAFINST:FPGA_UART_RX_pad/U0/U1, PRESERVE.
+PIN FPGA_UART_RX_pad/U0/U1/U1:Y; T_O_P:Y, O_P:
+  FLATSOFT%FPGA_UART_RX_pad/Y.
+USE ADLIB:NOR3C; FPGA_UART/make_RX/receive_count_RNIVJ2A[0].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_shift[5].
+USE ADLIB:XA1C; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[10].
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[10]:A; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_28/A.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[10]:B; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_28/B.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[10]:C; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[10]/B.
+USE ADLIB:DFN1E1; WOLF_CONTROLLER_inst_0/led1.
+USE ADLIB:MX2; FPGA_UART/make_TX/tx_xhdl2_RNO_1.
+USE ADLIB:DFN1E0P1; FPGA_UART/make_TX/txrdy_int.
+USE ADLIB:NOR2; FPGA_UART/make_RX/receive_count_RNI1602[0].
+USE ADLIB:UAUX_IOTRI_OB_EB; LED1_pad/U0/U1/U1; CLS_NAME:LED1_pad, 
+  CLS_ID:9%HARD%IO%2%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', LEAFINST:
+  LED1_pad/U0/U1, PRESERVE.
+PIN LED1_pad/U0/U1/U1:D; T_O_P:D, O_P:FLATSOFT%LED1_pad/D.
+PIN LED1_pad/U0/U1/U1:E; T_O_P:E, O_P:FLATHARD%LED1_pad/U0/U1/E.
+USE ADLIB:XOR2; system_clock_inst_0/un1_s_time_I_14.
+USE ADLIB:DFN0C1; system_clock_inst_0/l_time[12].
+USE ADLIB:XA1C; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[9].
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[9]:A; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_26/A.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[9]:B; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_26/B.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[9]:C; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[9]/B.
+USE ADLIB:DFN0E1C1; system_clock_inst_0/s_time[6].
+USE ADLIB:IOPAD_IN; CLK_pad/U0/U0; PRESERVE, CLS_ID:
+  10%HARD%IO%0%0, CLS_NAME:CLK_pad.
+PIN CLK_pad/U0/U0:PAD; O_P:FLATSOFT%CLK_pad/PAD.
+USE ADLIB:NOR3; WOLF_CONTROLLER_inst_0/sec_since_res_RNIKHGG4[3].
+USE ADLIB:DFN1E0; WOLF_CONTROLLER_inst_0/main_current_state[0].
+USE ADLIB:DFN0E0C1; system_clock_inst_0/l_time[9].
+USE ADLIB:NOR2B; FPGA_UART/make_RX/rx_state_RNI69LF[0].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_state[1].
+USE ADLIB:OR2B; WOLF_CONTROLLER_inst_0/sec_since_res_RNI5MPU[1].
+USE ADLIB:DFN0E0C1; system_clock_inst_0/l_time[13].
+USE ADLIB:AO1A; 
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNIUUIP[0].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/uart_next_state[0].
+USE ADLIB:OR2A; WOLF_CONTROLLER_inst_0/sec_since_res_RNICH7R3[7].
+USE ADLIB:DFN1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int.
+USE ADLIB:DFN0E1C1; system_clock_inst_0/s_time[4].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_byte_xhdl5[7].
+USE ADLIB:INV; system_clock_inst_0/l_time_RNO[16].
+USE ADLIB:DFN1E0C1; WOLF_CONTROLLER_inst_0/main_uart_data_out[2].
+USE ADLIB:NOR2B; WOLF_CONTROLLER_inst_0/uart_next_state_RNO[2].
+USE ADLIB:AX1C; system_clock_inst_0/un1_s_time_I_12.
+PIN system_clock_inst_0/un1_s_time_I_12:A; O_P:
+  LCOM%system_clock_inst_0/un1_s_time_I_11/A.
+PIN system_clock_inst_0/un1_s_time_I_12:B; O_P:
+  LCOM%system_clock_inst_0/un1_s_time_I_11/B.
+PIN system_clock_inst_0/un1_s_time_I_12:C; O_P:
+  LCOM%system_clock_inst_0/un1_s_time_I_12/B.
+USE ADLIB:NOR3; FPGA_UART/make_TX/tx_xhdl2_RNO_0.
+USE ADLIB:NOR2; FPGA_UART/make_RX/rx_bit_cnt_RNO[0].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/sec_since_res[4].
+USE ADLIB:AND3; system_clock_inst_0/un1_s_time_I_13.
+USE ADLIB:DFN1E0C1; FPGA_UART/tx_hold_reg[3].
+USE ADLIB:MX2; WOLF_CONTROLLER_inst_0/uart_data_out_RNO_0[2].
+USE ADLIB:DFN1E1; WOLF_CONTROLLER_inst_0/uart_data_buffer_in[1].
+USE ADLIB:DFN1E1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[3].
+USE ADLIB:NOR2A; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[12].
+USE ADLIB:AOI1B; system_clock_inst_0/s_time_RNO[2].
+USE ADLIB:NOR2B; system_clock_inst_0/flag_RNO_1.
+USE ADLIB:NOR2A; FPGA_UART/make_RX/rx_shift_RNO[0].
+USE ADLIB:OR3B; system_clock_inst_0/l_time_RNO_0[17].
+PIN system_clock_inst_0/l_time_RNO_0[17]:A; O_P:
+  LCOM%system_clock_inst_0/l_time_RNO_1[17]/A.
+PIN system_clock_inst_0/l_time_RNO_0[17]:B; O_P:
+  LCOM%system_clock_inst_0/l_time_RNO_1[17]/B.
+PIN system_clock_inst_0/l_time_RNO_0[17]:C; O_P:
+  LCOM%system_clock_inst_0/l_time_RNO_0[17]/B.
+USE ADLIB:DFN1E0; WOLF_CONTROLLER_inst_0/uart_current_state[1].
+USE ADLIB:IOPAD_TRI; SENS_MEM_L5_PWR_pad/U0/U0; PRESERVE, CLS_ID:
+  8%HARD%IO%0%0, CLS_NAME:SENS_MEM_L5_PWR_pad.
+PIN SENS_MEM_L5_PWR_pad/U0/U0:PAD; O_P:
+  FLATSOFT%SENS_MEM_L5_PWR_pad/PAD.
+USE ADLIB:DFN1E0C1; FPGA_UART/tx_hold_reg[1].
+USE ADLIB:NOR2A; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[2].
+USE ADLIB:NOR2B; WOLF_CONTROLLER_inst_0/sec_since_res_RNIEVPU[2].
+USE ADLIB:NOR3B; WOLF_CONTROLLER_inst_0/sec_since_res_RNO_1[10].
+USE ADLIB:DFN0E1C1; system_clock_inst_0/s_time[3].
+USE ADLIB:MX2; FPGA_UART/make_RX/samples_RNO[0].
+USE ADLIB:AX1B; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_12; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_12'.
+PIN 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_12:
+  A; O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_11/A.
+PIN 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_12:
+  B; O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_11/B.
+PIN 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_12:
+  C; O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_12/B.
+USE ADLIB:XOR2; system_clock_inst_0/l_time_RNO[2].
+USE ADLIB:MX2; FPGA_UART/make_TX/tx_xhdl2_RNO_5.
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_shift[4].
+USE ADLIB:DFN1E0C1; WOLF_CONTROLLER_inst_0/uart_data_out[6].
+USE ADLIB:OR3; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_24; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_24'.
+USE ADLIB:INV; WOLF_CONTROLLER_inst_0/sec_since_res_RNO[0].
+USE ADLIB:NOR2A; WOLF_CONTROLLER_inst_0/uart_data_out_RNO[1].
+USE ADLIB:MX2; FPGA_UART/make_RX/samples_RNO[1].
+USE ADLIB:AND3; system_clock_inst_0/un1_s_time_I_10.
+USE ADLIB:XA1C; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[11].
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[11]:A; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_32/A.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[11]:B; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_32/B.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[11]:C; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[11]/B.
+USE ADLIB:DFN1E0C1; WOLF_CONTROLLER_inst_0/uart_data_out[4].
+USE ADLIB:NOR3A; FPGA_UART/make_RX/stop_strobe_i_RNO.
+USE ADLIB:OR2; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_15; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_15'.
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/uart_next_state[3].
+USE ADLIB:DFN0E0C1; system_clock_inst_0/l_time[17].
+USE ADLIB:NOR2A; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int_RNO.
+USE ADLIB:XNOR2; WOLF_CONTROLLER_inst_0/sec_since_res_RNO[8].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/sec_since_res[3].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/sec_since_res[1].
+USE ADLIB:XOR2; system_clock_inst_0/un1_s_time_0_I_20.
+USE ADLIB:NOR3C; system_clock_inst_0/flag_RNO.
+USE ADLIB:AX1E; FPGA_UART/make_RX/receive_count_RNO_0[1].
+USE ADLIB:MX2; FPGA_UART/make_TX/xmit_state_RNO_1[5].
+USE ADLIB:OR2; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_21; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_21'.
+USE ADLIB:DFN1E0C1; WOLF_CONTROLLER_inst_0/uart_data_out[1].
+USE ADLIB:NOR2A; FPGA_UART/make_RX/last_bit_RNO[0].
+USE ADLIB:NOR2A; 
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNI0C4B[3].
+USE ADLIB:OR3C; system_clock_inst_0/l_time_RNO_0[13].
+USE ADLIB:OR3; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_16; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_16'.
+USE ADLIB:UAUX_IOIN_IB; CLK_pad/U0/U1/U1; CLS_NAME:CLK_pad, 
+  CLS_ID:10%HARD%IO%2%0, LEAFDEF:'ADLIB:IOIN_IB', LEAFINST:
+  CLK_pad/U0/U1, PRESERVE.
+PIN CLK_pad/U0/U1/U1:Y; T_O_P:Y, O_P:FLATSOFT%CLK_pad/Y.
+USE ADLIB:OR3; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_18; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_18'.
+USE ADLIB:NOR3; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNI361S[12].
+USE ADLIB:NOR2A; WOLF_CONTROLLER_inst_0/uart_data_out_RNO[2].
+USE ADLIB:XOR2; system_clock_inst_0/un1_s_time_I_9.
+USE ADLIB:AOI1B; system_clock_inst_0/s_time_RNO[1].
+USE ADLIB:NOR2A; FPGA_UART/make_RX/rx_shift_RNO[4].
+USE ADLIB:XOR2; FPGA_UART/make_RX/receive_count_RNO_0[3].
+USE ADLIB:MX2B; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[4].
+USE ADLIB:DFN1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[8].
+USE ADLIB:OR3A; WOLF_CONTROLLER_inst_0/uart_ready_RNIFDT0C.
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_shift[6].
+USE ADLIB:IOPAD_TRI; LED1_pad/U0/U0; PRESERVE, CLS_ID:
+  9%HARD%IO%0%0, CLS_NAME:LED1_pad.
+PIN LED1_pad/U0/U0:PAD; O_P:FLATSOFT%LED1_pad/PAD.
+USE ADLIB:NOR2B; FPGA_UART/make_RX/receive_full_int_RNO_0.
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/sec_since_res[2].
+USE ADLIB:DFN0E0C1; system_clock_inst_0/l_time[7].
+USE ADLIB:AO1A; FPGA_UART/make_TX/xmit_state_RNO[0].
+USE ADLIB:DFN1E0C1; WOLF_CONTROLLER_inst_0/uart_data_out[7].
+USE ADLIB:NOR3C; system_clock_inst_0/l_time_RNIJUQI[13].
+USE ADLIB:IOPAD_IN; FPGA_UART_RX_pad/U0/U0; PRESERVE, CLS_ID:
+  12%HARD%IO%0%0, CLS_NAME:FPGA_UART_RX_pad.
+PIN FPGA_UART_RX_pad/U0/U0:PAD; O_P:FLATSOFT%FPGA_UART_RX_pad/PAD.
+USE ADLIB:DFN1E1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[1].
+USE ADLIB:XNOR2; WOLF_CONTROLLER_inst_0/sec_since_res_RNO[5].
+USE ADLIB:DFN1E1C1; WOLF_CONTROLLER_inst_0/main_next_state[3].
+USE ADLIB:OR3; WOLF_CONTROLLER_inst_0/sec_since_res_RNI93EQ1[7].
+USE ADLIB:NOR2A; WOLF_CONTROLLER_inst_0/led1_RNO.
+USE ADLIB:NOR2B; FPGA_UART/make_RX/samples_RNIBC1D1[0].
+USE ADLIB:INV; system_clock_inst_0/l_time_RNO[1].
+USE ADLIB:DFN1E0; WOLF_CONTROLLER_inst_0/main_current_state[1].
+USE ADLIB:NOR2B; system_clock_inst_0/l_time_RNO_2[11].
+USE ADLIB:UAUX_IOTRI_OB_EB; LED2_pad/U0/U1/U1; CLS_NAME:LED2_pad, 
+  CLS_ID:0%HARD%IO%2%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', LEAFINST:
+  LED2_pad/U0/U1, PRESERVE.
+PIN LED2_pad/U0/U1/U1:D; T_O_P:D, O_P:FLATSOFT%LED2_pad/D.
+PIN LED2_pad/U0/U1/U1:E; T_O_P:E, O_P:FLATHARD%LED2_pad/U0/U1/E.
+USE ADLIB:NOR2B; system_clock_inst_0/l_time_RNIVP5U[4].
+USE ADLIB:UAUX_IOTRI_OB_EB; L1_GPS_PWR_pad/U0/U1/U1; CLS_NAME:
+  L1_GPS_PWR_pad, CLS_ID:3%HARD%IO%2%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', 
+  LEAFINST:L1_GPS_PWR_pad/U0/U1, PRESERVE.
+PIN L1_GPS_PWR_pad/U0/U1/U1:D; T_O_P:D, O_P:
+  FLATSOFT%L1_GPS_PWR_pad/D.
+PIN L1_GPS_PWR_pad/U0/U1/U1:E; T_O_P:E, O_P:
+  FLATHARD%L1_GPS_PWR_pad/U0/U1/E.
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_bit_cnt[1].
+USE ADLIB:DFN1E0C1; WOLF_CONTROLLER_inst_0/sec_since_res[12].
+USE ADLIB:NOR3C; system_clock_inst_0/l_time_RNIEPQI[11].
+USE ADLIB:DFN1E0C1; WOLF_CONTROLLER_inst_0/uart_data_out[0].
+USE ADLIB:DFN1E1P1; FPGA_UART/make_RX/samples[2].
+USE ADLIB:NOR2A; FPGA_UART/make_RX/rx_shift_RNO[6].
+USE ADLIB:XA1C; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[8].
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[8]:A; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_23/A.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[8]:B; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_23/B.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[8]:C; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[8]/B.
+USE ADLIB:DFN1E0C1; FPGA_UART/tx_hold_reg[7].
+USE ADLIB:XA1C; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[1].
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[1]:A; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_5/A.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[1]:B; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_5/B.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[1]:C; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[1]/B.
+USE ADLIB:DFN1E0C1; FPGA_UART/make_TX/tx_byte[0].
+USE ADLIB:AND3; system_clock_inst_0/un1_s_time_0_I_18.
+USE ADLIB:DFN1E0C1; FPGA_UART/tx_hold_reg[5].
+USE ADLIB:OR2; WOLF_CONTROLLER_inst_0/un1_uart_current_state_1.
+USE ADLIB:UAUX_IOTRI_OB_EB; SENS_MEM_L5_PWR_pad/U0/U1/U1; 
+  CLS_NAME:SENS_MEM_L5_PWR_pad, CLS_ID:8%HARD%IO%2%0, LEAFDEF:
+  'ADLIB:IOTRI_OB_EB', LEAFINST:SENS_MEM_L5_PWR_pad/U0/U1, PRESERVE.
+PIN SENS_MEM_L5_PWR_pad/U0/U1/U1:D; T_O_P:D, O_P:
+  FLATSOFT%SENS_MEM_L5_PWR_pad/D.
+PIN SENS_MEM_L5_PWR_pad/U0/U1/U1:E; T_O_P:E, O_P:
+  FLATHARD%SENS_MEM_L5_PWR_pad/U0/U1/E.
+USE ADLIB:OR2B; FPGA_UART/make_RX/receive_count_RNIV302[1].
+USE ADLIB:UGLINT; CLKINT_0/U_GL; CLS_NAME:CLKINT_0, CLS_ID:
+  7%HARD%PLL%0%0, ORIGNAME:CLKINT_0, LEAFDEF:'ADLIB:CLKINT', 
+  LEAFINST:CLKINT_0, PRESERVE.
+PIN CLKINT_0/U_GL:CLK; T_O_P:A, O_P:FLATHARD%CLKINT_0/A.
+PIN CLKINT_0/U_GL:GL; T_O_P:Y, O_P:FLATHARD%CLKINT_0/Y.
+USE ADLIB:NOR2B; system_clock_inst_0/l_time_RNO_3[11].
+USE ADLIB:NOR2; FPGA_UART/make_TX/xmit_state_RNO_0[5].
+USE ADLIB:DFN1E0P1; WOLF_CONTROLLER_inst_0/uart_oen.
+USE ADLIB:INV; system_clock_inst_0/l_time_RNO[17].
+USE ADLIB:DFN1E0; WOLF_CONTROLLER_inst_0/main_current_state[3].
+USE ADLIB:XA1; FPGA_UART/make_TX/xmit_bit_sel_RNO[1].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_shift[7].
+USE ADLIB:DFN1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[6].
+USE ADLIB:XOR2; system_clock_inst_0/un1_s_time_I_5.
+USE ADLIB:UIO_IOTRI_OB_EB; SAT_PWR_pad/U0/U1/U0; CLS_NAME:
+  SAT_PWR_pad, CLS_ID:13%HARD%IO%1%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', 
+  LEAFINST:SAT_PWR_pad/U0/U1, PRESERVE.
+PIN SAT_PWR_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%SAT_PWR_pad/U0/U1/DOUT.
+PIN SAT_PWR_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%SAT_PWR_pad/U0/U1/EOUT.
+USE ADLIB:NOR2B; WOLF_CONTROLLER_inst_0/sec_since_res_RNO_2[10].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/sec_since_res[6].
+USE ADLIB:OR3; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_30; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_30'.
+USE ADLIB:NOR2; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNI9MLP[2].
+USE ADLIB:OR3; WOLF_CONTROLLER_inst_0/sec_since_res_RNIO91B1[12].
+USE ADLIB:DFN1E0; WOLF_CONTROLLER_inst_0/uart_current_state[0].
+USE ADLIB:OR3; 
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNIORVL[2].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_TX/xmit_bit_sel[2].
+USE ADLIB:XOR2; FPGA_UART/make_RX/last_bit_RNI6SBL[0].
+USE ADLIB:OA1B; FPGA_UART/make_RX/rx_state_RNO_0[1].
+USE ADLIB:NOR2B; WOLF_CONTROLLER_inst_0/uart_next_state_RNO[4].
+USE ADLIB:DFN1P1; WOLF_CONTROLLER_inst_0/main_next_state[4].
+USE ADLIB:UIO_IOTRI_OB_EB; L1_GPS_PWR_pad/U0/U1/U0; CLS_NAME:
+  L1_GPS_PWR_pad, CLS_ID:3%HARD%IO%1%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', 
+  LEAFINST:L1_GPS_PWR_pad/U0/U1, PRESERVE.
+PIN L1_GPS_PWR_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%L1_GPS_PWR_pad/U0/U1/DOUT.
+PIN L1_GPS_PWR_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%L1_GPS_PWR_pad/U0/U1/EOUT.
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/sec_since_res[9].
+USE ADLIB:DFN0C1; system_clock_inst_0/l_time[5].
+USE ADLIB:DFN1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one.
+USE ADLIB:MX2; WOLF_CONTROLLER_inst_0/uart_data_out_RNO_0[1].
+USE ADLIB:UGLINT; CLKINT_1/U_GL; CLS_NAME:CLKINT_1, CLS_ID:
+  6%HARD%PLL%0%0, ORIGNAME:CLKINT_1, LEAFDEF:'ADLIB:CLKINT', 
+  LEAFINST:CLKINT_1, PRESERVE.
+PIN CLKINT_1/U_GL:CLK; T_O_P:A, O_P:FLATHARD%CLKINT_1/A.
+PIN CLKINT_1/U_GL:GL; T_O_P:Y, O_P:FLATHARD%CLKINT_1/Y.
+USE ADLIB:DFN1E0; WOLF_CONTROLLER_inst_0/uart_current_state[3].
+USE ADLIB:DFN0C1; system_clock_inst_0/l_time[1].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/sec_since_res[0].
+USE ADLIB:OA1C; WOLF_CONTROLLER_inst_0/main_next_state_RNO_0[1].
+USE ADLIB:INV; system_clock_inst_0/l_time_RNO[8].
+USE ADLIB:OR2B; FPGA_UART/make_TX/xmit_state_RNIP3DT[3].
+USE ADLIB:DFN1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[12].
+USE ADLIB:NOR2B; FPGA_UART/make_RX/rx_state_RNO_3[0].
+USE ADLIB:AND3; system_clock_inst_0/un1_s_time_I_8.
+USE ADLIB:AX1B; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_7; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_7'.
+PIN 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_7:
+  A; O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_6/A.
+PIN 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_7:
+  B; O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_6/B.
+PIN 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_7:
+  C; O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_7/B.
+USE ADLIB:OR2; WOLF_CONTROLLER_inst_0/sec_since_res_RNIP1KR[10].
+USE ADLIB:NOR2A; FPGA_UART/make_TX/xmit_state_RNO_1[2].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_byte_xhdl5[5].
+USE ADLIB:OR3; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_27; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_27'.
+USE ADLIB:NOR2; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIGTLP[5].
+USE ADLIB:XNOR2; WOLF_CONTROLLER_inst_0/sec_since_res_RNO[7].
+USE ADLIB:UAUX_IOTRI_OB_EB; CUTTER_pad/U0/U1/U1; CLS_NAME:
+  CUTTER_pad, CLS_ID:4%HARD%IO%2%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', 
+  LEAFINST:CUTTER_pad/U0/U1, PRESERVE.
+PIN CUTTER_pad/U0/U1/U1:D; T_O_P:D, O_P:FLATSOFT%CUTTER_pad/D.
+PIN CUTTER_pad/U0/U1/U1:E; T_O_P:E, O_P:
+  FLATHARD%CUTTER_pad/U0/U1/E.
+USE ADLIB:AO1; WOLF_CONTROLLER_inst_0/main_next_state_RNO[0].
+USE ADLIB:DFN1C1; FPGA_UART/make_TX/xmit_state[2].
+USE ADLIB:NOR2B; system_clock_inst_0/l_time_RNIJ8AF4[12].
+USE ADLIB:OR3; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_13; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_13'.
+USE ADLIB:AO1A; FPGA_UART/make_TX/xmit_state_RNO[3].
+USE ADLIB:NOR3C; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one_RNIML9L.
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/sec_since_res[8].
+USE ADLIB:DFN1E0C1; WOLF_CONTROLLER_inst_0/main_uart_data_out[1].
+USE ADLIB:INV; WOLF_CONTROLLER_inst_0/sec_since_res_RNO[12].
+USE ADLIB:NOR2A; FPGA_UART/make_RX/rx_shift_RNO[3].
+USE ADLIB:DFN1E0C1; FPGA_UART/make_TX/tx_byte[4].
+USE ADLIB:NOR3C; system_clock_inst_0/flag_RNO_0.
+USE ADLIB:NOR3B; FPGA_UART/make_RX/receive_full_int_RNO_1.
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_byte_xhdl5[1].
+USE ADLIB:AXOI4; FPGA_UART/make_RX/receive_count_RNO[0].
+USE ADLIB:DFN1C1; FPGA_UART/make_TX/xmit_state[3].
+USE ADLIB:OR2; WOLF_CONTROLLER_inst_0/uart_oen_RNO.
+USE ADLIB:XOR2; WOLF_CONTROLLER_inst_0/sec_since_res_RNO[1].
+USE ADLIB:UAUX_IOTRI_OB_EB; PRESSURE_PWR_pad/U0/U1/U1; CLS_NAME:
+  PRESSURE_PWR_pad, CLS_ID:2%HARD%IO%2%0, LEAFDEF:
+  'ADLIB:IOTRI_OB_EB', LEAFINST:PRESSURE_PWR_pad/U0/U1, PRESERVE.
+PIN PRESSURE_PWR_pad/U0/U1/U1:D; T_O_P:D, O_P:
+  FLATSOFT%PRESSURE_PWR_pad/D.
+PIN PRESSURE_PWR_pad/U0/U1/U1:E; T_O_P:E, O_P:
+  FLATHARD%PRESSURE_PWR_pad/U0/U1/E.
+USE ADLIB:NOR2B; FPGA_UART/make_RX/receive_count_RNI1602[1].
+USE ADLIB:NOR2B; FPGA_UART/make_TX/xmit_bit_sel_RNO_0[3].
+USE ADLIB:IOPAD_TRI; LED2_pad/U0/U0; PRESERVE, CLS_ID:
+  0%HARD%IO%0%0, CLS_NAME:LED2_pad.
+PIN LED2_pad/U0/U0:PAD; O_P:FLATSOFT%LED2_pad/PAD.
+USE ADLIB:DFN1E0C1; FPGA_UART/tx_hold_reg[4].
+USE ADLIB:NOR3B; FPGA_UART/make_RX/receive_count_RNI8LLJ[3].
+USE ADLIB:NOR2B; 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNIKLMV5[3].
+USE ADLIB:NOR3C; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one_RNO.
+USE ADLIB:DFN1E0C1; FPGA_UART/make_TX/tx_byte[5].
+USE ADLIB:NOR2A; FPGA_UART/make_RX/rx_shift_RNO[2].
+USE ADLIB:AX1A; FPGA_UART/make_RX/receive_count_RNO_0[2].
+USE ADLIB:DFN1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[11].
+USE ADLIB:DFN1E0P1; WOLF_CONTROLLER_inst_0/uart_wen.
+USE ADLIB:OR3A; WOLF_CONTROLLER_inst_0/sec_since_res_RNID4NU5[11].
+USE ADLIB:MX2; FPGA_UART/make_TX/tx_xhdl2_RNO_2.
+USE ADLIB:AOI1B; system_clock_inst_0/s_time_RNO[6].
+USE ADLIB:UAUX_IOIN_IB; PWRONRESET_pad/U0/U1/U1; CLS_NAME:
+  PWRONRESET_pad, CLS_ID:11%HARD%IO%2%0, LEAFDEF:'ADLIB:IOIN_IB', 
+  LEAFINST:PWRONRESET_pad/U0/U1, PRESERVE.
+PIN PWRONRESET_pad/U0/U1/U1:Y; T_O_P:Y, O_P:
+  FLATSOFT%PWRONRESET_pad/Y.
+USE ADLIB:MX2; WOLF_CONTROLLER_inst_0/uart_data_out_RNO_0[0].
+USE ADLIB:OR2; 
+  WOLF_CONTROLLER_inst_0/main_uart_transmit_flag_RNI2IM5.
+USE ADLIB:DFN0E1C1; system_clock_inst_0/s_time[2].
+USE ADLIB:NOR3A; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIUOBJ1[4].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_shift[3].
+USE ADLIB:MX2C; WOLF_CONTROLLER_inst_0/uart_wen_RNO.
+USE ADLIB:DFN0C1; system_clock_inst_0/l_time[6].
+USE ADLIB:AO1D; FPGA_UART/make_RX/rx_state_RNO_0[0].
+USE ADLIB:XA1B; FPGA_UART/make_RX/rx_bit_cnt_RNO[1].
+USE ADLIB:DFN1E0; WOLF_CONTROLLER_inst_0/main_current_state[4].
+USE ADLIB:OR2B; system_clock_inst_0/l_time_RNIRL5U[2].
+USE ADLIB:NOR3B; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one_RNO_0.
+USE ADLIB:UIO_IOIN_IB; FPGA_UART_RX_pad/U0/U1/U0; CLS_NAME:
+  FPGA_UART_RX_pad, CLS_ID:12%HARD%IO%1%0, LEAFDEF:'ADLIB:IOIN_IB', 
+  LEAFINST:FPGA_UART_RX_pad/U0/U1, PRESERVE.
+PIN FPGA_UART_RX_pad/U0/U1/U0:YIN; T_O_P:YIN, O_P:
+  FLATHARD%FPGA_UART_RX_pad/U0/U1/YIN.
+USE ADLIB:NOR2B; FPGA_UART/make_TX/txrdy_int_RNO.
+USE ADLIB:NOR3C; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIDA6N4[1].
+USE ADLIB:XA1C; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[6].
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[6]:A; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_17/A.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[6]:B; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_17/B.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[6]:C; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[6]/B.
+USE ADLIB:DFN1E0C1; WOLF_CONTROLLER_inst_0/uart_data_out[5].
+USE ADLIB:XNOR2; system_clock_inst_0/l_time_RNO[6].
+USE ADLIB:DFN0C1; system_clock_inst_0/l_time[4].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_byte_xhdl5[0].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_bit_cnt[3].
+USE ADLIB:OR2A; system_clock_inst_0/l_time_RNO_0[16].
+USE ADLIB:AOI1B; system_clock_inst_0/s_time_0_RNO[7].
+USE ADLIB:NOR2B; FPGA_UART/make_RX/rx_state_RNIBC1D1[0].
+USE ADLIB:AO1B; FPGA_UART/make_RX/receive_full_int_RNO.
+USE ADLIB:DFN1C1; FPGA_UART/make_RX/receive_count[3].
+USE ADLIB:DFN1E1; WOLF_CONTROLLER_inst_0/uart_data_buffer_in[6].
+USE ADLIB:OR2B; system_clock_inst_0/l_time_RNIK86H4[14].
+USE ADLIB:DFN1E1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock.
+USE ADLIB:AND3; system_clock_inst_0/un1_s_time_0_I_10.
+USE ADLIB:NOR3A; WOLF_CONTROLLER_inst_0/main_next_state_RNO_1[1].
+USE ADLIB:NOR3C; system_clock_inst_0/l_time_RNIQFBS1[2].
+PIN system_clock_inst_0/l_time_RNIQFBS1[2]:A; O_P:
+  LCOM%system_clock_inst_0/l_time_RNIRL5U_0[2]/A.
+PIN system_clock_inst_0/l_time_RNIQFBS1[2]:B; O_P:
+  LCOM%system_clock_inst_0/l_time_RNIRL5U_0[2]/B.
+PIN system_clock_inst_0/l_time_RNIQFBS1[2]:C; O_P:
+  LCOM%system_clock_inst_0/l_time_RNIQFBS1[2]/A.
+USE ADLIB:DFN1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[5].
+USE ADLIB:UIO_IOTRI_OB_EB; SENS_MEM_L5_PWR_pad/U0/U1/U0; CLS_NAME:
+  SENS_MEM_L5_PWR_pad, CLS_ID:8%HARD%IO%1%0, LEAFDEF:
+  'ADLIB:IOTRI_OB_EB', LEAFINST:SENS_MEM_L5_PWR_pad/U0/U1, PRESERVE.
+PIN SENS_MEM_L5_PWR_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%SENS_MEM_L5_PWR_pad/U0/U1/DOUT.
+PIN SENS_MEM_L5_PWR_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%SENS_MEM_L5_PWR_pad/U0/U1/EOUT.
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_shift[1].
+USE ADLIB:NOR2B; WOLF_CONTROLLER_inst_0/sec_since_res_RNIH2QU[6].
+USE ADLIB:NOR2A; WOLF_CONTROLLER_inst_0/main_next_state_RNO_2[1].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/receive_full_int.
+USE ADLIB:NOR2B; system_clock_inst_0/l_time_RNO_1[10].
+USE ADLIB:OR2B; system_clock_inst_0/l_time_RNIBEEB2[5].
+USE ADLIB:IOPAD_IN; PWRONRESET_pad/U0/U0; PRESERVE, CLS_ID:
+  11%HARD%IO%0%0, CLS_NAME:PWRONRESET_pad.
+PIN PWRONRESET_pad/U0/U0:PAD; O_P:FLATSOFT%PWRONRESET_pad/PAD.
+USE ADLIB:MX2; FPGA_UART/make_TX/tx_xhdl2_RNO_6.
+USE ADLIB:NOR2A; WOLF_CONTROLLER_inst_0/main_next_state_RNO[4].
+USE ADLIB:IOPAD_TRI; L1_GPS_PWR_pad/U0/U0; PRESERVE, CLS_ID:
+  3%HARD%IO%0%0, CLS_NAME:L1_GPS_PWR_pad.
+PIN L1_GPS_PWR_pad/U0/U0:PAD; O_P:FLATSOFT%L1_GPS_PWR_pad/PAD.
+USE ADLIB:DFN1E0C1; FPGA_UART/make_TX/tx_byte[6].
+USE ADLIB:AO1A; FPGA_UART/make_RX/receive_count_RNIHM8T[3].
+USE ADLIB:DFN1E1; WOLF_CONTROLLER_inst_0/uart_data_buffer_in[5].
+USE ADLIB:DFN0C1; system_clock_inst_0/l_time[3].
+USE ADLIB:UAUX_IOTRI_OB_EB; FPGA_UART_TX_pad/U0/U1/U1; CLS_NAME:
+  FPGA_UART_TX_pad, CLS_ID:5%HARD%IO%2%0, LEAFDEF:
+  'ADLIB:IOTRI_OB_EB', LEAFINST:FPGA_UART_TX_pad/U0/U1, PRESERVE.
+PIN FPGA_UART_TX_pad/U0/U1/U1:D; T_O_P:D, O_P:
+  FLATSOFT%FPGA_UART_TX_pad/D.
+PIN FPGA_UART_TX_pad/U0/U1/U1:E; T_O_P:E, O_P:
+  FLATHARD%FPGA_UART_TX_pad/U0/U1/E.
+USE ADLIB:MX2A; FPGA_UART/make_TX/tx_xhdl2_RNO.
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/main_uart_transmit_flag.
+USE ADLIB:OR2A; 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNIIJMV5_0[1].
+USE ADLIB:NOR3; WOLF_CONTROLLER_inst_0/main_next_state_RNO[1].
+USE ADLIB:XOR2; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[2].
+USE ADLIB:NOR2A; WOLF_CONTROLLER_inst_0/uart_data_out_RNO[0].
+USE ADLIB:NOR3B; system_clock_inst_0/l_time_RNO_1[11].
+USE ADLIB:NOR3C; WOLF_CONTROLLER_inst_0/sec_since_res_RNI03R92[3].
+USE ADLIB:IOPAD_TRI; VHF_PWR_pad/U0/U0; PRESERVE, CLS_ID:
+  1%HARD%IO%0%0, CLS_NAME:VHF_PWR_pad.
+PIN VHF_PWR_pad/U0/U0:PAD; O_P:FLATSOFT%VHF_PWR_pad/PAD.
+USE ADLIB:OR3; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_29; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_29'.
+USE ADLIB:OR3; WOLF_CONTROLLER_inst_0/sec_since_res_RNIMGL62[11].
+USE ADLIB:OA1A; 
+  WOLF_CONTROLLER_inst_0/main_uart_transmit_flag_RNI0C4B.
+USE ADLIB:XOR2; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[0].
+USE ADLIB:NOR3B; FPGA_UART/make_RX/receive_full_int_RNITEQM2.
+USE ADLIB:AOI1B; system_clock_inst_0/s_time_RNO[3].
+USE ADLIB:AO1; WOLF_CONTROLLER_inst_0/main_next_state_RNO[3].
+USE ADLIB:NOR3A; 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNI77L26[3].
+USE ADLIB:UIO_IOTRI_OB_EB; VHF_PWR_pad/U0/U1/U0; CLS_NAME:
+  VHF_PWR_pad, CLS_ID:1%HARD%IO%1%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', 
+  LEAFINST:VHF_PWR_pad/U0/U1, PRESERVE.
+PIN VHF_PWR_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%VHF_PWR_pad/U0/U1/DOUT.
+PIN VHF_PWR_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%VHF_PWR_pad/U0/U1/EOUT.
+USE ADLIB:DFN1E1; WOLF_CONTROLLER_inst_0/uart_data_buffer_in[4].
+USE ADLIB:NOR3B; FPGA_UART/make_TX/xmit_state_RNO[5].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/sec_since_res[5].
+USE ADLIB:OR2A; system_clock_inst_0/l_time_RNO_0[9].
+USE ADLIB:AX1; FPGA_UART/make_TX/xmit_bit_sel_RNO[2].
+USE ADLIB:NOR3B; WOLF_CONTROLLER_inst_0/main_next_state_RNO_0[3].
+PIN WOLF_CONTROLLER_inst_0/main_next_state_RNO_0[3]:A; O_P:
+  LCOM%WOLF_CONTROLLER_inst_0/main_next_state_RNO_0[3]/B.
+PIN WOLF_CONTROLLER_inst_0/main_next_state_RNO_0[3]:B; O_P:
+  LCOM%WOLF_CONTROLLER_inst_0/main_next_state_RNO_1[3]/A.
+PIN WOLF_CONTROLLER_inst_0/main_next_state_RNO_0[3]:C; O_P:
+  LCOM%WOLF_CONTROLLER_inst_0/main_next_state_RNO_1[3]/B.
+USE ADLIB:XNOR2; WOLF_CONTROLLER_inst_0/sec_since_res_RNO[3].
+USE ADLIB:DFN1C1; FPGA_UART/make_TX/xmit_state[0].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/stop_strobe_i.
+USE ADLIB:AX1C; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[3].
+USE ADLIB:DFN1E1C1; WOLF_CONTROLLER_inst_0/main_next_state[1].
+USE ADLIB:AX1C; system_clock_inst_0/l_time_RNO[12].
+USE ADLIB:DFN0C1; system_clock_inst_0/l_time[14].
+USE ADLIB:XNOR2; system_clock_inst_0/l_time_RNO[3].
+USE ADLIB:MX2; FPGA_UART/make_TX/tx_xhdl2_RNO_4.
+USE ADLIB:NOR3C; system_clock_inst_0/l_time_RNIVNT11[12].
+USE ADLIB:IOPAD_TRI; CUTTER_pad/U0/U0; PRESERVE, CLS_ID:
+  4%HARD%IO%0%0, CLS_NAME:CUTTER_pad.
+PIN CUTTER_pad/U0/U0:PAD; O_P:FLATSOFT%CUTTER_pad/PAD.
+USE ADLIB:AND3; system_clock_inst_0/un1_s_time_0_I_19.
+USE ADLIB:NOR2B; FPGA_UART/make_RX/stop_strobe_i_RNO_0.
+USE ADLIB:UIO_IOTRI_OB_EB; LED1_pad/U0/U1/U0; CLS_NAME:LED1_pad, 
+  CLS_ID:9%HARD%IO%1%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', LEAFINST:
+  LED1_pad/U0/U1, PRESERVE.
+PIN LED1_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%LED1_pad/U0/U1/DOUT.
+PIN LED1_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%LED1_pad/U0/U1/EOUT.
+USE ADLIB:MX2; WOLF_CONTROLLER_inst_0/uart_next_state_RNO[0].
+USE ADLIB:XA1C; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[5].
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[5]:A; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_14/A.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[5]:B; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_14/B.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[5]:C; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[5]/B.
+USE ADLIB:AO1A; WOLF_CONTROLLER_inst_0/uart_ready_RNI0T616.
+USE ADLIB:IOPAD_TRI; FPGA_UART_TX_pad/U0/U0; PRESERVE, CLS_ID:
+  5%HARD%IO%0%0, CLS_NAME:FPGA_UART_TX_pad.
+PIN FPGA_UART_TX_pad/U0/U0:PAD; O_P:FLATSOFT%FPGA_UART_TX_pad/PAD.
+USE ADLIB:DFN1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[9].
+USE ADLIB:DFN1E0C1; FPGA_UART/make_TX/tx_byte[7].
+USE ADLIB:DFN0E0C1; system_clock_inst_0/l_time[8].
+USE ADLIB:DFN1E0C1; FPGA_UART/tx_hold_reg[2].
+USE ADLIB:MX2; WOLF_CONTROLLER_inst_0/uart_next_state_RNO[3].
+USE ADLIB:NOR3C; 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIL61B1[10].
+USE ADLIB:NOR2A; FPGA_UART/make_TX/xmit_bit_sel_RNO[0].
+USE ADLIB:XOR2; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[1].
+USE ADLIB:NOR2B; WOLF_CONTROLLER_inst_0/uart_data_out_RNO[6].
+USE ADLIB:NOR3A; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIE8BJ1[1].
+USE ADLIB:DFN1E1; WOLF_CONTROLLER_inst_0/uart_data_buffer_in[3].
+USE ADLIB:DFN0E1C1; system_clock_inst_0/s_time[0].
+USE ADLIB:DFN1P1; FPGA_UART/make_TX/xmit_state[5].
+USE ADLIB:DFN1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[0].
+USE ADLIB:NOR2B; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock_RNIEFCH.
+USE ADLIB:AX1C; system_clock_inst_0/l_time_RNO[10].
+USE ADLIB:OR2A; WOLF_CONTROLLER_inst_0/sec_since_res_RNIEGJT1[3].
+USE ADLIB:AX1B; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_35; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_35'.
+PIN 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_35:
+  A; O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_34/A.
+PIN 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_35:
+  B; O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_34/B.
+PIN 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_35:
+  C; O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_35/B.
+USE ADLIB:OR3A; FPGA_UART/make_RX/rx_bit_cnt_RNIM6M61[3].
+USE ADLIB:OR2; 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNIE2V1[4].
+USE ADLIB:XNOR2; WOLF_CONTROLLER_inst_0/sec_since_res_RNO[2].
+USE ADLIB:DFN1E0P1; FPGA_UART/make_TX/tx_xhdl2.
+USE ADLIB:OR2; WOLF_CONTROLLER_inst_0/uart_ready_RNI74S3C.
+USE ADLIB:NOR3; FPGA_UART/make_RX/rx_state_RNO[0].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_TX/xmit_bit_sel[3].
+USE ADLIB:DFN1E1C1; WOLF_CONTROLLER_inst_0/uart_ready.
+USE ADLIB:DFN1E0C1; WOLF_CONTROLLER_inst_0/uart_data_out[3].
+USE ADLIB:OR2A; system_clock_inst_0/l_time_RNIGEK93[7].
+USE ADLIB:DFN1E1C1; FPGA_UART/rxrdy_xhdl4.
+USE ADLIB:NOR2B; WOLF_CONTROLLER_inst_0/sec_since_res_RNO_3[10].
+USE ADLIB:NOR3B; FPGA_UART/make_TX/xmit_state_RNO_0[0].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_TX/xmit_bit_sel[1].
+USE ADLIB:AX1C; system_clock_inst_0/l_time_RNO[11].
+USE ADLIB:NOR2B; WOLF_CONTROLLER_inst_0/uart_data_out_RNO[7].
+USE ADLIB:OR2; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNIJIP4[1].
+USE ADLIB:DFN1C1; FPGA_UART/make_TX/xmit_state[4].
+USE ADLIB:DFN1E0C1; FPGA_UART/tx_hold_reg[6].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_shift[2].
+USE ADLIB:XA1B; FPGA_UART/make_RX/rx_bit_cnt_RNO[3].
+USE ADLIB:NOR2B; WOLF_CONTROLLER_inst_0/uart_data_out_RNO[3].
+USE ADLIB:AOI1B; system_clock_inst_0/s_time_RNO[4].
+USE ADLIB:NOR3C; system_clock_inst_0/s_time_RNI40Q71[6].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/uart_next_state[2].
+USE ADLIB:DFN1E0C1; FPGA_UART/make_TX/tx_byte[3].
+USE ADLIB:AND2; system_clock_inst_0/un1_s_time_I_15.
+USE ADLIB:NOR2B; WOLF_CONTROLLER_inst_0/sec_since_res_RNO_4[10].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_bit_cnt[0].
+USE ADLIB:DFN1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[7].
+USE ADLIB:DFN0C1; system_clock_inst_0/l_time[10].
+USE ADLIB:DFN1P1; FPGA_UART/make_RX/samples[1].
+USE ADLIB:DFN1E0; WOLF_CONTROLLER_inst_0/uart_current_state[4].
+USE ADLIB:DFN1P1; FPGA_UART/make_RX/last_bit[0].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/sec_since_res[11].
+USE ADLIB:NOR3; FPGA_UART/make_RX/rx_state_RNO[1].
+USE ADLIB:DFN1E1C1; WOLF_CONTROLLER_inst_0/main_next_state[2].
+USE ADLIB:NOR2B; FPGA_UART/make_RX/receive_count_RNIR5JA[3].
+USE ADLIB:NOR2B; WOLF_CONTROLLER_inst_0/uart_data_out_RNO[4].
+USE ADLIB:OA1C; FPGA_UART/make_TX/xmit_state_RNO[2].
+USE ADLIB:DFN1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[1].
+USE ADLIB:DFN1E0C1; WOLF_CONTROLLER_inst_0/main_uart_data_out[0].
+USE ADLIB:AX1; system_clock_inst_0/l_time_RNO[4].
+USE ADLIB:AX1; WOLF_CONTROLLER_inst_0/sec_since_res_RNO[9].
+USE ADLIB:DFN1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[0].
+USE ADLIB:XA1C; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[3].
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[3]:A; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_9/A.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[3]:B; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_9/B.
+PIN FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[3]:C; 
+  O_P:
+  LCOM%FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[3]/B.
+USE ADLIB:DFN1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[10].
+USE ADLIB:OR3; FPGA_UART/make_RX/receive_count_RNIG703[1].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_byte_xhdl5[6].
+USE ADLIB:OR2A; WOLF_CONTROLLER_inst_0/uart_ready_RNI94G1.
+USE ADLIB:DFN1E0C1; WOLF_CONTROLLER_inst_0/uart_data_out[2].
+USE ADLIB:XOR2; system_clock_inst_0/un1_s_time_I_17.
+USE ADLIB:OR3; FPGA_UART/make_RX/rx_state_RNO_1[0].
+USE ADLIB:OR2A; FPGA_UART/make_RX/receive_count_RNIP8JC[2].
+USE ADLIB:DFN0C1; system_clock_inst_0/l_time[11].
+USE ADLIB:NOR2B; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNIHGP4[1].
+USE ADLIB:NOR2B; system_clock_inst_0/l_time_RNI616U[5].
+USE ADLIB:NOR2A; FPGA_UART/make_RX/rx_shift_RNO[7].
+USE ADLIB:DFN1P1; WOLF_CONTROLLER_inst_0/uart_next_state[4].
+USE ADLIB:INV; system_clock_inst_0/l_time_RNO[9].
+USE ADLIB:NOR2A; FPGA_UART/make_TX/xmit_bit_sel_RNIQTGQ[3].
+USE ADLIB:NOR2B; FPGA_UART/make_RX/rx_state_RNIT726[0].
+USE ADLIB:AOI1B; system_clock_inst_0/s_time_RNO[5].
+USE ADLIB:OR3; FPGA_UART/make_RX/samples_RNIILPA2[0].
+USE ADLIB:OR3; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_19; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_19'.
+USE ADLIB:OR2A; FPGA_UART/make_RX/receive_count_RNIG703[2].
+USE ADLIB:NOR2A; 
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNIIK4F[2].
+USE ADLIB:NOR2B; WOLF_CONTROLLER_inst_0/sec_since_res_RNID4NU5[1].
+USE ADLIB:NOR3A; FPGA_UART/make_RX/rx_state_RNIPA422[0].
+USE ADLIB:NOR2B; FPGA_UART/make_RX/rx_bit_cnt_RNO_0[3].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_bit_cnt[2].
+USE ADLIB:OR3; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_10; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_10'.
+USE ADLIB:NOR2A; FPGA_UART/make_RX/rx_shift_RNO[5].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/sec_since_res[7].
+USE ADLIB:AOI1; FPGA_UART/make_RX/receive_count_RNO[2].
+USE ADLIB:UIO_IOTRI_OB_EB; CUTTER_pad/U0/U1/U0; CLS_NAME:
+  CUTTER_pad, CLS_ID:4%HARD%IO%1%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', 
+  LEAFINST:CUTTER_pad/U0/U1, PRESERVE.
+PIN CUTTER_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%CUTTER_pad/U0/U1/DOUT.
+PIN CUTTER_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%CUTTER_pad/U0/U1/EOUT.
+USE ADLIB:OR3C; WOLF_CONTROLLER_inst_0/sec_since_res_RNO_0[12].
+USE ADLIB:XA1B; FPGA_UART/make_RX/rx_bit_cnt_RNO[2].
+USE ADLIB:NOR2A; WOLF_CONTROLLER_inst_0/main_next_state_RNO[2].
+USE ADLIB:NOR2B; system_clock_inst_0/l_time_RNI3U5U[5].
+USE ADLIB:UIO_IOTRI_OB_EB; LED2_pad/U0/U1/U0; CLS_NAME:LED2_pad, 
+  CLS_ID:0%HARD%IO%1%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', LEAFINST:
+  LED2_pad/U0/U1, PRESERVE.
+PIN LED2_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%LED2_pad/U0/U1/DOUT.
+PIN LED2_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%LED2_pad/U0/U1/EOUT.
+USE ADLIB:OR2; WOLF_CONTROLLER_inst_0/main_uart_data_out_RNO[1].
+USE ADLIB:DFN1E0C1; FPGA_UART/make_TX/tx_byte[2].
+USE ADLIB:INV; system_clock_inst_0/un1_s_time_I_4.
+USE ADLIB:XOR2; system_clock_inst_0/l_time_RNO[5].
+USE ADLIB:AX1C; system_clock_inst_0/un1_s_time_I_7.
+PIN system_clock_inst_0/un1_s_time_I_7:A; O_P:
+  LCOM%system_clock_inst_0/un1_s_time_I_6/A.
+PIN system_clock_inst_0/un1_s_time_I_7:B; O_P:
+  LCOM%system_clock_inst_0/un1_s_time_I_6/B.
+PIN system_clock_inst_0/un1_s_time_I_7:C; O_P:
+  LCOM%system_clock_inst_0/un1_s_time_I_7/B.
+USE ADLIB:DFN0C1; system_clock_inst_0/l_time[2].
+USE ADLIB:DFN1E0C1; FPGA_UART/tx_hold_reg[0].
+USE ADLIB:OR3; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_8; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_8'.
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_state[0].
+USE ADLIB:DFN1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[4].
+USE ADLIB:DFN1C1; FPGA_UART/make_RX/receive_count[2].
+USE ADLIB:NOR2; FPGA_UART/make_RX/rx_state_RNIT726_1[0].
+USE ADLIB:AX1C; WOLF_CONTROLLER_inst_0/sec_since_res_RNO[10].
+USE ADLIB:NOR3C; system_clock_inst_0/l_time_RNO_0[10].
+USE ADLIB:XOR2; system_clock_inst_0/l_time_RNO[14].
+USE ADLIB:MAJ3; FPGA_UART/make_RX/samples_RNIE4V61[0].
+USE ADLIB:DFN1E0; WOLF_CONTROLLER_inst_0/main_current_state[2].
+USE ADLIB:DFN1C1; FPGA_UART/make_RX/receive_count[1].
+USE ADLIB:OR2A; WOLF_CONTROLLER_inst_0/sec_since_res_RNI4F0D2[4].
+USE ADLIB:UAUX_IOTRI_OB_EB; SAT_PWR_pad/U0/U1/U1; CLS_NAME:
+  SAT_PWR_pad, CLS_ID:13%HARD%IO%2%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', 
+  LEAFINST:SAT_PWR_pad/U0/U1, PRESERVE.
+PIN SAT_PWR_pad/U0/U1/U1:D; T_O_P:D, O_P:FLATSOFT%SAT_PWR_pad/D.
+PIN SAT_PWR_pad/U0/U1/U1:E; T_O_P:E, O_P:
+  FLATHARD%SAT_PWR_pad/U0/U1/E.
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_byte_xhdl5[2].
+USE ADLIB:UIO_IOIN_IB; CLK_pad/U0/U1/U0; CLS_NAME:CLK_pad, CLS_ID:
+  10%HARD%IO%1%0, LEAFDEF:'ADLIB:IOIN_IB', LEAFINST:CLK_pad/U0/U1, 
+  PRESERVE.
+PIN CLK_pad/U0/U1/U0:YIN; T_O_P:YIN, O_P:
+  FLATHARD%CLK_pad/U0/U1/YIN.
+USE ADLIB:NOR3C; WOLF_CONTROLLER_inst_0/sec_since_res_RNO_0[10].
+USE ADLIB:DFN1C1; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[2].
+USE ADLIB:NOR2A; FPGA_UART/make_TX/xmit_state_RNO[4].
+USE ADLIB:DFN1E0; WOLF_CONTROLLER_inst_0/uart_current_state[2].
+USE ADLIB:AX1; FPGA_UART/make_TX/xmit_bit_sel_RNO[3].
+USE ADLIB:OR3; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_33; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_33'.
+USE ADLIB:NOR3C; system_clock_inst_0/l_time_RNIQ01H1[7].
+USE ADLIB:AX1C; WOLF_CONTROLLER_inst_0/sec_since_res_RNO[11].
+USE ADLIB:OAI1; 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIPI6E1_0[1].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_shift[0].
+USE ADLIB:INV; system_clock_inst_0/l_time_RNO[7].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_TX/xmit_bit_sel[0].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_inst_0/uart_next_state[1].
+USE ADLIB:OR3C; WOLF_CONTROLLER_inst_0/sec_since_res_RNIPI6E1[1].
+USE ADLIB:DFN0E0C1; system_clock_inst_0/l_time[16].
+USE ADLIB:AOI1; FPGA_UART/make_RX/receive_count_RNO[1].
+USE ADLIB:NOR3C; system_clock_inst_0/l_time_RNO_0[11].
+USE ADLIB:UIO_IOTRI_OB_EB; PRESSURE_PWR_pad/U0/U1/U0; CLS_NAME:
+  PRESSURE_PWR_pad, CLS_ID:2%HARD%IO%1%0, LEAFDEF:
+  'ADLIB:IOTRI_OB_EB', LEAFINST:PRESSURE_PWR_pad/U0/U1, PRESERVE.
+PIN PRESSURE_PWR_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%PRESSURE_PWR_pad/U0/U1/DOUT.
+PIN PRESSURE_PWR_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%PRESSURE_PWR_pad/U0/U1/EOUT.
+USE ADLIB:DFN1C1; system_clock_inst_0/flag.
+USE ADLIB:OR3; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_22; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_22'.
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_byte_xhdl5[4].
+USE ADLIB:MX2; FPGA_UART/make_TX/tx_xhdl2_RNO_3.
+USE ADLIB:NOR3C; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock_RNO.
+USE ADLIB:MX2; FPGA_UART/make_TX/tx_xhdl2_RNO_7.
+USE ADLIB:DFN1E0C1; FPGA_UART/make_TX/tx_byte[1].
+USE ADLIB:DFN1E1C1; FPGA_UART/make_RX/rx_byte_xhdl5[3].
+USE ADLIB:INV; WOLF_CONTROLLER_inst_0/main_uart_transmit_flag_RNO.
+USE ADLIB:AND3; system_clock_inst_0/un1_s_time_I_16.
+USE ADLIB:NOR2B; FPGA_UART/make_TX/xmit_bit_sel_RNIL05L[2].
+USE ADLIB:NOR2B; WOLF_CONTROLLER_inst_0/uart_data_out_RNO[5].
+USE ADLIB:XNOR2; WOLF_CONTROLLER_inst_0/sec_since_res_RNO[4].
+USE ADLIB:AX1; WOLF_CONTROLLER_inst_0/sec_since_res_RNO[6].
+USE ADLIB:UAUX_IOTRI_OB_EB; VHF_PWR_pad/U0/U1/U1; CLS_NAME:
+  VHF_PWR_pad, CLS_ID:1%HARD%IO%2%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', 
+  LEAFINST:VHF_PWR_pad/U0/U1, PRESERVE.
+PIN VHF_PWR_pad/U0/U1/U1:D; T_O_P:D, O_P:FLATSOFT%VHF_PWR_pad/D.
+PIN VHF_PWR_pad/U0/U1/U1:E; T_O_P:E, O_P:
+  FLATHARD%VHF_PWR_pad/U0/U1/E.
+USE ADLIB:INV; system_clock_inst_0/l_time_RNO[13].
+USE ADLIB:NOR3B; FPGA_UART/make_TX/xmit_state_RNO_0[2].
+USE ADLIB:OR2; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_25; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_25'.
+USE ADLIB:OR3; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_31; 
+  ORIGNAME:
+  'FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09.make_baud_cntr1.baud_cntr_3_I_31'.
+USE ADLIB:DFN1E1; WOLF_CONTROLLER_inst_0/uart_data_buffer_in[2].
+USE ADLIB:INV; system_clock_inst_0/l_time_RNO[15].
+USE ADLIB:DFN1C1; FPGA_UART/make_RX/receive_count[0].
+USE ADLIB:NOR3A; 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNI19FG1[10].
+USE ADLIB:OR2; WOLF_CONTROLLER_inst_0/uart_ready_RNO.
+USE ADLIB:DFN0E1C1; system_clock_inst_0/s_time[5].
+USE ADLIB:UIO_IOIN_IB; PWRONRESET_pad/U0/U1/U0; CLS_NAME:
+  PWRONRESET_pad, CLS_ID:11%HARD%IO%1%0, LEAFDEF:'ADLIB:IOIN_IB', 
+  LEAFINST:PWRONRESET_pad/U0/U1, PRESERVE.
+PIN PWRONRESET_pad/U0/U1/U0:YIN; T_O_P:YIN, O_P:
+  FLATHARD%PWRONRESET_pad/U0/U1/YIN.
+USE ADLIB:IOPAD_TRI; SAT_PWR_pad/U0/U0; PRESERVE, CLS_ID:
+  13%HARD%IO%0%0, CLS_NAME:SAT_PWR_pad.
+PIN SAT_PWR_pad/U0/U0:PAD; O_P:FLATSOFT%SAT_PWR_pad/PAD.
+USE ADLIB:NOR2; FPGA_UART/make_RX/receive_full_int_RNO_2.
+USE ADLIB:AO1A; WOLF_CONTROLLER_inst_0/uart_next_state_RNO_0[0].
+USE ADLIB:DFN0E1C1; system_clock_inst_0/s_time[1].
+USE ADLIB:DFN1P1; FPGA_UART/make_RX/samples[0].
+USE ADLIB:NOR3C; system_clock_inst_0/l_time_RNIKQ0H1[6].
+NET CLKINT_0_Y;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[2]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[3]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[7]:CLK, 
+  system_clock_inst_0/s_time_0[7]:CLK, 
+  system_clock_inst_0/l_time[15]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[0]:CLK, 
+  WOLF_CONTROLLER_inst_0/main_next_state[0]:CLK, 
+  FPGA_UART/make_RX/rx_shift[5]:CLK, WOLF_CONTROLLER_inst_0/led1:
+  CLK, FPGA_UART/make_TX/txrdy_int:CLK, 
+  system_clock_inst_0/l_time[12]:CLK, 
+  system_clock_inst_0/s_time[6]:CLK, 
+  WOLF_CONTROLLER_inst_0/main_current_state[0]:CLK, 
+  system_clock_inst_0/l_time[9]:CLK, 
+  FPGA_UART/make_RX/rx_state[1]:CLK, 
+  system_clock_inst_0/l_time[13]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_next_state[0]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int:CLK, 
+  system_clock_inst_0/s_time[4]:CLK, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[7]:CLK, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out[2]:CLK, 
+  FPGA_UART/tx_hold_reg[3]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[1]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[3]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_current_state[1]:CLK, 
+  FPGA_UART/tx_hold_reg[1]:CLK, system_clock_inst_0/s_time[3]:CLK, 
+  FPGA_UART/make_RX/rx_shift[4]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[6]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[4]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_next_state[3]:CLK, 
+  system_clock_inst_0/l_time[17]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[1]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[8]:CLK, 
+  FPGA_UART/make_RX/rx_shift[6]:CLK, 
+  system_clock_inst_0/l_time[7]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[7]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[1]:CLK, 
+  WOLF_CONTROLLER_inst_0/main_next_state[3]:CLK, 
+  WOLF_CONTROLLER_inst_0/main_current_state[1]:CLK, 
+  FPGA_UART/make_RX/rx_bit_cnt[1]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[0]:CLK, 
+  FPGA_UART/make_RX/samples[2]:CLK, FPGA_UART/tx_hold_reg[7]:CLK, 
+  FPGA_UART/make_TX/tx_byte[0]:CLK, FPGA_UART/tx_hold_reg[5]:CLK, 
+  CLKINT_0/U_GL:GL, WOLF_CONTROLLER_inst_0/uart_oen:CLK, 
+  WOLF_CONTROLLER_inst_0/main_current_state[3]:CLK, 
+  FPGA_UART/make_RX/rx_shift[7]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[6]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_current_state[0]:CLK, 
+  FPGA_UART/make_TX/xmit_bit_sel[2]:CLK, 
+  WOLF_CONTROLLER_inst_0/main_next_state[4]:CLK, 
+  system_clock_inst_0/l_time[5]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_current_state[3]:CLK, 
+  system_clock_inst_0/l_time[1]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[12]:CLK, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[5]:CLK, 
+  FPGA_UART/make_TX/xmit_state[2]:CLK, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out[1]:CLK, 
+  FPGA_UART/make_TX/tx_byte[4]:CLK, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[1]:CLK, 
+  FPGA_UART/make_TX/xmit_state[3]:CLK, FPGA_UART/tx_hold_reg[4]:
+  CLK, FPGA_UART/make_TX/tx_byte[5]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[11]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_wen:CLK, 
+  system_clock_inst_0/s_time[2]:CLK, 
+  FPGA_UART/make_RX/rx_shift[3]:CLK, 
+  system_clock_inst_0/l_time[6]:CLK, 
+  WOLF_CONTROLLER_inst_0/main_current_state[4]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[5]:CLK, 
+  system_clock_inst_0/l_time[4]:CLK, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[0]:CLK, 
+  FPGA_UART/make_RX/rx_bit_cnt[3]:CLK, 
+  FPGA_UART/make_RX/receive_count[3]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[6]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[5]:CLK, 
+  FPGA_UART/make_RX/rx_shift[1]:CLK, 
+  FPGA_UART/make_RX/receive_full_int:CLK, 
+  FPGA_UART/make_TX/tx_byte[6]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[5]:CLK, 
+  system_clock_inst_0/l_time[3]:CLK, 
+  WOLF_CONTROLLER_inst_0/main_uart_transmit_flag:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[4]:CLK, 
+  FPGA_UART/make_TX/xmit_state[0]:CLK, 
+  FPGA_UART/make_RX/stop_strobe_i:CLK, 
+  WOLF_CONTROLLER_inst_0/main_next_state[1]:CLK, 
+  system_clock_inst_0/l_time[14]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[9]:CLK, 
+  FPGA_UART/make_TX/tx_byte[7]:CLK, system_clock_inst_0/l_time[8]:
+  CLK, FPGA_UART/tx_hold_reg[2]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[3]:CLK, 
+  system_clock_inst_0/s_time[0]:CLK, 
+  FPGA_UART/make_TX/xmit_state[5]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[0]:CLK, 
+  FPGA_UART/make_TX/tx_xhdl2:CLK, 
+  FPGA_UART/make_TX/xmit_bit_sel[3]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_ready:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[3]:CLK, 
+  FPGA_UART/rxrdy_xhdl4:CLK, FPGA_UART/make_TX/xmit_bit_sel[1]:
+  CLK, FPGA_UART/make_TX/xmit_state[4]:CLK, 
+  FPGA_UART/tx_hold_reg[6]:CLK, FPGA_UART/make_RX/rx_shift[2]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_next_state[2]:CLK, 
+  FPGA_UART/make_TX/tx_byte[3]:CLK, 
+  FPGA_UART/make_RX/rx_bit_cnt[0]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[7]:CLK, 
+  system_clock_inst_0/l_time[10]:CLK, 
+  FPGA_UART/make_RX/samples[1]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_current_state[4]:CLK, 
+  FPGA_UART/make_RX/last_bit[0]:CLK, 
+  WOLF_CONTROLLER_inst_0/main_next_state[2]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[1]:CLK, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out[0]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[0]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[10]:CLK, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[6]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[2]:CLK, 
+  system_clock_inst_0/l_time[11]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_next_state[4]:CLK, 
+  FPGA_UART/make_RX/rx_bit_cnt[2]:CLK, 
+  FPGA_UART/make_TX/tx_byte[2]:CLK, system_clock_inst_0/l_time[2]:
+  CLK, FPGA_UART/tx_hold_reg[0]:CLK, 
+  FPGA_UART/make_RX/rx_state[0]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[4]:CLK, 
+  FPGA_UART/make_RX/receive_count[2]:CLK, 
+  WOLF_CONTROLLER_inst_0/main_current_state[2]:CLK, 
+  FPGA_UART/make_RX/receive_count[1]:CLK, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[2]:CLK, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[2]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_current_state[2]:CLK, 
+  FPGA_UART/make_RX/rx_shift[0]:CLK, 
+  FPGA_UART/make_TX/xmit_bit_sel[0]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_next_state[1]:CLK, 
+  system_clock_inst_0/l_time[16]:CLK, system_clock_inst_0/flag:
+  CLK, FPGA_UART/make_RX/rx_byte_xhdl5[4]:CLK, 
+  FPGA_UART/make_TX/tx_byte[1]:CLK, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[3]:CLK, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[2]:CLK, 
+  FPGA_UART/make_RX/receive_count[0]:CLK, 
+  system_clock_inst_0/s_time[5]:CLK, 
+  system_clock_inst_0/s_time[1]:CLK, FPGA_UART/make_RX/samples[0]:
+  CLK; CLOCK.
+NET CLKINT_1_Y;  WOLF_CONTROLLER_inst_0/led1_RNO:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[3]:CLR, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[10]:CLR, 
+  system_clock_inst_0/s_time_0[7]:CLR, 
+  system_clock_inst_0/l_time[15]:CLR, 
+  WOLF_CONTROLLER_inst_0/main_next_state[0]:CLR, 
+  FPGA_UART/make_RX/rx_shift[5]:CLR, FPGA_UART/make_TX/txrdy_int:
+  PRE, system_clock_inst_0/l_time[12]:CLR, 
+  system_clock_inst_0/s_time[6]:CLR, 
+  WOLF_CONTROLLER_inst_0/main_current_state[0]:E, 
+  system_clock_inst_0/l_time[9]:CLR, 
+  FPGA_UART/make_RX/rx_state[1]:CLR, 
+  system_clock_inst_0/l_time[13]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_next_state[0]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int:CLR, 
+  system_clock_inst_0/s_time[4]:CLR, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[7]:CLR, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out[2]:CLR, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[4]:CLR, 
+  FPGA_UART/tx_hold_reg[3]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[3]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_current_state[1]:E, 
+  FPGA_UART/tx_hold_reg[1]:CLR, system_clock_inst_0/s_time[3]:CLR, 
+  FPGA_UART/make_RX/rx_shift[4]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[6]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[4]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_next_state[3]:CLR, 
+  system_clock_inst_0/l_time[17]:CLR, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[3]:CLR, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[1]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[1]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[8]:CLR, 
+  FPGA_UART/make_RX/rx_shift[6]:CLR, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[2]:CLR, 
+  system_clock_inst_0/l_time[7]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[7]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[1]:CLR, 
+  WOLF_CONTROLLER_inst_0/main_next_state[3]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[2]:CLR, 
+  WOLF_CONTROLLER_inst_0/main_current_state[1]:E, 
+  FPGA_UART/make_RX/rx_bit_cnt[1]:CLR, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[12]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[0]:CLR, 
+  FPGA_UART/make_RX/samples[2]:PRE, FPGA_UART/tx_hold_reg[7]:CLR, 
+  FPGA_UART/make_TX/tx_byte[0]:CLR, FPGA_UART/tx_hold_reg[5]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_oen:PRE, 
+  WOLF_CONTROLLER_inst_0/main_current_state[3]:E, 
+  FPGA_UART/make_RX/rx_shift[7]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[6]:CLR, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[6]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_current_state[0]:E, 
+  FPGA_UART/make_TX/xmit_bit_sel[2]:CLR, 
+  WOLF_CONTROLLER_inst_0/main_next_state[4]:PRE, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[9]:CLR, 
+  system_clock_inst_0/l_time[5]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one:CLR, 
+  CLKINT_1/U_GL:GL, WOLF_CONTROLLER_inst_0/uart_current_state[3]:
+  E, system_clock_inst_0/l_time[1]:CLR, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[12]:CLR, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[5]:CLR, 
+  FPGA_UART/make_TX/xmit_state[2]:CLR, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[8]:CLR, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out[1]:CLR, 
+  FPGA_UART/make_TX/tx_byte[4]:CLR, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[1]:CLR, 
+  FPGA_UART/make_TX/xmit_state[3]:CLR, FPGA_UART/tx_hold_reg[4]:
+  CLR, FPGA_UART/make_TX/tx_byte[5]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[11]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_wen:PRE, 
+  system_clock_inst_0/s_time[2]:CLR, 
+  FPGA_UART/make_RX/rx_shift[3]:CLR, 
+  system_clock_inst_0/l_time[6]:CLR, 
+  WOLF_CONTROLLER_inst_0/main_current_state[4]:E, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[5]:CLR, 
+  system_clock_inst_0/l_time[4]:CLR, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[0]:CLR, 
+  FPGA_UART/make_RX/rx_bit_cnt[3]:CLR, 
+  FPGA_UART/make_RX/receive_count[3]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[5]:CLR, 
+  FPGA_UART/make_RX/rx_shift[1]:CLR, 
+  FPGA_UART/make_RX/receive_full_int:CLR, 
+  FPGA_UART/make_TX/tx_byte[6]:CLR, system_clock_inst_0/l_time[3]:
+  CLR, WOLF_CONTROLLER_inst_0/main_uart_transmit_flag:CLR, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[5]:CLR, 
+  FPGA_UART/make_TX/xmit_state[0]:CLR, 
+  FPGA_UART/make_RX/stop_strobe_i:CLR, 
+  WOLF_CONTROLLER_inst_0/main_next_state[1]:CLR, 
+  system_clock_inst_0/l_time[14]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[9]:CLR, 
+  FPGA_UART/make_TX/tx_byte[7]:CLR, system_clock_inst_0/l_time[8]:
+  CLR, FPGA_UART/tx_hold_reg[2]:CLR, 
+  system_clock_inst_0/s_time[0]:CLR, 
+  FPGA_UART/make_TX/xmit_state[5]:PRE, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[0]:CLR, 
+  FPGA_UART/make_TX/tx_xhdl2:PRE, 
+  FPGA_UART/make_TX/xmit_bit_sel[3]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_ready:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[3]:CLR, 
+  FPGA_UART/rxrdy_xhdl4:CLR, FPGA_UART/make_TX/xmit_bit_sel[1]:
+  CLR, FPGA_UART/make_TX/xmit_state[4]:CLR, 
+  FPGA_UART/tx_hold_reg[6]:CLR, FPGA_UART/make_RX/rx_shift[2]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_next_state[2]:CLR, 
+  FPGA_UART/make_TX/tx_byte[3]:CLR, 
+  FPGA_UART/make_RX/rx_bit_cnt[0]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[7]:CLR, 
+  system_clock_inst_0/l_time[10]:CLR, 
+  FPGA_UART/make_RX/samples[1]:PRE, 
+  WOLF_CONTROLLER_inst_0/uart_current_state[4]:E, 
+  FPGA_UART/make_RX/last_bit[0]:PRE, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[11]:CLR, 
+  WOLF_CONTROLLER_inst_0/main_next_state[2]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[1]:CLR, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out[0]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[0]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[10]:CLR, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[6]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[2]:CLR, 
+  system_clock_inst_0/l_time[11]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_next_state[4]:PRE, 
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNIIK4F[2]:B, 
+  FPGA_UART/make_RX/rx_bit_cnt[2]:CLR, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[7]:CLR, 
+  FPGA_UART/make_TX/tx_byte[2]:CLR, system_clock_inst_0/l_time[2]:
+  CLR, FPGA_UART/tx_hold_reg[0]:CLR, 
+  FPGA_UART/make_RX/rx_state[0]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[4]:CLR, 
+  FPGA_UART/make_RX/receive_count[2]:CLR, 
+  WOLF_CONTROLLER_inst_0/main_current_state[2]:E, 
+  FPGA_UART/make_RX/receive_count[1]:CLR, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[2]:CLR, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[2]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_current_state[2]:E, 
+  FPGA_UART/make_RX/rx_shift[0]:CLR, 
+  FPGA_UART/make_TX/xmit_bit_sel[0]:CLR, 
+  WOLF_CONTROLLER_inst_0/uart_next_state[1]:CLR, 
+  system_clock_inst_0/l_time[16]:CLR, system_clock_inst_0/flag:
+  CLR, FPGA_UART/make_RX/rx_byte_xhdl5[4]:CLR, 
+  FPGA_UART/make_TX/tx_byte[1]:CLR, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[3]:CLR, 
+  FPGA_UART/make_RX/receive_count[0]:CLR, 
+  system_clock_inst_0/s_time[5]:CLR, 
+  system_clock_inst_0/s_time[1]:CLR, FPGA_UART/make_RX/samples[0]:
+  PRE; CLOCK.
+NET LED2_0;  FPGA_UART/make_TX/txrdy_int_RNO:B, 
+  FPGA_UART/tx_hold_reg[3]:E, FPGA_UART/tx_hold_reg[1]:E, 
+  FPGA_UART/tx_hold_reg[7]:E, FPGA_UART/tx_hold_reg[5]:E, 
+  FPGA_UART/tx_hold_reg[4]:E, WOLF_CONTROLLER_inst_0/uart_wen:Q, 
+  FPGA_UART/make_TX/txrdy_int:D, FPGA_UART/tx_hold_reg[2]:E, 
+  FPGA_UART/tx_hold_reg[6]:E, FPGA_UART/tx_hold_reg[0]:E.
+NET LED1_1;  FPGA_UART/make_RX/receive_full_int_RNO:C, 
+  WOLF_CONTROLLER_inst_0/uart_oen:Q, 
+  FPGA_UART/make_RX/receive_full_int:D.
+NET WOLF_CONTROLLER_uart_data_out[0];  FPGA_UART/tx_hold_reg[0]:D, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[0]:Q.
+NET WOLF_CONTROLLER_uart_data_out[1];  FPGA_UART/tx_hold_reg[1]:D, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[1]:Q.
+NET WOLF_CONTROLLER_uart_data_out[2];  FPGA_UART/tx_hold_reg[2]:D, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[2]:Q.
+NET WOLF_CONTROLLER_uart_data_out[3];  FPGA_UART/tx_hold_reg[3]:D, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[3]:Q.
+NET WOLF_CONTROLLER_uart_data_out[4];  FPGA_UART/tx_hold_reg[4]:D, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[4]:Q.
+NET WOLF_CONTROLLER_uart_data_out[5];  FPGA_UART/tx_hold_reg[5]:D, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[5]:Q.
+NET WOLF_CONTROLLER_uart_data_out[6];  FPGA_UART/tx_hold_reg[6]:D, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[6]:Q.
+NET WOLF_CONTROLLER_uart_data_out[7];  FPGA_UART/tx_hold_reg[7]:D, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[7]:Q.
+NET COREUART_0_TXRDY;  
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNIUUIP[0]:A, 
+  FPGA_UART/make_TX/txrdy_int:Q, 
+  FPGA_UART/make_TX/xmit_state_RNO_1[5]:A, 
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO[4]:B, 
+  WOLF_CONTROLLER_inst_0/uart_wen_RNO:B, 
+  FPGA_UART/make_TX/xmit_state_RNO[4]:B.
+NET LED1_0;  WOLF_CONTROLLER_inst_0/uart_next_state_RNO[2]:A, 
+  WOLF_CONTROLLER_inst_0/main_uart_transmit_flag_RNI2IM5:B, 
+  WOLF_CONTROLLER_inst_0/main_uart_transmit_flag_RNI0C4B:B, 
+  FPGA_UART/rxrdy_xhdl4:Q, 
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO_0[0]:A.
+NET COREUART_0_DATA_OUT[0];  
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[0]:D, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[0]:Q.
+NET COREUART_0_DATA_OUT[1];  
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[1]:D, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[1]:Q.
+NET COREUART_0_DATA_OUT[2];  
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[2]:D, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[2]:Q.
+NET COREUART_0_DATA_OUT[3];  
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[3]:D, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[3]:Q.
+NET COREUART_0_DATA_OUT[4];  
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[4]:D, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[4]:Q.
+NET COREUART_0_DATA_OUT[5];  
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[5]:D, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[5]:Q.
+NET COREUART_0_DATA_OUT[6];  
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[6]:D, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[6]:Q.
+NET COREUART_0_DATA_OUT[7];  
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[7]:D, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[7]:Q.
+NET m_time[25];  system_clock_inst_0/un1_s_time_0_I_20:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[10]:CLK, 
+  system_clock_inst_0/s_time_0[7]:Q, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[4]:CLK, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[3]:CLK, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[1]:CLK, 
+  system_clock_inst_0/s_time_0_RNIM98R[7]:C, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[2]:CLK, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[12]:CLK, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[6]:CLK, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[9]:CLK, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLK, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[8]:CLK, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[5]:CLK, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[11]:CLK, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[7]:CLK.
+NET CLK_c;  CLKINT_0/U_GL:CLK, CLK_pad/U0/U1/U1:Y.
+NET CLK;  CLK, CLK_pad/U0/U0:PAD; RES_PULL:LW%NONE, IO_THRESH:
+  LW%LVTTL, HARDWIRED:PAD.
+NET FPGA_UART_RX_c;  FPGA_UART/make_RX/samples[2]:D, 
+  FPGA_UART_RX_pad/U0/U1/U1:Y.
+NET FPGA_UART_RX;  FPGA_UART_RX, FPGA_UART_RX_pad/U0/U0:PAD; 
+  COB_REGISTER:E%NO, RES_PULL:LW%NONE, IO_THRESH:LW%LVTTL, 
+  HARDWIRED:PAD.
+NET PWRONRESET_c;  CLKINT_1/U_GL:CLK, PWRONRESET_pad/U0/U1/U1:Y.
+NET PWRONRESET;  PWRONRESET, PWRONRESET_pad/U0/U0:PAD; RES_PULL:
+  LW%NONE, IO_THRESH:LW%LVTTL, HARDWIRED:PAD.
+NET CUTTER;  CUTTER, CUTTER_pad/U0/U0:PAD; RES_PULL:LW%NONE, 
+  IO_THRESH:LW%LVTTL, SLEW:LW%HIGH, OUT_DRIVE:LW%12, HARDWIRED:
+  PAD.
+NET FPGA_UART_TX_c;  FPGA_UART_TX_pad/U0/U1/U1:D, 
+  FPGA_UART/make_TX/tx_xhdl2:Q.
+NET FPGA_UART_TX;  FPGA_UART_TX, FPGA_UART_TX_pad/U0/U0:PAD; 
+  COB_REGISTER:E%NO, RES_PULL:LW%NONE, IO_THRESH:LW%LVTTL, SLEW:
+  LW%HIGH, OUT_DRIVE:LW%12, HARDWIRED:PAD.
+NET L1_GPS_PWR;  L1_GPS_PWR, L1_GPS_PWR_pad/U0/U0:PAD; RES_PULL:
+  LW%NONE, IO_THRESH:LW%LVTTL, SLEW:LW%HIGH, OUT_DRIVE:LW%12, 
+  HARDWIRED:PAD.
+NET LED1_c;  LED1_pad/U0/U1/U1:D, WOLF_CONTROLLER_inst_0/led1:Q.
+NET LED1;  LED1, LED1_pad/U0/U0:PAD; COB_REGISTER:E%NO, RES_PULL:
+  LW%NONE, IO_THRESH:LW%LVTTL, SLEW:LW%HIGH, OUT_DRIVE:LW%12, 
+  HARDWIRED:PAD.
+NET LED2;  LED2, LED2_pad/U0/U0:PAD; RES_PULL:LW%NONE, IO_THRESH:
+  LW%LVTTL, SLEW:LW%HIGH, OUT_DRIVE:LW%12, HARDWIRED:PAD.
+NET PRESSURE_PWR;  PRESSURE_PWR, PRESSURE_PWR_pad/U0/U0:PAD; 
+  RES_PULL:LW%NONE, IO_THRESH:LW%LVTTL, SLEW:LW%HIGH, OUT_DRIVE:
+  LW%12, HARDWIRED:PAD.
+NET SAT_PWR;  SAT_PWR, SAT_PWR_pad/U0/U0:PAD; RES_PULL:LW%NONE, 
+  IO_THRESH:LW%LVTTL, SLEW:LW%HIGH, OUT_DRIVE:LW%12, HARDWIRED:
+  PAD.
+NET SENS_MEM_L5_PWR;  SENS_MEM_L5_PWR, SENS_MEM_L5_PWR_pad/U0/U0:
+  PAD; RES_PULL:LW%NONE, IO_THRESH:LW%LVTTL, SLEW:LW%HIGH, 
+  OUT_DRIVE:LW%12, HARDWIRED:PAD.
+NET VHF_PWR;  VHF_PWR, VHF_PWR_pad/U0/U0:PAD; RES_PULL:LW%NONE, 
+  IO_THRESH:LW%LVTTL, SLEW:LW%HIGH, OUT_DRIVE:LW%12, HARDWIRED:
+  PAD.
+NET FPGA_UART/un1_rx_fifo;  FPGA_UART/rxrdy_xhdl4:E, 
+  FPGA_UART/rxrdy_xhdl4_RNO:Y.
+NET FPGA_UART/receive_full;  FPGA_UART/rxrdy_xhdl4_RNO:A, 
+  FPGA_UART/make_RX/receive_full_int:Q, 
+  FPGA_UART/make_RX/receive_full_int_RNITEQM2:C, 
+  FPGA_UART/rxrdy_xhdl4:D.
+NET FPGA_UART/stop_strobe;  FPGA_UART/rxrdy_xhdl4_RNO:B, 
+  FPGA_UART/make_RX/stop_strobe_i:Q.
+NET FPGA_UART/tx_hold_reg[0];  FPGA_UART/make_TX/tx_byte[0]:D, 
+  FPGA_UART/tx_hold_reg[0]:Q.
+NET FPGA_UART/tx_hold_reg[1];  FPGA_UART/make_TX/tx_byte[1]:D, 
+  FPGA_UART/tx_hold_reg[1]:Q.
+NET FPGA_UART/tx_hold_reg[2];  FPGA_UART/make_TX/tx_byte[2]:D, 
+  FPGA_UART/tx_hold_reg[2]:Q.
+NET FPGA_UART/tx_hold_reg[3];  FPGA_UART/make_TX/tx_byte[3]:D, 
+  FPGA_UART/tx_hold_reg[3]:Q.
+NET FPGA_UART/tx_hold_reg[4];  FPGA_UART/make_TX/tx_byte[4]:D, 
+  FPGA_UART/tx_hold_reg[4]:Q.
+NET FPGA_UART/tx_hold_reg[5];  FPGA_UART/make_TX/tx_byte[5]:D, 
+  FPGA_UART/tx_hold_reg[5]:Q.
+NET FPGA_UART/tx_hold_reg[6];  FPGA_UART/make_TX/tx_byte[6]:D, 
+  FPGA_UART/tx_hold_reg[6]:Q.
+NET FPGA_UART/tx_hold_reg[7];  FPGA_UART/make_TX/tx_byte[7]:D, 
+  FPGA_UART/tx_hold_reg[7]:Q.
+NET FPGA_UART/xmit_pulse;  FPGA_UART/make_TX/xmit_state_RNO[0]:A, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO_0:C, 
+  FPGA_UART/make_TX/xmit_state_RNO_1[5]:B, 
+  FPGA_UART/make_TX/xmit_bit_sel[2]:E, 
+  FPGA_UART/make_TX/xmit_state_RNIP3DT[3]:A, 
+  FPGA_UART/make_TX/xmit_state_RNO[3]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock_RNIEFCH:Y, 
+  FPGA_UART/make_TX/xmit_bit_sel[3]:E, 
+  FPGA_UART/make_TX/xmit_bit_sel[1]:E, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNIQTGQ[3]:A, 
+  FPGA_UART/make_TX/xmit_bit_sel[0]:E.
+NET FPGA_UART/baud_clock;  
+  FPGA_UART/make_RX/receive_full_int_RNITEQM2:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[2]:E, 
+  FPGA_UART/make_RX/rx_state_RNI69LF[0]:B, 
+  FPGA_UART/make_RX/rx_state[1]:E, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int:Q, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[3]:E, 
+  FPGA_UART/make_RX/samples_RNO[0]:S, 
+  FPGA_UART/make_RX/samples_RNO[1]:S, 
+  FPGA_UART/make_RX/receive_count_RNO_0[1]:B, 
+  FPGA_UART/make_RX/receive_full_int_RNO_0:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[1]:E, 
+  FPGA_UART/make_RX/samples[2]:E, 
+  FPGA_UART/make_RX/receive_count_RNO[0]:B, 
+  FPGA_UART/make_RX/receive_count_RNO_0[2]:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock:E, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[0]:B, 
+  FPGA_UART/make_RX/receive_count_RNO[3]:B, 
+  FPGA_UART/make_RX/stop_strobe_i:E, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock_RNIEFCH:A, 
+  FPGA_UART/make_RX/receive_count_RNIR5JA[3]:B, 
+  FPGA_UART/make_RX/receive_count_RNIP8JC[2]:A, 
+  FPGA_UART/make_RX/receive_count_RNO[2]:B, 
+  FPGA_UART/make_RX/rx_state[0]:E, 
+  FPGA_UART/make_RX/receive_count_RNO[1]:B.
+NET FPGA_UART/make_TX/xmit_state_ns_a2_0[0];  
+  FPGA_UART/make_TX/xmit_state_RNO[5]:A, 
+  FPGA_UART/make_TX/xmit_state_RNO_0[5]:Y.
+NET FPGA_UART/make_TX/xmit_state[4];  
+  FPGA_UART/make_TX/tx_xhdl2_RNO_0:A, 
+  FPGA_UART/make_TX/xmit_state_RNO_0[5]:A, 
+  FPGA_UART/make_TX/xmit_state_RNO[3]:C, 
+  FPGA_UART/make_TX/xmit_state[4]:Q.
+NET FPGA_UART/make_TX/xmit_state[3];  
+  FPGA_UART/make_TX/tx_xhdl2_RNO:A, 
+  FPGA_UART/make_TX/xmit_state_RNIP3DT[3]:B, 
+  FPGA_UART/make_TX/xmit_state_RNO_1[2]:B, 
+  FPGA_UART/make_TX/xmit_state_RNO[3]:B, 
+  FPGA_UART/make_TX/xmit_state[3]:Q, 
+  FPGA_UART/make_TX/xmit_state_RNO_0[5]:B.
+NET FPGA_UART/make_TX/xmit_state_ns_i_a2_0_0[3];  
+  FPGA_UART/make_TX/xmit_state_RNO_0[2]:A, 
+  FPGA_UART/make_TX/xmit_state_RNO_1[2]:Y.
+NET FPGA_UART/make_TX/xmit_bit_sel[2];  
+  FPGA_UART/make_TX/xmit_state_RNO_1[2]:A, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO_5:S, 
+  FPGA_UART/make_TX/xmit_bit_sel[2]:Q, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO_6:S, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO_4:S, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO_7:S, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNIL05L[2]:A.
+NET FPGA_UART/make_TX/N_170_1;  
+  FPGA_UART/make_TX/xmit_state_RNO_0[0]:A, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNO[2]:C, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNO[3]:B, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNIL05L[2]:Y.
+NET FPGA_UART/make_TX/xmit_state[2];  
+  FPGA_UART/make_TX/xmit_bit_sel_RNO[0]:A, 
+  FPGA_UART/make_TX/xmit_state[2]:Q, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNO[1]:C, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO:S, 
+  FPGA_UART/make_TX/xmit_state_RNO[5]:C, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNO[2]:B, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNO_0[3]:B, 
+  FPGA_UART/make_TX/xmit_state_RNO[2]:B, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNIL05L[2]:B.
+NET FPGA_UART/make_TX/N_170;  FPGA_UART/make_TX/xmit_state_RNO[0]:
+  C, FPGA_UART/make_TX/xmit_state_RNO_0[0]:Y.
+NET FPGA_UART/make_TX/N_166_2;  
+  FPGA_UART/make_TX/xmit_state_RNO_0[0]:B, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNIQTGQ[3]:Y, 
+  FPGA_UART/make_TX/xmit_state_RNO_0[2]:B.
+NET FPGA_UART/make_TX/N_158;  
+  FPGA_UART/make_TX/xmit_bit_sel_RNO[2]:A, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNIJN8I[0]:Y, 
+  FPGA_UART/make_TX/xmit_state_RNO_0[0]:C, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNO[3]:A, 
+  FPGA_UART/make_TX/xmit_state_RNO_0[2]:C.
+NET FPGA_UART/make_TX/xmit_state_ns[0];  
+  FPGA_UART/make_TX/xmit_state[5]:D, 
+  FPGA_UART/make_TX/xmit_state_RNO[5]:Y.
+NET FPGA_UART/make_TX/N_156;  FPGA_UART/make_TX/xmit_state_RNO[5]:
+  B, FPGA_UART/make_TX/xmit_state_RNO_1[5]:Y.
+NET FPGA_UART/make_TX/N_161;  FPGA_UART/make_TX/tx_xhdl2:E, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO_0:Y.
+NET FPGA_UART/make_TX/xmit_state[5];  
+  FPGA_UART/make_TX/xmit_state_RNO[4]:A, 
+  FPGA_UART/make_TX/xmit_state[5]:Q, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO_0:B.
+NET FPGA_UART/make_TX/N_166;  FPGA_UART/make_TX/xmit_state_RNO[2]:
+  C, FPGA_UART/make_TX/xmit_state_RNO_0[2]:Y.
+NET FPGA_UART/make_TX/txrdy_int_1_sqmuxa;  
+  FPGA_UART/make_TX/txrdy_int:E, FPGA_UART/make_TX/txrdy_int_RNO:
+  Y.
+NET FPGA_UART/make_TX/N_157;  FPGA_UART/make_TX/txrdy_int_RNO:A, 
+  FPGA_UART/make_TX/xmit_state_RNIP3DT[3]:Y, 
+  FPGA_UART/make_TX/tx_byte[4]:E, FPGA_UART/make_TX/tx_byte[5]:E, 
+  FPGA_UART/make_TX/tx_byte[0]:E, FPGA_UART/make_TX/tx_byte[6]:E, 
+  FPGA_UART/make_TX/tx_byte[7]:E, FPGA_UART/make_TX/tx_byte[3]:E, 
+  FPGA_UART/make_TX/xmit_state_RNO[2]:A, 
+  FPGA_UART/make_TX/tx_byte[2]:E, FPGA_UART/make_TX/tx_byte[1]:E.
+NET FPGA_UART/make_TX/xmit_state_RNO[2];  
+  FPGA_UART/make_TX/xmit_state[2]:D, 
+  FPGA_UART/make_TX/xmit_state_RNO[2]:Y.
+NET FPGA_UART/make_TX/xmit_state_ns[1];  
+  FPGA_UART/make_TX/xmit_state[4]:D, 
+  FPGA_UART/make_TX/xmit_state_RNO[4]:Y.
+NET FPGA_UART/make_TX/tx_xhdl2_1;  FPGA_UART/make_TX/tx_xhdl2_RNO:
+  B, FPGA_UART/make_TX/tx_xhdl2_RNO_1:Y.
+NET FPGA_UART/make_TX/N_59;  FPGA_UART/make_TX/tx_xhdl2_RNO_1:A, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO_2:Y.
+NET FPGA_UART/make_TX/N_62;  FPGA_UART/make_TX/tx_xhdl2_RNO_1:B, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO_3:Y.
+NET FPGA_UART/make_TX/xmit_bit_sel_c0;  
+  FPGA_UART/make_TX/xmit_bit_sel_RNIJN8I[0]:A, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO_1:S, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNO[1]:B, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNO[0]:B, 
+  FPGA_UART/make_TX/xmit_bit_sel[0]:Q.
+NET FPGA_UART/make_TX/N_60;  FPGA_UART/make_TX/tx_xhdl2_RNO_3:A, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO_6:Y.
+NET FPGA_UART/make_TX/N_61;  FPGA_UART/make_TX/tx_xhdl2_RNO_3:B, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO_7:Y.
+NET FPGA_UART/make_TX/xmit_bit_sel[1];  
+  FPGA_UART/make_TX/xmit_bit_sel_RNO[1]:A, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNIJN8I[0]:B, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO_2:S, 
+  FPGA_UART/make_TX/xmit_bit_sel[1]:Q, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO_3:S.
+NET FPGA_UART/make_TX/tx_byte[3];  
+  FPGA_UART/make_TX/tx_xhdl2_RNO_7:A, 
+  FPGA_UART/make_TX/tx_byte[3]:Q.
+NET FPGA_UART/make_TX/tx_byte[7];  
+  FPGA_UART/make_TX/tx_xhdl2_RNO_7:B, 
+  FPGA_UART/make_TX/tx_byte[7]:Q.
+NET FPGA_UART/make_TX/tx_byte[1];  
+  FPGA_UART/make_TX/tx_xhdl2_RNO_6:A, 
+  FPGA_UART/make_TX/tx_byte[1]:Q.
+NET FPGA_UART/make_TX/tx_byte[5];  
+  FPGA_UART/make_TX/tx_xhdl2_RNO_6:B, 
+  FPGA_UART/make_TX/tx_byte[5]:Q.
+NET FPGA_UART/make_TX/N_57;  FPGA_UART/make_TX/tx_xhdl2_RNO_2:A, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO_4:Y.
+NET FPGA_UART/make_TX/N_58;  FPGA_UART/make_TX/tx_xhdl2_RNO_2:B, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO_5:Y.
+NET FPGA_UART/make_TX/tx_byte[2];  
+  FPGA_UART/make_TX/tx_xhdl2_RNO_5:A, 
+  FPGA_UART/make_TX/tx_byte[2]:Q.
+NET FPGA_UART/make_TX/tx_byte[6];  
+  FPGA_UART/make_TX/tx_xhdl2_RNO_5:B, 
+  FPGA_UART/make_TX/tx_byte[6]:Q.
+NET FPGA_UART/make_TX/tx_byte[0];  
+  FPGA_UART/make_TX/tx_xhdl2_RNO_4:A, 
+  FPGA_UART/make_TX/tx_byte[0]:Q.
+NET FPGA_UART/make_TX/tx_byte[4];  
+  FPGA_UART/make_TX/tx_xhdl2_RNO_4:B, 
+  FPGA_UART/make_TX/tx_byte[4]:Q.
+NET FPGA_UART/make_TX/tx_xhdl2_3;  FPGA_UART/make_TX/tx_xhdl2:D, 
+  FPGA_UART/make_TX/tx_xhdl2_RNO:Y.
+NET FPGA_UART/make_TX/xmit_bit_sel[3];  
+  FPGA_UART/make_TX/xmit_bit_sel_RNO_0[3]:A, 
+  FPGA_UART/make_TX/xmit_bit_sel[3]:Q, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNIQTGQ[3]:B.
+NET FPGA_UART/make_TX/xmit_bit_sel_n3;  
+  FPGA_UART/make_TX/xmit_bit_sel[3]:D, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNO[3]:Y.
+NET FPGA_UART/make_TX/N_99;  
+  FPGA_UART/make_TX/xmit_bit_sel_RNO[3]:C, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNO_0[3]:Y.
+NET FPGA_UART/make_TX/xmit_bit_sel_n2;  
+  FPGA_UART/make_TX/xmit_bit_sel[2]:D, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNO[2]:Y.
+NET FPGA_UART/make_TX/xmit_bit_sel_n1;  
+  FPGA_UART/make_TX/xmit_bit_sel[1]:D, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNO[1]:Y.
+NET FPGA_UART/make_TX/N_177;  FPGA_UART/make_TX/xmit_bit_sel[0]:D, 
+  FPGA_UART/make_TX/xmit_bit_sel_RNO[0]:Y.
+NET FPGA_UART/make_TX/xmit_state_ns[5];  
+  FPGA_UART/make_TX/xmit_state[0]:D, 
+  FPGA_UART/make_TX/xmit_state_RNO[0]:Y.
+NET FPGA_UART/make_TX/xmit_state[0];  
+  FPGA_UART/make_TX/xmit_state_RNO[0]:B, 
+  FPGA_UART/make_TX/xmit_state_RNO_1[5]:S, 
+  FPGA_UART/make_TX/xmit_state[0]:Q.
+NET FPGA_UART/make_TX/xmit_state_ns[2];  
+  FPGA_UART/make_TX/xmit_state[3]:D, 
+  FPGA_UART/make_TX/xmit_state_RNO[3]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[1];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_7:
+  A, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[1]:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one_RNO_0:C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIE8BJ1[1]:
+  C, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[1]:Q, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_10:
+  B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_8:
+  B.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[0];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[0]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[1]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_7:
+  B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one_RNO_0:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIE8BJ1[1]:
+  B, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[0]:Q, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_10:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_8:
+  A.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[3];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_12:
+  A, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[3]:Q, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_15:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_18:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNI9MLP[2]:
+  B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_13:
+  B, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[3]:B.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/DWACT_FDEC_E[0];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_24:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_12:
+  B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_16:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_30:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_13:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_19:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_10:
+  Y, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_22:
+  A.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/N_5;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[9]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_25:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[8];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_25:
+  A, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[8]:Q, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNI361S[12]:
+  C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_27:
+  B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_29:
+  C, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[8]:B.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/DWACT_FDEC_E[4];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_27:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_24:
+  Y, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_25:
+  B.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/DWACT_FDEC_E[7];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_35:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_33:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/DWACT_FDEC_E[6];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_31:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_30:
+  Y, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_35:
+  B.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un4_baud_cntr_1;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIDA6N4[1]:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIE8BJ1[1]:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un4_baud_cntr_2;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIE8BJ1[1]:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNI9MLP[2]:
+  Y, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one_RNO_0:B.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un1_baud_cntr_1;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one_RNO:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one_RNO_0:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un4_baud_cntr_11_2; 
+   
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNI19FG1[10]:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNI361S[12]:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[11];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNI361S[12]:
+  A, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[11]:
+  B, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[11]:Q, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_33:
+  C.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[12];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNI361S[12]:
+  B, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[12]:Q, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_35:
+  C.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un4_baud_cntr_8_0;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIUOBJ1[4]:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIGTLP[5]:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[7];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIGTLP[5]:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_21:
+  B, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[7]:B, 
+  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_29:
+  B, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[7]:Q.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[5];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIGTLP[5]:
+  B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_18:
+  C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_16:
+  C, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[5]:Q, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[5]:B.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un55_baud_cntr;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[0]:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int_RNO:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[4]:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one_RNIML9L:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[0];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one_RNIML9L:
+  A, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[0]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[1]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[0]:Q, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNIHGP4[1]:
+  A.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one_RNIML9L:
+  B, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one:Q.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un49_baud_cntr;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one_RNIML9L:
+  C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNIJIP4[1]:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un4_baud_cntr;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int_RNO:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[0]:S, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[10]:C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[9]:C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[7]:C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[2]:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[11]:C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[12]:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[4]:S, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[8]:C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[1]:C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIDA6N4[1]:
+  Y, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[6]:C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[5]:C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[3]:C.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un4_baud_cntr_8;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one_RNO:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIUOBJ1[4]:
+  Y, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIDA6N4[1]:
+  B.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un4_baud_cntr_11;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one_RNO:C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIDA6N4[1]:
+  C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNI19FG1[10]:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un1_baud_cntr;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_one_RNO:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un38_baud_clock_int; 
+   FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock_RNO:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[2];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[3]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[2]:Q, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[2]:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNIJIP4[1]:
+  B, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock_RNO:A.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[3];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock_RNO:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[3]:Q, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[3]:C.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_c1;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[2]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[3]:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNIHGP4[1]:
+  Y, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock_RNO:C.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[9];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_33:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_27:
+  C, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[9]:Q, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[9]:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_31:
+  B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNI19FG1[10]:
+  B.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[10];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[10]:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[10]:Q, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_33:
+  B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_31:
+  C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNI19FG1[10]:
+  C.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[4];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_15:
+  B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_12:
+  C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_18:
+  B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_13:
+  C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIUOBJ1[4]:
+  B, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[4]:Q.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[6];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_21:
+  A, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[6]:Q, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIUOBJ1[4]:
+  C, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[6]:B, 
+  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_29:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_19:
+  C.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock_RNIEFCH:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock:Q.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_19[1];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[1]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[1]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_19[2];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[2]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[2]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_3[2];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[2]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_7:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_19[3];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[3]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[3]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_19[5];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[5]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[5]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_19[6];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[6]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[6]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_19[7];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[7]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[7]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_19[8];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[8]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[8]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_19[9];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[9]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[9]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_19[10];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[10]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[10]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_19[11];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[11]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[11]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_19[12];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[12]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[12]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_3[12];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[12]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_35:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_e0;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[0]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[0]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[2];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNI9MLP[2]:
+  A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_7:
+  C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_10:
+  C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_8:
+  C, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[2]:Q.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[1];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNIJIP4[1]:
+  A, FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[1]:Q, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[1]:B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNIHGP4[1]:
+  B.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_n3;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[3]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[3]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_n2;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[2]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[2]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_n1;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr[1]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_cntr_RNO[1]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_19[4];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[4]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[4]:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_3[4];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[4]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_12:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_19[0];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[0]:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[0]:Y.
+NET 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int_1_sqmuxa_11; 
+   FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int:D, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int_RNO:Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/N_3;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[11]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_31:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/DWACT_FDEC_E[2];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_24:
+  B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_18:
+  Y, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_30:
+  B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_19:
+  B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_22:
+  B.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/DWACT_FDEC_E[5];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_30:
+  C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_29:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/N_4;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[10]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_27:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/DWACT_FDEC_E[3];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_24:
+  C, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_21:
+  Y, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_22:
+  C.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/N_6;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[8]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_22:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/N_7;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[7]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_19:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/N_8;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[6]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_16:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/DWACT_FDEC_E[1];  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_16:
+  B, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_15:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/N_9;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[5]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_13:
+  Y.
+NET FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/N_11;  
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNO[3]:A, 
+  FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/UG09_make_baud_cntr1_baud_cntr_3_I_8:
+  Y.
+NET FPGA_UART/make_RX/receive_count_e2_i_0;  
+  FPGA_UART/make_RX/receive_count_RNO[2]:C, 
+  FPGA_UART/make_RX/receive_count_RNO_0[2]:Y.
+NET FPGA_UART/make_RX/N_28;  
+  FPGA_UART/make_RX/receive_count_RNO_0[2]:A, 
+  FPGA_UART/make_RX/receive_count_RNIV302[1]:Y, 
+  FPGA_UART/make_RX/receive_count_RNIG703[2]:B.
+NET FPGA_UART/make_RX/receive_count[2];  
+  FPGA_UART/make_RX/receive_count_RNI1602[1]:A, 
+  FPGA_UART/make_RX/receive_count_RNO_0[2]:C, 
+  FPGA_UART/make_RX/receive_count_RNIG703[1]:B, 
+  FPGA_UART/make_RX/receive_count_RNIG703[2]:A, 
+  FPGA_UART/make_RX/receive_count[2]:Q.
+NET FPGA_UART/make_RX/receive_count_e1_i_0;  
+  FPGA_UART/make_RX/receive_count_RNO[1]:C, 
+  FPGA_UART/make_RX/receive_count_RNO_0[1]:Y.
+NET FPGA_UART/make_RX/receive_count_c0;  
+  FPGA_UART/make_RX/receive_count_RNI1602[0]:A, 
+  FPGA_UART/make_RX/receive_count_RNO_0[1]:A, 
+  FPGA_UART/make_RX/receive_count_RNIV302[1]:B, 
+  FPGA_UART/make_RX/receive_count_RNO[0]:C, 
+  FPGA_UART/make_RX/receive_count_RNIG703[1]:C, 
+  FPGA_UART/make_RX/receive_count[0]:Q.
+NET FPGA_UART/make_RX/receive_count[1];  
+  FPGA_UART/make_RX/receive_count_RNIV302[1]:A, 
+  FPGA_UART/make_RX/receive_count_RNO_0[1]:C, 
+  FPGA_UART/make_RX/receive_count_RNI1602[1]:B, 
+  FPGA_UART/make_RX/receive_count_RNIG703[1]:A, 
+  FPGA_UART/make_RX/receive_count[1]:Q.
+NET FPGA_UART/make_RX/rx_state_ns_i_a2_0_3[0];  
+  FPGA_UART/make_RX/rx_state_RNO[0]:C, 
+  FPGA_UART/make_RX/rx_state_RNO_1[0]:Y.
+NET FPGA_UART/make_RX/N_74;  FPGA_UART/make_RX/rx_state_RNO_1[0]:
+  A, FPGA_UART/make_RX/receive_full_int_RNITEQM2:B, 
+  FPGA_UART/make_RX/rx_state_RNIPA422[0]:Y.
+NET FPGA_UART/make_RX/N_45;  FPGA_UART/make_RX/rx_state_RNO_1[0]:
+  B, FPGA_UART/make_RX/rx_state_RNO_2[0]:Y.
+NET FPGA_UART/make_RX/N_44;  FPGA_UART/make_RX/rx_state_RNO_1[0]:
+  C, FPGA_UART/make_RX/rx_state_RNO_3[0]:Y.
+NET FPGA_UART/make_RX/rx_state_ns_i_a2_0_0[0];  
+  FPGA_UART/make_RX/rx_state_RNO[0]:A, 
+  FPGA_UART/make_RX/rx_state_RNO_0[0]:Y.
+NET FPGA_UART/make_RX/receive_count[3];  
+  FPGA_UART/make_RX/rx_state_RNO_0[0]:A, 
+  FPGA_UART/make_RX/receive_count_RNO_0[3]:B, 
+  FPGA_UART/make_RX/receive_count_RNI1602[0]:B, 
+  FPGA_UART/make_RX/receive_count[3]:Q, 
+  FPGA_UART/make_RX/receive_count_RNIHM8T[3]:B, 
+  FPGA_UART/make_RX/stop_strobe_i_RNO_0:A, 
+  FPGA_UART/make_RX/receive_count_RNIR5JA[3]:A.
+NET FPGA_UART/make_RX/rx_state[0];  
+  FPGA_UART/make_RX/rx_state_RNIT726_0[0]:A, 
+  FPGA_UART/make_RX/rx_state_RNO_2[0]:C, 
+  FPGA_UART/make_RX/stop_strobe_i_RNO:B, 
+  FPGA_UART/make_RX/rx_state_RNO_0[0]:B, 
+  FPGA_UART/make_RX/rx_state_RNIT726[0]:A, 
+  FPGA_UART/make_RX/rx_state[0]:Q, 
+  FPGA_UART/make_RX/rx_state_RNIT726_1[0]:A.
+NET FPGA_UART/make_RX/N_50;  FPGA_UART/make_RX/rx_state_RNO[1]:B, 
+  FPGA_UART/make_RX/receive_count_RNIVJ2A[0]:Y, 
+  FPGA_UART/make_RX/rx_state_RNO_0[0]:C, 
+  FPGA_UART/make_RX/samples_RNIILPA2[0]:B.
+NET FPGA_UART/make_RX/rx_state_ns_i_a2_0_1[1];  
+  FPGA_UART/make_RX/rx_state_RNO[1]:C, 
+  FPGA_UART/make_RX/rx_state_RNO_1[1]:Y.
+NET FPGA_UART/make_RX/N_132;  FPGA_UART/make_RX/rx_state_RNO_1[1]:
+  A, FPGA_UART/make_RX/rx_shift_RNO[1]:B, 
+  FPGA_UART/make_RX/rx_state_RNI69LF[0]:A, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNO[0]:B, 
+  FPGA_UART/make_RX/rx_shift_RNO[0]:B, 
+  FPGA_UART/make_RX/rx_shift_RNO[4]:B, 
+  FPGA_UART/make_RX/samples_RNIBC1D1[0]:B, 
+  FPGA_UART/make_RX/rx_shift_RNO[6]:B, 
+  FPGA_UART/make_RX/rx_state_RNO_3[0]:B, 
+  FPGA_UART/make_RX/rx_shift_RNO[3]:B, 
+  FPGA_UART/make_RX/receive_count_RNI8LLJ[3]:B, 
+  FPGA_UART/make_RX/rx_shift_RNO[2]:B, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNO[1]:C, 
+  FPGA_UART/make_RX/rx_shift_RNO[7]:B, 
+  FPGA_UART/make_RX/rx_shift_RNO[5]:B, 
+  FPGA_UART/make_RX/rx_state_RNIT726_1[0]:Y.
+NET FPGA_UART/make_RX/N_46;  FPGA_UART/make_RX/rx_state_RNO_1[1]:
+  B, FPGA_UART/make_RX/rx_state_RNIBC1D1[0]:Y, 
+  FPGA_UART/make_RX/rx_state_RNO[0]:B.
+NET FPGA_UART/make_RX/rcv_m1_0_a2_0;  
+  FPGA_UART/make_RX/receive_count_RNI8LLJ[3]:A, 
+  FPGA_UART/make_RX/receive_count_RNIR5JA[3]:Y.
+NET FPGA_UART/make_RX/framing_error_int_2_sqmuxa_0_a4_0_a3_0;  
+  FPGA_UART/make_RX/stop_strobe_i_RNO:A, 
+  FPGA_UART/make_RX/stop_strobe_i_RNO_0:Y.
+NET FPGA_UART/make_RX/rx_state[1];  
+  FPGA_UART/make_RX/rx_state_RNO_2[0]:A, 
+  FPGA_UART/make_RX/rx_state_RNIT726_0[0]:B, 
+  FPGA_UART/make_RX/rx_state[1]:Q, 
+  FPGA_UART/make_RX/rx_state_RNO_0[1]:C, 
+  FPGA_UART/make_RX/stop_strobe_i_RNO_0:B, 
+  FPGA_UART/make_RX/rx_state_RNIT726[0]:B, 
+  FPGA_UART/make_RX/rx_state_RNIT726_1[0]:B.
+NET FPGA_UART/make_RX/rx_state_ns_i_a2_0_a3_0_1[1];  
+  FPGA_UART/make_RX/receive_count_RNIVJ2A[0]:A, 
+  FPGA_UART/make_RX/receive_count_RNI1602[0]:Y.
+NET FPGA_UART/make_RX/rx_state_ns_i_a2_0_a3_0_0[1];  
+  FPGA_UART/make_RX/receive_count_RNIVJ2A[0]:B, 
+  FPGA_UART/make_RX/receive_count_RNI1602[1]:Y.
+NET FPGA_UART/make_RX/un1_receive_full_int_1_sqmuxa_i_a3_3;  
+  FPGA_UART/make_RX/receive_full_int_RNO:A, 
+  FPGA_UART/make_RX/receive_full_int_RNO_0:Y.
+NET FPGA_UART/make_RX/N_73;  
+  FPGA_UART/make_RX/receive_full_int_RNO_0:A, 
+  FPGA_UART/make_RX/rx_state_RNIT726_0[0]:Y, 
+  FPGA_UART/make_RX/rx_state_RNIPA422[0]:A.
+NET FPGA_UART/make_RX/un1_receive_full_int_1_sqmuxa_i_a3_2;  
+  FPGA_UART/make_RX/receive_full_int_RNO:B, 
+  FPGA_UART/make_RX/receive_full_int_RNO_1:Y.
+NET FPGA_UART/make_RX/rx_bit_cnt[3];  
+  FPGA_UART/make_RX/receive_full_int_RNO_1:A, 
+  FPGA_UART/make_RX/rx_bit_cnt[3]:Q, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNIM6M61[3]:A, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNO[3]:B.
+NET FPGA_UART/make_RX/un1_receive_full_int_1_sqmuxa_i_a3_1;  
+  FPGA_UART/make_RX/receive_full_int_RNO_1:B, 
+  FPGA_UART/make_RX/receive_full_int_RNO_2:Y.
+NET FPGA_UART/make_RX/rx_bit_cnt[2];  
+  FPGA_UART/make_RX/rx_bit_cnt_RNO_0[3]:A, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNIM6M61[3]:C, 
+  FPGA_UART/make_RX/receive_full_int_RNO_1:C, 
+  FPGA_UART/make_RX/rx_bit_cnt[2]:Q, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNO[2]:B.
+NET FPGA_UART/make_RX/rx_bit_cnt[1];  
+  FPGA_UART/make_RX/rx_bit_cnt_RNI1CPP[1]:A, 
+  FPGA_UART/make_RX/rx_bit_cnt[1]:Q, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNO[1]:A, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNIM6M61[3]:B, 
+  FPGA_UART/make_RX/receive_full_int_RNO_2:A.
+NET FPGA_UART/make_RX/rx_bit_cnt[0];  
+  FPGA_UART/make_RX/rx_bit_cnt_RNO[0]:A, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNI1CPP[1]:B, 
+  FPGA_UART/make_RX/last_bit_RNI6SBL[0]:B, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNO[1]:B, 
+  FPGA_UART/make_RX/rx_bit_cnt[0]:Q, 
+  FPGA_UART/make_RX/receive_full_int_RNO_2:B.
+NET FPGA_UART/make_RX/un47_baud_clock_NE_1;  
+  FPGA_UART/make_RX/rx_state_RNO_0[1]:B, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNIM6M61[3]:Y, 
+  FPGA_UART/make_RX/rx_state_RNIPA422[0]:C.
+NET FPGA_UART/make_RX/N_319;  FPGA_UART/make_RX/rx_state[1]:D, 
+  FPGA_UART/make_RX/rx_state_RNO[1]:Y.
+NET FPGA_UART/make_RX/N_49;  FPGA_UART/make_RX/rx_state_RNO[1]:A, 
+  FPGA_UART/make_RX/rx_state_RNO_0[1]:Y.
+NET FPGA_UART/make_RX/N_318;  FPGA_UART/make_RX/rx_state[0]:D, 
+  FPGA_UART/make_RX/rx_state_RNO[0]:Y.
+NET FPGA_UART/make_RX/N_29;  FPGA_UART/make_RX/rx_state_RNO_2[0]:
+  B, FPGA_UART/make_RX/stop_strobe_i_RNO:C, 
+  FPGA_UART/make_RX/receive_count_RNIP8JC[2]:B, 
+  FPGA_UART/make_RX/receive_count_RNIG703[2]:Y.
+NET FPGA_UART/make_RX/rx_byte_xhdl5_1_sqmuxa;  
+  FPGA_UART/make_RX/rx_byte_xhdl5[7]:E, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[5]:E, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[1]:E, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[0]:E, 
+  FPGA_UART/make_RX/receive_full_int_RNITEQM2:Y, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[6]:E, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[2]:E, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[4]:E, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[3]:E.
+NET FPGA_UART/make_RX/N_17;  FPGA_UART/make_RX/receive_count[2]:D, 
+  FPGA_UART/make_RX/receive_count_RNO[2]:Y.
+NET FPGA_UART/make_RX/un10_baud_clock;  
+  FPGA_UART/make_RX/receive_count_RNO[3]:A, 
+  FPGA_UART/make_RX/receive_count_RNO[0]:A, 
+  FPGA_UART/make_RX/samples_RNIILPA2[0]:Y, 
+  FPGA_UART/make_RX/receive_count_RNO[2]:A, 
+  FPGA_UART/make_RX/receive_count_RNO[1]:A.
+NET FPGA_UART/make_RX/N_19;  FPGA_UART/make_RX/receive_count[1]:D, 
+  FPGA_UART/make_RX/receive_count_RNO[1]:Y.
+NET FPGA_UART/make_RX/N_35;  FPGA_UART/make_RX/rx_state_RNO_3[0]:
+  A, FPGA_UART/make_RX/receive_count_RNI8LLJ[3]:C, 
+  FPGA_UART/make_RX/receive_count_RNIG703[1]:Y.
+NET FPGA_UART/make_RX/framing_error_int_2_sqmuxa;  
+  FPGA_UART/make_RX/stop_strobe_i:D, 
+  FPGA_UART/make_RX/stop_strobe_i_RNO:Y.
+NET FPGA_UART/make_RX/N_51;  
+  FPGA_UART/make_RX/samples_RNIILPA2[0]:A, 
+  FPGA_UART/make_RX/samples_RNIBC1D1[0]:Y.
+NET FPGA_UART/make_RX/N_52;  FPGA_UART/make_RX/last_bit_RNO[0]:B, 
+  FPGA_UART/make_RX/receive_count_RNI8LLJ[3]:Y, 
+  FPGA_UART/make_RX/samples_RNIILPA2[0]:C.
+NET FPGA_UART/make_RX/N_50_3;  
+  FPGA_UART/make_RX/rx_state_RNIBC1D1[0]:A, 
+  FPGA_UART/make_RX/receive_count_RNIVJ2A[0]:C, 
+  FPGA_UART/make_RX/rx_state_RNIT726[0]:Y.
+NET FPGA_UART/make_RX/rx_bit_cnt_n2;  
+  FPGA_UART/make_RX/rx_bit_cnt[2]:D, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNO[2]:Y.
+NET FPGA_UART/make_RX/rx_bit_cnt_c1;  
+  FPGA_UART/make_RX/rx_bit_cnt_RNO[2]:A, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNI1CPP[1]:Y, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNO_0[3]:B.
+NET FPGA_UART/make_RX/N_67;  
+  FPGA_UART/make_RX/receive_count_RNIHM8T[3]:C, 
+  FPGA_UART/make_RX/rx_state_RNI69LF[0]:Y, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNO[3]:C, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNO[2]:C.
+NET FPGA_UART/make_RX/rx_bit_cnt_n3;  
+  FPGA_UART/make_RX/rx_bit_cnt[3]:D, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNO[3]:Y.
+NET FPGA_UART/make_RX/rx_bit_cnt_15_0;  
+  FPGA_UART/make_RX/rx_bit_cnt_RNO[3]:A, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNO_0[3]:Y.
+NET FPGA_UART/make_RX/N_27;  
+  FPGA_UART/make_RX/samples_RNIBC1D1[0]:A, 
+  FPGA_UART/make_RX/rx_state_RNIBC1D1[0]:B, 
+  FPGA_UART/make_RX/rx_shift_RNO[7]:A, 
+  FPGA_UART/make_RX/samples_RNIE4V61[0]:Y.
+NET FPGA_UART/make_RX/samples[2];  
+  FPGA_UART/make_RX/samples_RNIE4V61[0]:A, 
+  FPGA_UART/make_RX/samples[2]:Q, 
+  FPGA_UART/make_RX/samples_RNO[1]:B.
+NET FPGA_UART/make_RX/samples[1];  
+  FPGA_UART/make_RX/samples_RNO[1]:A, 
+  FPGA_UART/make_RX/samples_RNO[0]:B, 
+  FPGA_UART/make_RX/samples[1]:Q, 
+  FPGA_UART/make_RX/samples_RNIE4V61[0]:B.
+NET FPGA_UART/make_RX/samples[0];  
+  FPGA_UART/make_RX/samples_RNO[0]:A, 
+  FPGA_UART/make_RX/samples_RNIE4V61[0]:C, 
+  FPGA_UART/make_RX/samples[0]:Q.
+NET FPGA_UART/make_RX/N_324;  FPGA_UART/make_RX/rx_bit_cnt[0]:D, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNO[0]:Y.
+NET FPGA_UART/make_RX/rx_bit_cnt_n1;  
+  FPGA_UART/make_RX/rx_bit_cnt[1]:D, 
+  FPGA_UART/make_RX/rx_bit_cnt_RNO[1]:Y.
+NET FPGA_UART/make_RX/N_36_i;  
+  FPGA_UART/make_RX/rx_state_RNO_0[1]:A, 
+  FPGA_UART/make_RX/last_bit_RNI6SBL[0]:Y, 
+  FPGA_UART/make_RX/rx_state_RNIPA422[0]:B.
+NET FPGA_UART/make_RX/last_bit[0];  
+  FPGA_UART/make_RX/last_bit_RNO[0]:A, 
+  FPGA_UART/make_RX/last_bit_RNI6SBL[0]:A, 
+  FPGA_UART/make_RX/last_bit[0]:Q.
+NET FPGA_UART/make_RX/rx_shift_12[5];  
+  FPGA_UART/make_RX/rx_shift[5]:D, 
+  FPGA_UART/make_RX/rx_shift_RNO[5]:Y.
+NET FPGA_UART/make_RX/rx_shift[6];  
+  FPGA_UART/make_RX/rx_shift_RNO[5]:A, 
+  FPGA_UART/make_RX/rx_shift[6]:Q, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[6]:D.
+NET FPGA_UART/make_RX/rx_shift_12[4];  
+  FPGA_UART/make_RX/rx_shift[4]:D, 
+  FPGA_UART/make_RX/rx_shift_RNO[4]:Y.
+NET FPGA_UART/make_RX/rx_shift[5];  
+  FPGA_UART/make_RX/rx_shift_RNO[4]:A, 
+  FPGA_UART/make_RX/rx_shift[5]:Q, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[5]:D.
+NET FPGA_UART/make_RX/samples_RNO[1];  
+  FPGA_UART/make_RX/samples[1]:D, 
+  FPGA_UART/make_RX/samples_RNO[1]:Y.
+NET FPGA_UART/make_RX/samples_RNO[0];  
+  FPGA_UART/make_RX/samples[0]:D, 
+  FPGA_UART/make_RX/samples_RNO[0]:Y.
+NET FPGA_UART/make_RX/N_291;  FPGA_UART/make_RX/rx_shift[7]:D, 
+  FPGA_UART/make_RX/rx_shift_RNO[7]:Y.
+NET FPGA_UART/make_RX/rx_shift_12[6];  
+  FPGA_UART/make_RX/rx_shift[6]:D, 
+  FPGA_UART/make_RX/rx_shift_RNO[6]:Y.
+NET FPGA_UART/make_RX/rx_shift[7];  
+  FPGA_UART/make_RX/rx_shift_RNO[6]:A, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[7]:D, 
+  FPGA_UART/make_RX/rx_shift[7]:Q.
+NET FPGA_UART/make_RX/rx_shift_12[3];  
+  FPGA_UART/make_RX/rx_shift[3]:D, 
+  FPGA_UART/make_RX/rx_shift_RNO[3]:Y.
+NET FPGA_UART/make_RX/rx_shift[4];  
+  FPGA_UART/make_RX/rx_shift_RNO[3]:A, 
+  FPGA_UART/make_RX/rx_shift[4]:Q, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[4]:D.
+NET FPGA_UART/make_RX/N_38_i;  
+  FPGA_UART/make_RX/receive_count_RNO[3]:C, 
+  FPGA_UART/make_RX/receive_count_RNO_0[3]:Y.
+NET FPGA_UART/make_RX/N_32;  
+  FPGA_UART/make_RX/receive_count_RNO_0[3]:A, 
+  FPGA_UART/make_RX/receive_count_RNIHM8T[3]:A, 
+  FPGA_UART/make_RX/receive_count_RNIP8JC[2]:Y.
+NET FPGA_UART/make_RX/N_23;  FPGA_UART/make_RX/last_bit[0]:D, 
+  FPGA_UART/make_RX/last_bit_RNO[0]:Y.
+NET FPGA_UART/make_RX/N_21;  FPGA_UART/make_RX/receive_count[0]:D, 
+  FPGA_UART/make_RX/receive_count_RNO[0]:Y.
+NET FPGA_UART/make_RX/N_15;  FPGA_UART/make_RX/receive_count[3]:D, 
+  FPGA_UART/make_RX/receive_count_RNO[3]:Y.
+NET FPGA_UART/make_RX/rx_bit_cnte;  FPGA_UART/make_RX/rx_shift[5]:
+  E, FPGA_UART/make_RX/rx_shift[4]:E, 
+  FPGA_UART/make_RX/rx_shift[6]:E, 
+  FPGA_UART/make_RX/rx_bit_cnt[1]:E, 
+  FPGA_UART/make_RX/rx_shift[7]:E, FPGA_UART/make_RX/rx_shift[3]:
+  E, FPGA_UART/make_RX/rx_bit_cnt[3]:E, 
+  FPGA_UART/make_RX/rx_shift[1]:E, 
+  FPGA_UART/make_RX/receive_count_RNIHM8T[3]:Y, 
+  FPGA_UART/make_RX/rx_shift[2]:E, 
+  FPGA_UART/make_RX/rx_bit_cnt[0]:E, 
+  FPGA_UART/make_RX/rx_bit_cnt[2]:E, 
+  FPGA_UART/make_RX/rx_shift[0]:E.
+NET FPGA_UART/make_RX/N_26;  FPGA_UART/make_RX/receive_full_int:E, 
+  FPGA_UART/make_RX/receive_full_int_RNO:Y.
+NET FPGA_UART/make_RX/rx_shift_12[2];  
+  FPGA_UART/make_RX/rx_shift[2]:D, 
+  FPGA_UART/make_RX/rx_shift_RNO[2]:Y.
+NET FPGA_UART/make_RX/rx_shift[3];  
+  FPGA_UART/make_RX/rx_shift_RNO[2]:A, 
+  FPGA_UART/make_RX/rx_shift[3]:Q, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[3]:D.
+NET FPGA_UART/make_RX/rx_shift_12[1];  
+  FPGA_UART/make_RX/rx_shift[1]:D, 
+  FPGA_UART/make_RX/rx_shift_RNO[1]:Y.
+NET FPGA_UART/make_RX/rx_shift[2];  
+  FPGA_UART/make_RX/rx_shift_RNO[1]:A, 
+  FPGA_UART/make_RX/rx_shift[2]:Q, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[2]:D.
+NET FPGA_UART/make_RX/rx_shift_12[0];  
+  FPGA_UART/make_RX/rx_shift[0]:D, 
+  FPGA_UART/make_RX/rx_shift_RNO[0]:Y.
+NET FPGA_UART/make_RX/rx_shift[1];  
+  FPGA_UART/make_RX/rx_shift_RNO[0]:A, 
+  FPGA_UART/make_RX/rx_byte_xhdl5[1]:D, 
+  FPGA_UART/make_RX/rx_shift[1]:Q.
+NET FPGA_UART/make_RX/rx_shift[0];  
+  FPGA_UART/make_RX/rx_byte_xhdl5[0]:D, 
+  FPGA_UART/make_RX/rx_shift[0]:Q.
+NET system_clock_inst_0/un15_m1_0_a2_3_2;  
+  system_clock_inst_0/flag_RNO:B, system_clock_inst_0/flag_RNO_0:
+  Y.
+NET system_clock_inst_0/m_time[14];  
+  system_clock_inst_0/flag_RNO_0:A, 
+  system_clock_inst_0/l_time_RNIK86H4[14]:B, 
+  system_clock_inst_0/l_time[14]:Q, 
+  system_clock_inst_0/l_time_RNO[14]:A.
+NET system_clock_inst_0/m_time[17];  
+  system_clock_inst_0/l_time_RNO[17]:A, 
+  system_clock_inst_0/l_time[17]:Q, 
+  system_clock_inst_0/flag_RNO_0:B.
+NET system_clock_inst_0/un15_m1_0_a2_3_1;  
+  system_clock_inst_0/flag_RNO_0:C, 
+  system_clock_inst_0/flag_RNO_1:Y.
+NET system_clock_inst_0/m_time[16];  
+  system_clock_inst_0/l_time_RNO[16]:A, 
+  system_clock_inst_0/flag_RNO_1:A, 
+  system_clock_inst_0/l_time_RNO_0[17]:A, 
+  system_clock_inst_0/l_time[16]:Q.
+NET system_clock_inst_0/m_time[15];  
+  system_clock_inst_0/l_time_RNO_0[16]:A, 
+  system_clock_inst_0/l_time[15]:Q, 
+  system_clock_inst_0/l_time_RNO_0[17]:B, 
+  system_clock_inst_0/flag_RNO_1:B, 
+  system_clock_inst_0/l_time_RNO[15]:A.
+NET system_clock_inst_0/l_m5_0_a2_2;  
+  system_clock_inst_0/l_time_RNO_1[10]:B, 
+  system_clock_inst_0/l_time_RNIVNT11[12]:C, 
+  system_clock_inst_0/l_time_RNI3U5U[5]:Y, 
+  system_clock_inst_0/l_time_RNO_0[11]:C.
+NET system_clock_inst_0/m_time[5];  
+  system_clock_inst_0/l_time_RNI3U5U[5]:A, 
+  system_clock_inst_0/l_time[5]:Q, 
+  system_clock_inst_0/l_time_RNI616U[5]:B, 
+  system_clock_inst_0/l_time_RNIBEEB2[5]:B, 
+  system_clock_inst_0/l_time_RNO[5]:B.
+NET system_clock_inst_0/m_time[6];  
+  system_clock_inst_0/l_time_RNITDHQ2[6]:A, 
+  system_clock_inst_0/l_time[6]:Q, 
+  system_clock_inst_0/l_time_RNO[6]:B, 
+  system_clock_inst_0/l_time_RNI3U5U[5]:B, 
+  system_clock_inst_0/l_time_RNIKQ0H1[6]:B.
+NET system_clock_inst_0/l_m6_0_a2_7_6;  
+  system_clock_inst_0/l_time_RNIPOUI2[12]:A, 
+  system_clock_inst_0/l_time_RNIQ01H1[7]:Y.
+NET system_clock_inst_0/m_time[8];  
+  system_clock_inst_0/l_time_RNO[8]:A, 
+  system_clock_inst_0/l_time_RNO_1[10]:A, 
+  system_clock_inst_0/l_time_RNO_0[9]:A, 
+  system_clock_inst_0/l_time[8]:Q, 
+  system_clock_inst_0/l_time_RNIQ01H1[7]:A, 
+  system_clock_inst_0/l_time_RNO_0[11]:A, 
+  system_clock_inst_0/l_time_RNIKQ0H1[6]:A.
+NET system_clock_inst_0/m_time[7];  
+  system_clock_inst_0/l_time_RNIGEK93[7]:A, 
+  system_clock_inst_0/l_time[7]:Q, 
+  system_clock_inst_0/l_time_RNIEPQI[11]:C, 
+  system_clock_inst_0/l_time_RNO_0[10]:A, 
+  system_clock_inst_0/l_time_RNIQ01H1[7]:B, 
+  system_clock_inst_0/l_time_RNO[7]:A, 
+  system_clock_inst_0/l_time_RNO_0[11]:B.
+NET system_clock_inst_0/l_m6_0_a2_7_3;  
+  system_clock_inst_0/l_time_RNIQ01H1[7]:C, 
+  system_clock_inst_0/l_time_RNIJUQI[13]:Y.
+NET system_clock_inst_0/l_m6_0_a2_7_5;  
+  system_clock_inst_0/l_time_RNIPOUI2[12]:B, 
+  system_clock_inst_0/l_time_RNIVNT11[12]:Y.
+NET system_clock_inst_0/m_time[12];  
+  system_clock_inst_0/l_time_RNIVNT11[12]:A, 
+  system_clock_inst_0/l_time[12]:Q, 
+  system_clock_inst_0/l_time_RNO[12]:C, 
+  system_clock_inst_0/l_time_RNO_0[13]:C.
+NET system_clock_inst_0/m_time[10];  
+  system_clock_inst_0/l_time_RNIEPQI[11]:A, 
+  system_clock_inst_0/l_time_RNO_3[11]:A, 
+  system_clock_inst_0/l_time_RNIVNT11[12]:B, 
+  system_clock_inst_0/l_time_RNO[10]:C, 
+  system_clock_inst_0/l_time[10]:Q.
+NET system_clock_inst_0/m_time[13];  
+  system_clock_inst_0/l_time_RNIJUQI[13]:A, 
+  system_clock_inst_0/l_time[13]:Q, 
+  system_clock_inst_0/l_time_RNO[13]:A.
+NET system_clock_inst_0/m_time[11];  
+  system_clock_inst_0/l_time_RNIJUQI[13]:B, 
+  system_clock_inst_0/l_time_RNIEPQI[11]:B, 
+  system_clock_inst_0/l_time_RNO[11]:C, 
+  system_clock_inst_0/l_time[11]:Q.
+NET system_clock_inst_0/m_time[9];  
+  system_clock_inst_0/l_time_RNI616U[5]:A, 
+  system_clock_inst_0/l_time[9]:Q, 
+  system_clock_inst_0/l_time_RNIJUQI[13]:C, 
+  system_clock_inst_0/l_time_RNO_2[11]:B, 
+  system_clock_inst_0/l_time_RNO[9]:A, 
+  system_clock_inst_0/l_time_RNO_0[10]:B.
+NET system_clock_inst_0/l_m1_0_a2_1;  
+  system_clock_inst_0/l_time_RNI0HHQ2[5]:B, 
+  system_clock_inst_0/l_time_RNIVP5U[4]:Y, 
+  system_clock_inst_0/l_time_RNIQFBS1[2]:C.
+NET system_clock_inst_0/m_time[4];  
+  system_clock_inst_0/l_time_RNIVP5U[4]:A, 
+  system_clock_inst_0/l_time_RNO_3[11]:B, 
+  system_clock_inst_0/l_time[4]:Q, 
+  system_clock_inst_0/l_time_RNO[4]:C.
+NET system_clock_inst_0/m_time[3];  
+  system_clock_inst_0/l_time_RNO_2[11]:A, 
+  system_clock_inst_0/l_time_RNIVP5U[4]:B, 
+  system_clock_inst_0/l_time[3]:Q, 
+  system_clock_inst_0/l_time_RNO[3]:B, 
+  system_clock_inst_0/l_time_RNO[4]:B.
+NET system_clock_inst_0/m_time[2];  
+  system_clock_inst_0/l_time_RNO[2]:A, 
+  system_clock_inst_0/l_time_RNIRL5U[2]:A, 
+  system_clock_inst_0/l_time_RNIQFBS1[2]:A, 
+  system_clock_inst_0/l_time[2]:Q.
+NET system_clock_inst_0/m_time[1];  
+  system_clock_inst_0/l_time_RNO[1]:A, 
+  system_clock_inst_0/l_time_RNO[2]:B, 
+  system_clock_inst_0/l_time[1]:Q, 
+  system_clock_inst_0/l_time_RNIRL5U[2]:B, 
+  system_clock_inst_0/l_time_RNIQFBS1[2]:B.
+NET system_clock_inst_0/l_m6_0_a2_7;  
+  system_clock_inst_0/l_time_RNIJ8AF4[12]:A, 
+  system_clock_inst_0/l_time_RNIPOUI2[12]:Y, 
+  system_clock_inst_0/flag_RNO:C.
+NET system_clock_inst_0/l_N_3_mux_0;  
+  system_clock_inst_0/flag_RNO:A, 
+  system_clock_inst_0/l_time_RNIJ8AF4[12]:B, 
+  system_clock_inst_0/l_time_RNIQFBS1[2]:Y, 
+  system_clock_inst_0/l_time_RNIBEEB2[5]:A, 
+  system_clock_inst_0/l_time_RNO[10]:A, 
+  system_clock_inst_0/l_time_RNO[5]:A.
+NET system_clock_inst_0/flag_RNO;  system_clock_inst_0/flag:D, 
+  system_clock_inst_0/flag_RNO:Y.
+NET system_clock_inst_0/s_time[1];  
+  system_clock_inst_0/un1_s_time_I_7:A, 
+  system_clock_inst_0/un1_s_time_I_5:B, 
+  system_clock_inst_0/un1_s_time_I_8:B, 
+  system_clock_inst_0/un1_s_time_0_I_10:B, 
+  system_clock_inst_0/un1_s_time_I_10:B, 
+  system_clock_inst_0/s_time[1]:Q.
+NET system_clock_inst_0/s_time[0];  
+  system_clock_inst_0/un1_s_time_I_10:A, 
+  system_clock_inst_0/un1_s_time_I_5:A, 
+  system_clock_inst_0/un1_s_time_I_8:A, 
+  system_clock_inst_0/un1_s_time_0_I_10:A, 
+  system_clock_inst_0/s_time[0]:Q, 
+  system_clock_inst_0/s_time_RNI40Q71[6]:C, 
+  system_clock_inst_0/un1_s_time_I_4:A, 
+  system_clock_inst_0/un1_s_time_I_7:B.
+NET system_clock_inst_0/s_time[3];  
+  system_clock_inst_0/s_time_0_RNIM98R[7]:A, 
+  system_clock_inst_0/un1_s_time_I_12:A, 
+  system_clock_inst_0/un1_s_time_I_13:B, 
+  system_clock_inst_0/s_time[3]:Q, 
+  system_clock_inst_0/un1_s_time_I_9:B, 
+  system_clock_inst_0/un1_s_time_0_I_18:A, 
+  system_clock_inst_0/un1_s_time_I_15:A.
+NET system_clock_inst_0/DWACT_FINC_E[0];  
+  system_clock_inst_0/un1_s_time_I_13:A, 
+  system_clock_inst_0/un1_s_time_I_12:B, 
+  system_clock_inst_0/un1_s_time_I_10:Y, 
+  system_clock_inst_0/un1_s_time_I_16:A.
+NET system_clock_inst_0/m_time_i[15];  
+  system_clock_inst_0/l_time[15]:D, 
+  system_clock_inst_0/l_time_RNO[15]:Y.
+NET system_clock_inst_0/m_time_i[16];  
+  system_clock_inst_0/l_time[16]:D, 
+  system_clock_inst_0/l_time_RNO[16]:Y.
+NET system_clock_inst_0/m_time_i[17];  
+  system_clock_inst_0/l_time[17]:D, 
+  system_clock_inst_0/l_time_RNO[17]:Y.
+NET system_clock_inst_0/m_time_i[1];  
+  system_clock_inst_0/l_time[1]:D, 
+  system_clock_inst_0/l_time_RNO[1]:Y.
+NET system_clock_inst_0/m_time_i[7];  
+  system_clock_inst_0/l_time[7]:D, 
+  system_clock_inst_0/l_time_RNO[7]:Y.
+NET system_clock_inst_0/m_time_i[8];  
+  system_clock_inst_0/l_time[8]:D, 
+  system_clock_inst_0/l_time_RNO[8]:Y.
+NET system_clock_inst_0/m_time_i[9];  
+  system_clock_inst_0/l_time[9]:D, 
+  system_clock_inst_0/l_time_RNO[9]:Y.
+NET system_clock_inst_0/m_time_i[13];  
+  system_clock_inst_0/l_time[13]:D, 
+  system_clock_inst_0/l_time_RNO[13]:Y.
+NET system_clock_inst_0/un14_flag_3;  
+  system_clock_inst_0/s_time_RNO[2]:A, 
+  system_clock_inst_0/s_time_0_RNIM98R[7]:Y, 
+  system_clock_inst_0/s_time_RNO[1]:A, 
+  system_clock_inst_0/s_time_RNO[6]:A, 
+  system_clock_inst_0/s_time_0_RNO[7]:A, 
+  system_clock_inst_0/s_time_RNO[3]:A, 
+  system_clock_inst_0/s_time_RNO[4]:A, 
+  system_clock_inst_0/s_time_RNO[5]:A.
+NET system_clock_inst_0/s_time[4];  
+  system_clock_inst_0/s_time_0_RNIM98R[7]:B, 
+  system_clock_inst_0/s_time[4]:Q, 
+  system_clock_inst_0/un1_s_time_I_12:C, 
+  system_clock_inst_0/un1_s_time_I_13:C, 
+  system_clock_inst_0/un1_s_time_0_I_18:B, 
+  system_clock_inst_0/un1_s_time_I_15:B.
+NET system_clock_inst_0/un14_flag_2;  
+  system_clock_inst_0/s_time_RNO[2]:B, 
+  system_clock_inst_0/s_time_RNO[1]:B, 
+  system_clock_inst_0/s_time_RNO[6]:B, 
+  system_clock_inst_0/s_time_0_RNO[7]:B, 
+  system_clock_inst_0/s_time_RNO[3]:B, 
+  system_clock_inst_0/s_time_RNO[4]:B, 
+  system_clock_inst_0/s_time_RNI40Q71[6]:Y, 
+  system_clock_inst_0/s_time_RNO[5]:B.
+NET system_clock_inst_0/s_time[5];  
+  system_clock_inst_0/s_time_RNI40Q71[6]:A, 
+  system_clock_inst_0/un1_s_time_0_I_18:C, 
+  system_clock_inst_0/un1_s_time_I_14:B, 
+  system_clock_inst_0/un1_s_time_I_16:C, 
+  system_clock_inst_0/s_time[5]:Q.
+NET system_clock_inst_0/s_time[6];  
+  system_clock_inst_0/s_time_RNI40Q71[6]:B, 
+  system_clock_inst_0/s_time[6]:Q, 
+  system_clock_inst_0/un1_s_time_0_I_19:C, 
+  system_clock_inst_0/un1_s_time_I_17:B.
+NET system_clock_inst_0/l_m2_0_a2_3;  
+  system_clock_inst_0/l_time_RNO[10]:B, 
+  system_clock_inst_0/l_time_RNO_0[10]:Y.
+NET system_clock_inst_0/l_m2_0_a2_2;  
+  system_clock_inst_0/l_time_RNO_0[10]:C, 
+  system_clock_inst_0/l_time_RNO_1[10]:Y.
+NET system_clock_inst_0/l_m6_0_a2_5_7;  
+  system_clock_inst_0/l_time_RNO_0[13]:B, 
+  system_clock_inst_0/l_time_RNI0HHQ2[5]:Y, 
+  system_clock_inst_0/l_time_RNO[12]:B.
+NET system_clock_inst_0/l_m6_0_a2_5_2;  
+  system_clock_inst_0/l_time_RNI0HHQ2[5]:A, 
+  system_clock_inst_0/l_time_RNI616U[5]:Y.
+NET system_clock_inst_0/N_20;  system_clock_inst_0/l_time_RNO[3]:
+  A, system_clock_inst_0/l_time_RNIRL5U[2]:Y, 
+  system_clock_inst_0/l_time_RNO_1[11]:C, 
+  system_clock_inst_0/l_time_RNI0HHQ2[5]:C, 
+  system_clock_inst_0/l_time_RNO[4]:A.
+NET system_clock_inst_0/l_m6_0_a2_5_6;  
+  system_clock_inst_0/l_time_RNO_0[13]:A, 
+  system_clock_inst_0/l_time_RNO[12]:A, 
+  system_clock_inst_0/l_time_RNIKQ0H1[6]:Y.
+NET system_clock_inst_0/l_m6_0_a2_5_4;  
+  system_clock_inst_0/l_time_RNIKQ0H1[6]:C, 
+  system_clock_inst_0/l_time_RNIEPQI[11]:Y.
+NET system_clock_inst_0/l_m5_0_a2_6;  
+  system_clock_inst_0/l_time_RNO[11]:B, 
+  system_clock_inst_0/l_time_RNO_1[11]:Y.
+NET system_clock_inst_0/l_m5_0_a2_1;  
+  system_clock_inst_0/l_time_RNO_1[11]:A, 
+  system_clock_inst_0/l_time_RNO_2[11]:Y.
+NET system_clock_inst_0/l_m5_0_a2_0;  
+  system_clock_inst_0/l_time_RNO_1[11]:B, 
+  system_clock_inst_0/l_time_RNO_3[11]:Y.
+NET system_clock_inst_0/l_m5_0_a2_5;  
+  system_clock_inst_0/l_time_RNO[11]:A, 
+  system_clock_inst_0/l_time_RNO_0[11]:Y.
+NET system_clock_inst_0/l_time_RNO_0[17];  
+  system_clock_inst_0/l_time[17]:E, 
+  system_clock_inst_0/l_time_RNO_0[17]:Y.
+NET system_clock_inst_0/l_time_RNIK86H4[14];  
+  system_clock_inst_0/l_time_RNO_0[16]:B, 
+  system_clock_inst_0/l_time[15]:E, 
+  system_clock_inst_0/l_time_RNO_0[17]:C, 
+  system_clock_inst_0/l_time_RNIK86H4[14]:Y.
+NET system_clock_inst_0/l_N_13_mux;  
+  system_clock_inst_0/l_time_RNIK86H4[14]:A, 
+  system_clock_inst_0/l_time_RNIJ8AF4[12]:Y, 
+  system_clock_inst_0/l_time_RNO[14]:B.
+NET system_clock_inst_0/l_time_n9;  
+  system_clock_inst_0/l_time[10]:D, 
+  system_clock_inst_0/l_time_RNO[10]:Y.
+NET system_clock_inst_0/l_time_n10;  
+  system_clock_inst_0/l_time[11]:D, 
+  system_clock_inst_0/l_time_RNO[11]:Y.
+NET system_clock_inst_0/N_39_i;  system_clock_inst_0/l_time[6]:D, 
+  system_clock_inst_0/l_time_RNO[6]:Y.
+NET system_clock_inst_0/N_23;  system_clock_inst_0/l_time_RNO[6]:
+  A, system_clock_inst_0/l_time_RNITDHQ2[6]:B, 
+  system_clock_inst_0/l_time_RNIBEEB2[5]:Y.
+NET system_clock_inst_0/N_38_i;  system_clock_inst_0/l_time[5]:D, 
+  system_clock_inst_0/l_time_RNO[5]:Y.
+NET system_clock_inst_0/N_37_i;  system_clock_inst_0/l_time[4]:D, 
+  system_clock_inst_0/l_time_RNO[4]:Y.
+NET system_clock_inst_0/N_36_i;  system_clock_inst_0/l_time[3]:D, 
+  system_clock_inst_0/l_time_RNO[3]:Y.
+NET system_clock_inst_0/N_35_i;  system_clock_inst_0/l_time[2]:D, 
+  system_clock_inst_0/l_time_RNO[2]:Y.
+NET system_clock_inst_0/l_time_RNO_0[16];  
+  system_clock_inst_0/l_time[16]:E, 
+  system_clock_inst_0/l_time_RNO_0[16]:Y.
+NET system_clock_inst_0/l_time_RNO_0[13];  
+  system_clock_inst_0/l_time[13]:E, 
+  system_clock_inst_0/l_time_RNO_0[13]:Y.
+NET system_clock_inst_0/N_26;  system_clock_inst_0/l_time[9]:E, 
+  system_clock_inst_0/l_time_RNO_0[9]:Y.
+NET system_clock_inst_0/N_25;  
+  system_clock_inst_0/l_time_RNO_0[9]:B, 
+  system_clock_inst_0/l_time[8]:E, 
+  system_clock_inst_0/l_time_RNIGEK93[7]:Y.
+NET system_clock_inst_0/N_24;  
+  system_clock_inst_0/l_time_RNIGEK93[7]:B, 
+  system_clock_inst_0/l_time_RNITDHQ2[6]:Y, 
+  system_clock_inst_0/l_time[7]:E.
+NET system_clock_inst_0/l_time_n11;  
+  system_clock_inst_0/l_time[12]:D, 
+  system_clock_inst_0/l_time_RNO[12]:Y.
+NET system_clock_inst_0/l_time_n13;  
+  system_clock_inst_0/l_time[14]:D, 
+  system_clock_inst_0/l_time_RNO[14]:Y.
+NET system_clock_inst_0/s_time_3_0[7];  
+  system_clock_inst_0/s_time_0[7]:D, 
+  system_clock_inst_0/s_time_0_RNO[7]:Y.
+NET system_clock_inst_0/un1_s_time_0[7];  
+  system_clock_inst_0/s_time_0_RNO[7]:C, 
+  system_clock_inst_0/un1_s_time_0_I_20:Y.
+NET system_clock_inst_0/s_time_3[6];  
+  system_clock_inst_0/s_time[6]:D, 
+  system_clock_inst_0/s_time_RNO[6]:Y.
+NET system_clock_inst_0/I_17;  system_clock_inst_0/s_time_RNO[6]:
+  C, system_clock_inst_0/un1_s_time_I_17:Y.
+NET system_clock_inst_0/s_time_3[5];  
+  system_clock_inst_0/s_time[5]:D, 
+  system_clock_inst_0/s_time_RNO[5]:Y.
+NET system_clock_inst_0/I_14;  system_clock_inst_0/s_time_RNO[5]:
+  C, system_clock_inst_0/un1_s_time_I_14:Y.
+NET system_clock_inst_0/s_time_3[4];  
+  system_clock_inst_0/s_time[4]:D, 
+  system_clock_inst_0/s_time_RNO[4]:Y.
+NET system_clock_inst_0/I_12;  system_clock_inst_0/s_time_RNO[4]:
+  C, system_clock_inst_0/un1_s_time_I_12:Y.
+NET system_clock_inst_0/s_time_3[3];  
+  system_clock_inst_0/s_time[3]:D, 
+  system_clock_inst_0/s_time_RNO[3]:Y.
+NET system_clock_inst_0/I_9;  system_clock_inst_0/s_time_RNO[3]:C, 
+  system_clock_inst_0/un1_s_time_I_9:Y.
+NET system_clock_inst_0/s_time_3[2];  
+  system_clock_inst_0/s_time[2]:D, 
+  system_clock_inst_0/s_time_RNO[2]:Y.
+NET system_clock_inst_0/I_7;  system_clock_inst_0/s_time_RNO[2]:C, 
+  system_clock_inst_0/un1_s_time_I_7:Y.
+NET system_clock_inst_0/s_time_3[1];  
+  system_clock_inst_0/s_time[1]:D, 
+  system_clock_inst_0/s_time_RNO[1]:Y.
+NET system_clock_inst_0/I_5;  system_clock_inst_0/s_time_RNO[1]:C, 
+  system_clock_inst_0/un1_s_time_I_5:Y.
+NET system_clock_inst_0/flag;  system_clock_inst_0/s_time_0[7]:E, 
+  system_clock_inst_0/s_time[6]:E, system_clock_inst_0/s_time[4]:
+  E, system_clock_inst_0/s_time[3]:E, 
+  system_clock_inst_0/s_time[2]:E, system_clock_inst_0/s_time[0]:
+  E, system_clock_inst_0/flag:Q, system_clock_inst_0/s_time[5]:E, 
+  system_clock_inst_0/s_time[1]:E.
+NET system_clock_inst_0/I_4;  system_clock_inst_0/s_time[0]:D, 
+  system_clock_inst_0/un1_s_time_I_4:Y.
+NET system_clock_inst_0/s_time[2];  
+  system_clock_inst_0/un1_s_time_I_10:C, 
+  system_clock_inst_0/un1_s_time_I_8:C, 
+  system_clock_inst_0/s_time[2]:Q, 
+  system_clock_inst_0/un1_s_time_0_I_10:C, 
+  system_clock_inst_0/un1_s_time_I_7:C.
+NET system_clock_inst_0/N_2;  system_clock_inst_0/un1_s_time_I_17:
+  A, system_clock_inst_0/un1_s_time_I_16:Y.
+NET system_clock_inst_0/DWACT_FINC_E[1];  
+  system_clock_inst_0/un1_s_time_I_16:B, 
+  system_clock_inst_0/un1_s_time_I_15:Y.
+NET system_clock_inst_0/N_3;  system_clock_inst_0/un1_s_time_I_14:
+  A, system_clock_inst_0/un1_s_time_I_13:Y.
+NET system_clock_inst_0/N_5;  system_clock_inst_0/un1_s_time_I_9:
+  A, system_clock_inst_0/un1_s_time_I_8:Y.
+NET system_clock_inst_0/N_2_0;  
+  system_clock_inst_0/un1_s_time_0_I_20:A, 
+  system_clock_inst_0/un1_s_time_0_I_19:Y.
+NET system_clock_inst_0/DWACT_FINC_E_0[0];  
+  system_clock_inst_0/un1_s_time_0_I_19:A, 
+  system_clock_inst_0/un1_s_time_0_I_10:Y.
+NET system_clock_inst_0/DWACT_FINC_E[2];  
+  system_clock_inst_0/un1_s_time_0_I_19:B, 
+  system_clock_inst_0/un1_s_time_0_I_18:Y.
+NET WOLF_CONTROLLER_inst_0/sec_since_res_i[0];  
+  WOLF_CONTROLLER_inst_0/sec_since_res[0]:D, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[0]:Y.
+NET WOLF_CONTROLLER_inst_0/sec_since_res[0];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[0]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI5MPU[1]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[0]:Q, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[1]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIPI6E1_0[1]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIPI6E1[1]:C.
+NET WOLF_CONTROLLER_inst_0/sec_since_res_i[12];  
+  WOLF_CONTROLLER_inst_0/sec_since_res[12]:D, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[12]:Y.
+NET WOLF_CONTROLLER_inst_0/sec_since_res[12];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[12]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[12]:Q, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIO91B1[12]:B.
+NET WOLF_CONTROLLER_inst_0/N_26_i;  
+  WOLF_CONTROLLER_inst_0/main_uart_transmit_flag:D, 
+  WOLF_CONTROLLER_inst_0/main_uart_transmit_flag_RNO:Y.
+NET WOLF_CONTROLLER_inst_0/N_26;  
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[3]:A, 
+  WOLF_CONTROLLER_inst_0/uart_ready_RNIFDT0C:Y, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out[1]:E, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out[2]:E, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out[0]:E, 
+  WOLF_CONTROLLER_inst_0/main_uart_transmit_flag_RNO:A.
+NET WOLF_CONTROLLER_inst_0/un1_main_next_state_1_sqmuxa_i_0;  
+  WOLF_CONTROLLER_inst_0/uart_ready_RNI74S3C:A, 
+  WOLF_CONTROLLER_inst_0/uart_ready_RNI0T616:Y.
+NET WOLF_CONTROLLER_inst_0/N_136;  
+  WOLF_CONTROLLER_inst_0/uart_ready_RNI0T616:A, 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNI77L26[3]:C, 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNIE2V1[4]:Y, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out[0]:D.
+NET WOLF_CONTROLLER_inst_0/N_86;  
+  WOLF_CONTROLLER_inst_0/main_current_state_RNIKLMV5[3]:A, 
+  WOLF_CONTROLLER_inst_0/uart_ready_RNI0T616:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNID4NU5[1]:Y, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[2]:B.
+NET WOLF_CONTROLLER_inst_0/uart_ready;  
+  WOLF_CONTROLLER_inst_0/uart_ready_RNI94G1:A, 
+  WOLF_CONTROLLER_inst_0/uart_ready:Q, 
+  WOLF_CONTROLLER_inst_0/uart_ready_RNI0T616:C.
+NET WOLF_CONTROLLER_inst_0/main_uart_transmit_flag_4_i_0;  
+  WOLF_CONTROLLER_inst_0/uart_ready_RNIFDT0C:C, 
+  WOLF_CONTROLLER_inst_0/uart_ready_RNI94G1:Y.
+NET WOLF_CONTROLLER_inst_0/main_current_state[0];  
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO_0[1]:B, 
+  WOLF_CONTROLLER_inst_0/main_current_state[0]:Q, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[0]:C, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO_1[1]:C, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO_0[3]:C, 
+  WOLF_CONTROLLER_inst_0/uart_ready_RNI94G1:B.
+NET WOLF_CONTROLLER_inst_0/sec_m6_0_a2_7;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_0[12]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI4ODS2[2]:Y, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[11]:B.
+NET WOLF_CONTROLLER_inst_0/sec_m6_0_a2_2;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI4ODS2[2]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIEVPU[2]:Y.
+NET WOLF_CONTROLLER_inst_0/sec_m6_0_a2_1;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI4ODS2[2]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIH2QU[6]:Y.
+NET WOLF_CONTROLLER_inst_0/N_29;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[2]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI5MPU[1]:Y, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_1[10]:C, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI4ODS2[2]:C.
+NET WOLF_CONTROLLER_inst_0/sec_m6_0_a2_6;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_0[12]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI03R92[3]:Y, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[11]:A.
+NET WOLF_CONTROLLER_inst_0/sec_since_res[4];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_2[10]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[4]:Q, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIP1KR[10]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI03R92[3]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI4F0D2[4]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[4]:A.
+NET WOLF_CONTROLLER_inst_0/sec_since_res[3];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIEGJT1[3]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[3]:Q, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIKHGG4[3]:C, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[3]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI03R92[3]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_0[10]:A.
+NET WOLF_CONTROLLER_inst_0/sec_m6_0_a2_4;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI03R92[3]:C, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIL61B1[10]:Y.
+NET WOLF_CONTROLLER_inst_0/sec_since_res[9];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIL61B1[10]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[9]:Q, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIO91B1[12]:C, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_4[10]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[9]:C.
+NET WOLF_CONTROLLER_inst_0/sec_since_res[10];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIP1KR[10]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[10]:Q, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIL61B1[10]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[10]:C.
+NET WOLF_CONTROLLER_inst_0/sec_since_res[5];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIJFQB3[6]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[5]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI93EQ1[7]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_2[10]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[5]:Q, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIL61B1[10]:C, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[6]:B.
+NET WOLF_CONTROLLER_inst_0/sec_since_res[8];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIEVPU[2]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[8]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[8]:Q, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIMGL62[11]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_3[10]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[9]:B.
+NET WOLF_CONTROLLER_inst_0/sec_since_res[2];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIPI6E1[1]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[2]:Q, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[2]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_0[10]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIPI6E1_0[1]:C, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIEVPU[2]:B.
+NET WOLF_CONTROLLER_inst_0/sec_since_res[6];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIO91B1[12]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[6]:Q, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIJFQB3[6]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIH2QU[6]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_4[10]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[6]:C.
+NET WOLF_CONTROLLER_inst_0/sec_since_res[7];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNICH7R3[7]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI93EQ1[7]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[7]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIH2QU[6]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_3[10]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[7]:Q.
+NET WOLF_CONTROLLER_inst_0/sec_m5_0_a2_6;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[10]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_1[10]:Y.
+NET WOLF_CONTROLLER_inst_0/sec_m5_0_a2_1;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_1[10]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_3[10]:Y.
+NET WOLF_CONTROLLER_inst_0/sec_m5_0_a2_0;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_1[10]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_4[10]:Y.
+NET WOLF_CONTROLLER_inst_0/sec_m5_0_a2_5;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[10]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_0[10]:Y.
+NET WOLF_CONTROLLER_inst_0/sec_m5_0_a2_3;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_0[10]:C, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_2[10]:Y.
+NET WOLF_CONTROLLER_inst_0/main_current_state[4];  
+  WOLF_CONTROLLER_inst_0/main_current_state_RNIE2V1[4]:A, 
+  WOLF_CONTROLLER_inst_0/main_current_state[4]:Q, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO_0[3]:B.
+NET WOLF_CONTROLLER_inst_0/main_uart_data_out_0_sqmuxa_1_i_a2_0;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNID4NU5[1]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIKHGG4[3]:Y.
+NET WOLF_CONTROLLER_inst_0/main_next_state_13_iv_0_o2_0_5[0];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIKHGG4[3]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI93EQ1[7]:Y, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNID4NU5[11]:B.
+NET WOLF_CONTROLLER_inst_0/main_next_state_13_iv_0_o2_0_6[0];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIKHGG4[3]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNID4NU5[11]:C, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIMGL62[11]:Y.
+NET WOLF_CONTROLLER_inst_0/sec_since_res[11];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIMGL62[11]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[11]:Q, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_0[12]:C, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[11]:C.
+NET WOLF_CONTROLLER_inst_0/main_next_state_13_iv_0_o2_0_4[0];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIMGL62[11]:C, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIO91B1[12]:Y.
+NET WOLF_CONTROLLER_inst_0/main_next_state_13_iv_0_o2_0_2[0];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI93EQ1[7]:C, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIP1KR[10]:Y.
+NET WOLF_CONTROLLER_inst_0/N_30;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[3]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIEGJT1[3]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIPI6E1[1]:Y.
+NET WOLF_CONTROLLER_inst_0/sec_since_res[1];  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI5MPU[1]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res[1]:Q, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[1]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIPI6E1_0[1]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIPI6E1[1]:B.
+NET WOLF_CONTROLLER_inst_0/main_current_state_RNI77L26[3];  
+  WOLF_CONTROLLER_inst_0/uart_ready_RNI74S3C:B, 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNI77L26[3]:Y.
+NET WOLF_CONTROLLER_inst_0/N_116_tz_tz;  
+  WOLF_CONTROLLER_inst_0/main_current_state_RNI77L26[3]:A, 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNIIJMV5[1]:Y.
+NET WOLF_CONTROLLER_inst_0/main_current_state[3];  
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[2]:A, 
+  WOLF_CONTROLLER_inst_0/main_current_state[3]:Q, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[3]:B, 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNI77L26[3]:B, 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNIKLMV5[3]:B, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out_RNO[1]:B.
+NET WOLF_CONTROLLER_inst_0/un1_uart_current_state_9;  
+  WOLF_CONTROLLER_inst_0/uart_data_out[6]:E, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[4]:E, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[1]:E, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[7]:E, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[0]:E, 
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNIORVL[2]:Y, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[5]:E, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[3]:E, 
+  WOLF_CONTROLLER_inst_0/uart_data_out[2]:E.
+NET WOLF_CONTROLLER_inst_0/uart_current_state[0];  
+  WOLF_CONTROLLER_inst_0/un1_uart_current_state_1:A, 
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNIUUIP[0]:B, 
+  WOLF_CONTROLLER_inst_0/uart_current_state[0]:Q, 
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNIORVL[2]:A, 
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO[4]:A, 
+  WOLF_CONTROLLER_inst_0/uart_wen_RNO:S, 
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO[0]:B.
+NET WOLF_CONTROLLER_inst_0/uart_current_state[2];  
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNIIK4F[2]:A, 
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNIORVL[2]:B, 
+  WOLF_CONTROLLER_inst_0/uart_current_state[2]:Q, 
+  WOLF_CONTROLLER_inst_0/uart_next_state[1]:D.
+NET WOLF_CONTROLLER_inst_0/uart_data_out_0_sqmuxa;  
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNIORVL[2]:C, 
+  WOLF_CONTROLLER_inst_0/main_uart_transmit_flag_RNI0C4B:Y.
+NET WOLF_CONTROLLER_inst_0/N_32;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNID4NU5[1]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIPI6E1_0[1]:Y.
+NET WOLF_CONTROLLER_inst_0/N_21;  
+  WOLF_CONTROLLER_inst_0/main_next_state[1]:D, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[1]:Y.
+NET WOLF_CONTROLLER_inst_0/N_77;  
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[1]:A, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO_0[1]:Y.
+NET WOLF_CONTROLLER_inst_0/N_78;  
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[1]:B, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO_1[1]:Y.
+NET WOLF_CONTROLLER_inst_0/N_79;  
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[1]:C, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO_2[1]:Y.
+NET WOLF_CONTROLLER_inst_0/N_49;  
+  WOLF_CONTROLLER_inst_0/uart_ready_RNIFDT0C:A, 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNIIJMV5_0[1]:Y, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO_0[3]:A.
+NET WOLF_CONTROLLER_inst_0/N_104;  
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO_2[1]:A, 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNIKLMV5[3]:Y, 
+  WOLF_CONTROLLER_inst_0/uart_ready_RNIFDT0C:B.
+NET WOLF_CONTROLLER_inst_0/N_5;  
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[4]:B, 
+  WOLF_CONTROLLER_inst_0/main_next_state[3]:E, 
+  WOLF_CONTROLLER_inst_0/main_next_state[0]:E, 
+  WOLF_CONTROLLER_inst_0/main_next_state[1]:E, 
+  WOLF_CONTROLLER_inst_0/uart_ready_RNI74S3C:Y, 
+  WOLF_CONTROLLER_inst_0/main_next_state[2]:E.
+NET WOLF_CONTROLLER_inst_0/N_82;  
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[3]:C, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO_0[3]:Y.
+NET WOLF_CONTROLLER_inst_0/N_45;  
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[0]:A, 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNIIJMV5[1]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNID4NU5[11]:Y, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO_1[1]:A, 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNIIJMV5_0[1]:B.
+NET WOLF_CONTROLLER_inst_0/main_current_state[2];  
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO_0[1]:A, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO_1[1]:B, 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNIE2V1[4]:B, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out_RNO[1]:A, 
+  WOLF_CONTROLLER_inst_0/main_current_state[2]:Q.
+NET WOLF_CONTROLLER_inst_0/sec_since_res_n10;  
+  WOLF_CONTROLLER_inst_0/sec_since_res[10]:D, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[10]:Y.
+NET WOLF_CONTROLLER_inst_0/main_current_state[1];  
+  WOLF_CONTROLLER_inst_0/main_current_state_RNIIJMV5[1]:A, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out[2]:D, 
+  WOLF_CONTROLLER_inst_0/main_current_state[1]:Q, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO_0[1]:C, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[0]:B, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO_2[1]:B, 
+  WOLF_CONTROLLER_inst_0/main_current_state_RNIIJMV5_0[1]:A.
+NET WOLF_CONTROLLER_inst_0/sec_since_res_n11;  
+  WOLF_CONTROLLER_inst_0/sec_since_res[11]:D, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[11]:Y.
+NET WOLF_CONTROLLER_inst_0/N_35;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[7]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIJFQB3[6]:Y, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNICH7R3[7]:B.
+NET WOLF_CONTROLLER_inst_0/N_33;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[5]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIJFQB3[6]:C, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI4F0D2[4]:Y, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[6]:A.
+NET WOLF_CONTROLLER_inst_0/N_44;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[8]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNICH7R3[7]:Y, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[9]:A.
+NET WOLF_CONTROLLER_inst_0/N_53_i;  
+  WOLF_CONTROLLER_inst_0/sec_since_res[1]:D, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[1]:Y.
+NET WOLF_CONTROLLER_inst_0/N_54_i;  
+  WOLF_CONTROLLER_inst_0/sec_since_res[2]:D, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[2]:Y.
+NET WOLF_CONTROLLER_inst_0/N_59;  
+  WOLF_CONTROLLER_inst_0/sec_since_res[12]:E, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO_0[12]:Y.
+NET WOLF_CONTROLLER_inst_0/N_60_i;  
+  WOLF_CONTROLLER_inst_0/sec_since_res[5]:D, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[5]:Y.
+NET WOLF_CONTROLLER_inst_0/N_62_i;  
+  WOLF_CONTROLLER_inst_0/sec_since_res[6]:D, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[6]:Y.
+NET WOLF_CONTROLLER_inst_0/N_63_i;  
+  WOLF_CONTROLLER_inst_0/sec_since_res[7]:D, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[7]:Y.
+NET WOLF_CONTROLLER_inst_0/N_64_i;  
+  WOLF_CONTROLLER_inst_0/sec_since_res[8]:D, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[8]:Y.
+NET WOLF_CONTROLLER_inst_0/N_65_i;  
+  WOLF_CONTROLLER_inst_0/sec_since_res[9]:D, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[9]:Y.
+NET WOLF_CONTROLLER_inst_0/uart_data_out_5[6];  
+  WOLF_CONTROLLER_inst_0/uart_data_out[6]:D, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[6]:Y.
+NET WOLF_CONTROLLER_inst_0/uart_data_buffer_in[6];  
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[6]:A, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[6]:Q.
+NET WOLF_CONTROLLER_inst_0/uart_current_state[1];  
+  WOLF_CONTROLLER_inst_0/uart_oen_RNO:B, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO_0[2]:S, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO_0[1]:S, 
+  WOLF_CONTROLLER_inst_0/uart_current_state[1]:Q, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO_0[0]:S, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[6]:B, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[7]:B, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[3]:B, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[4]:B, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[5]:B, 
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO_0[0]:C.
+NET WOLF_CONTROLLER_inst_0/N_56_i;  
+  WOLF_CONTROLLER_inst_0/sec_since_res[4]:D, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[4]:Y.
+NET WOLF_CONTROLLER_inst_0/N_31;  
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNID4NU5[11]:A, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNIEGJT1[3]:Y, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNI4F0D2[4]:B, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[4]:B.
+NET WOLF_CONTROLLER_inst_0/N_55_i;  
+  WOLF_CONTROLLER_inst_0/sec_since_res[3]:D, 
+  WOLF_CONTROLLER_inst_0/sec_since_res_RNO[3]:Y.
+NET WOLF_CONTROLLER_inst_0/N_28;  
+  WOLF_CONTROLLER_inst_0/main_next_state[2]:D, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[2]:Y.
+NET WOLF_CONTROLLER_inst_0/main_next_state_13[3];  
+  WOLF_CONTROLLER_inst_0/main_next_state[3]:D, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[3]:Y.
+NET WOLF_CONTROLLER_inst_0/main_next_state_13[0];  
+  WOLF_CONTROLLER_inst_0/main_next_state[0]:D, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[0]:Y.
+NET WOLF_CONTROLLER_inst_0/N_137;  
+  WOLF_CONTROLLER_inst_0/main_uart_data_out[1]:D, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out_RNO[1]:Y.
+NET WOLF_CONTROLLER_inst_0/main_next_state_RNO[4];  
+  WOLF_CONTROLLER_inst_0/main_next_state[4]:D, 
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[4]:Y.
+NET WOLF_CONTROLLER_inst_0/main_next_state[4];  
+  WOLF_CONTROLLER_inst_0/main_next_state_RNO[4]:A, 
+  WOLF_CONTROLLER_inst_0/main_next_state[4]:Q, 
+  WOLF_CONTROLLER_inst_0/main_current_state[4]:D.
+NET WOLF_CONTROLLER_inst_0/un1_uart_current_state;  
+  WOLF_CONTROLLER_inst_0/uart_ready:E, 
+  WOLF_CONTROLLER_inst_0/uart_ready_RNO:Y.
+NET WOLF_CONTROLLER_inst_0/uart_current_state[3];  
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNI0C4B[3]:A, 
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO[2]:B, 
+  WOLF_CONTROLLER_inst_0/led1_RNO:A, 
+  WOLF_CONTROLLER_inst_0/un1_uart_current_state_1:B, 
+  WOLF_CONTROLLER_inst_0/uart_current_state[3]:Q, 
+  WOLF_CONTROLLER_inst_0/main_uart_transmit_flag_RNI0C4B:C, 
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO[3]:B, 
+  WOLF_CONTROLLER_inst_0/uart_ready_RNO:A, 
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO_0[0]:B.
+NET WOLF_CONTROLLER_inst_0/uart_current_state[4];  
+  WOLF_CONTROLLER_inst_0/uart_oen_RNO:A, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[2]:B, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[1]:B, 
+  WOLF_CONTROLLER_inst_0/uart_wen:D, 
+  WOLF_CONTROLLER_inst_0/uart_wen_RNO:A, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[0]:B, 
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO[3]:A, 
+  WOLF_CONTROLLER_inst_0/uart_current_state[4]:Q, 
+  WOLF_CONTROLLER_inst_0/uart_ready_RNO:B.
+NET WOLF_CONTROLLER_inst_0/uart_data_buffer_in_1_sqmuxa;  
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[7]:E, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[0]:E, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[1]:E, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[6]:E, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[5]:E, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[4]:E, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[3]:E, 
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNIIK4F[2]:Y, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[2]:E.
+NET WOLF_CONTROLLER_inst_0/N_122;  
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[0]:A, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO_0[0]:Y.
+NET WOLF_CONTROLLER_inst_0/main_uart_data_out[0];  
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO_0[0]:A, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out[0]:Q.
+NET WOLF_CONTROLLER_inst_0/uart_data_buffer_in[0];  
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO_0[0]:B, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[0]:Q.
+NET WOLF_CONTROLLER_inst_0/uart_data_out_5[0];  
+  WOLF_CONTROLLER_inst_0/uart_data_out[0]:D, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[0]:Y.
+NET WOLF_CONTROLLER_inst_0/uart_data_out_5[5];  
+  WOLF_CONTROLLER_inst_0/uart_data_out[5]:D, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[5]:Y.
+NET WOLF_CONTROLLER_inst_0/uart_data_buffer_in[5];  
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[5]:A, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[5]:Q.
+NET WOLF_CONTROLLER_inst_0/uart_data_out_5[4];  
+  WOLF_CONTROLLER_inst_0/uart_data_out[4]:D, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[4]:Y.
+NET WOLF_CONTROLLER_inst_0/uart_data_buffer_in[4];  
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[4]:A, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[4]:Q.
+NET WOLF_CONTROLLER_inst_0/uart_data_out_5[3];  
+  WOLF_CONTROLLER_inst_0/uart_data_out[3]:D, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[3]:Y.
+NET WOLF_CONTROLLER_inst_0/uart_data_buffer_in[3];  
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[3]:A, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[3]:Q.
+NET WOLF_CONTROLLER_inst_0/uart_next_state_0_sqmuxa;  
+  WOLF_CONTROLLER_inst_0/uart_next_state[2]:D, 
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO[2]:Y.
+NET WOLF_CONTROLLER_inst_0/un1_main_uart_transmit_flag;  
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNI0C4B[3]:B, 
+  WOLF_CONTROLLER_inst_0/led1:D, 
+  WOLF_CONTROLLER_inst_0/main_uart_transmit_flag_RNI2IM5:Y.
+NET WOLF_CONTROLLER_inst_0/main_uart_transmit_flag;  
+  WOLF_CONTROLLER_inst_0/main_uart_transmit_flag_RNI2IM5:A, 
+  WOLF_CONTROLLER_inst_0/main_uart_transmit_flag:Q, 
+  WOLF_CONTROLLER_inst_0/main_uart_transmit_flag_RNI0C4B:A.
+NET WOLF_CONTROLLER_inst_0/led1_1_sqmuxa;  
+  WOLF_CONTROLLER_inst_0/led1:E, WOLF_CONTROLLER_inst_0/led1_RNO:
+  Y.
+NET WOLF_CONTROLLER_inst_0/uart_next_state_2_sqmuxa;  
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNIUUIP[0]:C, 
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNI0C4B[3]:Y, 
+  WOLF_CONTROLLER_inst_0/uart_ready:D.
+NET WOLF_CONTROLLER_inst_0/un1_uart_current_state_3;  
+  WOLF_CONTROLLER_inst_0/uart_oen:D, 
+  WOLF_CONTROLLER_inst_0/uart_oen_RNO:Y.
+NET WOLF_CONTROLLER_inst_0/un1_uart_current_state_1;  
+  WOLF_CONTROLLER_inst_0/uart_oen:E, 
+  WOLF_CONTROLLER_inst_0/un1_uart_current_state_1:Y.
+NET WOLF_CONTROLLER_inst_0/uart_next_state_9[0];  
+  WOLF_CONTROLLER_inst_0/uart_next_state[0]:D, 
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO[0]:Y.
+NET WOLF_CONTROLLER_inst_0/un1_uart_current_state_8;  
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO[0]:A, 
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO_0[0]:Y.
+NET WOLF_CONTROLLER_inst_0/un1_uart_wen_1_sqmuxa;  
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO[0]:S, 
+  WOLF_CONTROLLER_inst_0/uart_current_state_RNIUUIP[0]:Y, 
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO[3]:S.
+NET WOLF_CONTROLLER_inst_0/uart_next_state_9[3];  
+  WOLF_CONTROLLER_inst_0/uart_next_state[3]:D, 
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO[3]:Y.
+NET WOLF_CONTROLLER_inst_0/un1_uart_current_state_6;  
+  WOLF_CONTROLLER_inst_0/uart_wen:E, 
+  WOLF_CONTROLLER_inst_0/uart_wen_RNO:Y.
+NET WOLF_CONTROLLER_inst_0/uart_wen_0_sqmuxa;  
+  WOLF_CONTROLLER_inst_0/uart_next_state[4]:D, 
+  WOLF_CONTROLLER_inst_0/uart_next_state_RNO[4]:Y.
+NET WOLF_CONTROLLER_inst_0/uart_data_out_5[7];  
+  WOLF_CONTROLLER_inst_0/uart_data_out[7]:D, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[7]:Y.
+NET WOLF_CONTROLLER_inst_0/uart_data_buffer_in[7];  
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[7]:A, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[7]:Q.
+NET WOLF_CONTROLLER_inst_0/uart_data_out_5[2];  
+  WOLF_CONTROLLER_inst_0/uart_data_out[2]:D, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[2]:Y.
+NET WOLF_CONTROLLER_inst_0/N_124;  
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[2]:A, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO_0[2]:Y.
+NET WOLF_CONTROLLER_inst_0/uart_data_out_5[1];  
+  WOLF_CONTROLLER_inst_0/uart_data_out[1]:D, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[1]:Y.
+NET WOLF_CONTROLLER_inst_0/N_123;  
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO[1]:A, 
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO_0[1]:Y.
+NET WOLF_CONTROLLER_inst_0/main_uart_data_out[2];  
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO_0[2]:A, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out[2]:Q.
+NET WOLF_CONTROLLER_inst_0/uart_data_buffer_in[2];  
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO_0[2]:B, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[2]:Q.
+NET WOLF_CONTROLLER_inst_0/main_uart_data_out[1];  
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO_0[1]:A, 
+  WOLF_CONTROLLER_inst_0/main_uart_data_out[1]:Q.
+NET WOLF_CONTROLLER_inst_0/uart_data_buffer_in[1];  
+  WOLF_CONTROLLER_inst_0/uart_data_out_RNO_0[1]:B, 
+  WOLF_CONTROLLER_inst_0/uart_data_buffer_in[1]:Q.
+NET WOLF_CONTROLLER_inst_0/main_next_state[3];  
+  WOLF_CONTROLLER_inst_0/main_current_state[3]:D, 
+  WOLF_CONTROLLER_inst_0/main_next_state[3]:Q.
+NET WOLF_CONTROLLER_inst_0/main_next_state[2];  
+  WOLF_CONTROLLER_inst_0/main_current_state[2]:D, 
+  WOLF_CONTROLLER_inst_0/main_next_state[2]:Q.
+NET WOLF_CONTROLLER_inst_0/main_next_state[1];  
+  WOLF_CONTROLLER_inst_0/main_current_state[1]:D, 
+  WOLF_CONTROLLER_inst_0/main_next_state[1]:Q.
+NET WOLF_CONTROLLER_inst_0/main_next_state[0];  
+  WOLF_CONTROLLER_inst_0/main_current_state[0]:D, 
+  WOLF_CONTROLLER_inst_0/main_next_state[0]:Q.
+NET WOLF_CONTROLLER_inst_0/uart_next_state[4];  
+  WOLF_CONTROLLER_inst_0/uart_current_state[4]:D, 
+  WOLF_CONTROLLER_inst_0/uart_next_state[4]:Q.
+NET WOLF_CONTROLLER_inst_0/uart_next_state[3];  
+  WOLF_CONTROLLER_inst_0/uart_current_state[3]:D, 
+  WOLF_CONTROLLER_inst_0/uart_next_state[3]:Q.
+NET WOLF_CONTROLLER_inst_0/uart_next_state[2];  
+  WOLF_CONTROLLER_inst_0/uart_current_state[2]:D, 
+  WOLF_CONTROLLER_inst_0/uart_next_state[2]:Q.
+NET WOLF_CONTROLLER_inst_0/uart_next_state[1];  
+  WOLF_CONTROLLER_inst_0/uart_current_state[1]:D, 
+  WOLF_CONTROLLER_inst_0/uart_next_state[1]:Q.
+NET WOLF_CONTROLLER_inst_0/uart_next_state[0];  
+  WOLF_CONTROLLER_inst_0/uart_current_state[0]:D, 
+  WOLF_CONTROLLER_inst_0/uart_next_state[0]:Q.
+NET LED2_pad/U0/NET1;  LED2_pad/U0/U0:D, LED2_pad/U0/U1/U0:DOUT; 
+  HARDWIRED:PADIN.
+NET LED2_pad/U0/NET2;  LED2_pad/U0/U0:E, LED2_pad/U0/U1/U0:EOUT; 
+  HARDWIRED:PADEN.
+NET VHF_PWR_pad/U0/NET1;  VHF_PWR_pad/U0/U0:D, 
+  VHF_PWR_pad/U0/U1/U0:DOUT; HARDWIRED:PADIN.
+NET VHF_PWR_pad/U0/NET2;  VHF_PWR_pad/U0/U0:E, 
+  VHF_PWR_pad/U0/U1/U0:EOUT; HARDWIRED:PADEN.
+NET PRESSURE_PWR_pad/U0/NET1;  PRESSURE_PWR_pad/U0/U0:D, 
+  PRESSURE_PWR_pad/U0/U1/U0:DOUT; HARDWIRED:PADIN.
+NET PRESSURE_PWR_pad/U0/NET2;  PRESSURE_PWR_pad/U0/U0:E, 
+  PRESSURE_PWR_pad/U0/U1/U0:EOUT; HARDWIRED:PADEN.
+NET L1_GPS_PWR_pad/U0/NET1;  L1_GPS_PWR_pad/U0/U0:D, 
+  L1_GPS_PWR_pad/U0/U1/U0:DOUT; HARDWIRED:PADIN.
+NET L1_GPS_PWR_pad/U0/NET2;  L1_GPS_PWR_pad/U0/U0:E, 
+  L1_GPS_PWR_pad/U0/U1/U0:EOUT; HARDWIRED:PADEN.
+NET CUTTER_pad/U0/NET1;  CUTTER_pad/U0/U0:D, CUTTER_pad/U0/U1/U0:
+  DOUT; HARDWIRED:PADIN.
+NET CUTTER_pad/U0/NET2;  CUTTER_pad/U0/U0:E, CUTTER_pad/U0/U1/U0:
+  EOUT; HARDWIRED:PADEN.
+NET FPGA_UART_TX_pad/U0/NET1;  FPGA_UART_TX_pad/U0/U0:D, 
+  FPGA_UART_TX_pad/U0/U1/U0:DOUT; HARDWIRED:PADIN.
+NET FPGA_UART_TX_pad/U0/NET2;  FPGA_UART_TX_pad/U0/U0:E, 
+  FPGA_UART_TX_pad/U0/U1/U0:EOUT; HARDWIRED:PADEN.
+NET SENS_MEM_L5_PWR_pad/U0/NET1;  SENS_MEM_L5_PWR_pad/U0/U0:D, 
+  SENS_MEM_L5_PWR_pad/U0/U1/U0:DOUT; HARDWIRED:PADIN.
+NET SENS_MEM_L5_PWR_pad/U0/NET2;  SENS_MEM_L5_PWR_pad/U0/U0:E, 
+  SENS_MEM_L5_PWR_pad/U0/U1/U0:EOUT; HARDWIRED:PADEN.
+NET LED1_pad/U0/NET1;  LED1_pad/U0/U0:D, LED1_pad/U0/U1/U0:DOUT; 
+  HARDWIRED:PADIN.
+NET LED1_pad/U0/NET2;  LED1_pad/U0/U0:E, LED1_pad/U0/U1/U0:EOUT; 
+  HARDWIRED:PADEN.
+NET CLK_pad/U0/NET1;  CLK_pad/U0/U0:Y, CLK_pad/U0/U1/U0:YIN; 
+  HARDWIRED:PADOUT.
+NET PWRONRESET_pad/U0/NET1;  PWRONRESET_pad/U0/U0:Y, 
+  PWRONRESET_pad/U0/U1/U0:YIN; HARDWIRED:PADOUT.
+NET FPGA_UART_RX_pad/U0/NET1;  FPGA_UART_RX_pad/U0/U0:Y, 
+  FPGA_UART_RX_pad/U0/U1/U0:YIN; HARDWIRED:PADOUT.
+NET SAT_PWR_pad/U0/NET1;  SAT_PWR_pad/U0/U0:D, 
+  SAT_PWR_pad/U0/U1/U0:DOUT; HARDWIRED:PADIN.
+NET SAT_PWR_pad/U0/NET2;  SAT_PWR_pad/U0/U0:E, 
+  SAT_PWR_pad/U0/U1/U0:EOUT; HARDWIRED:PADEN.
+NET VCC;  LED1_pad/U0/U1/U1:E, LED2_pad/U0/U1/U1:E, 
+  L1_GPS_PWR_pad/U0/U1/U1:E, SENS_MEM_L5_PWR_pad/U0/U1/U1:E, 
+  CUTTER_pad/U0/U1/U1:E, PRESSURE_PWR_pad/U0/U1/U1:E, 
+  FPGA_UART_TX_pad/U0/U1/U1:E, SAT_PWR_pad/U0/U1/U1:E, 
+  VHF_PWR_pad/U0/U1/U1:E; GLOBAL, POWER:VCC.
+NET GND;  LED2_pad/U0/U1/U1:D, L1_GPS_PWR_pad/U0/U1/U1:D, 
+  SENS_MEM_L5_PWR_pad/U0/U1/U1:D, CLKINT_0/U_GL:S_ODIV0, 
+  CLKINT_0/U_GL:S_ODIV1, CLKINT_0/U_GL:S_ODIV2, CLKINT_0/U_GL:
+  S_ODIV3, CLKINT_0/U_GL:S_ODIV4, CLKINT_0/U_GL:S_OMUX0, 
+  CLKINT_0/U_GL:S_OMUX1, CLKINT_0/U_GL:S_OMUX2, CLKINT_0/U_GL:
+  S_DLYHC0, CLKINT_0/U_GL:S_DLYHC1, CLKINT_0/U_GL:S_DLYHC2, 
+  CLKINT_0/U_GL:S_DLYHC3, CLKINT_0/U_GL:S_DLYHC4, CLKINT_1/U_GL:
+  S_ODIV0, CLKINT_1/U_GL:S_ODIV1, CLKINT_1/U_GL:S_ODIV2, 
+  CLKINT_1/U_GL:S_ODIV3, CLKINT_1/U_GL:S_ODIV4, CLKINT_1/U_GL:
+  S_OMUX0, CLKINT_1/U_GL:S_OMUX1, CLKINT_1/U_GL:S_OMUX2, 
+  CLKINT_1/U_GL:S_DLYHC0, CLKINT_1/U_GL:S_DLYHC1, CLKINT_1/U_GL:
+  S_DLYHC2, CLKINT_1/U_GL:S_DLYHC3, CLKINT_1/U_GL:S_DLYHC4, 
+  CUTTER_pad/U0/U1/U1:D, PRESSURE_PWR_pad/U0/U1/U1:D, 
+  SAT_PWR_pad/U0/U1/U1:D, VHF_PWR_pad/U0/U1/U1:D; GLOBAL, POWER:
+  GND.
+END.

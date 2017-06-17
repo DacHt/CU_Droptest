@@ -1,0 +1,23 @@
+********************************************************************
+                            Global Usage Report
+********************************************************************
+  
+Product: Designer
+Release: v11.8
+Version: 11.8.0.26
+Date: Fri Jun 16 21:23:15 2017
+Design Name: CU_TOP  Family: ProASIC3  Die: A3P250  Package: 100 VQFP
+Design State: Post-Layout
+
+The following nets have been routed to a chip global resource:
+
+    Fanout            Name
+    ----------------------
+    159               Net   : CLKINT_0_Y
+                      Driver: CLKINT_0/U_GL
+    164               Net   : CLKINT_1_Y
+                      Driver: CLKINT_1/U_GL
+
+
+
+

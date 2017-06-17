@@ -1,0 +1,426 @@
+#Build: Synplify Pro J-2015.03M-SP1-2, Build 266R, Dec 14 2015
+#install: C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2
+#OS: Windows 8 6.2
+#Hostname: LAPTOP-UCQD4H1A
+
+#Implementation: synthesis
+
+Synopsys HDL Compiler, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\vhd2008\std.vhd":146:18:146:21|Setting time resolution to ns
+@N:"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_Main\CU_Main.vhd":17:7:17:13|Top entity is set to CU_Main.
+VHDL syntax check successful!
+@N: CD231 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus ('U'="1000000000")
+@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_Main\CU_Main.vhd":17:7:17:13|Synthesizing work.cu_main.rtl 
+@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\System_clock.vhd":48:7:48:18|Synthesizing work.system_clock.behaviour 
+Post processing for work.system_clock.behaviour
+@N: CD630 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\proasic\proasic3.vhd":2858:10:2858:15|Synthesizing proasic3.clkint.syn_black_box 
+Post processing for proasic3.clkint.syn_black_box
+Post processing for work.cu_main.rtl
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 73MB peak: 74MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Apr 15 17:11:58 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Apr 15 17:11:58 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Apr 15 17:11:58 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Apr 15 17:12:00 2017
+
+###########################################################]
+Pre-mapping Report
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1659R, Built Dec 10 2015 09:42:41
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-SP1-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+Reading constraint file: C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\constraint\CU_Main_32.sdc
+@L: C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_Main_scck.rpt 
+Printing clock  summary report in "C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_Main_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+
+@S |Clock Summary
+*****************
+
+Start        Requested     Requested     Clock        Clock           
+Clock        Frequency     Period        Type         Group           
+----------------------------------------------------------------------
+main_clk     32.8 MHz      30.500        declared     default_clkgroup
+======================================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_Main.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 45MB peak: 109MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Apr 15 17:12:00 2017
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1659R, Built Dec 10 2015 09:42:41
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-SP1-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 110MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 110MB)
+
+@N:"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\hdl\system_clock.vhd":68:4:68:5|Found counter in view:work.system_clock(behaviour) inst l_time[17:1]
+@N: MF238 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\hdl\system_clock.vhd":98:22:98:31|Found 8-bit incrementor, 'un1_s_time[7:0]'
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name     Fanout, notes                 
+-------------------------------------------------------------
+CLKINT_1 / Y                   26 : 26 asynchronous set/reset
+=============================================================
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 26 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=================================== Non-Gated/Non-Generated Clocks ===================================
+Clock Tree ID     Driving Element     Drive Element Type           Fanout     Sample Instance         
+------------------------------------------------------------------------------------------------------
+@K:CKID0001       CLK                 clock definition on port     26         system_clock_0.s_time[7]
+======================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+Writing Analyst data base C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synwork\CU_Main_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+Writing EDIF Netlist and constraint files
+J-2015.03M-SP1-2
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+Found clock main_clk with period 30.50ns 
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Sat Apr 15 17:12:01 2017
+#
+
+
+Top view:               CU_Main
+Library name:           PA3
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.74, tree_type = balanced_tree )
+Requested Frequency:    32.8 MHz
+Wire load mode:         top
+Wire load model:        proasic3
+Paths requested:        5
+Constraint File(s):    C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\constraint\CU_Main_32.sdc
+                       
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 6.446
+
+                   Requested     Estimated     Requested     Estimated               Clock        Clock           
+Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group           
+------------------------------------------------------------------------------------------------------------------
+main_clk           32.8 MHz      56.8 MHz      30.500        17.608        6.446     declared     default_clkgroup
+==================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks              |    rise  to  rise   |    fall  to  fall    |    rise  to  fall    |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------
+Starting  Ending    |  constraint  slack  |  constraint  slack   |  constraint  slack   |  constraint  slack
+------------------------------------------------------------------------------------------------------------
+main_clk  main_clk  |  No paths    -      |  30.500      15.034  |  15.250      12.266  |  15.250      6.446
+============================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: main_clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                          Arrival          
+Instance                      Reference     Type         Pin     Net            Time        Slack
+                              Clock                                                              
+-------------------------------------------------------------------------------------------------
+system_clock_0.l_time[1]      main_clk      DFN0C1       Q       m_time[1]      0.527       6.446
+system_clock_0.l_time[2]      main_clk      DFN0C1       Q       m_time[2]      0.527       6.724
+system_clock_0.l_time[3]      main_clk      DFN0C1       Q       m_time[3]      0.527       7.103
+system_clock_0.l_time[4]      main_clk      DFN0C1       Q       m_time[4]      0.527       8.380
+system_clock_0.l_time[8]      main_clk      DFN0C1       Q       m_time[8]      0.653       8.479
+system_clock_0.l_time[12]     main_clk      DFN0E0C1     Q       m_time[12]     0.653       8.656
+system_clock_0.l_time[5]      main_clk      DFN0C1       Q       m_time[5]      0.527       8.702
+system_clock_0.l_time[16]     main_clk      DFN0E0C1     Q       m_time[16]     0.653       8.935
+system_clock_0.l_time[10]     main_clk      DFN0E0C1     Q       m_time[10]     0.653       9.477
+system_clock_0.l_time[14]     main_clk      DFN0E0C1     Q       m_time[14]     0.653       9.491
+=================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                                Required           
+Instance                      Reference     Type         Pin     Net                  Time         Slack 
+                              Clock                                                                      
+---------------------------------------------------------------------------------------------------------
+system_clock_0.flag           main_clk      DFN1C1       D       flag_RNO             14.711       6.446 
+system_clock_0.s_time[0]      main_clk      DFN0E1C1     E       flag                 14.642       12.266
+system_clock_0.s_time[1]      main_clk      DFN0E1C1     E       flag                 14.642       12.266
+system_clock_0.s_time[2]      main_clk      DFN0E1C1     E       flag                 14.642       12.266
+system_clock_0.s_time[3]      main_clk      DFN0E1C1     E       flag                 14.642       12.266
+system_clock_0.s_time[4]      main_clk      DFN0E1C1     E       flag                 14.642       12.266
+system_clock_0.s_time[5]      main_clk      DFN0E1C1     E       flag                 14.642       12.266
+system_clock_0.s_time[6]      main_clk      DFN0E1C1     E       flag                 14.642       12.266
+system_clock_0.s_time[7]      main_clk      DFN0E1C1     E       flag                 14.642       12.266
+system_clock_0.l_time[16]     main_clk      DFN0E0C1     E       l_time_RNO_0[16]     29.892       15.034
+=========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      15.250
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         14.711
+
+    - Propagation time:                      8.265
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     6.446
+
+    Number of logic level(s):                6
+    Starting point:                          system_clock_0.l_time[1] / Q
+    Ending point:                            system_clock_0.flag / D
+    The start point is clocked by            main_clk [falling] on pin CLK
+    The end   point is clocked by            main_clk [rising] on pin CLK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+system_clock_0.l_time[1]              DFN0C1     Q        Out     0.527     0.527       -         
+m_time[1]                             Net        -        -       1.184     -           4         
+system_clock_0.l_time_RNIJ9QI[3]      OR3C       A        In      -         1.710       -         
+system_clock_0.l_time_RNIJ9QI[3]      OR3C       Y        Out     0.525     2.235       -         
+N_21                                  Net        -        -       0.806     -           3         
+system_clock_0.l_time_RNIQVBV[5]      OR3B       C        In      -         3.041       -         
+system_clock_0.l_time_RNIQVBV[5]      OR3B       Y        Out     0.751     3.792       -         
+N_23                                  Net        -        -       0.386     -           2         
+system_clock_0.l_time_RNIFSK51[6]     OR2A       B        In      -         4.178       -         
+system_clock_0.l_time_RNIFSK51[6]     OR2A       Y        Out     0.646     4.824       -         
+N_24                                  Net        -        -       0.386     -           2         
+system_clock_0.l_time_RNI5QTB1[7]     OR2A       B        In      -         5.210       -         
+system_clock_0.l_time_RNI5QTB1[7]     OR2A       Y        Out     0.646     5.857       -         
+N_25                                  Net        -        -       0.806     -           3         
+system_clock_0.l_time_RNI9I815[7]     NOR2A      B        In      -         6.663       -         
+system_clock_0.l_time_RNI9I815[7]     NOR2A      Y        Out     0.407     7.070       -         
+l_N_13_mux                            Net        -        -       0.386     -           2         
+system_clock_0.flag_RNO               NOR2B      A        In      -         7.456       -         
+system_clock_0.flag_RNO               NOR2B      Y        Out     0.488     7.944       -         
+flag_RNO                              Net        -        -       0.322     -           1         
+system_clock_0.flag                   DFN1C1     D        In      -         8.265       -         
+==================================================================================================
+Total path delay (propagation time + setup) of 8.804 is 4.529(51.4%) logic and 4.275(48.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+--------------------------------------------------------------------------------
+Target Part: A3P250_VQFP100_STD
+Report for cell CU_Main.rtl
+  Core Cell usage:
+              cell count     area count*area
+              AND2     1      1.0        1.0
+              AND3     6      1.0        6.0
+             AOI1B     7      1.0        7.0
+               AX1     1      1.0        1.0
+              AX1C     1      1.0        1.0
+            CLKINT     2      0.0        0.0
+               GND     2      0.0        0.0
+               INV    12      1.0       12.0
+             NOR2A     1      1.0        1.0
+             NOR2B     7      1.0        7.0
+             NOR3C     4      1.0        4.0
+              OR2A    10      1.0       10.0
+              OR3B     1      1.0        1.0
+              OR3C     1      1.0        1.0
+               VCC     2      0.0        0.0
+             XNOR2     3      1.0        3.0
+              XOR2     8      1.0        8.0
+
+
+            DFN0C1     7      1.0        7.0
+          DFN0E0C1     9      1.0        9.0
+          DFN0E1C1     9      1.0        9.0
+            DFN1C1     1      1.0        1.0
+                   -----          ----------
+             TOTAL    95                89.0
+
+
+  IO Cell usage:
+              cell count
+             INBUF     2
+            OUTBUF     8
+                   -----
+             TOTAL    10
+
+
+Core Cells         : 89 of 6144 (1%)
+IO Cells           : 10
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 46MB peak: 110MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Apr 15 17:12:01 2017
+
+###########################################################]

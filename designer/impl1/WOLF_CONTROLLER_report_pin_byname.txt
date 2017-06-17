@@ -1,0 +1,16 @@
+*****************************************************************
+Pin Report - Date: Tue Jun 06 15:34:25 2017 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.8
+Version: 11.8.0.26
+Design Name: WOLF_CONTROLLER
+Family: ProASIC3
+Die: A3P250
+Package: 100 VQFP
+*****************************************************************
+Port      |Pin |Fixed |Function       |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+----------|----|------|---------------|--------|------------------|-----|--------------|-----|-----------------|------------|--------------|
+clk_1hz    10   No     GFB1/IO109PDB3  LVTTL    ---                ---   None           ---   ---               No           No
+clk_main   64   No     GCC0/IO48NDB1   LVTTL    ---                ---   None           ---   ---               No           No
+cutter_en  94   No     GAC0/IO04RSB0   LVTTL    12                 High  None           No    35                No           No
+reset      11   No     GFB0/IO109NDB3  LVTTL    ---                ---   None           ---   ---               No           No

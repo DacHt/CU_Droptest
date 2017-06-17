@@ -1,0 +1,31 @@
+----------------------------------------------------------------------
+Report for cell WOLF_CONTROLLER.architecture_wolf_controller
+                                          Cell usage:
+                               cell       count     area    count*area
+                                AO1         3       1.0        3.0
+                               AO1A         1       1.0        1.0
+                               AX1C         6       1.0        6.0
+                               BUFF         1       1.0        1.0
+                             CLKBUF         2       0.0        0.0
+                               DFN1         1       1.0        1.0
+                             DFN1C1        18       1.0       18.0
+                             DFN1E0         5       1.0        5.0
+                           DFN1E0C1         1       1.0        1.0
+                             DFN1P1         1       1.0        1.0
+                                GND         1       0.0        0.0
+                              INBUF         1       0.0        0.0
+                                INV         1       1.0        1.0
+                                MX2         2       1.0        2.0
+                               NOR2         2       1.0        2.0
+                              NOR2A         1       1.0        1.0
+                              NOR2B         8       1.0        8.0
+                               NOR3         1       1.0        1.0
+                              NOR3A         6       1.0        6.0
+                              NOR3C         7       1.0        7.0
+                               OAI1         1       1.0        1.0
+                                OR3         1       1.0        1.0
+                             OUTBUF         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                               XOR2         6       1.0        6.0
+                            
+                         TOTAL             79                 73.0

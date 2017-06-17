@@ -1,0 +1,75 @@
+# Microsemi I/O Settings During Programming (IOS) file
+# Version: 11.8.0.26
+# Design: CU_TOP
+# Family: ProASIC3, Die: A3P250, Package: vq100, Speed Grade: STD
+
+set_prog_io_state -pinNumber {45} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {44} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -portName {CLK} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {42} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -portName {PRESSURE_PWR} -input 1 -outputEnable 1 -output 0
+set_prog_io_state -pinNumber {40} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {36} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -portName {VHF_PWR} -input 1 -outputEnable 1 -output 0
+set_prog_io_state -portName {CUTTER} -input 1 -outputEnable 1 -output 0
+set_prog_io_state -pinNumber {33} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {32} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {31} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {30} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {29} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {28} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {27} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {26} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -portName {LED1} -input 0 -outputEnable 1 -output 1
+set_prog_io_state -pinNumber {22} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {21} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {20} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {19} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {16} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {13} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {15} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {11} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {10} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {8} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {7} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {6} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {5} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {4} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {3} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {2} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {98} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -portName {SAT_PWR} -input 1 -outputEnable 1 -output 0
+set_prog_io_state -pinNumber {96} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {95} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {94} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {93} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {92} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {91} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -portName {SENS_MEM_L5_PWR} -input 1 -outputEnable 1 -output 0
+set_prog_io_state -pinNumber {86} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {85} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {84} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {83} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {82} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {81} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {80} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {79} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {78} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {77} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -portName {PWRONRESET} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {73} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {72} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {71} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {70} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -portName {L1_GPS_PWR} -input 1 -outputEnable 1 -output 0
+set_prog_io_state -portName {LED2} -input 0 -outputEnable 1 -output 1
+set_prog_io_state -pinNumber {64} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {62} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {63} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {61} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {60} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {59} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {58} -input 1 -outputEnable 0 -output 0
+set_prog_io_state -pinNumber {57} -input 1 -outputEnable 0 -output 0
+
+# Date generated: Fri Jun 09 13:40:17 2017

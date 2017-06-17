@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>CU_TOP</design>
+	<target_edif>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP.edn</target_edif>
+</SynplifyOutput>

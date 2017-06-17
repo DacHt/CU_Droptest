@@ -1,0 +1,1163 @@
+; HEADER
+; FILEID ADL C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.dtf\netlist.afl 7f95fc96
+; CHECKSUM 7f95fc96
+; ASC 646f4094
+; PROGRAM Microsemi Libero Software
+; VERSION v11.8 11.8.0.26
+; ALSMAJORREV 11
+; ALSMINORREV 8
+; ALSPATCHREV 0
+; VAR DESIGN CU_TOP
+; VAR FAM ProASIC3
+; VAR FAMILY PA3LC
+; VAR DIE IS4X4M1
+; VAR PACKAGE vq100
+; VAR IFIKEEPER <NOT-SET>
+; VAR RESTRICTTRSTPIN YES
+; VAR UNCLAMP_UNUSED_IOS 0
+; VAR RESERVE_PROGRAMMING_PINS 1
+; VAR RESTRICTPROBEPINS 1
+; VAR RESTRICTJTAGPINS YES
+; VAR SPEED STD
+; VAR TEMPR COM
+; VAR VOLTR COM
+; VAR SI_SECURITY_KEY 
+; VAR SIG 
+; VAR FUSCHECKSUM <NOT-SET>
+; VAR PROGSECFUSE <NOT-SET>
+; VAR PINCHECKSUM <NOT-SET>
+; VAR ACT1_special_IO_pins_used NO
+; VAR AXPROGRAMMING_USE_UMA <NOT-SET>
+; ENDHEADER
+DEF CU_TOP; CLK, PWRONRESET, CUTTER, L1_GPS_PWR, LED1, LED2, 
+  PRESSURE_PWR, SAT_PWR, SENS_MEM_L5_PWR, VHF_PWR.
+PIN CLK; DIRECTION:INPUT.
+PIN PWRONRESET; DIRECTION:INPUT.
+PIN CUTTER; DIRECTION:OUTPUT.
+PIN L1_GPS_PWR; DIRECTION:OUTPUT.
+PIN LED1; DIRECTION:OUTPUT.
+PIN LED2; DIRECTION:OUTPUT.
+PIN PRESSURE_PWR; DIRECTION:OUTPUT.
+PIN SAT_PWR; DIRECTION:OUTPUT.
+PIN SENS_MEM_L5_PWR; DIRECTION:OUTPUT.
+PIN VHF_PWR; DIRECTION:OUTPUT.
+USE ADLIB:IOPAD_TRI; PRESSURE_PWR_pad/U0/U0; PRESERVE, CLS_ID:
+  2%HARD%IO%0%0, CLS_NAME:PRESSURE_PWR_pad.
+PIN PRESSURE_PWR_pad/U0/U0:PAD; O_P:FLATSOFT%PRESSURE_PWR_pad/PAD.
+USE ADLIB:NOR3C; system_clock_0/l_time_RNION641[13].
+USE ADLIB:AX1C; WOLF_CONTROLLER_0/sec_since_eject_RNO[6].
+USE ADLIB:AX1C; WOLF_CONTROLLER_0/sec_since_eject_RNO[12].
+USE ADLIB:NOR3C; WOLF_CONTROLLER_0/sec_since_eject_RNIBNUS4[2].
+USE ADLIB:DFN0E0C1; system_clock_0/l_time[9].
+USE ADLIB:DFN0C1; system_clock_0/l_time[17].
+USE ADLIB:NOR3C; WOLF_CONTROLLER_0/sec_since_eject_RNO_0[12].
+USE ADLIB:NOR3B; system_clock_0/l_time_RNO_1[11].
+USE ADLIB:XNOR2; system_clock_0/l_time_RNO[3].
+USE ADLIB:DFN0E0C1; system_clock_0/l_time[16].
+USE ADLIB:OR2A; system_clock_0/l_time_RNIFSK51[6].
+USE ADLIB:NOR3C; WOLF_CONTROLLER_0/sec_since_eject_RNI1I295[3].
+USE ADLIB:NOR3C; WOLF_CONTROLLER_0/sec_since_eject_RNO_0[7].
+USE ADLIB:NOR3A; WOLF_CONTROLLER_0/sec_since_eject_RNIM4842[12].
+USE ADLIB:NOR3C; system_clock_0/l_time_RNO_0[17].
+USE ADLIB:UAUX_IOTRI_OB_EB; LED1_pad/U0/U1/U1; CLS_NAME:LED1_pad, 
+  CLS_ID:8%HARD%IO%2%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', LEAFINST:
+  LED1_pad/U0/U1, PRESERVE.
+PIN LED1_pad/U0/U1/U1:D; T_O_P:D, O_P:FLATSOFT%LED1_pad/D.
+PIN LED1_pad/U0/U1/U1:E; T_O_P:E, O_P:FLATHARD%LED1_pad/U0/U1/E.
+USE ADLIB:AX1C; WOLF_CONTROLLER_0/sec_since_eject_RNO[2].
+USE ADLIB:NOR2B; system_clock_0/l_time_RNI1PTT[11].
+USE ADLIB:AX1C; WOLF_CONTROLLER_0/sec_since_eject_RNO[8].
+USE ADLIB:IOPAD_IN; CLK_pad/U0/U0; PRESERVE, CLS_ID:9%HARD%IO%0%0, 
+  CLS_NAME:CLK_pad.
+PIN CLK_pad/U0/U0:PAD; O_P:FLATSOFT%CLK_pad/PAD.
+USE ADLIB:INV; system_clock_0/l_time_RNO[7].
+USE ADLIB:NOR3B; system_clock_0/l_time_RNIFSK51[4].
+USE ADLIB:OR3B; system_clock_0/l_time_RNI643P[4].
+PIN system_clock_0/l_time_RNI643P[4]:A; O_P:
+  LCOM%system_clock_0/l_time_RNI5KHC[4]/A.
+PIN system_clock_0/l_time_RNI643P[4]:B; O_P:
+  LCOM%system_clock_0/l_time_RNI5KHC[4]/B.
+PIN system_clock_0/l_time_RNI643P[4]:C; O_P:
+  LCOM%system_clock_0/l_time_RNI643P[4]/A.
+USE ADLIB:XNOR2; system_clock_0/l_time_RNO[6].
+USE ADLIB:DFN0E1C1; system_clock_0/s_time[6].
+USE ADLIB:NOR2B; system_clock_0/flag_RNO_2.
+USE ADLIB:DFN0C1; system_clock_0/l_time[4].
+USE ADLIB:XOR2; WOLF_CONTROLLER_0/sec_since_eject_RNO[10].
+USE ADLIB:INV; WOLF_CONTROLLER_0/sec_since_eject_RNO[0].
+USE ADLIB:DFN1E0C1; WOLF_CONTROLLER_0/cutter_en.
+USE ADLIB:IOPAD_TRI; SENS_MEM_L5_PWR_pad/U0/U0; PRESERVE, CLS_ID:
+  7%HARD%IO%0%0, CLS_NAME:SENS_MEM_L5_PWR_pad.
+PIN SENS_MEM_L5_PWR_pad/U0/U0:PAD; O_P:
+  FLATSOFT%SENS_MEM_L5_PWR_pad/PAD.
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/sec_since_eject[12].
+USE ADLIB:NOR3C; system_clock_0/l_time_RNO_0[11].
+USE ADLIB:XOR2; WOLF_CONTROLLER_0/sec_since_eject_RNO[1].
+USE ADLIB:OAI1; WOLF_CONTROLLER_0/sec_since_eject_RNI8MB41[2].
+USE ADLIB:DFN1E0; WOLF_CONTROLLER_0/next_state[1].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/current_state[0].
+USE ADLIB:XOR2; system_clock_0/l_time_RNO[2].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/sec_since_eject[3].
+USE ADLIB:UAUX_IOIN_IB; CLK_pad/U0/U1/U1; CLS_NAME:CLK_pad, 
+  CLS_ID:9%HARD%IO%2%0, LEAFDEF:'ADLIB:IOIN_IB', LEAFINST:
+  CLK_pad/U0/U1, PRESERVE.
+PIN CLK_pad/U0/U1/U1:Y; T_O_P:Y, O_P:FLATSOFT%CLK_pad/Y.
+USE ADLIB:OR2B; system_clock_0/l_time_RNI1GHC[2].
+USE ADLIB:DFN1C1; system_clock_0/flag.
+USE ADLIB:XOR2; system_clock_0/un1_s_time_0_I_20.
+USE ADLIB:INV; system_clock_0/l_time_RNO[8].
+USE ADLIB:IOPAD_TRI; LED1_pad/U0/U0; PRESERVE, CLS_ID:
+  8%HARD%IO%0%0, CLS_NAME:LED1_pad.
+PIN LED1_pad/U0/U0:PAD; O_P:FLATSOFT%LED1_pad/PAD.
+USE ADLIB:DFN1E0; WOLF_CONTROLLER_0/next_state[3].
+USE ADLIB:DFN0C1; system_clock_0/l_time[14].
+USE ADLIB:DFN1; WOLF_CONTROLLER_0/next_state[5].
+USE ADLIB:UAUX_IOTRI_OB_EB; LED2_pad/U0/U1/U1; CLS_NAME:LED2_pad, 
+  CLS_ID:0%HARD%IO%2%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', LEAFINST:
+  LED2_pad/U0/U1, PRESERVE.
+PIN LED2_pad/U0/U1/U1:D; T_O_P:D, O_P:FLATSOFT%LED2_pad/D.
+PIN LED2_pad/U0/U1/U1:E; T_O_P:E, O_P:FLATHARD%LED2_pad/U0/U1/E.
+USE ADLIB:AX1; system_clock_0/l_time_RNO[4].
+USE ADLIB:UAUX_IOTRI_OB_EB; L1_GPS_PWR_pad/U0/U1/U1; CLS_NAME:
+  L1_GPS_PWR_pad, CLS_ID:3%HARD%IO%2%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', 
+  LEAFINST:L1_GPS_PWR_pad/U0/U1, PRESERVE.
+PIN L1_GPS_PWR_pad/U0/U1/U1:D; T_O_P:D, O_P:
+  FLATSOFT%L1_GPS_PWR_pad/D.
+PIN L1_GPS_PWR_pad/U0/U1/U1:E; T_O_P:E, O_P:
+  FLATHARD%L1_GPS_PWR_pad/U0/U1/E.
+USE ADLIB:NOR3C; system_clock_0/flag_RNO.
+USE ADLIB:NOR2B; WOLF_CONTROLLER_0/sec_since_eject_RNO_1[12].
+USE ADLIB:NOR2; WOLF_CONTROLLER_0/sec_since_eject_RNIN08O_0[6].
+USE ADLIB:NOR3C; system_clock_0/l_time_RNI6LOG1[7].
+USE ADLIB:AOI1B; system_clock_0/s_time_RNO[5].
+USE ADLIB:UAUX_IOTRI_OB_EB; SENS_MEM_L5_PWR_pad/U0/U1/U1; 
+  CLS_NAME:SENS_MEM_L5_PWR_pad, CLS_ID:7%HARD%IO%2%0, LEAFDEF:
+  'ADLIB:IOTRI_OB_EB', LEAFINST:SENS_MEM_L5_PWR_pad/U0/U1, PRESERVE.
+PIN SENS_MEM_L5_PWR_pad/U0/U1/U1:D; T_O_P:D, O_P:
+  FLATSOFT%SENS_MEM_L5_PWR_pad/D.
+PIN SENS_MEM_L5_PWR_pad/U0/U1/U1:E; T_O_P:E, O_P:
+  FLATHARD%SENS_MEM_L5_PWR_pad/U0/U1/E.
+USE ADLIB:UGLINT; CLKINT_0/U_GL; CLS_NAME:CLKINT_0, CLS_ID:
+  6%HARD%PLL%0%0, ORIGNAME:CLKINT_0, LEAFDEF:'ADLIB:CLKINT', 
+  LEAFINST:CLKINT_0, PRESERVE.
+PIN CLKINT_0/U_GL:CLK; T_O_P:A, O_P:FLATHARD%CLKINT_0/A.
+PIN CLKINT_0/U_GL:GL; T_O_P:Y, O_P:FLATHARD%CLKINT_0/Y.
+USE ADLIB:XOR2; WOLF_CONTROLLER_0/sec_since_eject_RNO[7].
+USE ADLIB:AX1C; system_clock_0/l_time_RNO[17].
+USE ADLIB:DFN0E0C1; system_clock_0/l_time[15].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/sec_since_eject[1].
+USE ADLIB:AX1; system_clock_0/l_time_RNO[10].
+USE ADLIB:DFN0E0C1; system_clock_0/l_time[13].
+USE ADLIB:UIO_IOTRI_OB_EB; SAT_PWR_pad/U0/U1/U0; CLS_NAME:
+  SAT_PWR_pad, CLS_ID:11%HARD%IO%1%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', 
+  LEAFINST:SAT_PWR_pad/U0/U1, PRESERVE.
+PIN SAT_PWR_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%SAT_PWR_pad/U0/U1/DOUT.
+PIN SAT_PWR_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%SAT_PWR_pad/U0/U1/EOUT.
+USE ADLIB:DFN0E0C1; system_clock_0/l_time[7].
+USE ADLIB:DFN0E1C1; system_clock_0/s_time[4].
+USE ADLIB:AND3; system_clock_0/un1_s_time_0_I_18.
+USE ADLIB:NOR3A; WOLF_CONTROLLER_0/sec_since_eject_RNIATFG1[3].
+USE ADLIB:DFN0C1; system_clock_0/l_time[10].
+USE ADLIB:UIO_IOTRI_OB_EB; L1_GPS_PWR_pad/U0/U1/U0; CLS_NAME:
+  L1_GPS_PWR_pad, CLS_ID:3%HARD%IO%1%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', 
+  LEAFINST:L1_GPS_PWR_pad/U0/U1, PRESERVE.
+PIN L1_GPS_PWR_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%L1_GPS_PWR_pad/U0/U1/DOUT.
+PIN L1_GPS_PWR_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%L1_GPS_PWR_pad/U0/U1/EOUT.
+USE ADLIB:DFN1E0; WOLF_CONTROLLER_0/next_state[2].
+USE ADLIB:NOR3C; system_clock_0/s_time_RNIDNBD[6].
+USE ADLIB:UGLINT; CLKINT_1/U_GL; CLS_NAME:CLKINT_1, CLS_ID:
+  5%HARD%PLL%0%0, ORIGNAME:CLKINT_1, LEAFDEF:'ADLIB:CLKINT', 
+  LEAFINST:CLKINT_1, PRESERVE.
+PIN CLKINT_1/U_GL:CLK; T_O_P:A, O_P:FLATHARD%CLKINT_1/A.
+PIN CLKINT_1/U_GL:GL; T_O_P:Y, O_P:FLATHARD%CLKINT_1/Y.
+USE ADLIB:INV; system_clock_0/un1_s_time_I_4.
+USE ADLIB:XOR2; system_clock_0/l_time_RNO[14].
+USE ADLIB:NOR3C; system_clock_0/l_time_RNI5KOG1[8].
+USE ADLIB:AND3; system_clock_0/un1_s_time_I_16.
+USE ADLIB:DFN0C1; system_clock_0/l_time[3].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/sec_since_eject[10].
+USE ADLIB:NOR2B; WOLF_CONTROLLER_0/sec_since_eject_RNI9P7P3[9].
+USE ADLIB:NOR2B; WOLF_CONTROLLER_0/sec_since_eject_RNIN08O[6].
+USE ADLIB:UAUX_IOTRI_OB_EB; CUTTER_pad/U0/U1/U1; CLS_NAME:
+  CUTTER_pad, CLS_ID:4%HARD%IO%2%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', 
+  LEAFINST:CUTTER_pad/U0/U1, PRESERVE.
+PIN CUTTER_pad/U0/U1/U1:D; T_O_P:D, O_P:FLATSOFT%CUTTER_pad/D.
+PIN CUTTER_pad/U0/U1/U1:E; T_O_P:E, O_P:
+  FLATHARD%CUTTER_pad/U0/U1/E.
+USE ADLIB:XOR2; WOLF_CONTROLLER_0/sec_since_eject_RNO[5].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/sec_since_eject[9].
+USE ADLIB:NOR3C; system_clock_0/flag_RNO_3.
+USE ADLIB:AOI1B; system_clock_0/s_time_RNO[1].
+USE ADLIB:MX2; WOLF_CONTROLLER_0/next_state_9_iv[1].
+USE ADLIB:OR2A; system_clock_0/l_time_RNO_0[16].
+USE ADLIB:DFN0C1; system_clock_0/l_time[2].
+USE ADLIB:NOR2B; system_clock_0/flag_RNO_1.
+USE ADLIB:DFN0C1; system_clock_0/l_time[1].
+USE ADLIB:NOR3C; system_clock_0/s_time_0_RNIV6N9[7].
+USE ADLIB:AND3; system_clock_0/un1_s_time_I_8.
+USE ADLIB:UAUX_IOTRI_OB_EB; PRESSURE_PWR_pad/U0/U1/U1; CLS_NAME:
+  PRESSURE_PWR_pad, CLS_ID:2%HARD%IO%2%0, LEAFDEF:
+  'ADLIB:IOTRI_OB_EB', LEAFINST:PRESSURE_PWR_pad/U0/U1, PRESERVE.
+PIN PRESSURE_PWR_pad/U0/U1/U1:D; T_O_P:D, O_P:
+  FLATSOFT%PRESSURE_PWR_pad/D.
+PIN PRESSURE_PWR_pad/U0/U1/U1:E; T_O_P:E, O_P:
+  FLATHARD%PRESSURE_PWR_pad/U0/U1/E.
+USE ADLIB:OR3C; system_clock_0/l_time_RNO_0[13].
+USE ADLIB:DFN0C1; system_clock_0/l_time[11].
+USE ADLIB:AX1C; system_clock_0/un1_s_time_I_7.
+PIN system_clock_0/un1_s_time_I_7:A; O_P:
+  LCOM%system_clock_0/un1_s_time_I_6/A.
+PIN system_clock_0/un1_s_time_I_7:B; O_P:
+  LCOM%system_clock_0/un1_s_time_I_6/B.
+PIN system_clock_0/un1_s_time_I_7:C; O_P:
+  LCOM%system_clock_0/un1_s_time_I_7/B.
+USE ADLIB:AND3; system_clock_0/un1_s_time_0_I_10.
+USE ADLIB:IOPAD_TRI; LED2_pad/U0/U0; PRESERVE, CLS_ID:
+  0%HARD%IO%0%0, CLS_NAME:LED2_pad.
+PIN LED2_pad/U0/U0:PAD; O_P:FLATSOFT%LED2_pad/PAD.
+USE ADLIB:UAUX_IOIN_IB; PWRONRESET_pad/U0/U1/U1; CLS_NAME:
+  PWRONRESET_pad, CLS_ID:10%HARD%IO%2%0, LEAFDEF:'ADLIB:IOIN_IB', 
+  LEAFINST:PWRONRESET_pad/U0/U1, PRESERVE.
+PIN PWRONRESET_pad/U0/U1/U1:Y; T_O_P:Y, O_P:
+  FLATSOFT%PWRONRESET_pad/Y.
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/sec_since_eject[5].
+USE ADLIB:NOR2B; system_clock_0/l_time_RNO_2[11].
+USE ADLIB:AOI1B; system_clock_0/s_time_RNO[3].
+USE ADLIB:NOR2B; WOLF_CONTROLLER_0/sec_since_eject_RNIIR7O[2].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/sec_since_eject[8].
+USE ADLIB:NOR2B; system_clock_0/l_time_RNI5KHC_0[4].
+USE ADLIB:UIO_IOTRI_OB_EB; SENS_MEM_L5_PWR_pad/U0/U1/U0; CLS_NAME:
+  SENS_MEM_L5_PWR_pad, CLS_ID:7%HARD%IO%1%0, LEAFDEF:
+  'ADLIB:IOTRI_OB_EB', LEAFINST:SENS_MEM_L5_PWR_pad/U0/U1, PRESERVE.
+PIN SENS_MEM_L5_PWR_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%SENS_MEM_L5_PWR_pad/U0/U1/DOUT.
+PIN SENS_MEM_L5_PWR_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%SENS_MEM_L5_PWR_pad/U0/U1/EOUT.
+USE ADLIB:AND2; system_clock_0/un1_s_time_I_15.
+USE ADLIB:IOPAD_IN; PWRONRESET_pad/U0/U0; PRESERVE, CLS_ID:
+  10%HARD%IO%0%0, CLS_NAME:PWRONRESET_pad.
+PIN PWRONRESET_pad/U0/U0:PAD; O_P:FLATSOFT%PWRONRESET_pad/PAD.
+USE ADLIB:DFN1E0; WOLF_CONTROLLER_0/next_state[4].
+USE ADLIB:NOR3B; system_clock_0/l_time_RNIQEBK3[8].
+USE ADLIB:IOPAD_TRI; L1_GPS_PWR_pad/U0/U0; PRESERVE, CLS_ID:
+  3%HARD%IO%0%0, CLS_NAME:L1_GPS_PWR_pad.
+PIN L1_GPS_PWR_pad/U0/U0:PAD; O_P:FLATSOFT%L1_GPS_PWR_pad/PAD.
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/sec_since_eject[6].
+USE ADLIB:AOI1B; system_clock_0/s_time_RNO[6].
+USE ADLIB:DFN1P1; WOLF_CONTROLLER_0/current_state[5].
+USE ADLIB:OR2A; system_clock_0/l_time_RNIQVBV[5].
+USE ADLIB:AO1A; WOLF_CONTROLLER_0/next_state_9_iv[0].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/current_state[4].
+USE ADLIB:DFN0C1; system_clock_0/l_time[5].
+USE ADLIB:OAI1; WOLF_CONTROLLER_0/sec_since_eject_RNI5JB41[2].
+USE ADLIB:MX2; WOLF_CONTROLLER_0/next_state_9[3].
+USE ADLIB:DFN0E1C1; system_clock_0/s_time[3].
+USE ADLIB:IOPAD_TRI; VHF_PWR_pad/U0/U0; PRESERVE, CLS_ID:
+  1%HARD%IO%0%0, CLS_NAME:VHF_PWR_pad.
+PIN VHF_PWR_pad/U0/U0:PAD; O_P:FLATSOFT%VHF_PWR_pad/PAD.
+USE ADLIB:AO1; WOLF_CONTROLLER_0/current_state_RNIIAMR5[0].
+USE ADLIB:UIO_IOTRI_OB_EB; VHF_PWR_pad/U0/U1/U0; CLS_NAME:
+  VHF_PWR_pad, CLS_ID:1%HARD%IO%1%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', 
+  LEAFINST:VHF_PWR_pad/U0/U1, PRESERVE.
+PIN VHF_PWR_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%VHF_PWR_pad/U0/U1/DOUT.
+PIN VHF_PWR_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%VHF_PWR_pad/U0/U1/EOUT.
+USE ADLIB:AND3; system_clock_0/un1_s_time_I_10.
+USE ADLIB:NOR2B; WOLF_CONTROLLER_0/sec_since_eject_RNO_2[12].
+USE ADLIB:NOR3C; WOLF_CONTROLLER_0/sec_since_eject_RNI4NFG1[0].
+USE ADLIB:DFN0E1C1; system_clock_0/s_time[2].
+USE ADLIB:NOR3C; WOLF_CONTROLLER_0/sec_since_eject_RNIAL3D3[8].
+USE ADLIB:DFN0E1C1; system_clock_0/s_time[1].
+USE ADLIB:IOPAD_TRI; CUTTER_pad/U0/U0; PRESERVE, CLS_ID:
+  4%HARD%IO%0%0, CLS_NAME:CUTTER_pad.
+PIN CUTTER_pad/U0/U0:PAD; O_P:FLATSOFT%CUTTER_pad/PAD.
+USE ADLIB:NOR2B; WOLF_CONTROLLER_0/next_state_RNO[5].
+USE ADLIB:AOI1B; system_clock_0/s_time_RNO[2].
+USE ADLIB:UIO_IOTRI_OB_EB; LED1_pad/U0/U1/U0; CLS_NAME:LED1_pad, 
+  CLS_ID:8%HARD%IO%1%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', LEAFINST:
+  LED1_pad/U0/U1, PRESERVE.
+PIN LED1_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%LED1_pad/U0/U1/DOUT.
+PIN LED1_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%LED1_pad/U0/U1/EOUT.
+USE ADLIB:DFN0E0C1; system_clock_0/l_time[8].
+USE ADLIB:XOR2; system_clock_0/un1_s_time_I_5.
+USE ADLIB:XOR2; WOLF_CONTROLLER_0/sec_since_eject_RNO[3].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/sec_since_eject[7].
+USE ADLIB:AX1C; system_clock_0/l_time_RNO[12].
+USE ADLIB:DFN1E0; WOLF_CONTROLLER_0/next_state[0].
+USE ADLIB:AX1C; WOLF_CONTROLLER_0/sec_since_eject_RNO[11].
+USE ADLIB:AOI1B; system_clock_0/s_time_RNO[4].
+USE ADLIB:DFN0C1; system_clock_0/l_time[12].
+USE ADLIB:NOR3C; WOLF_CONTROLLER_0/sec_since_eject_RNO_3[12].
+USE ADLIB:OR3B; system_clock_0/l_time_RNO_0[9].
+PIN system_clock_0/l_time_RNO_0[9]:A; O_P:
+  LCOM%system_clock_0/l_time_RNO_1[9]/A.
+PIN system_clock_0/l_time_RNO_0[9]:B; O_P:
+  LCOM%system_clock_0/l_time_RNO_1[9]/B.
+PIN system_clock_0/l_time_RNO_0[9]:C; O_P:
+  LCOM%system_clock_0/l_time_RNO_0[9]/A.
+USE ADLIB:XOR2; system_clock_0/un1_s_time_I_14.
+USE ADLIB:OR2B; system_clock_0/l_time_RNIUEA34[14].
+USE ADLIB:NOR2B; WOLF_CONTROLLER_0/sec_since_eject_RNIUGFG1[3].
+USE ADLIB:NOR2A; WOLF_CONTROLLER_0/next_state_RNO[2].
+USE ADLIB:DFN0E1C1; system_clock_0/s_time[5].
+USE ADLIB:AND3; system_clock_0/un1_s_time_0_I_19.
+USE ADLIB:AO1; WOLF_CONTROLLER_0/current_state_RNIPO4KB[3].
+USE ADLIB:NOR2B; system_clock_0/l_time_RNO_3[11].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/sec_since_eject[11].
+USE ADLIB:INV; system_clock_0/l_time_RNO[13].
+USE ADLIB:AX1C; system_clock_0/l_time_RNO[11].
+USE ADLIB:OR3; WOLF_CONTROLLER_0/cutter_en_RNO_0.
+USE ADLIB:XOR2; WOLF_CONTROLLER_0/sec_since_eject_RNO[9].
+USE ADLIB:NOR3C; WOLF_CONTROLLER_0/sec_since_eject_RNI8RFG1[7].
+USE ADLIB:NOR3C; system_clock_0/l_time_RNO_0[10].
+USE ADLIB:AND3; system_clock_0/un1_s_time_I_13.
+USE ADLIB:DFN0E1C1; system_clock_0/s_time_0[7].
+USE ADLIB:XOR2; WOLF_CONTROLLER_0/sec_since_eject_RNO[4].
+USE ADLIB:NOR3C; system_clock_0/flag_RNO_0.
+USE ADLIB:UIO_IOTRI_OB_EB; CUTTER_pad/U0/U1/U0; CLS_NAME:
+  CUTTER_pad, CLS_ID:4%HARD%IO%1%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', 
+  LEAFINST:CUTTER_pad/U0/U1, PRESERVE.
+PIN CUTTER_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%CUTTER_pad/U0/U1/DOUT.
+PIN CUTTER_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%CUTTER_pad/U0/U1/EOUT.
+USE ADLIB:UIO_IOTRI_OB_EB; LED2_pad/U0/U1/U0; CLS_NAME:LED2_pad, 
+  CLS_ID:0%HARD%IO%1%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', LEAFINST:
+  LED2_pad/U0/U1, PRESERVE.
+PIN LED2_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%LED2_pad/U0/U1/DOUT.
+PIN LED2_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%LED2_pad/U0/U1/EOUT.
+USE ADLIB:NOR3C; WOLF_CONTROLLER_0/sec_since_eject_RNI5JB41_0[2].
+USE ADLIB:XOR2; system_clock_0/un1_s_time_I_17.
+USE ADLIB:INV; system_clock_0/l_time_RNO[15].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/sec_since_eject[0].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/current_state[1].
+USE ADLIB:XNOR2; system_clock_0/l_time_RNO[5].
+USE ADLIB:INV; system_clock_0/l_time_RNO[16].
+USE ADLIB:NOR2; WOLF_CONTROLLER_0/sec_since_eject_RNI6B2S[9].
+USE ADLIB:NOR2B; system_clock_0/l_time_RNIDSHC[9].
+USE ADLIB:NOR2B; system_clock_0/l_time_RNIFUHC[9].
+USE ADLIB:NOR2B; system_clock_0/l_time_RNO_4[11].
+USE ADLIB:NOR3A; WOLF_CONTROLLER_0/sec_since_eject_RNI1GAK1[7].
+USE ADLIB:AX1C; system_clock_0/un1_s_time_I_12.
+PIN system_clock_0/un1_s_time_I_12:A; O_P:
+  LCOM%system_clock_0/un1_s_time_I_11/A.
+PIN system_clock_0/un1_s_time_I_12:B; O_P:
+  LCOM%system_clock_0/un1_s_time_I_11/B.
+PIN system_clock_0/un1_s_time_I_12:C; O_P:
+  LCOM%system_clock_0/un1_s_time_I_12/B.
+USE ADLIB:NOR3A; WOLF_CONTROLLER_0/sec_since_eject_RNI2H842[4].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/current_state[3].
+USE ADLIB:UAUX_IOTRI_OB_EB; SAT_PWR_pad/U0/U1/U1; CLS_NAME:
+  SAT_PWR_pad, CLS_ID:11%HARD%IO%2%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', 
+  LEAFINST:SAT_PWR_pad/U0/U1, PRESERVE.
+PIN SAT_PWR_pad/U0/U1/U1:D; T_O_P:D, O_P:FLATSOFT%SAT_PWR_pad/D.
+PIN SAT_PWR_pad/U0/U1/U1:E; T_O_P:E, O_P:
+  FLATHARD%SAT_PWR_pad/U0/U1/E.
+USE ADLIB:UIO_IOIN_IB; CLK_pad/U0/U1/U0; CLS_NAME:CLK_pad, CLS_ID:
+  9%HARD%IO%1%0, LEAFDEF:'ADLIB:IOIN_IB', LEAFINST:CLK_pad/U0/U1, 
+  PRESERVE.
+PIN CLK_pad/U0/U1/U0:YIN; T_O_P:YIN, O_P:
+  FLATHARD%CLK_pad/U0/U1/YIN.
+USE ADLIB:NOR2B; WOLF_CONTROLLER_0/sec_since_eject_RNIOFJS1[4].
+USE ADLIB:AOI1B; system_clock_0/s_time_0_RNO[7].
+USE ADLIB:INV; system_clock_0/l_time_RNO[9].
+USE ADLIB:AO1; WOLF_CONTROLLER_0/cutter_en_RNO.
+USE ADLIB:DFN0C1; system_clock_0/l_time[6].
+USE ADLIB:UIO_IOTRI_OB_EB; PRESSURE_PWR_pad/U0/U1/U0; CLS_NAME:
+  PRESSURE_PWR_pad, CLS_ID:2%HARD%IO%1%0, LEAFDEF:
+  'ADLIB:IOTRI_OB_EB', LEAFINST:PRESSURE_PWR_pad/U0/U1, PRESERVE.
+PIN PRESSURE_PWR_pad/U0/U1/U0:DOUT; T_O_P:DOUT, O_P:
+  FLATHARD%PRESSURE_PWR_pad/U0/U1/DOUT.
+PIN PRESSURE_PWR_pad/U0/U1/U0:EOUT; T_O_P:EOUT, O_P:
+  FLATHARD%PRESSURE_PWR_pad/U0/U1/EOUT.
+USE ADLIB:OR2A; system_clock_0/l_time_RNO_0[8].
+USE ADLIB:DFN0E1C1; system_clock_0/s_time[0].
+USE ADLIB:UAUX_IOTRI_OB_EB; VHF_PWR_pad/U0/U1/U1; CLS_NAME:
+  VHF_PWR_pad, CLS_ID:1%HARD%IO%2%0, LEAFDEF:'ADLIB:IOTRI_OB_EB', 
+  LEAFINST:VHF_PWR_pad/U0/U1, PRESERVE.
+PIN VHF_PWR_pad/U0/U1/U1:D; T_O_P:D, O_P:FLATSOFT%VHF_PWR_pad/D.
+PIN VHF_PWR_pad/U0/U1/U1:E; T_O_P:E, O_P:
+  FLATHARD%VHF_PWR_pad/U0/U1/E.
+USE ADLIB:NOR2B; system_clock_0/l_time_RNI9OHC[5].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/current_state[2].
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/sec_since_eject[2].
+USE ADLIB:INV; system_clock_0/l_time_RNO[1].
+USE ADLIB:NOR3; WOLF_CONTROLLER_0/sec_since_eject_RNIDI0C1[12].
+USE ADLIB:UIO_IOIN_IB; PWRONRESET_pad/U0/U1/U0; CLS_NAME:
+  PWRONRESET_pad, CLS_ID:10%HARD%IO%1%0, LEAFDEF:'ADLIB:IOIN_IB', 
+  LEAFINST:PWRONRESET_pad/U0/U1, PRESERVE.
+PIN PWRONRESET_pad/U0/U1/U0:YIN; T_O_P:YIN, O_P:
+  FLATHARD%PWRONRESET_pad/U0/U1/YIN.
+USE ADLIB:IOPAD_TRI; SAT_PWR_pad/U0/U0; PRESERVE, CLS_ID:
+  11%HARD%IO%0%0, CLS_NAME:SAT_PWR_pad.
+PIN SAT_PWR_pad/U0/U0:PAD; O_P:FLATSOFT%SAT_PWR_pad/PAD.
+USE ADLIB:NOR2B; WOLF_CONTROLLER_0/sec_since_eject_RNO_4[12].
+USE ADLIB:NOR3C; system_clock_0/l_time_RNIFMFA1[12].
+USE ADLIB:XOR2; system_clock_0/un1_s_time_I_9.
+USE ADLIB:DFN1C1; WOLF_CONTROLLER_0/sec_since_eject[4].
+NET CLKINT_0_Y;  system_clock_0/l_time[9]:CLK, 
+  system_clock_0/l_time[17]:CLK, system_clock_0/l_time[16]:CLK, 
+  system_clock_0/s_time[6]:CLK, system_clock_0/l_time[4]:CLK, 
+  WOLF_CONTROLLER_0/cutter_en:CLK, 
+  WOLF_CONTROLLER_0/next_state[1]:CLK, 
+  WOLF_CONTROLLER_0/current_state[0]:CLK, system_clock_0/flag:CLK, 
+  WOLF_CONTROLLER_0/next_state[3]:CLK, system_clock_0/l_time[14]:
+  CLK, WOLF_CONTROLLER_0/next_state[5]:CLK, CLKINT_0/U_GL:GL, 
+  system_clock_0/l_time[15]:CLK, system_clock_0/l_time[13]:CLK, 
+  system_clock_0/l_time[7]:CLK, system_clock_0/s_time[4]:CLK, 
+  system_clock_0/l_time[10]:CLK, WOLF_CONTROLLER_0/next_state[2]:
+  CLK, system_clock_0/l_time[3]:CLK, system_clock_0/l_time[2]:CLK, 
+  system_clock_0/l_time[1]:CLK, system_clock_0/l_time[11]:CLK, 
+  WOLF_CONTROLLER_0/next_state[4]:CLK, 
+  WOLF_CONTROLLER_0/current_state[5]:CLK, 
+  WOLF_CONTROLLER_0/current_state[4]:CLK, 
+  system_clock_0/l_time[5]:CLK, system_clock_0/s_time[3]:CLK, 
+  system_clock_0/s_time[2]:CLK, system_clock_0/s_time[1]:CLK, 
+  system_clock_0/l_time[8]:CLK, WOLF_CONTROLLER_0/next_state[0]:
+  CLK, system_clock_0/l_time[12]:CLK, system_clock_0/s_time[5]:
+  CLK, system_clock_0/s_time_0[7]:CLK, 
+  WOLF_CONTROLLER_0/current_state[1]:CLK, 
+  WOLF_CONTROLLER_0/current_state[3]:CLK, 
+  system_clock_0/l_time[6]:CLK, system_clock_0/s_time[0]:CLK, 
+  WOLF_CONTROLLER_0/current_state[2]:CLK; CLOCK.
+NET CLKINT_1_Y;  WOLF_CONTROLLER_0/next_state_RNO[5]:B, 
+  system_clock_0/l_time[17]:CLR, system_clock_0/l_time[16]:CLR, 
+  system_clock_0/s_time[6]:CLR, system_clock_0/l_time[4]:CLR, 
+  WOLF_CONTROLLER_0/cutter_en:CLR, 
+  WOLF_CONTROLLER_0/sec_since_eject[12]:CLR, 
+  WOLF_CONTROLLER_0/next_state[1]:E, 
+  WOLF_CONTROLLER_0/current_state[0]:CLR, 
+  WOLF_CONTROLLER_0/sec_since_eject[3]:CLR, system_clock_0/flag:
+  CLR, WOLF_CONTROLLER_0/next_state[3]:E, 
+  system_clock_0/l_time[14]:CLR, system_clock_0/l_time[15]:CLR, 
+  WOLF_CONTROLLER_0/sec_since_eject[1]:CLR, 
+  system_clock_0/l_time[13]:CLR, system_clock_0/l_time[7]:CLR, 
+  system_clock_0/s_time[4]:CLR, system_clock_0/l_time[10]:CLR, 
+  WOLF_CONTROLLER_0/next_state[2]:E, CLKINT_1/U_GL:GL, 
+  system_clock_0/l_time[3]:CLR, 
+  WOLF_CONTROLLER_0/sec_since_eject[10]:CLR, 
+  WOLF_CONTROLLER_0/sec_since_eject[9]:CLR, 
+  system_clock_0/l_time[2]:CLR, system_clock_0/l_time[1]:CLR, 
+  system_clock_0/l_time[11]:CLR, 
+  WOLF_CONTROLLER_0/sec_since_eject[5]:CLR, 
+  WOLF_CONTROLLER_0/sec_since_eject[8]:CLR, 
+  WOLF_CONTROLLER_0/next_state[4]:E, 
+  WOLF_CONTROLLER_0/sec_since_eject[6]:CLR, 
+  WOLF_CONTROLLER_0/current_state[5]:PRE, 
+  WOLF_CONTROLLER_0/current_state[4]:CLR, 
+  system_clock_0/l_time[5]:CLR, system_clock_0/s_time[3]:CLR, 
+  system_clock_0/s_time[2]:CLR, system_clock_0/s_time[1]:CLR, 
+  system_clock_0/l_time[9]:CLR, system_clock_0/l_time[8]:CLR, 
+  WOLF_CONTROLLER_0/sec_since_eject[7]:CLR, 
+  WOLF_CONTROLLER_0/next_state[0]:E, system_clock_0/l_time[12]:
+  CLR, system_clock_0/s_time[5]:CLR, 
+  WOLF_CONTROLLER_0/sec_since_eject[11]:CLR, 
+  system_clock_0/s_time_0[7]:CLR, 
+  WOLF_CONTROLLER_0/sec_since_eject[0]:CLR, 
+  WOLF_CONTROLLER_0/current_state[1]:CLR, 
+  WOLF_CONTROLLER_0/current_state[3]:CLR, 
+  system_clock_0/l_time[6]:CLR, system_clock_0/s_time[0]:CLR, 
+  WOLF_CONTROLLER_0/current_state[2]:CLR, 
+  WOLF_CONTROLLER_0/sec_since_eject[2]:CLR, 
+  WOLF_CONTROLLER_0/sec_since_eject[4]:CLR; CLOCK.
+NET CLK_c;  CLKINT_0/U_GL:CLK, CLK_pad/U0/U1/U1:Y.
+NET CLK;  CLK, CLK_pad/U0/U0:PAD; RES_PULL:LW%NONE, IO_THRESH:
+  LW%LVTTL, HARDWIRED:PAD.
+NET PWRONRESET_c;  CLKINT_1/U_GL:CLK, PWRONRESET_pad/U0/U1/U1:Y.
+NET PWRONRESET;  PWRONRESET, PWRONRESET_pad/U0/U0:PAD; RES_PULL:
+  LW%NONE, IO_THRESH:LW%LVTTL, HARDWIRED:PAD.
+NET CUTTER;  CUTTER, CUTTER_pad/U0/U0:PAD; RES_PULL:LW%NONE, 
+  IO_THRESH:LW%LVTTL, SLEW:LW%HIGH, OUT_DRIVE:LW%12, HARDWIRED:
+  PAD.
+NET L1_GPS_PWR;  L1_GPS_PWR, L1_GPS_PWR_pad/U0/U0:PAD; RES_PULL:
+  LW%NONE, IO_THRESH:LW%LVTTL, SLEW:LW%HIGH, OUT_DRIVE:LW%12, 
+  HARDWIRED:PAD.
+NET m_time[25];  system_clock_0/un1_s_time_0_I_20:B, 
+  LED1_pad/U0/U1/U1:D, WOLF_CONTROLLER_0/sec_since_eject[3]:CLK, 
+  WOLF_CONTROLLER_0/sec_since_eject[12]:CLK, 
+  WOLF_CONTROLLER_0/sec_since_eject[1]:CLK, 
+  WOLF_CONTROLLER_0/sec_since_eject[10]:CLK, 
+  WOLF_CONTROLLER_0/sec_since_eject[9]:CLK, 
+  system_clock_0/s_time_0_RNIV6N9[7]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject[5]:CLK, 
+  WOLF_CONTROLLER_0/sec_since_eject[8]:CLK, 
+  WOLF_CONTROLLER_0/sec_since_eject[6]:CLK, 
+  WOLF_CONTROLLER_0/sec_since_eject[7]:CLK, 
+  WOLF_CONTROLLER_0/sec_since_eject[11]:CLK, 
+  system_clock_0/s_time_0[7]:Q, 
+  WOLF_CONTROLLER_0/sec_since_eject[0]:CLK, 
+  WOLF_CONTROLLER_0/sec_since_eject[2]:CLK, 
+  WOLF_CONTROLLER_0/sec_since_eject[4]:CLK.
+NET LED1;  LED1, LED1_pad/U0/U0:PAD; RES_PULL:LW%NONE, IO_THRESH:
+  LW%LVTTL, SLEW:LW%HIGH, OUT_DRIVE:LW%12, HARDWIRED:PAD.
+NET LED2_c;  LED2_pad/U0/U1/U1:D, WOLF_CONTROLLER_0/cutter_en:Q.
+NET LED2;  LED2, LED2_pad/U0/U0:PAD; COB_REGISTER:E%NO, RES_PULL:
+  LW%NONE, IO_THRESH:LW%LVTTL, SLEW:LW%HIGH, OUT_DRIVE:LW%12, 
+  HARDWIRED:PAD.
+NET PRESSURE_PWR;  PRESSURE_PWR, PRESSURE_PWR_pad/U0/U0:PAD; 
+  RES_PULL:LW%NONE, IO_THRESH:LW%LVTTL, SLEW:LW%HIGH, OUT_DRIVE:
+  LW%12, HARDWIRED:PAD.
+NET SAT_PWR;  SAT_PWR, SAT_PWR_pad/U0/U0:PAD; RES_PULL:LW%NONE, 
+  IO_THRESH:LW%LVTTL, SLEW:LW%HIGH, OUT_DRIVE:LW%12, HARDWIRED:
+  PAD.
+NET SENS_MEM_L5_PWR;  SENS_MEM_L5_PWR, SENS_MEM_L5_PWR_pad/U0/U0:
+  PAD; RES_PULL:LW%NONE, IO_THRESH:LW%LVTTL, SLEW:LW%HIGH, 
+  OUT_DRIVE:LW%12, HARDWIRED:PAD.
+NET VHF_PWR;  VHF_PWR, VHF_PWR_pad/U0/U0:PAD; RES_PULL:LW%NONE, 
+  IO_THRESH:LW%LVTTL, SLEW:LW%HIGH, OUT_DRIVE:LW%12, HARDWIRED:
+  PAD.
+NET system_clock_0/un15_m2_0_a2_6;  system_clock_0/flag_RNO:C, 
+  system_clock_0/flag_RNO_0:Y.
+NET system_clock_0/un15_m2_0_a2_1;  system_clock_0/flag_RNO_0:A, 
+  system_clock_0/flag_RNO_1:Y.
+NET system_clock_0/un15_m2_0_a2_0;  system_clock_0/flag_RNO_0:B, 
+  system_clock_0/flag_RNO_2:Y.
+NET system_clock_0/un15_m2_0_a2_5;  system_clock_0/flag_RNO_0:C, 
+  system_clock_0/flag_RNO_3:Y.
+NET system_clock_0/m_time[14];  system_clock_0/l_time_RNO[14]:A, 
+  system_clock_0/l_time[14]:Q, system_clock_0/l_time_RNO_0[17]:C, 
+  system_clock_0/flag_RNO_3:A, system_clock_0/l_time_RNIUEA34[14]:
+  B.
+NET system_clock_0/m_time[15];  system_clock_0/l_time_RNO_0[17]:A, 
+  system_clock_0/l_time[15]:Q, system_clock_0/flag_RNO_3:B, 
+  system_clock_0/l_time_RNO_0[16]:A, 
+  system_clock_0/l_time_RNO[15]:A.
+NET system_clock_0/l_m6_0_a2_5_1;  
+  system_clock_0/l_time_RNIFSK51[4]:B, system_clock_0/flag_RNO_3:
+  C, system_clock_0/l_time_RNI5KHC_0[4]:Y.
+NET system_clock_0/m_time[16];  system_clock_0/flag_RNO_1:A, 
+  system_clock_0/l_time[16]:Q, system_clock_0/l_time_RNO_0[17]:B, 
+  system_clock_0/l_time_RNO[16]:A.
+NET system_clock_0/m_time[1];  system_clock_0/l_time_RNO[1]:A, 
+  system_clock_0/l_time_RNI1GHC[2]:B, system_clock_0/flag_RNO_1:B, 
+  system_clock_0/l_time[1]:Q, system_clock_0/l_time_RNO[2]:B.
+NET system_clock_0/m_time[4];  system_clock_0/l_time_RNI5KHC_0[4]:
+  A, system_clock_0/l_time[4]:Q, system_clock_0/l_time_RNO[4]:C, 
+  system_clock_0/l_time_RNI643P[4]:B, 
+  system_clock_0/l_time_RNO_4[11]:B.
+NET system_clock_0/m_time[3];  system_clock_0/l_time_RNI643P[4]:A, 
+  system_clock_0/l_time_RNO[3]:B, system_clock_0/l_time_RNO[4]:B, 
+  system_clock_0/l_time[3]:Q, system_clock_0/l_time_RNI5KHC_0[4]:
+  B, system_clock_0/l_time_RNO_3[11]:A.
+NET system_clock_0/l_m6_0_a2_4_6;  system_clock_0/flag_RNO:B, 
+  system_clock_0/l_time_RNI5KOG1[8]:Y, 
+  system_clock_0/l_time_RNIQEBK3[8]:B.
+NET system_clock_0/m_time[7];  system_clock_0/l_time_RNO[7]:A, 
+  system_clock_0/l_time_RNO_0[11]:A, 
+  system_clock_0/l_time_RNI6LOG1[7]:B, system_clock_0/l_time[7]:Q, 
+  system_clock_0/l_time_RNI5KOG1[8]:A, 
+  system_clock_0/l_time_RNO_0[9]:A, 
+  system_clock_0/l_time_RNO_0[10]:B, 
+  system_clock_0/l_time_RNO_0[8]:A.
+NET system_clock_0/m_time[8];  system_clock_0/l_time_RNO[8]:A, 
+  system_clock_0/l_time_RNO_0[11]:B, 
+  system_clock_0/l_time_RNI5KOG1[8]:B, system_clock_0/l_time[8]:Q, 
+  system_clock_0/l_time_RNO_0[9]:B, 
+  system_clock_0/l_time_RNIFUHC[9]:B.
+NET system_clock_0/l_m6_0_a2_4_3;  
+  system_clock_0/l_time_RNI5KOG1[8]:C, 
+  system_clock_0/l_time_RNION641[13]:Y.
+NET system_clock_0/l_m6_0_a2_4_5;  system_clock_0/flag_RNO:A, 
+  system_clock_0/l_time_RNIQEBK3[8]:A, 
+  system_clock_0/l_time_RNIFMFA1[12]:Y.
+NET system_clock_0/m_time[10];  system_clock_0/l_time_RNO_4[11]:A, 
+  system_clock_0/l_time_RNO[10]:C, system_clock_0/l_time[10]:Q, 
+  system_clock_0/l_time_RNI1PTT[11]:B, 
+  system_clock_0/l_time_RNIFMFA1[12]:A.
+NET system_clock_0/m_time[12];  
+  system_clock_0/l_time_RNIFMFA1[12]:B, 
+  system_clock_0/l_time_RNO[12]:C, system_clock_0/l_time[12]:Q, 
+  system_clock_0/l_time_RNO_0[13]:C.
+NET system_clock_0/l_m6_0_a2_4_2;  
+  system_clock_0/l_time_RNIFMFA1[12]:C, 
+  system_clock_0/l_time_RNIDSHC[9]:Y.
+NET system_clock_0/m_time[11];  
+  system_clock_0/l_time_RNION641[13]:A, 
+  system_clock_0/l_time_RNI1PTT[11]:A, system_clock_0/l_time[11]:
+  Q, system_clock_0/l_time_RNO[11]:C.
+NET system_clock_0/m_time[13];  system_clock_0/l_time_RNO[13]:A, 
+  system_clock_0/l_time[13]:Q, system_clock_0/l_time_RNION641[13]:
+  B.
+NET system_clock_0/m_time[5];  system_clock_0/l_time_RNO_2[11]:A, 
+  system_clock_0/l_time_RNION641[13]:C, 
+  system_clock_0/l_time_RNIQVBV[5]:A, system_clock_0/l_time[5]:Q, 
+  system_clock_0/l_time_RNO[5]:B, 
+  system_clock_0/l_time_RNI9OHC[5]:B.
+NET system_clock_0/m_time[9];  system_clock_0/l_time_RNIDSHC[9]:A, 
+  system_clock_0/l_time[9]:Q, system_clock_0/l_time_RNO_2[11]:B, 
+  system_clock_0/l_time_RNIFUHC[9]:A, 
+  system_clock_0/l_time_RNO[9]:A.
+NET system_clock_0/m_time[6];  system_clock_0/l_time_RNIFSK51[6]:
+  A, system_clock_0/l_time_RNO[6]:B, 
+  system_clock_0/l_time_RNO_3[11]:B, 
+  system_clock_0/l_time_RNIDSHC[9]:B, system_clock_0/l_time[6]:Q, 
+  system_clock_0/l_time_RNI9OHC[5]:A.
+NET system_clock_0/flag_RNO;  system_clock_0/flag:D, 
+  system_clock_0/flag_RNO:Y.
+NET system_clock_0/s_time[1];  system_clock_0/un1_s_time_I_7:A, 
+  system_clock_0/un1_s_time_I_8:B, 
+  system_clock_0/un1_s_time_0_I_10:B, 
+  system_clock_0/un1_s_time_I_10:B, system_clock_0/s_time[1]:Q, 
+  system_clock_0/un1_s_time_I_5:B.
+NET system_clock_0/s_time[0];  system_clock_0/un1_s_time_I_4:A, 
+  system_clock_0/s_time_RNIDNBD[6]:C, 
+  system_clock_0/un1_s_time_I_8:A, system_clock_0/un1_s_time_I_7:
+  B, system_clock_0/un1_s_time_0_I_10:A, 
+  system_clock_0/un1_s_time_I_10:A, system_clock_0/un1_s_time_I_5:
+  A, system_clock_0/s_time[0]:Q.
+NET system_clock_0/s_time[3];  system_clock_0/un1_s_time_0_I_18:A, 
+  system_clock_0/s_time_0_RNIV6N9[7]:A, 
+  system_clock_0/un1_s_time_I_15:A, system_clock_0/s_time[3]:Q, 
+  system_clock_0/un1_s_time_I_13:B, 
+  system_clock_0/un1_s_time_I_12:A, system_clock_0/un1_s_time_I_9:
+  B.
+NET system_clock_0/DWACT_FINC_E[0];  
+  system_clock_0/un1_s_time_I_16:A, 
+  system_clock_0/un1_s_time_I_10:Y, 
+  system_clock_0/un1_s_time_I_13:A, 
+  system_clock_0/un1_s_time_I_12:B.
+NET system_clock_0/m_time_i[1];  system_clock_0/l_time[1]:D, 
+  system_clock_0/l_time_RNO[1]:Y.
+NET system_clock_0/m_time_i[7];  system_clock_0/l_time[7]:D, 
+  system_clock_0/l_time_RNO[7]:Y.
+NET system_clock_0/m_time_i[8];  system_clock_0/l_time[8]:D, 
+  system_clock_0/l_time_RNO[8]:Y.
+NET system_clock_0/m_time_i[9];  system_clock_0/l_time[9]:D, 
+  system_clock_0/l_time_RNO[9]:Y.
+NET system_clock_0/m_time_i[13];  system_clock_0/l_time[13]:D, 
+  system_clock_0/l_time_RNO[13]:Y.
+NET system_clock_0/m_time_i[15];  system_clock_0/l_time[15]:D, 
+  system_clock_0/l_time_RNO[15]:Y.
+NET system_clock_0/m_time_i[16];  system_clock_0/l_time[16]:D, 
+  system_clock_0/l_time_RNO[16]:Y.
+NET system_clock_0/l_m1_0_a2_1;  system_clock_0/l_time_RNO[17]:B, 
+  system_clock_0/l_time_RNO_0[17]:Y.
+NET system_clock_0/l_m2_0_a2_3;  system_clock_0/l_time_RNO[10]:B, 
+  system_clock_0/l_time_RNO_0[10]:Y.
+NET system_clock_0/l_m2_0_a2_0;  
+  system_clock_0/l_time_RNIFSK51[4]:A, 
+  system_clock_0/l_time_RNO_0[10]:A, 
+  system_clock_0/l_time_RNI9OHC[5]:Y.
+NET system_clock_0/l_m2_0_a2_1;  
+  system_clock_0/l_time_RNI6LOG1[7]:C, 
+  system_clock_0/l_time_RNO_0[10]:C, 
+  system_clock_0/l_time_RNIFUHC[9]:Y.
+NET system_clock_0/un14_flag_3;  system_clock_0/s_time_RNO[5]:A, 
+  system_clock_0/s_time_RNO[1]:A, 
+  system_clock_0/s_time_0_RNIV6N9[7]:Y, 
+  system_clock_0/s_time_RNO[3]:A, system_clock_0/s_time_RNO[6]:A, 
+  system_clock_0/s_time_RNO[2]:A, system_clock_0/s_time_RNO[4]:A, 
+  system_clock_0/s_time_0_RNO[7]:A.
+NET system_clock_0/s_time[4];  system_clock_0/un1_s_time_0_I_18:B, 
+  system_clock_0/s_time[4]:Q, system_clock_0/s_time_0_RNIV6N9[7]:
+  B, system_clock_0/un1_s_time_I_15:B, 
+  system_clock_0/un1_s_time_I_13:C, 
+  system_clock_0/un1_s_time_I_12:C.
+NET system_clock_0/un14_flag_2;  system_clock_0/s_time_RNO[5]:B, 
+  system_clock_0/s_time_RNIDNBD[6]:Y, 
+  system_clock_0/s_time_RNO[1]:B, system_clock_0/s_time_RNO[3]:B, 
+  system_clock_0/s_time_RNO[6]:B, system_clock_0/s_time_RNO[2]:B, 
+  system_clock_0/s_time_RNO[4]:B, system_clock_0/s_time_0_RNO[7]:
+  B.
+NET system_clock_0/s_time[5];  system_clock_0/s_time_RNIDNBD[6]:A, 
+  system_clock_0/un1_s_time_0_I_18:C, 
+  system_clock_0/un1_s_time_I_16:C, 
+  system_clock_0/un1_s_time_I_14:B, system_clock_0/s_time[5]:Q.
+NET system_clock_0/s_time[6];  system_clock_0/s_time_RNIDNBD[6]:B, 
+  system_clock_0/s_time[6]:Q, system_clock_0/un1_s_time_0_I_19:C, 
+  system_clock_0/un1_s_time_I_17:B.
+NET system_clock_0/m_time[17];  system_clock_0/flag_RNO_2:A, 
+  system_clock_0/l_time[17]:Q, system_clock_0/l_time_RNO[17]:C.
+NET system_clock_0/m_time[2];  system_clock_0/l_time_RNO[2]:A, 
+  system_clock_0/flag_RNO_2:B, system_clock_0/l_time_RNI1GHC[2]:A, 
+  system_clock_0/l_time[2]:Q.
+NET system_clock_0/l_m5_0_a2_6;  system_clock_0/l_time_RNO[11]:B, 
+  system_clock_0/l_time_RNO_1[11]:Y.
+NET system_clock_0/l_m5_0_a2_1;  system_clock_0/l_time_RNO_1[11]:
+  A, system_clock_0/l_time_RNO_3[11]:Y.
+NET system_clock_0/l_m5_0_a2_0;  system_clock_0/l_time_RNO_1[11]:
+  B, system_clock_0/l_time_RNO_4[11]:Y.
+NET system_clock_0/N_20;  system_clock_0/l_time_RNO[3]:A, 
+  system_clock_0/l_time_RNO_1[11]:C, 
+  system_clock_0/l_time_RNIFSK51[4]:C, 
+  system_clock_0/l_time_RNI643P[4]:C, 
+  system_clock_0/l_time_RNI1GHC[2]:Y, 
+  system_clock_0/l_time_RNO[4]:A.
+NET system_clock_0/l_m5_0_a2_5;  system_clock_0/l_time_RNO[11]:A, 
+  system_clock_0/l_time_RNO_0[11]:Y.
+NET system_clock_0/l_m5_0_a2_2;  system_clock_0/l_time_RNO_0[11]:
+  C, system_clock_0/l_time_RNO_2[11]:Y.
+NET system_clock_0/l_m6_0_a2_5_7;  
+  system_clock_0/l_time_RNO_0[13]:B, 
+  system_clock_0/l_time_RNIFSK51[4]:Y, 
+  system_clock_0/l_time_RNO[12]:B.
+NET system_clock_0/l_m6_0_a2_5_6;  
+  system_clock_0/l_time_RNO_0[13]:A, 
+  system_clock_0/l_time_RNI6LOG1[7]:Y, 
+  system_clock_0/l_time_RNO[12]:A.
+NET system_clock_0/l_m6_0_a2_5_0;  
+  system_clock_0/l_time_RNI6LOG1[7]:A, 
+  system_clock_0/l_time_RNI1PTT[11]:Y.
+NET system_clock_0/l_time_n16;  system_clock_0/l_time[17]:D, 
+  system_clock_0/l_time_RNO[17]:Y.
+NET system_clock_0/l_N_13_mux;  system_clock_0/l_time_RNO[17]:A, 
+  system_clock_0/l_time_RNO[14]:B, 
+  system_clock_0/l_time_RNIQEBK3[8]:Y, 
+  system_clock_0/l_time_RNIUEA34[14]:A.
+NET system_clock_0/l_time_n9;  system_clock_0/l_time[10]:D, 
+  system_clock_0/l_time_RNO[10]:Y.
+NET system_clock_0/N_22;  system_clock_0/l_time_RNO[10]:A, 
+  system_clock_0/l_time_RNI643P[4]:Y, 
+  system_clock_0/l_time_RNIQEBK3[8]:C, 
+  system_clock_0/l_time_RNIQVBV[5]:B, 
+  system_clock_0/l_time_RNO[5]:A.
+NET system_clock_0/l_time_n10;  system_clock_0/l_time[11]:D, 
+  system_clock_0/l_time_RNO[11]:Y.
+NET system_clock_0/N_39_i;  system_clock_0/l_time[6]:D, 
+  system_clock_0/l_time_RNO[6]:Y.
+NET system_clock_0/N_23;  system_clock_0/l_time_RNO[6]:A, 
+  system_clock_0/l_time_RNIFSK51[6]:B, 
+  system_clock_0/l_time_RNIQVBV[5]:Y.
+NET system_clock_0/N_38_i;  system_clock_0/l_time[5]:D, 
+  system_clock_0/l_time_RNO[5]:Y.
+NET system_clock_0/N_37_i;  system_clock_0/l_time[4]:D, 
+  system_clock_0/l_time_RNO[4]:Y.
+NET system_clock_0/N_36_i;  system_clock_0/l_time[3]:D, 
+  system_clock_0/l_time_RNO[3]:Y.
+NET system_clock_0/N_35_i;  system_clock_0/l_time[2]:D, 
+  system_clock_0/l_time_RNO[2]:Y.
+NET system_clock_0/l_time_RNO_0[16];  system_clock_0/l_time[16]:E, 
+  system_clock_0/l_time_RNO_0[16]:Y.
+NET system_clock_0/l_time_RNIUEA34[14];  
+  system_clock_0/l_time_RNO_0[16]:B, system_clock_0/l_time[15]:E, 
+  system_clock_0/l_time_RNIUEA34[14]:Y.
+NET system_clock_0/l_time_RNO_0[13];  system_clock_0/l_time[13]:E, 
+  system_clock_0/l_time_RNO_0[13]:Y.
+NET system_clock_0/N_26;  system_clock_0/l_time[9]:E, 
+  system_clock_0/l_time_RNO_0[9]:Y.
+NET system_clock_0/N_24;  system_clock_0/l_time_RNO_0[8]:B, 
+  system_clock_0/l_time_RNIFSK51[6]:Y, system_clock_0/l_time[7]:E, 
+  system_clock_0/l_time_RNO_0[9]:C.
+NET system_clock_0/N_25;  system_clock_0/l_time[8]:E, 
+  system_clock_0/l_time_RNO_0[8]:Y.
+NET system_clock_0/l_time_n11;  system_clock_0/l_time[12]:D, 
+  system_clock_0/l_time_RNO[12]:Y.
+NET system_clock_0/l_time_n13;  system_clock_0/l_time[14]:D, 
+  system_clock_0/l_time_RNO[14]:Y.
+NET system_clock_0/s_time_3_0[7];  system_clock_0/s_time_0[7]:D, 
+  system_clock_0/s_time_0_RNO[7]:Y.
+NET system_clock_0/un1_s_time_0[7];  
+  system_clock_0/s_time_0_RNO[7]:C, 
+  system_clock_0/un1_s_time_0_I_20:Y.
+NET system_clock_0/s_time_3[6];  system_clock_0/s_time[6]:D, 
+  system_clock_0/s_time_RNO[6]:Y.
+NET system_clock_0/I_17;  system_clock_0/s_time_RNO[6]:C, 
+  system_clock_0/un1_s_time_I_17:Y.
+NET system_clock_0/s_time_3[5];  system_clock_0/s_time[5]:D, 
+  system_clock_0/s_time_RNO[5]:Y.
+NET system_clock_0/I_14;  system_clock_0/s_time_RNO[5]:C, 
+  system_clock_0/un1_s_time_I_14:Y.
+NET system_clock_0/s_time_3[4];  system_clock_0/s_time[4]:D, 
+  system_clock_0/s_time_RNO[4]:Y.
+NET system_clock_0/I_12;  system_clock_0/s_time_RNO[4]:C, 
+  system_clock_0/un1_s_time_I_12:Y.
+NET system_clock_0/s_time_3[3];  system_clock_0/s_time[3]:D, 
+  system_clock_0/s_time_RNO[3]:Y.
+NET system_clock_0/I_9;  system_clock_0/s_time_RNO[3]:C, 
+  system_clock_0/un1_s_time_I_9:Y.
+NET system_clock_0/s_time_3[2];  system_clock_0/s_time[2]:D, 
+  system_clock_0/s_time_RNO[2]:Y.
+NET system_clock_0/I_7;  system_clock_0/s_time_RNO[2]:C, 
+  system_clock_0/un1_s_time_I_7:Y.
+NET system_clock_0/s_time_3[1];  system_clock_0/s_time[1]:D, 
+  system_clock_0/s_time_RNO[1]:Y.
+NET system_clock_0/I_5;  system_clock_0/s_time_RNO[1]:C, 
+  system_clock_0/un1_s_time_I_5:Y.
+NET system_clock_0/flag;  system_clock_0/s_time[6]:E, 
+  system_clock_0/flag:Q, system_clock_0/s_time[4]:E, 
+  system_clock_0/s_time[3]:E, system_clock_0/s_time[2]:E, 
+  system_clock_0/s_time[1]:E, system_clock_0/s_time[5]:E, 
+  system_clock_0/s_time_0[7]:E, system_clock_0/s_time[0]:E.
+NET system_clock_0/I_4;  system_clock_0/s_time[0]:D, 
+  system_clock_0/un1_s_time_I_4:Y.
+NET system_clock_0/s_time[2];  system_clock_0/un1_s_time_I_8:C, 
+  system_clock_0/un1_s_time_I_7:C, 
+  system_clock_0/un1_s_time_0_I_10:C, 
+  system_clock_0/un1_s_time_I_10:C, system_clock_0/s_time[2]:Q.
+NET system_clock_0/N_2;  system_clock_0/un1_s_time_I_17:A, 
+  system_clock_0/un1_s_time_I_16:Y.
+NET system_clock_0/DWACT_FINC_E[1];  
+  system_clock_0/un1_s_time_I_16:B, 
+  system_clock_0/un1_s_time_I_15:Y.
+NET system_clock_0/N_3;  system_clock_0/un1_s_time_I_14:A, 
+  system_clock_0/un1_s_time_I_13:Y.
+NET system_clock_0/N_5;  system_clock_0/un1_s_time_I_9:A, 
+  system_clock_0/un1_s_time_I_8:Y.
+NET system_clock_0/N_2_0;  system_clock_0/un1_s_time_0_I_20:A, 
+  system_clock_0/un1_s_time_0_I_19:Y.
+NET system_clock_0/DWACT_FINC_E_0[0];  
+  system_clock_0/un1_s_time_0_I_19:A, 
+  system_clock_0/un1_s_time_0_I_10:Y.
+NET system_clock_0/DWACT_FINC_E[2];  
+  system_clock_0/un1_s_time_0_I_19:B, 
+  system_clock_0/un1_s_time_0_I_18:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject_i[0];  
+  WOLF_CONTROLLER_0/sec_since_eject[0]:D, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[0]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject[0];  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[0]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[2]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[1]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI5JB41[2]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI4NFG1[0]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI5JB41_0[2]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject[0]:Q.
+NET WOLF_CONTROLLER_0/un1_current_state_0;  
+  WOLF_CONTROLLER_0/current_state_RNIPO4KB[3]:C, 
+  WOLF_CONTROLLER_0/current_state_RNIIAMR5[0]:Y.
+NET WOLF_CONTROLLER_0/cutter_en_1_sqmuxa_8;  
+  WOLF_CONTROLLER_0/current_state_RNIIAMR5[0]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIBNUS4[2]:Y, 
+  WOLF_CONTROLLER_0/cutter_en_RNO:A.
+NET WOLF_CONTROLLER_0/current_state[1];  
+  WOLF_CONTROLLER_0/next_state_9_iv[1]:B, 
+  WOLF_CONTROLLER_0/next_state_9_iv[0]:B, 
+  WOLF_CONTROLLER_0/current_state_RNIIAMR5[0]:B, 
+  WOLF_CONTROLLER_0/current_state[1]:Q, 
+  WOLF_CONTROLLER_0/cutter_en_RNO:B.
+NET WOLF_CONTROLLER_0/current_state[0];  
+  WOLF_CONTROLLER_0/cutter_en_RNO_0:A, 
+  WOLF_CONTROLLER_0/current_state[0]:Q, 
+  WOLF_CONTROLLER_0/current_state_RNIIAMR5[0]:C, 
+  WOLF_CONTROLLER_0/next_state_9_iv[0]:C.
+NET WOLF_CONTROLLER_0/sec_m5_0_a2_6;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[12]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_0[12]:Y.
+NET WOLF_CONTROLLER_0/sec_m5_0_a2_1;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_0[12]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_1[12]:Y.
+NET WOLF_CONTROLLER_0/sec_m5_0_a2_0;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_0[12]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_2[12]:Y.
+NET WOLF_CONTROLLER_0/sec_m5_0_a2_5;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_0[12]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_3[12]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject[6];  
+  WOLF_CONTROLLER_0/sec_since_eject_RNIN08O[6]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_0[7]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[6]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIN08O_0[6]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject[6]:Q, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_3[12]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIDI0C1[12]:C.
+NET WOLF_CONTROLLER_0/sec_since_eject[8];  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_3[12]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject[8]:Q, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIAL3D3[8]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[8]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI1GAK1[7]:B.
+NET WOLF_CONTROLLER_0/sec_m5_0_a2_3;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_3[12]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_4[12]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject[5];  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[6]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_0[7]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIN08O_0[6]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIN08O[6]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[5]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject[5]:Q, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI2H842[4]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_4[12]:A.
+NET WOLF_CONTROLLER_0/sec_since_eject[4];  
+  WOLF_CONTROLLER_0/sec_since_eject_RNIATFG1[3]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIIR7O[2]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[4]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI2H842[4]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIOFJS1[4]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_4[12]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject[4]:Q.
+NET WOLF_CONTROLLER_0/sec_since_eject[10];  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_1[12]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[10]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject[10]:Q, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[11]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI6B2S[9]:B.
+NET WOLF_CONTROLLER_0/sec_since_eject[9];  
+  WOLF_CONTROLLER_0/sec_since_eject_RNI6B2S[9]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI9P7P3[9]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject[9]:Q, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[9]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_1[12]:B.
+NET WOLF_CONTROLLER_0/sec_since_eject[11];  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_2[12]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIM4842[12]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[11]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject[11]:Q, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIDI0C1[12]:A.
+NET WOLF_CONTROLLER_0/sec_since_eject[7];  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[7]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_2[12]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject[7]:Q, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI8RFG1[7]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI1GAK1[7]:C.
+NET WOLF_CONTROLLER_0/un1_current_state_2_1;  
+  WOLF_CONTROLLER_0/cutter_en_RNO:C, 
+  WOLF_CONTROLLER_0/cutter_en_RNO_0:Y.
+NET WOLF_CONTROLLER_0/current_state[4];  
+  WOLF_CONTROLLER_0/next_state_9[3]:A, 
+  WOLF_CONTROLLER_0/current_state[4]:Q, 
+  WOLF_CONTROLLER_0/cutter_en_RNO_0:B.
+NET WOLF_CONTROLLER_0/current_state[3];  
+  WOLF_CONTROLLER_0/next_state_RNO[2]:A, 
+  WOLF_CONTROLLER_0/next_state_9[3]:B, 
+  WOLF_CONTROLLER_0/current_state_RNIPO4KB[3]:B, 
+  WOLF_CONTROLLER_0/cutter_en_RNO_0:C, 
+  WOLF_CONTROLLER_0/current_state[3]:Q.
+NET WOLF_CONTROLLER_0/cutter_en_1_sqmuxa_5;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNIBNUS4[2]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI1I295[3]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI1GAK1[7]:Y.
+NET WOLF_CONTROLLER_0/un1_sec_since_eject_1lt12;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNIBNUS4[2]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI8MB41[2]:Y.
+NET WOLF_CONTROLLER_0/cutter_en_1_sqmuxa_6;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNIBNUS4[2]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI2H842[4]:Y.
+NET WOLF_CONTROLLER_0/cutter_en_1_sqmuxa_4;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNI2H842[4]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIDI0C1[12]:Y.
+NET WOLF_CONTROLLER_0/cutter_en_1_sqmuxa_2;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNI1GAK1[7]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI6B2S[9]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject[12];  
+  WOLF_CONTROLLER_0/sec_since_eject_RNIDI0C1[12]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIM4842[12]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject[12]:Q, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[12]:C.
+NET WOLF_CONTROLLER_0/sec_m5_0_a2_4_4;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[8]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI4NFG1[0]:Y, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIAL3D3[8]:B.
+NET WOLF_CONTROLLER_0/sec_since_eject[1];  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[2]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[1]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI8MB41[2]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject[1]:Q, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI5JB41[2]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI4NFG1[0]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI5JB41_0[2]:A.
+NET WOLF_CONTROLLER_0/sec_m5_0_a2_4_2;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNI4NFG1[0]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIN08O[6]:Y.
+NET WOLF_CONTROLLER_0/sec_m5_0_a2_4_3;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[8]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIAL3D3[8]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI8RFG1[7]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject[3];  
+  WOLF_CONTROLLER_0/sec_since_eject_RNI8RFG1[7]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject[3]:Q, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIATFG1[3]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI8MB41[2]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIUGFG1[3]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[3]:B.
+NET WOLF_CONTROLLER_0/sec_m5_0_a2_4_1;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNI8RFG1[7]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIIR7O[2]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject[2];  
+  WOLF_CONTROLLER_0/sec_since_eject_RNI8MB41[2]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[2]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIIR7O[2]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI5JB41[2]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI5JB41_0[2]:C, 
+  WOLF_CONTROLLER_0/sec_since_eject[2]:Q.
+NET WOLF_CONTROLLER_0/un1_sec_since_ejectlto12_6;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNI1I295[3]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIATFG1[3]:Y.
+NET WOLF_CONTROLLER_0/un1_sec_since_ejectlto12_2;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNIATFG1[3]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIN08O_0[6]:Y.
+NET WOLF_CONTROLLER_0/un1_sec_since_ejectlto12_5;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNI1I295[3]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIM4842[12]:Y.
+NET WOLF_CONTROLLER_0/un1_sec_since_ejectlt12;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNIM4842[12]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI5JB41[2]:Y.
+NET WOLF_CONTROLLER_0/un1_current_state_2;  
+  WOLF_CONTROLLER_0/cutter_en:E, WOLF_CONTROLLER_0/cutter_en_RNO:
+  Y.
+NET WOLF_CONTROLLER_0/un1_sec_since_eject;  
+  WOLF_CONTROLLER_0/current_state_RNIPO4KB[3]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI1I295[3]:Y, 
+  WOLF_CONTROLLER_0/next_state_RNO[2]:B.
+NET WOLF_CONTROLLER_0/un1_current_state;  
+  WOLF_CONTROLLER_0/next_state_9_iv[0]:A, 
+  WOLF_CONTROLLER_0/next_state_9_iv[1]:S, 
+  WOLF_CONTROLLER_0/next_state_9[3]:S, 
+  WOLF_CONTROLLER_0/current_state_RNIPO4KB[3]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject_n12;  
+  WOLF_CONTROLLER_0/sec_since_eject[12]:D, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[12]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject_c3;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[12]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIUGFG1[3]:Y, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[4]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIOFJS1[4]:A.
+NET WOLF_CONTROLLER_0/next_state_RNO[5];  
+  WOLF_CONTROLLER_0/next_state[5]:D, 
+  WOLF_CONTROLLER_0/next_state_RNO[5]:Y.
+NET WOLF_CONTROLLER_0/next_state[5];  
+  WOLF_CONTROLLER_0/next_state_RNO[5]:A, 
+  WOLF_CONTROLLER_0/next_state[5]:Q, 
+  WOLF_CONTROLLER_0/current_state[5]:D.
+NET WOLF_CONTROLLER_0/sec_since_eject_n11;  
+  WOLF_CONTROLLER_0/sec_since_eject[11]:D, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[11]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject_c9;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[10]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI9P7P3[9]:Y, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[11]:B.
+NET WOLF_CONTROLLER_0/sec_since_eject_n10;  
+  WOLF_CONTROLLER_0/sec_since_eject[10]:D, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[10]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject_n9;  
+  WOLF_CONTROLLER_0/sec_since_eject[9]:D, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[9]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject_c8;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNI9P7P3[9]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIAL3D3[8]:Y, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[9]:A.
+NET WOLF_CONTROLLER_0/sec_since_eject_n8;  
+  WOLF_CONTROLLER_0/sec_since_eject[8]:D, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[8]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject_n7;  
+  WOLF_CONTROLLER_0/sec_since_eject[7]:D, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[7]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject_c6;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[7]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_0[7]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject_n6;  
+  WOLF_CONTROLLER_0/sec_since_eject[6]:D, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[6]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject_c4;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[5]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO_0[7]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[6]:B, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIOFJS1[4]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject_n5;  
+  WOLF_CONTROLLER_0/sec_since_eject[5]:D, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[5]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject_n4;  
+  WOLF_CONTROLLER_0/sec_since_eject[4]:D, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[4]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject_n3;  
+  WOLF_CONTROLLER_0/sec_since_eject[3]:D, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[3]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject_c2;  
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[3]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNIUGFG1[3]:A, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNI5JB41_0[2]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject_n2;  
+  WOLF_CONTROLLER_0/sec_since_eject[2]:D, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[2]:Y.
+NET WOLF_CONTROLLER_0/sec_since_eject_n1;  
+  WOLF_CONTROLLER_0/sec_since_eject[1]:D, 
+  WOLF_CONTROLLER_0/sec_since_eject_RNO[1]:Y.
+NET WOLF_CONTROLLER_0/next_state_9[0];  
+  WOLF_CONTROLLER_0/next_state[0]:D, 
+  WOLF_CONTROLLER_0/next_state_9_iv[0]:Y.
+NET WOLF_CONTROLLER_0/next_state_9[1];  
+  WOLF_CONTROLLER_0/next_state[1]:D, 
+  WOLF_CONTROLLER_0/next_state_9_iv[1]:Y.
+NET WOLF_CONTROLLER_0/current_state[2];  
+  WOLF_CONTROLLER_0/next_state_9_iv[1]:A, 
+  WOLF_CONTROLLER_0/cutter_en:D, 
+  WOLF_CONTROLLER_0/current_state[2]:Q.
+NET WOLF_CONTROLLER_0/next_state_9[3];  
+  WOLF_CONTROLLER_0/next_state[3]:D, 
+  WOLF_CONTROLLER_0/next_state_9[3]:Y.
+NET WOLF_CONTROLLER_0/next_state_0_sqmuxa;  
+  WOLF_CONTROLLER_0/next_state[2]:D, 
+  WOLF_CONTROLLER_0/next_state_RNO[2]:Y.
+NET WOLF_CONTROLLER_0/next_state[4];  
+  WOLF_CONTROLLER_0/current_state[4]:D, 
+  WOLF_CONTROLLER_0/next_state[4]:Q.
+NET WOLF_CONTROLLER_0/current_state[5];  
+  WOLF_CONTROLLER_0/next_state[4]:D, 
+  WOLF_CONTROLLER_0/current_state[5]:Q.
+NET WOLF_CONTROLLER_0/next_state[3];  
+  WOLF_CONTROLLER_0/current_state[3]:D, 
+  WOLF_CONTROLLER_0/next_state[3]:Q.
+NET WOLF_CONTROLLER_0/next_state[2];  
+  WOLF_CONTROLLER_0/current_state[2]:D, 
+  WOLF_CONTROLLER_0/next_state[2]:Q.
+NET WOLF_CONTROLLER_0/next_state[1];  
+  WOLF_CONTROLLER_0/current_state[1]:D, 
+  WOLF_CONTROLLER_0/next_state[1]:Q.
+NET WOLF_CONTROLLER_0/next_state[0];  
+  WOLF_CONTROLLER_0/current_state[0]:D, 
+  WOLF_CONTROLLER_0/next_state[0]:Q.
+NET LED2_pad/U0/NET1;  LED2_pad/U0/U0:D, LED2_pad/U0/U1/U0:DOUT; 
+  HARDWIRED:PADIN.
+NET LED2_pad/U0/NET2;  LED2_pad/U0/U0:E, LED2_pad/U0/U1/U0:EOUT; 
+  HARDWIRED:PADEN.
+NET VHF_PWR_pad/U0/NET1;  VHF_PWR_pad/U0/U0:D, 
+  VHF_PWR_pad/U0/U1/U0:DOUT; HARDWIRED:PADIN.
+NET VHF_PWR_pad/U0/NET2;  VHF_PWR_pad/U0/U0:E, 
+  VHF_PWR_pad/U0/U1/U0:EOUT; HARDWIRED:PADEN.
+NET PRESSURE_PWR_pad/U0/NET1;  PRESSURE_PWR_pad/U0/U0:D, 
+  PRESSURE_PWR_pad/U0/U1/U0:DOUT; HARDWIRED:PADIN.
+NET PRESSURE_PWR_pad/U0/NET2;  PRESSURE_PWR_pad/U0/U0:E, 
+  PRESSURE_PWR_pad/U0/U1/U0:EOUT; HARDWIRED:PADEN.
+NET L1_GPS_PWR_pad/U0/NET1;  L1_GPS_PWR_pad/U0/U0:D, 
+  L1_GPS_PWR_pad/U0/U1/U0:DOUT; HARDWIRED:PADIN.
+NET L1_GPS_PWR_pad/U0/NET2;  L1_GPS_PWR_pad/U0/U0:E, 
+  L1_GPS_PWR_pad/U0/U1/U0:EOUT; HARDWIRED:PADEN.
+NET CUTTER_pad/U0/NET1;  CUTTER_pad/U0/U0:D, CUTTER_pad/U0/U1/U0:
+  DOUT; HARDWIRED:PADIN.
+NET CUTTER_pad/U0/NET2;  CUTTER_pad/U0/U0:E, CUTTER_pad/U0/U1/U0:
+  EOUT; HARDWIRED:PADEN.
+NET SENS_MEM_L5_PWR_pad/U0/NET1;  SENS_MEM_L5_PWR_pad/U0/U0:D, 
+  SENS_MEM_L5_PWR_pad/U0/U1/U0:DOUT; HARDWIRED:PADIN.
+NET SENS_MEM_L5_PWR_pad/U0/NET2;  SENS_MEM_L5_PWR_pad/U0/U0:E, 
+  SENS_MEM_L5_PWR_pad/U0/U1/U0:EOUT; HARDWIRED:PADEN.
+NET LED1_pad/U0/NET1;  LED1_pad/U0/U0:D, LED1_pad/U0/U1/U0:DOUT; 
+  HARDWIRED:PADIN.
+NET LED1_pad/U0/NET2;  LED1_pad/U0/U0:E, LED1_pad/U0/U1/U0:EOUT; 
+  HARDWIRED:PADEN.
+NET CLK_pad/U0/NET1;  CLK_pad/U0/U0:Y, CLK_pad/U0/U1/U0:YIN; 
+  HARDWIRED:PADOUT.
+NET PWRONRESET_pad/U0/NET1;  PWRONRESET_pad/U0/U0:Y, 
+  PWRONRESET_pad/U0/U1/U0:YIN; HARDWIRED:PADOUT.
+NET SAT_PWR_pad/U0/NET1;  SAT_PWR_pad/U0/U0:D, 
+  SAT_PWR_pad/U0/U1/U0:DOUT; HARDWIRED:PADIN.
+NET SAT_PWR_pad/U0/NET2;  SAT_PWR_pad/U0/U0:E, 
+  SAT_PWR_pad/U0/U1/U0:EOUT; HARDWIRED:PADEN.
+NET VCC;  LED1_pad/U0/U1/U1:E, LED2_pad/U0/U1/U1:E, 
+  L1_GPS_PWR_pad/U0/U1/U1:E, SENS_MEM_L5_PWR_pad/U0/U1/U1:E, 
+  CUTTER_pad/U0/U1/U1:E, PRESSURE_PWR_pad/U0/U1/U1:E, 
+  SAT_PWR_pad/U0/U1/U1:E, VHF_PWR_pad/U0/U1/U1:E; GLOBAL, POWER:
+  VCC.
+NET GND;  L1_GPS_PWR_pad/U0/U1/U1:D, SENS_MEM_L5_PWR_pad/U0/U1/U1:
+  D, CLKINT_0/U_GL:S_ODIV0, CLKINT_0/U_GL:S_ODIV1, CLKINT_0/U_GL:
+  S_ODIV2, CLKINT_0/U_GL:S_ODIV3, CLKINT_0/U_GL:S_ODIV4, 
+  CLKINT_0/U_GL:S_OMUX0, CLKINT_0/U_GL:S_OMUX1, CLKINT_0/U_GL:
+  S_OMUX2, CLKINT_0/U_GL:S_DLYHC0, CLKINT_0/U_GL:S_DLYHC1, 
+  CLKINT_0/U_GL:S_DLYHC2, CLKINT_0/U_GL:S_DLYHC3, CLKINT_0/U_GL:
+  S_DLYHC4, CLKINT_1/U_GL:S_ODIV0, CLKINT_1/U_GL:S_ODIV1, 
+  CLKINT_1/U_GL:S_ODIV2, CLKINT_1/U_GL:S_ODIV3, CLKINT_1/U_GL:
+  S_ODIV4, CLKINT_1/U_GL:S_OMUX0, CLKINT_1/U_GL:S_OMUX1, 
+  CLKINT_1/U_GL:S_OMUX2, CLKINT_1/U_GL:S_DLYHC0, CLKINT_1/U_GL:
+  S_DLYHC1, CLKINT_1/U_GL:S_DLYHC2, CLKINT_1/U_GL:S_DLYHC3, 
+  CLKINT_1/U_GL:S_DLYHC4, CUTTER_pad/U0/U1/U1:D, 
+  PRESSURE_PWR_pad/U0/U1/U1:D, SAT_PWR_pad/U0/U1/U1:D, 
+  VHF_PWR_pad/U0/U1/U1:D; GLOBAL, POWER:GND.
+END.

@@ -1,0 +1,173 @@
+FlashPro
+Version: 11.8.0.26
+Release: v11.8
+
+Software Version: 11.8.0.26
+Warning: Unable to find file:
+         'C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.pdb'.
+Warning: Using local backup copy:
+         'C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_Main_fp\proj\
+         ectData\CU_TOP.pdb'.
+PDB file
+'C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_Main_fp\projectData\C\
+U_TOP.pdb' has been loaded successfully.
+DESIGN : CU_TOP;  CHECKSUM : 0AE2;  PDB_VERSION : 1.9
+Driver : 3.0.0 build 1
+programmer '83905' : FlashPro4
+Opened
+'C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_Main_fp\CU_Main.pro'
+Error: Error reading PDB.
+PDB file 'C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.pdb' has
+been loaded successfully.
+DESIGN : CU_TOP;  CHECKSUM : CE3E;  PDB_VERSION : 1.9
+The Import IOS (I/O Settings During Programming) file command succeeded.
+
+The Import IOS (I/O Settings During Programming) file command succeeded.
+
+PDB file 'C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.pdb' has
+been loaded successfully.
+DESIGN : CU_TOP;  CHECKSUM : CE3E;  PDB_VERSION : 1.9
+programmer '83905' : Scan Chain...
+Warning: programmer '83905' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '83905' : Scan Chain PASSED.
+programmer '83905' : Executing action PROGRAM
+programmer '83905' : EXPORT FSN[48] = 01438b1c4469
+programmer '83905' : Erase ...
+programmer '83905' : Completed erase
+programmer '83905' : EXPORT CHECKSUM[16] = ce3e
+programmer '83905' : Programming FPGA Array
+programmer '83905' : Verifying FPGA Array
+programmer '83905' :         Verifying FPGA Array -- pass
+programmer '83905' : Finished: Fri Jun 16 20:46:17 2017 (Elapsed time 00:01:09)
+programmer '83905' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+PDB file 'C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.pdb' has
+been loaded successfully.
+DESIGN : CU_TOP;  CHECKSUM : C1D5;  PDB_VERSION : 1.9
+The Import IOS (I/O Settings During Programming) file command succeeded.
+
+The Import IOS (I/O Settings During Programming) file command succeeded.
+
+PDB file 'C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.pdb' has
+been loaded successfully.
+DESIGN : CU_TOP;  CHECKSUM : C1D5;  PDB_VERSION : 1.9
+programmer '83905' : Scan Chain...
+Warning: programmer '83905' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '83905' : Scan Chain PASSED.
+programmer '83905' : Executing action PROGRAM
+programmer '83905' : EXPORT FSN[48] = 01438b1c4469
+programmer '83905' : Erase ...
+programmer '83905' : Completed erase
+programmer '83905' : EXPORT CHECKSUM[16] = c1d5
+programmer '83905' : Programming FPGA Array
+programmer '83905' : Verifying FPGA Array
+programmer '83905' :         Verifying FPGA Array -- pass
+programmer '83905' : Finished: Fri Jun 16 20:52:36 2017 (Elapsed time 00:01:08)
+programmer '83905' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+PDB file 'C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.pdb' has
+been loaded successfully.
+DESIGN : CU_TOP;  CHECKSUM : 8AA4;  PDB_VERSION : 1.9
+The Import IOS (I/O Settings During Programming) file command succeeded.
+
+The Import IOS (I/O Settings During Programming) file command succeeded.
+
+PDB file 'C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.pdb' has
+been loaded successfully.
+DESIGN : CU_TOP;  CHECKSUM : 8AA4;  PDB_VERSION : 1.9
+programmer '83905' : Scan Chain...
+Warning: programmer '83905' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '83905' : Scan Chain PASSED.
+programmer '83905' : Executing action PROGRAM
+programmer '83905' : EXPORT FSN[48] = 01438b1c4469
+programmer '83905' : Erase ...
+programmer '83905' : Completed erase
+programmer '83905' : EXPORT CHECKSUM[16] = 8aa4
+programmer '83905' : Programming FPGA Array
+programmer '83905' : Verifying FPGA Array
+programmer '83905' :         Verifying FPGA Array -- pass
+programmer '83905' : Finished: Fri Jun 16 21:17:15 2017 (Elapsed time 00:01:08)
+programmer '83905' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+PDB file 'C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.pdb' has
+been loaded successfully.
+DESIGN : CU_TOP;  CHECKSUM : 588E;  PDB_VERSION : 1.9
+The Import IOS (I/O Settings During Programming) file command succeeded.
+
+The Import IOS (I/O Settings During Programming) file command succeeded.
+
+PDB file 'C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.pdb' has
+been loaded successfully.
+DESIGN : CU_TOP;  CHECKSUM : 588E;  PDB_VERSION : 1.9
+programmer '83905' : Scan Chain...
+Warning: programmer '83905' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '83905' : Scan Chain PASSED.
+programmer '83905' : Executing action PROGRAM
+programmer '83905' : EXPORT FSN[48] = 01438b1c4469
+programmer '83905' : Erase ...
+programmer '83905' : Completed erase
+programmer '83905' : EXPORT CHECKSUM[16] = 588e
+programmer '83905' : Programming FPGA Array
+programmer '83905' : Verifying FPGA Array
+programmer '83905' :         Verifying FPGA Array -- pass
+programmer '83905' : Finished: Fri Jun 16 21:21:08 2017 (Elapsed time 00:01:08)
+programmer '83905' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+Warning: One or more programming or configuration files have changed since generation.
+         To view details and update a PDB, you may click on Modify PDB button for the target
+         device.
+         To update a STAPL file, you may reload the file or reload the project.
+         
+         --------------------------------------------------------------------------------------\
+         -----
+         Audit Status of Programming file 'CU_TOP.pdb'
+         --------------------------------------------------------------------------------------\
+         -----
+         The following original file[s] have changed:
+
+         'C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.pdb'
+         
+         
+         Do you want to Continue Programming? [NO]
+PDB file 'C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.pdb' has
+been loaded successfully.
+DESIGN : CU_TOP;  CHECKSUM : 40C3;  PDB_VERSION : 1.9
+The Import IOS (I/O Settings During Programming) file command succeeded.
+
+The Import IOS (I/O Settings During Programming) file command succeeded.
+
+PDB file 'C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.pdb' has
+been loaded successfully.
+DESIGN : CU_TOP;  CHECKSUM : 40C3;  PDB_VERSION : 1.9
+programmer '83905' : Scan Chain...
+Warning: programmer '83905' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '83905' : Scan Chain PASSED.
+programmer '83905' : Executing action PROGRAM
+programmer '83905' : EXPORT FSN[48] = 01438b1c4469
+programmer '83905' : Erase ...
+programmer '83905' : Completed erase
+programmer '83905' : EXPORT CHECKSUM[16] = 40c3
+programmer '83905' : Programming FPGA Array
+programmer '83905' : Verifying FPGA Array
+programmer '83905' :         Verifying FPGA Array -- pass
+programmer '83905' : Finished: Fri Jun 16 21:25:47 2017 (Elapsed time 00:01:08)
+programmer '83905' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+Warning: Project 'CU_Main' has been modified. Do you want to save it? [YES]
+Project saved.
+Project closed.

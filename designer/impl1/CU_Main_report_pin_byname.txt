@@ -1,0 +1,21 @@
+*****************************************************************
+Pin Report - Date: Thu Jun 08 17:29:16 2017 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.8
+Version: 11.8.0.26
+Design Name: CU_Main
+Family: ProASIC3
+Die: A3P250
+Package: 100 VQFP
+*****************************************************************
+Port             |Pin |Fixed |Function      |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+-----------------|----|------|--------------|--------|------------------|-----|--------------|-----|-----------------|------------|--------------|
+BEACON_PWR        35   Yes    IO85RSB2       LVTTL    12                 High  None           No    35                No           No
+CLK               43   Yes    GDC2/IO63RSB2  LVTTL    ---                ---   None           ---   ---               No           No
+LDO_FRONTEND_PWR  69   Yes    IO43NDB1       LVTTL    12                 High  None           No    35                No           No
+LED1              23   Yes    GEA0/IO98NDB3  LVTTL    12                 High  None           No    35                No           No
+LED2              65   Yes    GCC1/IO48PDB1  LVTTL    12                 High  None           No    35                No           No
+PR_OP_PWR         41   Yes    IO74RSB2       LVTTL    12                 High  None           No    35                No           No
+PWRONRESET        76   Yes    GBA1/IO40RSB0  LVTTL    ---                ---   None           ---   ---               No           No
+STX_PWR           97   Yes    GAA1/IO01RSB0  LVTTL    12                 High  None           No    35                No           No
+V3_LINEAR_PWR     90   Yes    IO15RSB0       LVTTL    12                 High  None           No    35                No           No

@@ -1,0 +1,230 @@
+***************************************************************************
+                               Status Report
+                          Fri Jun 16 21:22:58 2017 ***************************************************************************
+
+Product: Designer
+Release: v11.8
+Version: 11.8.0.26
+File Name: C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.adb
+Design Name: CU_TOP  Design State: compile
+Last Saved: Fri Jun 16 21:17:33 2017
+
+***** Device Data **************************************************
+
+Family: ProASIC3  Die: A3P250  Package: 100 VQFP
+Speed: STD  Voltage: 1.5
+
+Restrict JTAG Pins: YES
+Restrict Probe Pins: YES
+
+Junction Temperature Range:   COM
+Voltage Range:   COM
+
+***** Import Variables *********************************************
+
+Source File(s) Imported on Fri Jun 16 21:22:54 2017:
+        C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP.edn
+        C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\constraint\CU_Droptest.pdc
+        C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP_sdc.sdc
+
+
+***** CAE Variables ************************************************
+
+Back Annotation File: N/A
+
+
+***** Bitstream Variables ******************************************
+
+Bitstream File: N/A
+     Lock Mode: off
+
+
+***** Compile Variables ********************************************
+
+Netlist PIN properties overwrite existing properties: 0
+
+Compile Output:
+=====================================================================
+Parameters used to run compile:
+===============================
+
+Family      : ProASIC3
+Device      : A3P250
+Package     : 100 VQFP
+Source      : C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP.edn
+              C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\constraint\CU_Droptest.pdc
+              C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP_sdc.sdc
+Format      : EDIF
+Topcell     : CU_TOP
+Speed grade : STD
+Temp        : 0:25:70
+Voltage     : 1.58:1.50:1.42
+
+Keep Existing Physical Constraints : No
+Keep Existing Timing Constraints   : Yes
+
+pdc_abort_on_error                 : Yes
+pdc_eco_display_unmatched_objects  : No
+pdc_eco_max_warnings               : 10000
+
+demote_globals                     : No
+promote_globals                    : No
+localclock_max_shared_instances    : 12
+localclock_buffer_tree_max_fanout  : 12
+
+combine_register                   : No
+delete_buffer_tree                 : No
+
+report_high_fanout_nets_limit      : 10
+
+=====================================================================
+Compile starts ...
+
+
+Netlist Optimization Report
+===========================
+
+Optimized macros:
+  - Dangling net drivers:   0
+  - Buffers:                0
+  - Inverters:              0
+  - Tieoff:                 0
+  - Logic combining:        9
+
+    Total macros optimized  9
+
+There were 0 error(s) and 0 warning(s) in this design.
+=====================================================================
+
+Reading user pdc (Physical Design Constraints) file(s) postcompile
+
+
+There were 0 error(s) and 0 warning(s) in reading the user pdc.
+
+=====================================================================
+
+Reading previous post-compile physical placement constraints.
+
+
+There were 0 error(s) and 0 warning(s).
+
+=====================================================================
+Compile report:
+===============
+
+    CORE                       Used:    477  Total:   6144   (7.76%)
+    IO (W/ clocks)             Used:     12  Total:     68   (17.65%)
+    Differential IO            Used:      0  Total:     13   (0.00%)
+    GLOBAL (Chip+Quadrant)     Used:      2  Total:     18   (11.11%)
+    PLL                        Used:      0  Total:      1   (0.00%)
+    RAM/FIFO                   Used:      0  Total:      8   (0.00%)
+    Low Static ICC             Used:      0  Total:      1   (0.00%)
+    FlashROM                   Used:      0  Total:      1   (0.00%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
+
+Global Information:
+
+    Type            | Used   | Total
+    ----------------|--------|--------------
+    Chip global     | 2      | 6  (33.33%)*
+    Quadrant global | 0      | 12 (0.00%)
+
+    (*) Chip globals may be assigned to Quadrant globals using the Multi-View Navigator (MVN)
+        or Physical Design Constraints (PDC).
+        They may also be assigned to Quadrant globals automatically during Layout.
+
+Core Information:
+
+    Type    | Instances    | Core tiles
+    --------|--------------|-----------
+    COMB    | 305          | 305
+    SEQ     | 172          | 172
+
+I/O Function:
+
+    Type                                  | w/o register  | w/ register  | w/ DDR register
+    --------------------------------------|---------------|--------------|----------------
+    Input I/O                             | 3             | 0            | 0
+    Output I/O                            | 9             | 0            | 0
+    Bidirectional I/O                     | 0             | 0            | 0
+    Differential Input I/O Pairs          | 0             | 0            | 0
+    Differential Output I/O Pairs         | 0             | 0            | 0
+
+I/O Technology:
+
+                                    |   Voltages    |             I/Os
+    --------------------------------|-------|-------|-------|--------|--------------
+    I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
+    --------------------------------|-------|-------|-------|--------|--------------
+    LVTTL                           | 3.30v | N/A   | 3     | 9      | 0
+
+I/O Placement:
+
+    Locked  :  12 ( 100.00% )
+    Placed  :   0
+    UnPlaced:   0
+
+Net information report:
+=======================
+
+The following nets have been assigned to a chip global resource:
+    Fanout  Type          Name
+    --------------------------
+    164     SET/RESET_NET Net   : CLKINT_1_Y
+                          Driver: CLKINT_1
+                          Source: NETLIST
+    159     CLK_NET       Net   : CLKINT_0_Y
+                          Driver: CLKINT_0
+                          Source: NETLIST
+
+High fanout nets in the post compile netlist:
+    Fanout  Type          Name
+    --------------------------
+    21      INT_NET       Net   : FPGA_UART/baud_clock
+                          Driver: FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int
+    16      CLK_NET       Net   : m_time[25]
+                          Driver: system_clock_inst_0/s_time_0[7]
+    15      INT_NET       Net   : FPGA_UART/make_RX/N_217_1
+                          Driver: FPGA_UART/make_RX/rx_state_RNIT726_0[0]
+    12      INT_NET       Net   : FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un4_baud_cntr
+                          Driver:
+FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIDA6N4[10]
+    12      INT_NET       Net   : FPGA_UART/make_RX/rx_bit_cnte
+                          Driver: FPGA_UART/make_RX/receive_count_RNIHM8T[3]
+    10      INT_NET       Net   : LED2_0
+                          Driver: WOLF_CONTROLLER_inst_0/uart_wen
+    10      INT_NET       Net   : LED2_c
+                          Driver: WOLF_CONTROLLER_inst_0/cutter_en
+    10      INT_NET       Net   : FPGA_UART/xmit_pulse
+                          Driver: FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock_RNIEFCH
+    10      INT_NET       Net   : FPGA_UART/make_TX/N_157
+                          Driver: FPGA_UART/make_TX/xmit_state_RNIP3DT[3]
+    10      INT_NET       Net   : WOLF_CONTROLLER_inst_0/uart_current_state[1]
+                          Driver: WOLF_CONTROLLER_inst_0/uart_current_state[1]
+
+Nets that are candidates for clock assignment and the resulting fanout:
+    Fanout  Type          Name
+    --------------------------
+    21      INT_NET       Net   : FPGA_UART/baud_clock
+                          Driver: FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int
+    16      CLK_NET       Net   : m_time[25]
+                          Driver: system_clock_inst_0/s_time_0[7]
+    15      INT_NET       Net   : FPGA_UART/make_RX/N_217_1
+                          Driver: FPGA_UART/make_RX/rx_state_RNIT726_0[0]
+    12      INT_NET       Net   : FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un4_baud_cntr
+                          Driver:
+FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIDA6N4[10]
+    12      INT_NET       Net   : FPGA_UART/make_RX/rx_bit_cnte
+                          Driver: FPGA_UART/make_RX/receive_count_RNIHM8T[3]
+    10      INT_NET       Net   : LED2_0
+                          Driver: WOLF_CONTROLLER_inst_0/uart_wen
+    10      INT_NET       Net   : LED2_c
+                          Driver: WOLF_CONTROLLER_inst_0/cutter_en
+    10      INT_NET       Net   : FPGA_UART/xmit_pulse
+                          Driver: FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock_RNIEFCH
+    10      INT_NET       Net   : FPGA_UART/make_TX/N_157
+                          Driver: FPGA_UART/make_TX/xmit_state_RNIP3DT[3]
+    10      INT_NET       Net   : WOLF_CONTROLLER_inst_0/uart_current_state[1]
+                          Driver: WOLF_CONTROLLER_inst_0/uart_current_state[1]
+
+

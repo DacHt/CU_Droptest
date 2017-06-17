@@ -1,0 +1,60 @@
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Jun 08 17:28:49 2017
+#
+
+
+Top view:               CU_Main
+Operating conditions:   PA3.COMWC-2
+Requested Frequency:    32.8 MHz
+Wire load mode:         top
+Wire load model:        proasic3
+Paths requested:        5
+Constraint File(s):    C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\constraint\CU_Main_32.sdc
+                       
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: NA
+
+                                           Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock                             Frequency     Frequency     Period        Period        Slack     Type         Group              
+---------------------------------------------------------------------------------------------------------------------------------------------
+main_clk                                   32.8 MHz      56.8 MHz      30.500        17.608        6.446     declared     default_clkgroup   
+system_clock|m_time_inferred_clock[25]     100.0 MHz     110.0 MHz     10.000        9.089         0.911     inferred     Inferred_clkgroup_0
+=============================================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                          |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                Ending                                  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+main_clk                                main_clk                                |  0.000       False  |  0.000       False  |  15.250      False  |  15.250      False
+system_clock|m_time_inferred_clock[25]  main_clk                                |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+system_clock|m_time_inferred_clock[25]  system_clock|m_time_inferred_clock[25]  |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+======================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+

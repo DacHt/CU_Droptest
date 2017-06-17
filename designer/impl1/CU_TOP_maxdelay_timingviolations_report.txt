@@ -1,0 +1,54 @@
+Timing Violation Report Max Delay Analysis
+
+SmartTime Version v11.8
+Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
+Date: Fri Jun 16 21:23:21 2017
+
+
+Design: CU_TOP
+Family: ProASIC3
+Die: A3P250
+Package: 100 VQFP
+Temperature Range: 0 - 70 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 70 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+Path 1
+  From:                        system_clock_inst_0/l_time[6]:CLK
+  To:                          system_clock_inst_0/flag:D
+  Delay (ns):                  4.936
+  Slack (ns):                  -0.269
+  Arrival (ns):                8.985
+  Required (ns):               8.716
+
+Path 2
+  From:                        system_clock_inst_0/l_time[5]:CLK
+  To:                          system_clock_inst_0/flag:D
+  Delay (ns):                  4.808
+  Slack (ns):                  -0.163
+  Arrival (ns):                8.879
+  Required (ns):               8.716
+
+Path 3
+  From:                        system_clock_inst_0/l_time[9]:CLK
+  To:                          system_clock_inst_0/flag:D
+  Delay (ns):                  4.770
+  Slack (ns):                  -0.103
+  Arrival (ns):                8.819
+  Required (ns):               8.716
+
+Path 4
+  From:                        system_clock_inst_0/l_time[11]:CLK
+  To:                          system_clock_inst_0/flag:D
+  Delay (ns):                  4.739
+  Slack (ns):                  -0.072
+  Arrival (ns):                8.788
+  Required (ns):               8.716
+

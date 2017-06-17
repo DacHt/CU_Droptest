@@ -1,0 +1,15 @@
+@P:  Worst Slack : -1.248
+@P:  system_clock|mclk - Estimated Frequency : 80.0 MHz
+@P:  system_clock|mclk - Requested Frequency : 100.0 MHz
+@P:  system_clock|mclk - Estimated Period : 12.496
+@P:  system_clock|mclk - Requested Period : 10.000
+@P:  system_clock|mclk - Slack : -1.248
+@P:  Worst Slack(min analysis) : NA
+@P:  system_clock|mclk - Estimated Frequency(min analysis) : 80.0 MHz
+@P:  system_clock|mclk - Requested Frequency(min analysis) : 100.0 MHz
+@P:  system_clock|mclk - Estimated Period(min analysis) : 12.496
+@P:  system_clock|mclk - Requested Period(min analysis) : 10.000
+@P:  system_clock|mclk - Slack(min analysis) : -1.248
+@P:  Total Area : 104.0
+@P:  Total Area : 104.0
+@P:  CPU Time : 0h:00m:00s

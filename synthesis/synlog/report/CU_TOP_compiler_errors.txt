@@ -1,0 +1,6 @@
+@E: CL219 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":70:7:70:29|Multiple non-tristate drivers for net main_uart_transmit_flag in WOLF_CONTROLLER
+@E: CL229 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":70:7:70:29|Unresolved tristate drivers for net main_uart_transmit_flag in WOLF_CONTROLLER
+@E: MF420 |Netlist read from file C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synwork\layer0.srs failed
+@E: Could not find specified top level CU_TOP (library: work, cell: CU_TOP)Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+@E::Error while linking, aborting.
+

@@ -1,0 +1,35 @@
+@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":247:8:247:21|OTHERS clause is not synthesized 
+@W: CL240 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":53:4:53:7|led2 is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(3) to a constant 0
+@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(4) to a constant 0
+@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(5) to a constant 0
+@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(6) to a constant 0
+@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(7) to a constant 0
+@W: CL279 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Pruning register bits 7 to 3 of main_uart_data_out(7 downto 0)  
+@W: CD434 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":265:21:265:31|Signal rx_dout_reg in the sensitivity list is not used in the process
+@W: CD434 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":265:34:265:49|Signal parity_err_xhdl1 in the sensitivity list is not used in the process
+@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":392:9:392:22|OTHERS clause is not synthesized 
+@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":253:21:253:34|OTHERS clause is not synthesized 
+@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":318:19:318:33|OTHERS clause is not synthesized 
+@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":423:18:423:32|OTHERS clause is not synthesized 
+@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":134:4:134:5|Optimizing register bit fifo_read_en0 to a constant 1
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":134:4:134:5|Pruning register fifo_read_en0  
+@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":198:24:198:37|OTHERS clause is not synthesized 
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":439:7:439:8|Pruning register overflow_reg_3  
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":414:7:414:8|Pruning register rx_dout_reg_empty_5  
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":399:6:399:7|Pruning register rx_dout_reg_5(7 downto 0)  
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":367:6:367:7|Pruning register rx_state_4(1 downto 0)  
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":350:6:350:7|Pruning register clear_framing_error_reg0_3  
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":350:6:350:7|Pruning register clear_framing_error_reg_3  
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":333:6:333:7|Pruning register clear_parity_reg0_3  
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":333:6:333:7|Pruning register clear_parity_reg_3  
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":245:6:245:7|Pruning register fifo_write_tx_4  
+@W: CL189 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Register bit half_duty_new(4) is always 0, optimizing ...
+@W: CL260 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Pruning register bit 4 of half_duty_new(4 downto 0)  
+@W: CL189 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Register bit half_duty_0(4) is always 0, optimizing ...
+@W: CL260 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Pruning register bit 4 of half_duty_0(4 downto 0)  
+@W: CL246 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":34:6:34:9|Input port bits 3 to 0 of duty(7 downto 0) are unused 
+@W: CL159 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":45:9:45:19|Input tx_dout_reg is unused
+@W: CL159 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":46:9:46:18|Input fifo_empty is unused
+@W: CL159 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":47:9:47:17|Input fifo_full is unused
+

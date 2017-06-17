@@ -1,0 +1,286 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/simulation
+Ecu_main
+Z1 w1496908774
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/synthesis/CU_Main.vhd
+Z5 FC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/synthesis/CU_Main.vhd
+l0
+L1195
+V@c=NKNj8[2G1H]G:_zG0=2
+!s100 Yj2CQaU8T>ZaHG7[RB?>K1
+Z6 OW;C;10.5c;63
+33
+Z7 !s110 1496908779
+!i10b 1
+Z8 !s108 1496908779.000000
+Z9 !s90 -reportprogress|300|-2008|-explicit|-work|postsynth|C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/synthesis/CU_Main.vhd|
+Z10 !s107 C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/synthesis/CU_Main.vhd|
+!i113 1
+Z11 o-2008 -explicit -work postsynth -O0
+Z12 tCvgOpt 0
+Adef_arch
+Z13 DEx4 work 15 wolf_controller 0 22 MMYg3^kL;8]17bR3@TSGk2
+Z14 DEx4 work 10 cutter_pwm 0 22 jVXEXQK1>HhzMR3EP6Uh[3
+Z15 DEx4 work 12 system_clock 0 22 @1IYjf]J?@AUi=mV1kZmL3
+R2
+R3
+DEx4 work 7 cu_main 0 22 @c=NKNj8[2G1H]G:_zG0=2
+l1276
+L1211
+V_z>Mj8ONc_88zCZPH>6F90
+!s100 <QSWJHfg2kB0Sf1^G:zY>1
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecu_main_tb
+Z16 w1492283189
+R2
+R3
+R0
+Z17 8C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tb/CU_Main_tb.vhd
+Z18 FC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tb/CU_Main_tb.vhd
+l0
+L17
+VNB31Cl8AbKCjfL7E5[6dQ1
+!s100 l_FNJz>:gE@7D@>CY;O<Z2
+R6
+33
+Z19 !s110 1492376825
+!i10b 1
+Z20 !s108 1492376825.000000
+Z21 !s90 -reportprogress|300|-2008|-explicit|-work|postsynth|C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tb/CU_Main_tb.vhd|
+Z22 !s107 C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tb/CU_Main_tb.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 10 cu_main_tb 0 22 NB31Cl8AbKCjfL7E5[6dQ1
+l61
+L31
+VQafVf`F[CL@mX:]7e@KZn0
+!s100 RXA5jUk^Xb53DS>kD?7J@3
+R6
+33
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R11
+R12
+Ecu_main_tbt
+Z23 w1496908544
+R2
+R3
+R0
+Z24 8C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_MAIN_TBT/CU_MAIN_TBT.vhd
+Z25 FC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_MAIN_TBT/CU_MAIN_TBT.vhd
+l0
+L17
+VFo5UBzQP>kRYFoc2GP]5M2
+!s100 M=KNiO>`OYCiO1EO`GDh_0
+R6
+33
+Z26 !s110 1496908780
+!i10b 1
+Z27 !s108 1496908780.000000
+Z28 !s90 -reportprogress|300|-2008|-explicit|-work|postsynth|C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_MAIN_TBT/CU_MAIN_TBT.vhd|
+Z29 !s107 C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_MAIN_TBT/CU_MAIN_TBT.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 11 cu_main_tbt 0 22 Fo5UBzQP>kRYFoc2GP]5M2
+l64
+L32
+VgQXS=n[]W^`RLjP[eY4[A0
+!s100 Hh<Y==?iC4<cB22cYUha[0
+R6
+33
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 1
+R11
+R12
+Ecu_main_tst
+Z30 w1492183823
+R2
+R3
+R0
+Z31 8C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tst/CU_Main_tst.vhd
+Z32 FC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tst/CU_Main_tst.vhd
+l0
+L17
+VKhLdAPfliA2o@P^3=cG0n0
+!s100 ;CDNn85MCRGGCa@kBnb@o3
+R6
+33
+Z33 !s110 1492184490
+!i10b 1
+Z34 !s108 1492184490.000000
+Z35 !s90 -reportprogress|300|-2008|-explicit|-work|postsynth|C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tst/CU_Main_tst.vhd|
+Z36 !s107 C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tst/CU_Main_tst.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 11 cu_main_tst 0 22 KhLdAPfliA2o@P^3=cG0n0
+l59
+L30
+VW5eIJOh03<Y7iLR`nILXg2
+!s100 [:z1T7Xh^`blaW5hgWC`f0
+R6
+33
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 1
+R11
+R12
+Ecutter_pwm
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L551
+VjVXEXQK1>HhzMR3EP6Uh[3
+!s100 4KkTi1[aLA3i4I9<RI`f70
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Adef_arch
+R2
+R3
+R14
+l566
+L563
+V3n2b]IaV:R1DlHjbYKLHA2
+!s100 Bg8m4Sb;ghQ@;@W98OANW3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esystem_clock
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L8
+V@1IYjf]J?@AUi=mV1kZmL3
+!s100 ;bY0>dI>41D=O5_W]PC6g0
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Adef_arch
+R2
+R3
+R15
+l192
+L17
+VFAdFl6PcM`<FDjf0e_LiH2
+!s100 cj^]Zbm@h3AHLl<bc@?id0
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ewolf_controller
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L577
+VMMYg3^kL;8]17bR3@TSGk2
+!s100 jT8o=GlUMn0o=6IznNR8Z0
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Adef_arch
+R2
+R3
+R13
+l838
+L587
+VHRF`50bLhMATC?jeHT=6E2
+!s100 M2V[:AJl:RNb6nNKol^412
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

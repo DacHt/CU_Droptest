@@ -1,0 +1,118 @@
+Microsemi Libero Software
+Version: 11.8.0.26
+Release: v11.8
+
+Info: The design WOLF_CONTROLLER.adb was last modified by software version 11.8.0.26.
+Opened an existing Libero design WOLF_CONTROLLER.adb.
+'BA_NAME' set to 'WOLF_CONTROLLER_ba'
+'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
+'IDE_DESIGNERVIEW_COUNT' set to '1'
+'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
+'IDE_DESIGNERVIEW_REVNUM0' set to '1'
+'IDE_DESIGNERVIEW_ROOTDIR' set to
+'C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer'
+'IDE_DESIGNERVIEW_LASTREV' set to '1'
+
+ Netlist Reading Time = 0.0 seconds
+Imported the files:
+   C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\WOLF_CONTROLLER.edn
+   C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\constraint\CU_Droptest.pdc
+   C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\constraint\CU_Main_32.sdc
+
+The Import command succeeded ( 00:00:02 )
+=====================================================================
+Parameters used to run compile:
+===============================
+
+Family      : ProASIC3
+Device      : A3P250
+Package     : 100 VQFP
+Source      :
+C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\WOLF_CONTROLLER.edn
+              C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\constraint\CU_Droptest.pdc
+              C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\constraint\CU_Main_32.sdc
+Format      : EDIF
+Topcell     : WOLF_CONTROLLER
+Speed grade : STD
+Temp        : 0:25:70
+Voltage     : 1.58:1.50:1.42
+
+Keep Existing Physical Constraints : No
+Keep Existing Timing Constraints   : Yes
+
+pdc_abort_on_error                 : Yes
+pdc_eco_display_unmatched_objects  : No
+pdc_eco_max_warnings               : 10000
+
+demote_globals                     : No
+promote_globals                    : No
+localclock_max_shared_instances    : 12
+localclock_buffer_tree_max_fanout  : 12
+
+combine_register                   : No
+delete_buffer_tree                 : No
+
+report_high_fanout_nets_limit      : 10
+
+=====================================================================
+Compile starts ...
+
+Warning: Top level port rocket_pin is not connected to any IO pad
+
+Netlist Optimization Report
+===========================
+
+Optimized macros:
+  - Dangling net drivers:   0
+  - Buffers:                0
+  - Inverters:              0
+  - Tieoff:                 0
+  - Logic combining:        0
+
+    Total macros optimized  0
+
+Warning: CMP503: Remapped 1 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
+         pin on the enable flip-flop is not being driven by a global net.
+
+There were 0 error(s) and 2 warning(s) in this design.
+=====================================================================
+
+Reading user pdc (Physical Design Constraints) file(s) postcompile
+
+Error: PDC-01: port name doesn't exist in the netlist or is not connected to an IoCell macro at
+       PDC Line : set_io BEACON_PWR -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL
+       None -SKEW Off -OUT_LOAD 35 -pinname 35 -fixed yes
+Error: PDC-01: port name doesn't exist in the netlist or is not connected to an IoCell macro at
+       PDC Line : set_io CLK -iostd LVTTL -REGISTER No -RES_PULL None -pinname 43 -fixed yes
+Error: PDC-01: port name doesn't exist in the netlist or is not connected to an IoCell macro at
+       PDC Line : set_io LDO_FRONTEND_PWR -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High
+       -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 69 -fixed yes
+Error: PDC-01: port name doesn't exist in the netlist or is not connected to an IoCell macro at
+       PDC Line : set_io LED1 -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None
+       -SKEW Off -OUT_LOAD 35 -pinname 23 -fixed yes
+Error: PDC-01: port name doesn't exist in the netlist or is not connected to an IoCell macro at
+       PDC Line : set_io LED2 -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None
+       -SKEW Off -OUT_LOAD 35 -pinname 65 -fixed yes
+Error: PDC-01: port name doesn't exist in the netlist or is not connected to an IoCell macro at
+       PDC Line : set_io PR_OP_PWR -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL
+       None -SKEW Off -OUT_LOAD 35 -pinname 41 -fixed yes
+Error: PDC-01: port name doesn't exist in the netlist or is not connected to an IoCell macro at
+       PDC Line : set_io V3_LINEAR_PWR -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High
+       -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 90 -fixed yes
+Error: PDC-01: port name doesn't exist in the netlist or is not connected to an IoCell macro at
+       PDC Line : set_io STX_PWR -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL
+       None -SKEW Off -OUT_LOAD 35 -pinname 97 -fixed yes
+Error: PDC-01: port name doesn't exist in the netlist or is not connected to an IoCell macro at
+       PDC Line : set_io PWRONRESET -iostd LVTTL -REGISTER No -RES_PULL None -pinname 76 -fixed
+       yes
+
+There were 9 error(s) and 0 warning(s) in reading the user pdc.
+
+
+The Compile command failed ( 00:00:00 )
+Error: Failure when executing Tcl script. [ Line 23 ]
+
+The Execute Script command failed ( 00:00:05 )
+Warning: The database was closed without a save, modifications are lost
+Design closed.
+

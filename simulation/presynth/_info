@@ -1,0 +1,375 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/simulation
+Eblinkytest
+Z1 w1492202002
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/blinkytest/blinkytest.vhd
+Z5 FC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/blinkytest/blinkytest.vhd
+l0
+L17
+V>jL=92:=AX]BJzk?FjK7@1
+!s100 KVzilc]lo6]S^bF74c1lM1
+Z6 OW;C;10.5c;63
+33
+Z7 !s110 1492202871
+!i10b 1
+Z8 !s108 1492202871.000000
+Z9 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/blinkytest/blinkytest.vhd|
+Z10 !s107 C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/blinkytest/blinkytest.vhd|
+!i113 1
+Z11 o-2008 -explicit -work presynth -O0
+Z12 tCvgOpt 0
+Artl
+R2
+R3
+DEx4 work 10 blinkytest 0 22 >jL=92:=AX]BJzk?FjK7@1
+l74
+L36
+Vn0Q7;O:@i3YF79bBdeLo52
+!s100 P[NKkI<f`JAHQecLJLG4c0
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecu_main
+Z13 w1496908394
+R2
+R3
+R0
+Z14 8C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main/CU_Main.vhd
+Z15 FC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main/CU_Main.vhd
+l0
+L17
+VbCLHC@U60BlmHQg6[[<3Y1
+!s100 JdQoTK9WW?3^NQPTkkZQ`1
+R6
+33
+Z16 !s110 1496909263
+!i10b 1
+Z17 !s108 1496909263.000000
+Z18 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main/CU_Main.vhd|
+Z19 !s107 C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main/CU_Main.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 7 cu_main 0 22 bCLHC@U60BlmHQg6[[<3Y1
+l133
+L37
+V>342cS<F9@3WC_MBi53m[2
+!s100 `h`U_S82_CDf:L9IQP:5J1
+R6
+33
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Ecu_main_tb
+Z20 w1492283189
+R2
+R3
+R0
+Z21 8C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tb/CU_Main_tb.vhd
+Z22 FC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tb/CU_Main_tb.vhd
+l0
+L17
+VjZiHg6jg5lQoobFf1YRcc0
+!s100 l_FNJz>:gE@7D@>CY;O<Z2
+R6
+33
+Z23 !s110 1496908019
+!i10b 1
+Z24 !s108 1496908019.000000
+Z25 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tb/CU_Main_tb.vhd|
+Z26 !s107 C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tb/CU_Main_tb.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 10 cu_main_tb 0 22 jZiHg6jg5lQoobFf1YRcc0
+l61
+L31
+VZ_P6h;cS;8`Q:M8XG^N^?2
+!s100 RXA5jUk^Xb53DS>kD?7J@3
+R6
+33
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Ecu_main_tbt
+Z27 w1496908544
+R2
+R3
+R0
+Z28 8C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_MAIN_TBT/CU_MAIN_TBT.vhd
+Z29 FC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_MAIN_TBT/CU_MAIN_TBT.vhd
+l0
+L17
+VBeOcTECZV`_<OJ]FI6GUz3
+!s100 M=KNiO>`OYCiO1EO`GDh_0
+R6
+33
+R16
+!i10b 1
+R17
+Z30 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_MAIN_TBT/CU_MAIN_TBT.vhd|
+Z31 !s107 C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_MAIN_TBT/CU_MAIN_TBT.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+Z32 DEx4 work 11 cu_main_tbt 0 22 BeOcTECZV`_<OJ]FI6GUz3
+l64
+L32
+Z33 VVTCf@nb7NfjBGWXOle[z82
+Z34 !s100 Hh<Y==?iC4<cB22cYUha[0
+R6
+33
+R16
+!i10b 1
+R17
+R30
+R31
+!i113 1
+R11
+R12
+Ecu_main_tst
+Z35 w1492183823
+R2
+R3
+R0
+Z36 8C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tst/CU_Main_tst.vhd
+Z37 FC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tst/CU_Main_tst.vhd
+l0
+L17
+VmKil^Q2e0oafWZL>2LlWj0
+!s100 ;CDNn85MCRGGCa@kBnb@o3
+R6
+33
+Z38 !s110 1492187165
+!i10b 1
+Z39 !s108 1492187165.000000
+Z40 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tst/CU_Main_tst.vhd|
+Z41 !s107 C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tst/CU_Main_tst.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 11 cu_main_tst 0 22 mKil^Q2e0oafWZL>2LlWj0
+l59
+L30
+VL>44lE89:Vg8Beb6lMA2_1
+!s100 [:z1T7Xh^`blaW5hgWC`f0
+R6
+33
+R38
+!i10b 1
+R39
+R40
+R41
+!i113 1
+R11
+R12
+Ecutter_pwm
+Z42 w1496909202
+Z43 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z44 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+R0
+Z45 8C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/hdl/CUTTER_PWM.vhd
+Z46 FC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/hdl/CUTTER_PWM.vhd
+l0
+L23
+VHD4]hE4CjI_C4Pn?K4jN32
+!s100 k`EPHkQm4b[cGf>Jh@M=S1
+R6
+33
+Z47 !s110 1496909262
+!i10b 1
+Z48 !s108 1496909262.000000
+Z49 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/hdl/CUTTER_PWM.vhd|
+Z50 !s107 C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/hdl/CUTTER_PWM.vhd|
+!i113 1
+R11
+R12
+Alogic
+R43
+R44
+R2
+R3
+DEx4 work 10 cutter_pwm 0 22 HD4]hE4CjI_C4Pn?K4jN32
+l45
+L38
+VeFW1m:08@KgmX[@_>>HS?3
+!s100 jgQQ[Bd[fI0L7CG<5D04z0
+R6
+33
+R47
+!i10b 1
+R48
+R49
+R50
+!i113 1
+R11
+R12
+Eledblink
+Z51 w1492202857
+R43
+R44
+R2
+R3
+R0
+Z52 8C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/hdl/ledblink.vhd
+Z53 FC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/hdl/ledblink.vhd
+l0
+L23
+V?;6oQa_BdPB@XW<TlS=__0
+!s100 9MBZ^]a[A<z4UG[O`VHnK2
+R6
+33
+R7
+!i10b 1
+R8
+Z54 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/hdl/ledblink.vhd|
+Z55 !s107 C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/hdl/ledblink.vhd|
+!i113 1
+R11
+R12
+Aarchitecture_ledblink
+R43
+R44
+R2
+R3
+DEx4 work 8 ledblink 0 22 ?;6oQa_BdPB@XW<TlS=__0
+l38
+L31
+ViKnWOKHfJKzQZT94z=K:E0
+!s100 3Pob4^UnGX6mhm;=6dj=70
+R6
+33
+R7
+!i10b 1
+R8
+R54
+R55
+!i113 1
+R11
+R12
+Esystem_clock
+Z56 w1495983442
+R43
+R44
+R2
+R3
+R0
+Z57 8C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/hdl/System_clock.vhd
+Z58 FC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/hdl/System_clock.vhd
+l0
+L44
+VnQ@KYgHWTk6S6]j3:MARl0
+!s100 KF4[>G7ZEIR9SEbT6=4Qd0
+R6
+33
+R16
+!i10b 1
+R48
+Z59 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/hdl/System_clock.vhd|
+Z60 !s107 C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/hdl/System_clock.vhd|
+!i113 1
+R11
+R12
+Abehaviour
+R43
+R44
+R2
+R3
+DEx4 work 12 system_clock 0 22 nQ@KYgHWTk6S6]j3:MARl0
+l58
+L51
+VP?hLlo=?5LUk7iAeT8Gl83
+!s100 P>g5IR93PN8aXdFgg9H`N1
+R6
+33
+R16
+!i10b 1
+R48
+R59
+R60
+!i113 1
+R11
+R12
+Ewolf_controller
+Z61 w1496909098
+Z62 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z63 8C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/hdl/WOLF_CONTROLLER.vhd
+Z64 FC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/hdl/WOLF_CONTROLLER.vhd
+l0
+L22
+V74b6LBBX_@8PDe30[1n:o0
+!s100 VCQ=h[cCH3:[Fb:CQEc_31
+R6
+33
+R16
+!i10b 1
+R17
+Z65 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/hdl/WOLF_CONTROLLER.vhd|
+Z66 !s107 C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/hdl/WOLF_CONTROLLER.vhd|
+!i113 1
+R11
+R12
+Aarchitecture_wolf_controller
+R62
+R2
+R3
+DEx4 work 15 wolf_controller 0 22 74b6LBBX_@8PDe30[1n:o0
+l65
+L40
+Vo80;@ESmFO^KbK:7VC[:73
+!s100 mTzE9]:=dDZWk_hh70K0P2
+R6
+33
+R16
+!i10b 1
+R17
+R65
+R66
+!i113 1
+R11
+R12

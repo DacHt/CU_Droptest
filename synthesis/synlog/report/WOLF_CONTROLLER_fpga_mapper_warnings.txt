@@ -1,0 +1,3 @@
+@W: MT420 |Found inferred clock WOLF_CONTROLLER|clk_main with period 10.00ns. Please declare a user-defined clock on object "p:clk_main"
+@W: MT420 |Found inferred clock WOLF_CONTROLLER|clk_1hz with period 10.00ns. Please declare a user-defined clock on object "p:clk_1hz"
+@W: MT548 :"c:/users/rozen/dropbox/ee_bsc_2017/g8/vhdl/cu_droptest/constraint/cu_main_32.sdc":1:0:1:0|Source for clock main_clk not found in netlist. Run the constraint checker to verify if constraints are applied correctly.

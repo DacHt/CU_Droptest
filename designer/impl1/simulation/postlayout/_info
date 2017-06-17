@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/simulation
+Ecu_main
+Z1 w1492185256
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/designer/impl1/CU_Main_ba.vhd
+Z5 FC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/designer/impl1/CU_Main_ba.vhd
+l0
+L9
+VJ4GfjSKaSV:6a1[`Gbd4C1
+!s100 ZJ_HNP6`<LQ?Q5`UJf_Ai3
+Z6 OW;C;10.5c;63
+33
+Z7 !s110 1492186511
+!i10b 1
+Z8 !s108 1492186511.000000
+Z9 !s90 -reportprogress|300|-2008|-explicit|-work|postlayout|C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/designer/impl1/CU_Main_ba.vhd|
+Z10 !s107 C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/designer/impl1/CU_Main_ba.vhd|
+!i113 1
+Z11 o-2008 -explicit -work postlayout -O0
+Z12 tCvgOpt 0
+Adef_arch
+R2
+R3
+DEx4 work 7 cu_main 0 22 J4GfjSKaSV:6a1[`Gbd4C1
+l273
+L24
+V`DkVdO@o=j=jBX=76[n`D3
+!s100 K][`l3c:g_cVh1CPAPPWU3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecu_main_tst
+Z13 w1492183823
+R2
+R3
+R0
+Z14 8C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tst/CU_Main_tst.vhd
+Z15 FC:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tst/CU_Main_tst.vhd
+l0
+L17
+Vk4lK7hG5iIk3>2i1h2YGI2
+!s100 ;CDNn85MCRGGCa@kBnb@o3
+R6
+33
+Z16 !s110 1492186512
+!i10b 1
+Z17 !s108 1492186512.000000
+Z18 !s90 -reportprogress|300|-2008|-explicit|-work|postlayout|C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tst/CU_Main_tst.vhd|
+Z19 !s107 C:/Users/rozen/Dropbox/EE_BSC_2017/G8/vhdl/CU_Droptest/component/work/CU_Main_tst/CU_Main_tst.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+Z20 DEx4 work 11 cu_main_tst 0 22 k4lK7hG5iIk3>2i1h2YGI2
+l59
+L30
+Z21 Vb=1P>@Q:imUZ1>OWo:YKL0
+Z22 !s100 [:z1T7Xh^`blaW5hgWC`f0
+R6
+33
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12

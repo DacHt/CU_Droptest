@@ -1,0 +1,66 @@
+Synopsys HDL Compiler, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\vhd2008\std.vhd":146:18:146:21|Setting time resolution to ns
+@N:"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_Main\CU_Main.vhd":17:7:17:13|Top entity is set to CU_Main.
+File C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd changed - recompiling
+File C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_Main\CU_Main.vhd changed - recompiling
+File C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\proasic\proasic3.vhd changed - recompiling
+VHDL syntax check successful!
+File C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd changed - recompiling
+File C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_Main\CU_Main.vhd changed - recompiling
+@N: CD231 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus ('U'="1000000000")
+@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_Main\CU_Main.vhd":17:7:17:13|Synthesizing work.cu_main.rtl 
+@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":22:7:22:21|Synthesizing work.wolf_controller.architecture_wolf_controller 
+@N: CD231 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":60:11:60:12|Using onehot encoding for type state (start="100000")
+@W: CD434 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":77:34:77:43|Signal rocket_pin in the sensitivity list is not used in the process
+@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":141:8:141:21|OTHERS clause is not synthesized 
+@W: CD434 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":93:78:93:84|Signal clk_1hz in the sensitivity list is not used in the process
+Post processing for work.wolf_controller.architecture_wolf_controller
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":97:4:97:5|Pruning register rocket_pin_old_4  
+@A: CL282 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":97:4:97:5|Feedback mux created for signal next_state[0:5] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\System_clock.vhd":44:7:44:18|Synthesizing work.system_clock.behaviour 
+Post processing for work.system_clock.behaviour
+@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":23:7:23:16|Synthesizing work.cutter_pwm.logic 
+Post processing for work.cutter_pwm.logic
+@A: CL282 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Feedback mux created for signal half_duty_new[4:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Feedback mux created for signal half_duty_0[4:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\proasic\proasic3.vhd":2858:10:2858:15|Synthesizing proasic3.clkint.syn_black_box 
+Post processing for proasic3.clkint.syn_black_box
+Post processing for work.cu_main.rtl
+@W: CL168 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_Main\CU_Main.vhd":199:0:199:16|Pruning instance CUTTER_PWM_inst_0 -- not in use ... 
+@W: CL189 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Register bit half_duty_new(4) is always 0, optimizing ...
+@W: CL260 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Pruning register bit 4 of half_duty_new(4 downto 0)  
+@W: CL189 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Register bit half_duty_0(4) is always 0, optimizing ...
+@W: CL260 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Pruning register bit 4 of half_duty_0(4 downto 0)  
+@W: CL246 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":33:6:33:9|Input port bits 3 to 0 of duty(7 downto 0) are unused 
+@W: CL159 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":30:4:30:13|Input rocket_pin is unused
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 75MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Jun 08 17:28:46 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Jun 08 17:28:46 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Jun 08 17:28:46 2017
+
+###########################################################]

@@ -1,0 +1,866 @@
+#Build: Synplify Pro J-2015.03M-SP1-2, Build 266R, Dec 14 2015
+#install: C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2
+#OS: Windows 8 6.2
+#Hostname: LAPTOP-UCQD4H1A
+
+#Implementation: synthesis
+
+Synopsys HDL Compiler, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\vhd2008\std.vhd":146:18:146:21|Setting time resolution to ns
+@N:"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\CU_TOP.vhd":20:7:20:12|Top entity is set to CU_TOP.
+Options changed - recompiling
+VHDL syntax check successful!
+Options changed - recompiling
+@N: CD231 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus ('U'="1000000000")
+@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\CU_TOP.vhd":20:7:20:12|Synthesizing work.cu_top.rtl 
+@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":23:7:23:21|Synthesizing work.wolf_controller.architecture_wolf_controller 
+@N: CD231 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":84:16:84:17|Using onehot encoding for type main_state (start="10000")
+@N: CD231 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":88:16:88:17|Using onehot encoding for type uart_state (start="10000")
+@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":247:8:247:21|OTHERS clause is not synthesized 
+Post processing for work.wolf_controller.architecture_wolf_controller
+@W: CL240 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":53:4:53:7|led2 is not assigned a value (floating) -- simulation mismatch possible. 
+@A: CL282 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":124:4:124:5|Feedback mux created for signal led1 -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":124:4:124:5|Feedback mux created for signal uart_data_buffer_in[7:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Feedback mux created for signal main_current_state[0:4] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":124:4:124:5|Feedback mux created for signal uart_current_state[0:4] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(3) to a constant 0
+@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(4) to a constant 0
+@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(5) to a constant 0
+@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(6) to a constant 0
+@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(7) to a constant 0
+@W: CL279 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Pruning register bits 7 to 3 of main_uart_data_out(7 downto 0)  
+@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\System_clock.vhd":44:7:44:18|Synthesizing work.system_clock.behaviour 
+Post processing for work.system_clock.behaviour
+@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":34:7:34:31|Synthesizing coreuart_lib.cu_top_fpga_uart_coreuart.translated 
+@W: CD434 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":265:21:265:31|Signal rx_dout_reg in the sensitivity list is not used in the process
+@W: CD434 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":265:34:265:49|Signal parity_err_xhdl1 in the sensitivity list is not used in the process
+@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":392:9:392:22|OTHERS clause is not synthesized 
+@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":450:13:450:24|Removed redundant assignment
+@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":33:7:33:31|Synthesizing coreuart_lib.cu_top_fpga_uart_rx_async.translated 
+@N: CD233 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":64:24:64:25|Using sequential encoding for type receive_states
+@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":233:15:233:29|Removed redundant assignment
+@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":253:21:253:34|OTHERS clause is not synthesized 
+@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":256:19:256:26|Removed redundant assignment
+@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":318:19:318:33|OTHERS clause is not synthesized 
+@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":423:18:423:32|OTHERS clause is not synthesized 
+Post processing for coreuart_lib.cu_top_fpga_uart_rx_async.translated
+@N: CL177 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":443:6:443:7|Sharing sequential element clear_framing_error_en_i.
+@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":33:7:33:31|Synthesizing coreuart_lib.cu_top_fpga_uart_tx_async.translated 
+@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":311:12:311:20|Removed redundant assignment
+Post processing for coreuart_lib.cu_top_fpga_uart_tx_async.translated
+@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":134:4:134:5|Optimizing register bit fifo_read_en0 to a constant 1
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":134:4:134:5|Pruning register fifo_read_en0  
+@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":35:7:35:32|Synthesizing coreuart_lib.cu_top_fpga_uart_clock_gen.rtl 
+@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":109:43:109:51|Removed redundant assignment
+@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":122:42:122:50|Removed redundant assignment
+@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":135:42:135:50|Removed redundant assignment
+@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":148:42:148:50|Removed redundant assignment
+@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":161:42:161:50|Removed redundant assignment
+@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":174:42:174:50|Removed redundant assignment
+@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":187:42:187:50|Removed redundant assignment
+@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":198:24:198:37|OTHERS clause is not synthesized 
+Post processing for coreuart_lib.cu_top_fpga_uart_clock_gen.rtl
+Post processing for coreuart_lib.cu_top_fpga_uart_coreuart.translated
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":439:7:439:8|Pruning register overflow_reg_3  
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":414:7:414:8|Pruning register rx_dout_reg_empty_5  
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":399:6:399:7|Pruning register rx_dout_reg_5(7 downto 0)  
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":367:6:367:7|Pruning register rx_state_4(1 downto 0)  
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":350:6:350:7|Pruning register clear_framing_error_reg0_3  
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":350:6:350:7|Pruning register clear_framing_error_reg_3  
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":333:6:333:7|Pruning register clear_parity_reg0_3  
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":333:6:333:7|Pruning register clear_parity_reg_3  
+@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":245:6:245:7|Pruning register fifo_write_tx_4  
+@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":23:7:23:16|Synthesizing work.cutter_pwm.logic 
+Post processing for work.cutter_pwm.logic
+@A: CL282 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Feedback mux created for signal half_duty_new[4:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Feedback mux created for signal half_duty_0[4:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\proasic\proasic3.vhd":2858:10:2858:15|Synthesizing proasic3.clkint.syn_black_box 
+Post processing for proasic3.clkint.syn_black_box
+Post processing for work.cu_top.rtl
+@W: CL189 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Register bit half_duty_new(4) is always 0, optimizing ...
+@W: CL260 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Pruning register bit 4 of half_duty_new(4 downto 0)  
+@W: CL189 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Register bit half_duty_0(4) is always 0, optimizing ...
+@W: CL260 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Pruning register bit 4 of half_duty_0(4 downto 0)  
+@W: CL246 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":34:6:34:9|Input port bits 3 to 0 of duty(7 downto 0) are unused 
+@N: CL201 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":134:4:134:5|Trying to extract state machine for register xmit_state
+Extracted state machine for register xmit_state
+State machine has 6 reachable states with original encodings of:
+   00000000000000000000000000000000
+   00000000000000000000000000000001
+   00000000000000000000000000000010
+   00000000000000000000000000000011
+   00000000000000000000000000000100
+   00000000000000000000000000000101
+@W: CL159 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":45:9:45:19|Input tx_dout_reg is unused
+@W: CL159 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":46:9:46:18|Input fifo_empty is unused
+@W: CL159 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":47:9:47:17|Input fifo_full is unused
+@N: CL201 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":264:6:264:7|Trying to extract state machine for register rx_state
+Extracted state machine for register rx_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 81MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jun 16 21:22:46 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jun 16 21:22:46 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jun 16 21:22:47 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+File C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synwork\CU_TOP_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jun 16 21:22:48 2017
+
+###########################################################]
+Pre-mapping Report
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1659R, Built Dec 10 2015 09:42:41
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-SP1-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@L: C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP_scck.rpt 
+Printing clock  summary report in "C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":443:6:443:7|Removing sequential instance fifo_write_xhdl6 of view:PrimLib.dffs(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
+@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\hdl\wolf_controller.vhd":124:4:124:5|Removing sequential instance led1 of view:PrimLib.dffe(prim) in hierarchy view:work.WOLF_CONTROLLER(architecture_wolf_controller) because there are no references to its outputs 
+@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":443:6:443:7|Removing sequential instance clear_parity_en_xhdl3 of view:PrimLib.dffr(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
+@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":194:6:194:7|Removing sequential instance overflow_xhdl1 of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
+@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":399:6:399:7|Removing sequential instance parity_err_xhdl2 of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
+@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":218:6:218:7|Removing sequential instance framing_error_i of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
+@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":264:6:264:7|Removing sequential instance overflow_int of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
+@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":264:6:264:7|Removing sequential instance framing_error_int of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+
+
+@S |Clock Summary
+*****************
+
+Start                                      Requested     Requested     Clock        Clock              
+Clock                                      Frequency     Period        Type         Group              
+-------------------------------------------------------------------------------------------------------
+CU_TOP|CLK                                 100.0 MHz     10.000        inferred     Inferred_clkgroup_0
+system_clock|m_time_inferred_clock[25]     100.0 MHz     10.000        inferred     Inferred_clkgroup_1
+=======================================================================================================
+
+@W: MT530 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\hdl\cutter_pwm.vhd":48:4:48:5|Found inferred clock CU_TOP|CLK which controls 173 sequential elements including CUTTER_PWM_inst_0.pwm_out[0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\hdl\wolf_controller.vhd":108:4:108:5|Found inferred clock system_clock|m_time_inferred_clock[25] which controls 13 sequential elements including WOLF_CONTROLLER_inst_0.sec_since_res[12:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 46MB peak: 110MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jun 16 21:22:48 2017
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1659R, Built Dec 10 2015 09:42:41
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-SP1-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+@W: MO160 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":375:6:375:7|Register bit rx_parity_calc is always 0, optimizing ...
+@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\clock_gen.vhd":73:8:73:9|Removing sequential instance baud_cntr_one of view:PrimLib.dffr(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Clock_gen(rtl) because there are no references to its outputs 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+@N:"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\hdl\cutter_pwm.vhd":48:4:48:5|Found counter in view:work.CUTTER_PWM(logic) inst count_0[4:0]
+@N: MF176 |Default generator successful 
+@W: MO160 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\hdl\cutter_pwm.vhd":48:4:48:5|Register bit half_duty_0[3] is always 0, optimizing ...
+@W: MO160 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\hdl\cutter_pwm.vhd":48:4:48:5|Register bit half_duty_0[2] is always 0, optimizing ...
+@N:"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\clock_gen.vhd":90:11:90:12|Found counter in view:coreuart_lib.CU_TOP_FPGA_UART_Clock_gen(rtl) inst baud_cntr[12:0]
+@N:"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\clock_gen.vhd":243:23:243:24|Found counter in view:coreuart_lib.CU_TOP_FPGA_UART_Clock_gen(rtl) inst xmit_cntr[3:0]
+@N:"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\tx_async.vhd":238:4:238:5|Found counter in view:coreuart_lib.CU_TOP_FPGA_UART_Tx_async(translated) inst xmit_bit_sel[3:0]
+Encoding state machine xmit_state[0:5] (view:coreuart_lib.CU_TOP_FPGA_UART_Tx_async(translated))
+original code -> new code
+   00000000000000000000000000000000 -> 000001
+   00000000000000000000000000000001 -> 000010
+   00000000000000000000000000000010 -> 000100
+   00000000000000000000000000000011 -> 001000
+   00000000000000000000000000000100 -> 010000
+   00000000000000000000000000000101 -> 100000
+@W: MO160 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\tx_async.vhd":134:4:134:5|Register bit xmit_state[1] is always 0, optimizing ...
+@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\tx_async.vhd":299:4:299:5|Removing sequential instance tx_parity of view:PrimLib.dffr(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Tx_async(translated) because there are no references to its outputs 
+@N:"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":333:6:333:7|Found counter in view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) inst rx_bit_cnt[3:0]
+@N:"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":169:6:169:7|Found counter in view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) inst receive_count[3:0]
+Encoding state machine rx_state[0:3] (view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":264:6:264:7|No possible illegal states for state machine rx_state[0:3],safe FSM implementation is disabled
+@W: MO161 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":241:7:241:8|Register bit last_bit[3] is always 1, optimizing ...
+@W: MO160 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":241:7:241:8|Register bit last_bit[2] is always 0, optimizing ...
+@W: MO160 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":241:7:241:8|Register bit last_bit[1] is always 0, optimizing ...
+@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":333:6:333:7|Removing sequential instance rx_shift[8] of view:PrimLib.dffr(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
+@N:"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\hdl\system_clock.vhd":64:4:64:5|Found counter in view:work.system_clock(behaviour) inst l_time[17:1]
+@N: MF238 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\hdl\system_clock.vhd":94:26:94:35|Found 8-bit incrementor, 'un1_s_time_0[7:0]'
+@N: MF238 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\hdl\system_clock.vhd":94:26:94:35|Found 7-bit incrementor, 'un1_s_time[6:0]'
+@N:"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\hdl\wolf_controller.vhd":108:4:108:5|Found counter in view:work.WOLF_CONTROLLER(architecture_wolf_controller) inst sec_since_res[12:0]
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name     Fanout, notes                   
+---------------------------------------------------------------
+CLKINT_1 / Y                   164 : 150 asynchronous set/reset
+===============================================================
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 159 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 13 clock pin(s) of sequential element(s)
+0 instances converted, 13 sequential instances remain driven by gated/generated clocks
+
+======================================== Non-Gated/Non-Generated Clocks =========================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                          
+-----------------------------------------------------------------------------------------------------------------
+@K:CKID0002       CLK                 port                   159        WOLF_CONTROLLER_inst_0.uart_next_state[0]
+=================================================================================================================
+========================================================================================== Gated/Generated Clocks ===========================================================================================
+Clock Tree ID     Driving Element                     Drive Element Type     Fanout     Sample Instance                              Explanation                                                             
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       system_clock_inst_0.s_time_0[7]     DFN0E1C1               13         WOLF_CONTROLLER_inst_0.sec_since_res[12]     No generated or derived clock directive on output of sequential instance
+=============================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+Writing Analyst data base C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synwork\CU_TOP_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+Writing EDIF Netlist and constraint files
+J-2015.03M-SP1-2
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+@W: MT420 |Found inferred clock CU_TOP|CLK with period 10.00ns. Please declare a user-defined clock on object "p:CLK"
+
+@W: MT420 |Found inferred clock system_clock|m_time_inferred_clock[25] with period 10.00ns. Please declare a user-defined clock on object "n:system_clock_inst_0.m_time[25]"
+
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Jun 16 21:22:50 2017
+#
+
+
+Top view:               CU_TOP
+Library name:           PA3
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.74, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        proasic3
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -1.783
+
+                                           Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock                             Frequency     Frequency     Period        Period        Slack      Type         Group              
+----------------------------------------------------------------------------------------------------------------------------------------------
+CU_TOP|CLK                                 100.0 MHz     73.7 MHz      10.000        13.566        -1.783     inferred     Inferred_clkgroup_0
+system_clock|m_time_inferred_clock[25]     100.0 MHz     102.1 MHz     10.000        9.795         0.205      inferred     Inferred_clkgroup_1
+==============================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                          |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise  
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                Ending                                  |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CU_TOP|CLK                              CU_TOP|CLK                              |  10.000      -1.148  |  10.000      1.088  |  5.000       2.016  |  5.000       -1.783
+system_clock|m_time_inferred_clock[25]  CU_TOP|CLK                              |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -     
+system_clock|m_time_inferred_clock[25]  system_clock|m_time_inferred_clock[25]  |  10.000      0.205   |  No paths    -      |  No paths    -      |  No paths    -     
+========================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: CU_TOP|CLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                           Starting                                             Arrival           
+Instance                                                   Reference      Type         Pin     Net              Time        Slack 
+                                                           Clock                                                                  
+----------------------------------------------------------------------------------------------------------------------------------
+system_clock_inst_0.l_time[6]                              CU_TOP|CLK     DFN0C1       Q       m_time[6]        0.653       -1.783
+system_clock_inst_0.l_time[5]                              CU_TOP|CLK     DFN0C1       Q       m_time[5]        0.653       -1.670
+system_clock_inst_0.l_time[9]                              CU_TOP|CLK     DFN0E0C1     Q       m_time[9]        0.653       -1.295
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[1]     CU_TOP|CLK     DFN1C1       Q       baud_cntr[1]     0.737       -1.148
+system_clock_inst_0.l_time[1]                              CU_TOP|CLK     DFN0C1       Q       m_time[1]        0.653       -1.052
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[0]     CU_TOP|CLK     DFN1C1       Q       baud_cntr[0]     0.737       -1.009
+system_clock_inst_0.l_time[3]                              CU_TOP|CLK     DFN0C1       Q       m_time[3]        0.653       -1.003
+system_clock_inst_0.l_time[11]                             CU_TOP|CLK     DFN0C1       Q       m_time[11]       0.653       -0.787
+FPGA_UART.make_RX.rx_state[0]                              CU_TOP|CLK     DFN1E1C1     Q       rx_state[0]      0.737       -0.739
+FPGA_UART.make_RX.rx_state[1]                              CU_TOP|CLK     DFN1E1C1     Q       rx_state[1]      0.737       -0.600
+==================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                            Starting                                                   Required           
+Instance                                                    Reference      Type       Pin     Net                      Time         Slack 
+                                                            Clock                                                                         
+------------------------------------------------------------------------------------------------------------------------------------------
+system_clock_inst_0.flag                                    CU_TOP|CLK     DFN1C1     D       flag_RNO                 4.426        -1.783
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[12]     CU_TOP|CLK     DFN1C1     D       baud_cntr_RNO[12]        9.427        -1.148
+FPGA_UART.make_RX.receive_count[0]                          CU_TOP|CLK     DFN1C1     D       receive_count_RNO[0]     9.427        -0.739
+FPGA_UART.make_RX.receive_count[1]                          CU_TOP|CLK     DFN1C1     D       receive_count_RNO[1]     9.461        -0.494
+FPGA_UART.make_RX.receive_count[2]                          CU_TOP|CLK     DFN1C1     D       N_30                     9.461        -0.494
+FPGA_UART.make_RX.receive_count[3]                          CU_TOP|CLK     DFN1C1     D       N_28                     9.461        -0.494
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[1]      CU_TOP|CLK     DFN1C1     D       baud_cntr_RNO[1]         9.461        -0.182
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[11]     CU_TOP|CLK     DFN1C1     D       baud_cntr_RNO[11]        9.427        -0.172
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[3]      CU_TOP|CLK     DFN1C1     D       baud_cntr_RNO[3]         9.427        0.019 
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[5]      CU_TOP|CLK     DFN1C1     D       baud_cntr_RNO[5]         9.427        0.019 
+==========================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.574
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.426
+
+    - Propagation time:                      6.210
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.783
+
+    Number of logic level(s):                4
+    Starting point:                          system_clock_inst_0.l_time[6] / Q
+    Ending point:                            system_clock_inst_0.flag / D
+    The start point is clocked by            CU_TOP|CLK [falling] on pin CLK
+    The end   point is clocked by            CU_TOP|CLK [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                        Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+system_clock_inst_0.l_time[6]               DFN0C1     Q        Out     0.653     0.653       -         
+m_time[6]                                   Net        -        -       1.184     -           4         
+system_clock_inst_0.l_time_RNI3U5U[5]       NOR2B      B        In      -         1.837       -         
+system_clock_inst_0.l_time_RNI3U5U[5]       NOR2B      Y        Out     0.627     2.464       -         
+l_m5_0_a2_2                                 Net        -        -       0.806     -           3         
+system_clock_inst_0.l_time_RNIVNT11[12]     NOR3C      C        In      -         3.271       -         
+system_clock_inst_0.l_time_RNIVNT11[12]     NOR3C      Y        Out     0.641     3.912       -         
+l_m6_0_a2_7_5                               Net        -        -       0.322     -           1         
+system_clock_inst_0.l_time_RNIPOUI2[12]     NOR2B      B        In      -         4.234       -         
+system_clock_inst_0.l_time_RNIPOUI2[12]     NOR2B      Y        Out     0.627     4.861       -         
+l_m6_0_a2_7                                 Net        -        -       0.386     -           2         
+system_clock_inst_0.flag_RNO                NOR3C      C        In      -         5.247       -         
+system_clock_inst_0.flag_RNO                NOR3C      Y        Out     0.641     5.888       -         
+flag_RNO                                    Net        -        -       0.322     -           1         
+system_clock_inst_0.flag                    DFN1C1     D        In      -         6.210       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 6.783 is 3.764(55.5%) logic and 3.019(44.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.574
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.426
+
+    - Propagation time:                      6.097
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.670
+
+    Number of logic level(s):                4
+    Starting point:                          system_clock_inst_0.l_time[5] / Q
+    Ending point:                            system_clock_inst_0.flag / D
+    The start point is clocked by            CU_TOP|CLK [falling] on pin CLK
+    The end   point is clocked by            CU_TOP|CLK [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                        Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+system_clock_inst_0.l_time[5]               DFN0C1     Q        Out     0.653     0.653       -         
+m_time[5]                                   Net        -        -       1.184     -           4         
+system_clock_inst_0.l_time_RNI3U5U[5]       NOR2B      A        In      -         1.837       -         
+system_clock_inst_0.l_time_RNI3U5U[5]       NOR2B      Y        Out     0.514     2.351       -         
+l_m5_0_a2_2                                 Net        -        -       0.806     -           3         
+system_clock_inst_0.l_time_RNIVNT11[12]     NOR3C      C        In      -         3.158       -         
+system_clock_inst_0.l_time_RNIVNT11[12]     NOR3C      Y        Out     0.641     3.799       -         
+l_m6_0_a2_7_5                               Net        -        -       0.322     -           1         
+system_clock_inst_0.l_time_RNIPOUI2[12]     NOR2B      B        In      -         4.121       -         
+system_clock_inst_0.l_time_RNIPOUI2[12]     NOR2B      Y        Out     0.627     4.748       -         
+l_m6_0_a2_7                                 Net        -        -       0.386     -           2         
+system_clock_inst_0.flag_RNO                NOR3C      C        In      -         5.134       -         
+system_clock_inst_0.flag_RNO                NOR3C      Y        Out     0.641     5.775       -         
+flag_RNO                                    Net        -        -       0.322     -           1         
+system_clock_inst_0.flag                    DFN1C1     D        In      -         6.097       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 6.670 is 3.651(54.7%) logic and 3.019(45.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.574
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.426
+
+    - Propagation time:                      5.721
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.295
+
+    Number of logic level(s):                4
+    Starting point:                          system_clock_inst_0.l_time[9] / Q
+    Ending point:                            system_clock_inst_0.flag / D
+    The start point is clocked by            CU_TOP|CLK [falling] on pin CLK
+    The end   point is clocked by            CU_TOP|CLK [rising] on pin CLK
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                        Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+system_clock_inst_0.l_time[9]               DFN0E0C1     Q        Out     0.653     0.653       -         
+m_time[9]                                   Net          -        -       1.279     -           5         
+system_clock_inst_0.l_time_RNIJUQI[13]      NOR3C        C        In      -         1.933       -         
+system_clock_inst_0.l_time_RNIJUQI[13]      NOR3C        Y        Out     0.641     2.574       -         
+l_m6_0_a2_7_3                               Net          -        -       0.322     -           1         
+system_clock_inst_0.l_time_RNIQ01H1[7]      NOR3C        C        In      -         2.895       -         
+system_clock_inst_0.l_time_RNIQ01H1[7]      NOR3C        Y        Out     0.641     3.537       -         
+l_m6_0_a2_7_6                               Net          -        -       0.322     -           1         
+system_clock_inst_0.l_time_RNIPOUI2[12]     NOR2B        A        In      -         3.858       -         
+system_clock_inst_0.l_time_RNIPOUI2[12]     NOR2B        Y        Out     0.514     4.373       -         
+l_m6_0_a2_7                                 Net          -        -       0.386     -           2         
+system_clock_inst_0.flag_RNO                NOR3C        C        In      -         4.758       -         
+system_clock_inst_0.flag_RNO                NOR3C        Y        Out     0.641     5.400       -         
+flag_RNO                                    Net          -        -       0.322     -           1         
+system_clock_inst_0.flag                    DFN1C1       D        In      -         5.721       -         
+==========================================================================================================
+Total path delay (propagation time + setup) of 6.295 is 3.665(58.2%) logic and 2.629(41.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      10.575
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.148
+
+    Number of logic level(s):                9
+    Starting point:                          FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[1] / Q
+    Ending point:                            FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[12] / D
+    The start point is clocked by            CU_TOP|CLK [rising] on pin CLK
+    The end   point is clocked by            CU_TOP|CLK [rising] on pin CLK
+
+Instance / Net                                                                  Pin      Pin               Arrival     No. of    
+Name                                                                 Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[1]               DFN1C1     Q        Out     0.737     0.737       -         
+baud_cntr[1]                                                         Net        -        -       0.386     -           2         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNI5ILP[0]       OR2        B        In      -         1.123       -         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNI5ILP[0]       OR2        Y        Out     0.646     1.769       -         
+baud_cntr_c1                                                         Net        -        -       0.386     -           2         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNIPCG61[2]      OR2        A        In      -         2.155       -         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNIPCG61[2]      OR2        Y        Out     0.507     2.662       -         
+baud_cntr_c2                                                         Net        -        -       0.386     -           2         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNIE8BJ1[3]      OR2        A        In      -         3.048       -         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNIE8BJ1[3]      OR2        Y        Out     0.507     3.556       -         
+baud_cntr_c3                                                         Net        -        -       0.806     -           3         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNIC1N63[7]      NOR2A      B        In      -         4.362       -         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNIC1N63[7]      NOR2A      Y        Out     0.407     4.769       -         
+un4_baud_cntr_10                                                     Net        -        -       0.806     -           3         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNI62IJ3[8]      OR2A       A        In      -         5.575       -         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNI62IJ3[8]      OR2A       Y        Out     0.537     6.112       -         
+baud_cntr_c8                                                         Net        -        -       0.386     -           2         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNI14D04[9]      OR2        A        In      -         6.498       -         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNI14D04[9]      OR2        Y        Out     0.507     7.005       -         
+baud_cntr_c9                                                         Net        -        -       0.386     -           2         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNI45084[10]     OR2        A        In      -         7.391       -         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNI45084[10]     OR2        Y        Out     0.507     7.898       -         
+baud_cntr_c10                                                        Net        -        -       0.386     -           2         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNO_0[12]        OR2        B        In      -         8.284       -         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNO_0[12]        OR2        Y        Out     0.646     8.931       -         
+baud_cntr_26_0                                                       Net        -        -       0.322     -           1         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNO[12]          AX1B       B        In      -         9.252       -         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNO[12]          AX1B       Y        Out     1.001     10.253      -         
+baud_cntr_RNO[12]                                                    Net        -        -       0.322     -           1         
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[12]              DFN1C1     D        In      -         10.575      -         
+=================================================================================================================================
+Total path delay (propagation time + setup) of 11.148 is 6.578(59.0%) logic and 4.571(41.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.574
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.426
+
+    - Propagation time:                      5.478
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.051
+
+    Number of logic level(s):                3
+    Starting point:                          system_clock_inst_0.l_time[1] / Q
+    Ending point:                            system_clock_inst_0.flag / D
+    The start point is clocked by            CU_TOP|CLK [falling] on pin CLK
+    The end   point is clocked by            CU_TOP|CLK [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                        Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+system_clock_inst_0.l_time[1]               DFN0C1     Q        Out     0.653     0.653       -         
+m_time[1]                                   Net        -        -       1.184     -           4         
+system_clock_inst_0.l_time_RNIRL5U_0[2]     NOR2B      B        In      -         1.837       -         
+system_clock_inst_0.l_time_RNIRL5U_0[2]     NOR2B      Y        Out     0.627     2.464       -         
+l_m1_0_a2_0                                 Net        -        -       0.322     -           1         
+system_clock_inst_0.l_time_RNIQFBS1[2]      NOR2B      B        In      -         2.786       -         
+system_clock_inst_0.l_time_RNIQFBS1[2]      NOR2B      Y        Out     0.627     3.413       -         
+l_N_3_mux_0                                 Net        -        -       1.279     -           5         
+system_clock_inst_0.flag_RNO                NOR3C      A        In      -         4.692       -         
+system_clock_inst_0.flag_RNO                NOR3C      Y        Out     0.464     5.157       -         
+flag_RNO                                    Net        -        -       0.322     -           1         
+system_clock_inst_0.flag                    DFN1C1     D        In      -         5.478       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 6.051 is 2.946(48.7%) logic and 3.106(51.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: system_clock|m_time_inferred_clock[25]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                            Starting                                                                           Arrival          
+Instance                                    Reference                                  Type       Pin     Net                  Time        Slack
+                                            Clock                                                                                               
+------------------------------------------------------------------------------------------------------------------------------------------------
+WOLF_CONTROLLER_inst_0.sec_since_res[0]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[0]     0.580       0.205
+WOLF_CONTROLLER_inst_0.sec_since_res[1]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[1]     0.580       0.343
+WOLF_CONTROLLER_inst_0.sec_since_res[2]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[2]     0.580       0.346
+WOLF_CONTROLLER_inst_0.sec_since_res[3]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[3]     0.580       1.366
+WOLF_CONTROLLER_inst_0.sec_since_res[4]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[4]     0.580       2.819
+WOLF_CONTROLLER_inst_0.sec_since_res[5]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[5]     0.737       4.046
+WOLF_CONTROLLER_inst_0.sec_since_res[7]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[7]     0.737       4.069
+WOLF_CONTROLLER_inst_0.sec_since_res[6]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[6]     0.737       4.220
+WOLF_CONTROLLER_inst_0.sec_since_res[8]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[8]     0.737       4.242
+WOLF_CONTROLLER_inst_0.sec_since_res[9]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[9]     0.737       4.463
+================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                             Starting                                                                                  Required          
+Instance                                     Reference                                  Type         Pin     Net                       Time         Slack
+                                             Clock                                                                                                       
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+WOLF_CONTROLLER_inst_0.sec_since_res[9]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_70_i                    9.461        0.205
+WOLF_CONTROLLER_inst_0.sec_since_res[8]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_69_i                    9.427        0.739
+WOLF_CONTROLLER_inst_0.sec_since_res[7]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_68_i                    9.461        1.278
+WOLF_CONTROLLER_inst_0.sec_since_res[6]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_67_i                    9.427        2.296
+WOLF_CONTROLLER_inst_0.sec_since_res[5]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_64_i                    9.461        2.835
+WOLF_CONTROLLER_inst_0.sec_since_res[4]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_60_i                    9.461        3.839
+WOLF_CONTROLLER_inst_0.sec_since_res[11]     system_clock|m_time_inferred_clock[25]     DFN1C1       D       sec_since_res_n11         9.461        3.975
+WOLF_CONTROLLER_inst_0.sec_since_res[10]     system_clock|m_time_inferred_clock[25]     DFN1C1       D       sec_since_res_RNO[10]     9.461        4.039
+WOLF_CONTROLLER_inst_0.sec_since_res[12]     system_clock|m_time_inferred_clock[25]     DFN1E0C1     E       N_63                      9.392        4.390
+WOLF_CONTROLLER_inst_0.sec_since_res[2]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_58_i                    9.461        5.202
+=========================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      9.256
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.205
+
+    Number of logic level(s):                6
+    Starting point:                          WOLF_CONTROLLER_inst_0.sec_since_res[0] / Q
+    Ending point:                            WOLF_CONTROLLER_inst_0.sec_since_res[9] / D
+    The start point is clocked by            system_clock|m_time_inferred_clock[25] [rising] on pin CLK
+    The end   point is clocked by            system_clock|m_time_inferred_clock[25] [rising] on pin CLK
+
+Instance / Net                                                  Pin      Pin               Arrival     No. of    
+Name                                                 Type       Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------
+WOLF_CONTROLLER_inst_0.sec_since_res[0]              DFN1C1     Q        Out     0.580     0.580       -         
+sec_since_res[0]                                     Net        -        -       1.279     -           5         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNIPI6E1[1]     OR3C       C        In      -         1.860       -         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNIPI6E1[1]     OR3C       Y        Out     0.666     2.525       -         
+N_34                                                 Net        -        -       0.386     -           2         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNIEGJT1[3]     OR2A       B        In      -         2.911       -         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNIEGJT1[3]     OR2A       Y        Out     0.646     3.558       -         
+N_35                                                 Net        -        -       0.806     -           3         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNI4F0D2[4]     OR2A       B        In      -         4.364       -         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNI4F0D2[4]     OR2A       Y        Out     0.646     5.010       -         
+N_37                                                 Net        -        -       0.806     -           3         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNIJFQB3[6]     OR3B       C        In      -         5.817       -         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNIJFQB3[6]     OR3B       Y        Out     0.751     6.568       -         
+N_47                                                 Net        -        -       0.806     -           3         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNO_0[9]        OR3B       C        In      -         7.374       -         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNO_0[9]        OR3B       Y        Out     0.751     8.125       -         
+N_50                                                 Net        -        -       0.322     -           1         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNO[9]          XNOR2      A        In      -         8.446       -         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNO[9]          XNOR2      Y        Out     0.488     8.935       -         
+N_70_i                                               Net        -        -       0.322     -           1         
+WOLF_CONTROLLER_inst_0.sec_since_res[9]              DFN1C1     D        In      -         9.256       -         
+=================================================================================================================
+Total path delay (propagation time + setup) of 9.795 is 5.068(51.7%) logic and 4.727(48.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+--------------------------------------------------------------------------------
+Target Part: A3P250_VQFP100_STD
+Report for cell CU_TOP.rtl
+  Core Cell usage:
+              cell count     area count*area
+              AND2     1      1.0        1.0
+              AND3     7      1.0        7.0
+               AO1     3      1.0        3.0
+              AO13     2      1.0        2.0
+              AO1A     8      1.0        8.0
+              AO1D     1      1.0        1.0
+              AOI1     4      1.0        4.0
+             AOI1B     8      1.0        8.0
+               AX1     7      1.0        7.0
+              AX1B     6      1.0        6.0
+              AX1C     7      1.0        7.0
+              AX1E     1      1.0        1.0
+             AXOI4     1      1.0        1.0
+            CLKINT     2      0.0        0.0
+               GND     8      0.0        0.0
+               INV    12      1.0       12.0
+               MX2    13      1.0       13.0
+              MX2A     2      1.0        2.0
+              MX2B     3      1.0        3.0
+              MX2C     2      1.0        2.0
+              NOR2    11      1.0       11.0
+             NOR2A    29      1.0       29.0
+             NOR2B    44      1.0       44.0
+              NOR3     4      1.0        4.0
+             NOR3A     4      1.0        4.0
+             NOR3B    10      1.0       10.0
+             NOR3C    21      1.0       21.0
+               OA1     2      1.0        2.0
+              OA1A     1      1.0        1.0
+              OA1B     1      1.0        1.0
+              OA1C     2      1.0        2.0
+              OAI1     1      1.0        1.0
+               OR2    20      1.0       20.0
+              OR2A    11      1.0       11.0
+              OR2B     7      1.0        7.0
+               OR3     6      1.0        6.0
+              OR3A     3      1.0        3.0
+              OR3B     2      1.0        2.0
+              OR3C     6      1.0        6.0
+               VCC     8      0.0        0.0
+               XA1     1      1.0        1.0
+              XA1B     3      1.0        3.0
+              XA1C     1      1.0        1.0
+             XAI1A     1      1.0        1.0
+             XNOR2     9      1.0        9.0
+               XO1     2      1.0        2.0
+              XO1A     3      1.0        3.0
+              XOR2    21      1.0       21.0
+
+
+            DFN0C1    10      1.0       10.0
+          DFN0E0C1     7      1.0        7.0
+          DFN0E1C1     8      1.0        8.0
+              DFN1     2      1.0        2.0
+            DFN1C1    42      1.0       42.0
+            DFN1E0    10      1.0       10.0
+          DFN1E0C1    30      1.0       30.0
+          DFN1E0P1     4      1.0        4.0
+            DFN1E1    10      1.0       10.0
+          DFN1E1C1    42      1.0       42.0
+          DFN1E1P1     1      1.0        1.0
+            DFN1P1     6      1.0        6.0
+                   -----          ----------
+             TOTAL   504               486.0
+
+
+  IO Cell usage:
+              cell count
+             INBUF     3
+            OUTBUF     9
+                   -----
+             TOTAL    12
+
+
+Core Cells         : 486 of 6144 (8%)
+IO Cells           : 12
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 48MB peak: 113MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jun 16 21:22:50 2017
+
+###########################################################]

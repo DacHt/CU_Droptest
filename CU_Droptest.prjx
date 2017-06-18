@@ -233,7 +233,7 @@ TIME="1497641333"
 SIZE="55896"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.adb,adb"
-STATE="utd"
+STATE="ood"
 TIME="1497641012"
 SIZE="455680"
 ENDFILE
@@ -243,9 +243,9 @@ TIME="1497641012"
 SIZE="1276"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.pdb,pdb"
-STATE="utd"
-TIME="1497641075"
-SIZE="55896"
+STATE="ood"
+TIME="1497775937"
+SIZE="54475"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_compile_log.rpt,log"
 STATE="utd"
@@ -254,18 +254,18 @@ SIZE="9365"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1497640997"
-SIZE="2568"
+TIME="1497775923"
+SIZE="2528"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1497641012"
-SIZE="751"
+TIME="1497775937"
+SIZE="665"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1497641001"
-SIZE="1170"
+TIME="1497775927"
+SIZE="1130"
 ENDFILE
 VALUE "<project>\designer\impl1\WOLF_CONTROLLER.adb,adb"
 STATE="ood"
@@ -294,8 +294,8 @@ SIZE="2496"
 ENDFILE
 VALUE "<project>\hdl\WOLF_CONTROLLER.vhd,hdl"
 STATE="utd"
-TIME="1497640583"
-SIZE="10895"
+TIME="1497776039"
+SIZE="10894"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
@@ -313,7 +313,7 @@ TIME="1496935730"
 SIZE="1988"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP.edn,syn_edn"
-STATE="utd"
+STATE="ood"
 TIME="1497640970"
 SIZE="254904"
 ENDFILE
@@ -323,7 +323,7 @@ TIME="1497640970"
 SIZE="236"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP_sdc.sdc,syn_sdc"
-STATE="utd"
+STATE="ood"
 TIME="1497640970"
 SIZE="395"
 ENDFILE
@@ -351,27 +351,6 @@ ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
-LIST "CU_TOP::work"
-FILE "<project>\component\work\CU_TOP\CU_TOP.vhd,hdl"
-LIST ProjectState5.1
-LIST Impl1
-LiberoState=Post_Layout
-ideSYNTHESIS(<project>\synthesis\CU_TOP.edn,syn_edn)=StateSuccess
-ideDESIGNER(<project>\designer\impl1\CU_TOP.adb,adb)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
-LIST PinReports
-VALUE "<project>\designer\impl1\CU_TOP_report_pin_byname.txt,log"
-VALUE "<project>\designer\impl1\CU_TOP_report_pin_bynumber.txt,log"
-ENDLIST
-ENDLIST
 LIST "CU_TOP_FPGA_UART_COREUART::COREUART_LIB"
 FILE "<project>\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd,hdl"
 LIST Other_Association
@@ -521,20 +500,6 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
-LIST "CU_TOP::work"
-LIST Impl1
-LiberoState=Post_Layout
-ideSYNTHESIS(<project>\synthesis\CU_TOP.edn,syn_edn)=StateSuccess
-ideDESIGNER(<project>\designer\impl1\CU_TOP.adb,adb)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
 LIST "CU_TOP_FPGA_UART_COREUART::COREUART_LIB"
 LIST Impl1
 ideSTIMULUS=StateSuccess
@@ -560,15 +525,19 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Generate Programming Data:CU_TOP_prgdata_log.rpt
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;CU_TOP;0
+HDL;hdl\WOLF_CONTROLLER.vhd;0
+ACTIVEVIEW;hdl\WOLF_CONTROLLER.vhd
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CU_TOP::work","component\work\CU_TOP\CU_TOP.vhd","TRUE","FALSE"
 SUBBLOCK "CUTTER_PWM::work","hdl\CUTTER_PWM.vhd","FALSE","FALSE"
-SUBBLOCK "WOLF_CONTROLLER::work","hdl\WOLF_CONTROLLER.vhd","FALSE","FALSE"
 SUBBLOCK "system_clock::work","hdl\System_clock.vhd","FALSE","FALSE"
 SUBBLOCK "CU_TOP_FPGA_UART_COREUART::COREUART_LIB","component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd","FALSE","FALSE"
+SUBBLOCK "WOLF_CONTROLLER::work","hdl\WOLF_CONTROLLER.vhd","FALSE","FALSE"
 ENDLIST
 LIST "CUTTER_PWM::work","hdl\CUTTER_PWM.vhd","FALSE","FALSE"
 ENDLIST

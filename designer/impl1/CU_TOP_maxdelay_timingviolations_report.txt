@@ -2,7 +2,7 @@ Timing Violation Report Max Delay Analysis
 
 SmartTime Version v11.8
 Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
-Date: Sun Jun 18 10:36:52 2017
+Date: Sun Jun 18 10:52:07 2017
 
 
 Design: CU_TOP
@@ -21,50 +21,50 @@ Scenario for Timing Analysis: Primary
 
 
 Path 1
-  From:                        FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[1]:CLK
-  To:                          FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[12]:D
-  Delay (ns):                  9.695
-  Slack (ns):                  -0.274
-  Arrival (ns):                13.933
-  Required (ns):               13.659
-
-Path 2
   From:                        system_clock_inst_0/l_time[12]:CLK
   To:                          system_clock_inst_0/flag:D
-  Delay (ns):                  4.915
-  Slack (ns):                  -0.266
-  Arrival (ns):                8.976
-  Required (ns):               8.710
+  Delay (ns):                  5.388
+  Slack (ns):                  -0.714
+  Arrival (ns):                9.422
+  Required (ns):               8.708
+
+Path 2
+  From:                        system_clock_inst_0/l_time[10]:CLK
+  To:                          system_clock_inst_0/flag:D
+  Delay (ns):                  5.201
+  Slack (ns):                  -0.590
+  Arrival (ns):                9.298
+  Required (ns):               8.708
 
 Path 3
   From:                        system_clock_inst_0/l_time[8]:CLK
   To:                          system_clock_inst_0/flag:D
-  Delay (ns):                  4.805
-  Slack (ns):                  -0.193
-  Arrival (ns):                8.903
-  Required (ns):               8.710
+  Delay (ns):                  5.210
+  Slack (ns):                  -0.575
+  Arrival (ns):                9.283
+  Required (ns):               8.708
 
 Path 4
-  From:                        system_clock_inst_0/l_time[10]:CLK
-  To:                          system_clock_inst_0/flag:D
-  Delay (ns):                  4.787
-  Slack (ns):                  -0.138
-  Arrival (ns):                8.848
-  Required (ns):               8.710
-
-Path 5
-  From:                        FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[0]:CLK
-  To:                          FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[12]:D
-  Delay (ns):                  9.541
-  Slack (ns):                  -0.120
-  Arrival (ns):                13.779
-  Required (ns):               13.659
-
-Path 6
   From:                        system_clock_inst_0/l_time[7]:CLK
   To:                          system_clock_inst_0/flag:D
-  Delay (ns):                  4.677
-  Slack (ns):                  -0.065
-  Arrival (ns):                8.775
-  Required (ns):               8.710
+  Delay (ns):                  5.082
+  Slack (ns):                  -0.458
+  Arrival (ns):                9.166
+  Required (ns):               8.708
+
+Path 5
+  From:                        system_clock_inst_0/l_time[13]:CLK
+  To:                          system_clock_inst_0/flag:D
+  Delay (ns):                  4.864
+  Slack (ns):                  -0.253
+  Arrival (ns):                8.961
+  Required (ns):               8.708
+
+Path 6
+  From:                        system_clock_inst_0/l_time[11]:CLK
+  To:                          system_clock_inst_0/flag:D
+  Delay (ns):                  4.736
+  Slack (ns):                  -0.125
+  Arrival (ns):                8.833
+  Required (ns):               8.708
 

@@ -1,14 +1,14 @@
 C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\bin64\m_proasic.exe  -mp  1  -prjfile  C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\scratchproject.prs  -implementation  synthesis  -prodtype  synplify_pro   -encrypt  -pro  -rundir  C:\Users\rozen\Gitrepos\CU_Droptest\synthesis   -part A3P250  -package VQFP100  -grade STD    -maxfan 24 -globalthreshold 50 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synlog\report\CU_TOP_premap.xml  -top_level_module  work.CU_TOP  -oedif  C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.edn  -conchk_prepass  C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP_cck_prepass.rpt   -freq 100.000   C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_mult.srs  -flow prepass  -gcc_prepass  -osrd  C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_prem.srd  -qsap  C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.sap  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\proasic\proasic3.v  -ologparam  C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\syntmp\CU_TOP.plg  -osyn  C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_prem.srd  -prjdir  C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\  -prjname  CU_TOP_syn  -log  C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synlog\CU_TOP_premap.srr 
 rc:1 success:1
 C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\scratchproject.prs|o|1497774980|2797
-C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.edn|o|1497640970|254904
+C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.edn|o|1497774983|249321
 C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP_cck_prepass.rpt|o|0|0
-C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_mult.srs|i|1497774982|7721
-C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_prem.srd|o|1497774982|38193
-C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.sap|o|1497774982|12541
+C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_mult.srs|i|1497775898|7717
+C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_prem.srd|o|1497775899|38343
+C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.sap|o|1497775899|12541
 C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\proasic\proasic3.v|i|1449254128|49355
-C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\syntmp\CU_TOP.plg|o|1497774982|0
-C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_prem.srd|o|1497774982|38193
-C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synlog\CU_TOP_premap.srr|o|1497774982|5412
+C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\syntmp\CU_TOP.plg|o|1497775898|0
+C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_prem.srd|o|1497775899|38343
+C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synlog\CU_TOP_premap.srr|o|1497775899|5412
 C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\bin\m_proasic.exe|i|1449771376|9590784
 C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\bin64\m_proasic.exe|i|1449772972|12124160

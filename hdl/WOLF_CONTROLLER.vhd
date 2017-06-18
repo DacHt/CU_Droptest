@@ -58,7 +58,7 @@ architecture architecture_WOLF_CONTROLLER of WOLF_CONTROLLER is
 --####################### Constants #####################################
 
 --Cutter	
-constant sec_cutter_enable      : integer := 8;    -- Seconds cutter should be enabled
+constant sec_cutter_enable      : integer := 6;    -- Seconds cutter should be enabled
 constant sec_to_cutter_enable   : integer := 5;     -- Seconds from ejection to enable cutter.
 constant cutter_duty            : integer := 50;    -- Cutter PWM duty cycle, controls current through heating filament(255 => More current, 0 => Less current)
 

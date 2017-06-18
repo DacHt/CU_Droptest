@@ -12,7 +12,7 @@ Opened an existing Libero design CU_TOP.adb.
 'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\rozen\Gitrepos\CU_Droptest\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
- Netlist Reading Time = 0.0 seconds
+ Netlist Reading Time = 1.0 seconds
 Imported the files:
    C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.edn
    C:\Users\rozen\Gitrepos\CU_Droptest\constraint\CU_Droptest.pdc
@@ -64,9 +64,9 @@ Optimized macros:
   - Buffers:                0
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        7
+  - Logic combining:        5
 
-    Total macros optimized  7
+    Total macros optimized  5
 
 There were 0 error(s) and 0 warning(s) in this design.
 =====================================================================
@@ -87,7 +87,7 @@ There were 0 error(s) and 0 warning(s).
 Compile report:
 ===============
 
-    CORE                       Used:    468  Total:   6144   (7.62%)
+    CORE                       Used:    479  Total:   6144   (7.80%)
     IO (W/ clocks)             Used:     12  Total:     68   (17.65%)
     Differential IO            Used:      0  Total:     13   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      2  Total:     18   (11.11%)
@@ -112,7 +112,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 296          | 296
+    COMB    | 307          | 307
     SEQ     | 172          | 172
 
 I/O Function:
@@ -155,17 +155,17 @@ The following nets have been assigned to a chip global resource:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    20      INT_NET       Net   : FPGA_UART/baud_clock
+    21      INT_NET       Net   : FPGA_UART/baud_clock
                           Driver: FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int
     16      CLK_NET       Net   : m_time[25]
                           Driver: system_clock_inst_0/s_time_0[7]
+    13      INT_NET       Net   : FPGA_UART/make_RX/N_217_1
+                          Driver: FPGA_UART/make_RX/rx_state_RNIT726_0[0]
     12      INT_NET       Net   : FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un4_baud_cntr
                           Driver:
 FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIDA6N4[10]
     12      INT_NET       Net   : FPGA_UART/make_RX/rx_bit_cnte
                           Driver: FPGA_UART/make_RX/receive_count_RNIHM8T[3]
-    11      INT_NET       Net   : FPGA_UART/make_RX/N_125
-                          Driver: FPGA_UART/make_RX/rx_state_RNIT726_0[0]
     10      INT_NET       Net   : LED2_0
                           Driver: WOLF_CONTROLLER_inst_0/uart_wen
     10      INT_NET       Net   : LED2_c
@@ -180,17 +180,17 @@ FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIDA6N4[10]
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    20      INT_NET       Net   : FPGA_UART/baud_clock
+    21      INT_NET       Net   : FPGA_UART/baud_clock
                           Driver: FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int
     16      CLK_NET       Net   : m_time[25]
                           Driver: system_clock_inst_0/s_time_0[7]
+    13      INT_NET       Net   : FPGA_UART/make_RX/N_217_1
+                          Driver: FPGA_UART/make_RX/rx_state_RNIT726_0[0]
     12      INT_NET       Net   : FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un4_baud_cntr
                           Driver:
 FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIDA6N4[10]
     12      INT_NET       Net   : FPGA_UART/make_RX/rx_bit_cnte
                           Driver: FPGA_UART/make_RX/receive_count_RNIHM8T[3]
-    11      INT_NET       Net   : FPGA_UART/make_RX/N_125
-                          Driver: FPGA_UART/make_RX/rx_state_RNIT726_0[0]
     10      INT_NET       Net   : LED2_0
                           Driver: WOLF_CONTROLLER_inst_0/uart_wen
     10      INT_NET       Net   : LED2_c
@@ -222,6 +222,6 @@ Wrote pin report to file: CU_TOP_report_pin_bynumber.txt
 The Report command succeeded ( 00:00:01 )
 Design saved to file C:\Users\rozen\Gitrepos\CU_Droptest\designer\impl1\CU_TOP.adb.
 
-The Execute Script command succeeded ( 00:00:05 )
+The Execute Script command succeeded ( 00:00:06 )
 Design closed.
 

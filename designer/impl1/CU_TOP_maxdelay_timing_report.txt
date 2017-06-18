@@ -2,7 +2,7 @@ Timing Report Max Delay Analysis
 
 SmartTime Version v11.8
 Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
-Date: Sun Jun 18 10:52:07 2017
+Date: Sun Jun 18 20:21:42 2017
 
 
 Design: CU_TOP
@@ -24,18 +24,18 @@ Scenario for Timing Analysis: Primary
 SUMMARY
 
 Clock Domain:               CU_TOP|CLK
-Period (ns):                11.428
-Frequency (MHz):            87.504
+Period (ns):                11.002
+Frequency (MHz):            90.893
 Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
-External Setup (ns):        2.941
-External Hold (ns):         1.114
-Min Clock-To-Out (ns):      3.226
-Max Clock-To-Out (ns):      13.044
+External Setup (ns):        6.081
+External Hold (ns):         1.163
+Min Clock-To-Out (ns):      2.830
+Max Clock-To-Out (ns):      12.049
 
 Clock Domain:               system_clock_inst_0/s_time_0[7]:Q
-Period (ns):                10.187
-Frequency (MHz):            98.164
+Period (ns):                9.861
+Frequency (MHz):            101.410
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
 External Setup (ns):        N/A
@@ -55,62 +55,62 @@ Clock Domain CU_TOP|CLK
 SET Register to Register
 
 Path 1
-  From:                        system_clock_inst_0/l_time[12]:CLK
+  From:                        system_clock_inst_0/l_time[9]:CLK
   To:                          system_clock_inst_0/flag:D
-  Delay (ns):                  5.388
-  Slack (ns):                  -0.714
-  Arrival (ns):                9.422
-  Required (ns):               8.708
+  Delay (ns):                  5.017
+  Slack (ns):                  -0.384
+  Arrival (ns):                9.052
+  Required (ns):               8.668
   Setup (ns):                  0.574
-  Minimum Period (ns):         11.428
+  Minimum Period (ns):         10.768
 
 Path 2
-  From:                        system_clock_inst_0/l_time[10]:CLK
+  From:                        system_clock_inst_0/l_time[11]:CLK
   To:                          system_clock_inst_0/flag:D
-  Delay (ns):                  5.201
-  Slack (ns):                  -0.590
-  Arrival (ns):                9.298
-  Required (ns):               8.708
+  Delay (ns):                  4.986
+  Slack (ns):                  -0.373
+  Arrival (ns):                9.041
+  Required (ns):               8.668
   Setup (ns):                  0.574
-  Minimum Period (ns):         11.180
+  Minimum Period (ns):         10.746
 
 Path 3
-  From:                        system_clock_inst_0/l_time[8]:CLK
-  To:                          system_clock_inst_0/flag:D
-  Delay (ns):                  5.210
-  Slack (ns):                  -0.575
-  Arrival (ns):                9.283
-  Required (ns):               8.708
+  From:                        FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[1]:CLK
+  To:                          FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[12]:D
+  Delay (ns):                  9.753
+  Slack (ns):                  -0.337
+  Arrival (ns):                14.024
+  Required (ns):               13.687
   Setup (ns):                  0.574
-  Minimum Period (ns):         11.150
+  Minimum Period (ns):         10.337
 
 Path 4
-  From:                        system_clock_inst_0/l_time[7]:CLK
+  From:                        system_clock_inst_0/l_time[6]:CLK
   To:                          system_clock_inst_0/flag:D
-  Delay (ns):                  5.082
-  Slack (ns):                  -0.458
-  Arrival (ns):                9.166
-  Required (ns):               8.708
+  Delay (ns):                  4.909
+  Slack (ns):                  -0.304
+  Arrival (ns):                8.972
+  Required (ns):               8.668
   Setup (ns):                  0.574
-  Minimum Period (ns):         10.916
+  Minimum Period (ns):         10.608
 
 Path 5
   From:                        system_clock_inst_0/l_time[13]:CLK
   To:                          system_clock_inst_0/flag:D
-  Delay (ns):                  4.864
-  Slack (ns):                  -0.253
-  Arrival (ns):                8.961
-  Required (ns):               8.708
-  Setup (ns):                  0.574
-  Minimum Period (ns):         10.506
+  Delay (ns):                  4.893
+  Slack (ns):                  -0.245
+  Arrival (ns):                8.948
+  Required (ns):               8.703
+  Setup (ns):                  0.539
+  Minimum Period (ns):         10.490
 
 
 Expanded Path 1
-  From: system_clock_inst_0/l_time[12]:CLK
+  From: system_clock_inst_0/l_time[9]:CLK
   To: system_clock_inst_0/flag:D
-  data required time                             8.708
-  data arrival time                          -   9.422
-  slack                                          -0.714
+  data required time                             8.668
+  data arrival time                          -   9.052
+  slack                                          -0.384
   ________________________________________________________
   Data arrival time calculation
   0.000                        CU_TOP|CLK
@@ -128,30 +128,30 @@ Expanded Path 1
   2.569                        CLKINT_0:A (f)
                +     0.767          cell: ADLIB:CLKINT
   3.336                        CLKINT_0:Y (f)
-               +     0.698          net: CLKINT_0_Y
-  4.034                        system_clock_inst_0/l_time[12]:CLK (f)
-               +     0.654          cell: ADLIB:DFN0C1
-  4.688                        system_clock_inst_0/l_time[12]:Q (f)
-               +     0.382          net: system_clock_inst_0/m_time[12]
-  5.070                        system_clock_inst_0/l_time_RNISPN3[12]:B (f)
-               +     0.628          cell: ADLIB:NOR2B
-  5.698                        system_clock_inst_0/l_time_RNISPN3[12]:Y (f)
-               +     0.334          net: system_clock_inst_0/l_m6_0_a2_7_1
-  6.032                        system_clock_inst_0/l_time_RNIVNT11[5]:C (f)
+               +     0.699          net: CLKINT_0_Y
+  4.035                        system_clock_inst_0/l_time[9]:CLK (f)
+               +     0.654          cell: ADLIB:DFN0E0C1
+  4.689                        system_clock_inst_0/l_time[9]:Q (f)
+               +     0.329          net: system_clock_inst_0/m_time[9]
+  5.018                        system_clock_inst_0/l_time_RNIJUQI[13]:C (f)
+               +     0.641          cell: ADLIB:NOR3C
+  5.659                        system_clock_inst_0/l_time_RNIJUQI[13]:Y (f)
+               +     0.591          net: system_clock_inst_0/l_m6_0_a2_7_3
+  6.250                        system_clock_inst_0/l_time_RNIQ01H1[7]:C (f)
+               +     0.641          cell: ADLIB:NOR3C
+  6.891                        system_clock_inst_0/l_time_RNIQ01H1[7]:Y (f)
+               +     0.308          net: system_clock_inst_0/l_m6_0_a2_7_6
+  7.199                        system_clock_inst_0/l_time_RNIPOUI2[12]:A (f)
+               +     0.515          cell: ADLIB:NOR2B
+  7.714                        system_clock_inst_0/l_time_RNIPOUI2[12]:Y (f)
+               +     0.334          net: system_clock_inst_0/l_m6_0_a2_7
+  8.048                        system_clock_inst_0/flag_RNO:C (f)
                +     0.681          cell: ADLIB:NOR3C
-  6.713                        system_clock_inst_0/l_time_RNIVNT11[5]:Y (f)
-               +     0.323          net: system_clock_inst_0/l_m6_0_a2_7_5
-  7.036                        system_clock_inst_0/l_time_RNIPOUI2[5]:B (f)
-               +     0.628          cell: ADLIB:NOR2B
-  7.664                        system_clock_inst_0/l_time_RNIPOUI2[5]:Y (f)
-               +     0.757          net: system_clock_inst_0/l_m6_0_a2_7
-  8.421                        system_clock_inst_0/flag_RNO:A (f)
-               +     0.681          cell: ADLIB:NOR3B
-  9.102                        system_clock_inst_0/flag_RNO:Y (f)
-               +     0.320          net: system_clock_inst_0/flag_RNO
-  9.422                        system_clock_inst_0/flag:D (f)
+  8.729                        system_clock_inst_0/flag_RNO:Y (f)
+               +     0.323          net: system_clock_inst_0/flag_RNO
+  9.052                        system_clock_inst_0/flag:D (f)
                                     
-  9.422                        data arrival time
+  9.052                        data arrival time
   ________________________________________________________
   Data required time calculation
   5.000                        CU_TOP|CLK
@@ -169,12 +169,12 @@ Expanded Path 1
   7.787                        CLKINT_0:A (r)
                +     0.747          cell: ADLIB:CLKINT
   8.534                        CLKINT_0:Y (r)
-               +     0.748          net: CLKINT_0_Y
-  9.282                        system_clock_inst_0/flag:CLK (r)
+               +     0.708          net: CLKINT_0_Y
+  9.242                        system_clock_inst_0/flag:CLK (r)
                -     0.574          Library setup time: ADLIB:DFN1C1
-  8.708                        system_clock_inst_0/flag:D
+  8.668                        system_clock_inst_0/flag:D
                                     
-  8.708                        data required time
+  8.668                        data required time
 
 
 END SET Register to Register
@@ -185,84 +185,92 @@ SET External Setup
 
 Path 1
   From:                        PWRONRESET
-  To:                          WOLF_CONTROLLER_inst_0/uart_data_buffer_in[2]:E
-  Delay (ns):                  6.744
+  To:                          WOLF_CONTROLLER_inst_0/uart_data_buffer_in[1]:E
+  Delay (ns):                  9.689
   Slack (ns):
-  Arrival (ns):                6.744
+  Arrival (ns):                9.689
   Required (ns):
-  Setup (ns):                  0.435
-  External Setup (ns):         2.941
+  Setup (ns):                  0.608
+  External Setup (ns):         6.081
 
 Path 2
   From:                        PWRONRESET
-  To:                          WOLF_CONTROLLER_inst_0/uart_data_buffer_in[6]:E
-  Delay (ns):                  6.466
+  To:                          WOLF_CONTROLLER_inst_0/uart_data_buffer_in[2]:E
+  Delay (ns):                  9.373
   Slack (ns):
-  Arrival (ns):                6.466
+  Arrival (ns):                9.373
   Required (ns):
-  Setup (ns):                  0.435
-  External Setup (ns):         2.611
+  Setup (ns):                  0.608
+  External Setup (ns):         5.713
 
 Path 3
   From:                        PWRONRESET
-  To:                          WOLF_CONTROLLER_inst_0/uart_data_buffer_in[5]:E
-  Delay (ns):                  6.435
+  To:                          WOLF_CONTROLLER_inst_0/uart_data_buffer_in[3]:E
+  Delay (ns):                  9.359
   Slack (ns):
-  Arrival (ns):                6.435
+  Arrival (ns):                9.359
   Required (ns):
-  Setup (ns):                  0.435
-  External Setup (ns):         2.580
+  Setup (ns):                  0.608
+  External Setup (ns):         5.709
 
 Path 4
   From:                        PWRONRESET
-  To:                          CUTTER_PWM_inst_0/half_duty_0[0]:E
-  Delay (ns):                  6.041
+  To:                          WOLF_CONTROLLER_inst_0/uart_data_buffer_in[0]:E
+  Delay (ns):                  8.875
   Slack (ns):
-  Arrival (ns):                6.041
+  Arrival (ns):                8.875
   Required (ns):
   Setup (ns):                  0.608
-  External Setup (ns):         2.386
+  External Setup (ns):         5.215
 
 Path 5
   From:                        PWRONRESET
-  To:                          CUTTER_PWM_inst_0/half_duty_0[1]:E
-  Delay (ns):                  6.041
+  To:                          WOLF_CONTROLLER_inst_0/uart_data_buffer_in[5]:E
+  Delay (ns):                  8.875
   Slack (ns):
-  Arrival (ns):                6.041
+  Arrival (ns):                8.875
   Required (ns):
   Setup (ns):                  0.608
-  External Setup (ns):         2.386
+  External Setup (ns):         5.215
 
 
 Expanded Path 1
   From: PWRONRESET
-  To: WOLF_CONTROLLER_inst_0/uart_data_buffer_in[2]:E
+  To: WOLF_CONTROLLER_inst_0/uart_data_buffer_in[1]:E
   data required time                             N/C
-  data arrival time                          -   6.744
+  data arrival time                          -   9.689
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
-  0.000                        PWRONRESET (r)
+  0.000                        PWRONRESET (f)
                +     0.000          net: PWRONRESET
-  0.000                        PWRONRESET_pad/U0/U0:PAD (r)
-               +     1.001          cell: ADLIB:IOPAD_IN
-  1.001                        PWRONRESET_pad/U0/U0:Y (r)
+  0.000                        PWRONRESET_pad/U0/U0:PAD (f)
+               +     0.688          cell: ADLIB:IOPAD_IN
+  0.688                        PWRONRESET_pad/U0/U0:Y (f)
                +     0.000          net: PWRONRESET_pad/U0/NET1
-  1.001                        PWRONRESET_pad/U0/U1:YIN (r)
-               +     0.043          cell: ADLIB:IOIN_IB
-  1.044                        PWRONRESET_pad/U0/U1:Y (r)
-               +     1.817          net: PWRONRESET_c
-  2.861                        CLKINT_1:A (r)
-               +     0.747          cell: ADLIB:CLKINT
-  3.608                        CLKINT_1:Y (r)
-               +     0.734          net: CLKINT_1_Y
-  4.342                        WOLF_CONTROLLER_inst_0/uart_current_state_RNIIK4F[2]:B (r)
-               +     0.386          cell: ADLIB:NOR2A
-  4.728                        WOLF_CONTROLLER_inst_0/uart_current_state_RNIIK4F[2]:Y (f)
-               +     2.016          net: WOLF_CONTROLLER_inst_0/uart_data_buffer_in_1_sqmuxa
-  6.744                        WOLF_CONTROLLER_inst_0/uart_data_buffer_in[2]:E (f)
+  0.688                        PWRONRESET_pad/U0/U1:YIN (f)
+               +     0.040          cell: ADLIB:IOIN_IB
+  0.728                        PWRONRESET_pad/U0/U1:Y (f)
+               +     1.890          net: PWRONRESET_c
+  2.618                        CLKINT_1:A (f)
+               +     0.767          cell: ADLIB:CLKINT
+  3.385                        CLKINT_1:Y (f)
+               +     0.688          net: CLKINT_1_Y
+  4.073                        OR2_0:A (f)
+               +     0.508          cell: ADLIB:OR2
+  4.581                        OR2_0:Y (f)
+               +     1.846          net: OR2_0
+  6.427                        OR2_0_RNI20Q6:A (f)
+               +     0.767          cell: ADLIB:CLKINT
+  7.194                        OR2_0_RNI20Q6:Y (f)
+               +     0.708          net: OR2_0_Y
+  7.902                        WOLF_CONTROLLER_inst_0/uart_current_state_RNIVO7C[2]:B (f)
+               +     0.407          cell: ADLIB:NOR2A
+  8.309                        WOLF_CONTROLLER_inst_0/uart_current_state_RNIVO7C[2]:Y (r)
+               +     1.380          net: WOLF_CONTROLLER_inst_0/uart_data_buffer_in_1_sqmuxa
+  9.689                        WOLF_CONTROLLER_inst_0/uart_data_buffer_in[1]:E (r)
                                     
-  6.744                        data arrival time
+  9.689                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          CU_TOP|CLK
@@ -280,10 +288,10 @@ Expanded Path 1
   N/C                          CLKINT_0:A (r)
                +     0.747          cell: ADLIB:CLKINT
   N/C                          CLKINT_0:Y (r)
-               +     0.704          net: CLKINT_0_Y
-  N/C                          WOLF_CONTROLLER_inst_0/uart_data_buffer_in[2]:CLK (r)
-               -     0.435          Library setup time: ADLIB:DFN1E1
-  N/C                          WOLF_CONTROLLER_inst_0/uart_data_buffer_in[2]:E
+               +     0.682          net: CLKINT_0_Y
+  N/C                          WOLF_CONTROLLER_inst_0/uart_data_buffer_in[1]:CLK (r)
+               -     0.608          Library setup time: ADLIB:DFN1E1
+  N/C                          WOLF_CONTROLLER_inst_0/uart_data_buffer_in[1]:E
 
 
 END SET External Setup
@@ -293,81 +301,81 @@ END SET External Setup
 SET Clock to Output
 
 Path 1
-  From:                        system_clock_inst_0/s_time_0[7]:CLK
+  From:                        WOLF_CONTROLLER_inst_0/uart_oen:CLK
   To:                          LED1
-  Delay (ns):                  8.947
+  Delay (ns):                  7.785
   Slack (ns):
-  Arrival (ns):                13.044
+  Arrival (ns):                12.049
   Required (ns):
-  Clock to Out (ns):           13.044
+  Clock to Out (ns):           12.049
 
 Path 2
   From:                        CUTTER_PWM_inst_0/pwm_out[0]:CLK
   To:                          CUTTER
-  Delay (ns):                  6.995
+  Delay (ns):                  6.759
   Slack (ns):
-  Arrival (ns):                11.233
+  Arrival (ns):                10.975
   Required (ns):
-  Clock to Out (ns):           11.233
+  Clock to Out (ns):           10.975
 
 Path 3
-  From:                        WOLF_CONTROLLER_inst_0/cutter_en:CLK
+  From:                        system_clock_inst_0/s_time_0[7]:CLK
   To:                          LED2
-  Delay (ns):                  6.970
+  Delay (ns):                  6.040
   Slack (ns):
-  Arrival (ns):                11.177
+  Arrival (ns):                10.103
   Required (ns):
-  Clock to Out (ns):           11.177
+  Clock to Out (ns):           10.103
 
 Path 4
   From:                        FPGA_UART/make_TX/tx_xhdl2:CLK
   To:                          FPGA_UART_TX
-  Delay (ns):                  5.922
+  Delay (ns):                  4.811
   Slack (ns):
-  Arrival (ns):                10.144
+  Arrival (ns):                9.020
   Required (ns):
-  Clock to Out (ns):           10.144
+  Clock to Out (ns):           9.020
 
 
 Expanded Path 1
-  From: system_clock_inst_0/s_time_0[7]:CLK
+  From: WOLF_CONTROLLER_inst_0/uart_oen:CLK
   To: LED1
   data required time                             N/C
-  data arrival time                          -   13.044
+  data arrival time                          -   12.049
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
   0.000                        CU_TOP|CLK
                +     0.000          Clock source
-  0.000                        CLK (f)
+  0.000                        CLK (r)
                +     0.000          net: CLK
-  0.000                        CLK_pad/U0/U0:PAD (f)
-               +     0.688          cell: ADLIB:IOPAD_IN
-  0.688                        CLK_pad/U0/U0:Y (f)
+  0.000                        CLK_pad/U0/U0:PAD (r)
+               +     1.001          cell: ADLIB:IOPAD_IN
+  1.001                        CLK_pad/U0/U0:Y (r)
                +     0.000          net: CLK_pad/U0/NET1
-  0.688                        CLK_pad/U0/U1:YIN (f)
-               +     0.040          cell: ADLIB:IOIN_IB
-  0.728                        CLK_pad/U0/U1:Y (f)
-               +     1.841          net: CLK_c
-  2.569                        CLKINT_0:A (f)
-               +     0.767          cell: ADLIB:CLKINT
-  3.336                        CLKINT_0:Y (f)
-               +     0.761          net: CLKINT_0_Y
-  4.097                        system_clock_inst_0/s_time_0[7]:CLK (f)
-               +     0.654          cell: ADLIB:DFN0E1C1
-  4.751                        system_clock_inst_0/s_time_0[7]:Q (f)
-               +     4.102          net: m_time[25]
-  8.853                        LED1_pad/U0/U1:D (f)
-               +     0.659          cell: ADLIB:IOTRI_OB_EB
-  9.512                        LED1_pad/U0/U1:DOUT (f)
+  1.001                        CLK_pad/U0/U1:YIN (r)
+               +     0.043          cell: ADLIB:IOIN_IB
+  1.044                        CLK_pad/U0/U1:Y (r)
+               +     1.743          net: CLK_c
+  2.787                        CLKINT_0:A (r)
+               +     0.747          cell: ADLIB:CLKINT
+  3.534                        CLKINT_0:Y (r)
+               +     0.730          net: CLKINT_0_Y
+  4.264                        WOLF_CONTROLLER_inst_0/uart_oen:CLK (r)
+               +     0.737          cell: ADLIB:DFN1E1P1
+  5.001                        WOLF_CONTROLLER_inst_0/uart_oen:Q (f)
+               +     2.934          net: LED1_c
+  7.935                        LED1_pad/U0/U1:D (f)
+               +     0.582          cell: ADLIB:IOTRI_OB_EB
+  8.517                        LED1_pad/U0/U1:DOUT (f)
                +     0.000          net: LED1_pad/U0/NET1
-  9.512                        LED1_pad/U0/U0:D (f)
+  8.517                        LED1_pad/U0/U0:D (f)
                +     3.532          cell: ADLIB:IOPAD_TRI
-  13.044                       LED1_pad/U0/U0:PAD (f)
+  12.049                       LED1_pad/U0/U0:PAD (f)
                +     0.000          net: LED1
-  13.044                       LED1 (f)
+  12.049                       LED1 (f)
                                     
-  13.044                       data arrival time
+  12.049                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          CU_TOP|CLK
@@ -383,7 +391,125 @@ END SET Clock to Output
 
 SET Register to Asynchronous
 
-No Path
+Path 1
+  From:                        UART_reset_monitor_inst_0/reset_out:CLK
+  To:                          system_clock_inst_0/l_time[5]:CLR
+  Delay (ns):                  5.044
+  Slack (ns):                  -0.501
+  Arrival (ns):                9.267
+  Required (ns):               8.766
+  Recovery (ns):               0.297
+  Minimum Period (ns):         11.002
+  Skew (ns):                   0.160
+
+Path 2
+  From:                        UART_reset_monitor_inst_0/reset_out:CLK
+  To:                          system_clock_inst_0/l_time[1]:CLR
+  Delay (ns):                  5.044
+  Slack (ns):                  -0.501
+  Arrival (ns):                9.267
+  Required (ns):               8.766
+  Recovery (ns):               0.297
+  Minimum Period (ns):         11.002
+  Skew (ns):                   0.160
+
+Path 3
+  From:                        UART_reset_monitor_inst_0/reset_out:CLK
+  To:                          system_clock_inst_0/l_time[6]:CLR
+  Delay (ns):                  5.044
+  Slack (ns):                  -0.501
+  Arrival (ns):                9.267
+  Required (ns):               8.766
+  Recovery (ns):               0.297
+  Minimum Period (ns):         11.002
+  Skew (ns):                   0.160
+
+Path 4
+  From:                        UART_reset_monitor_inst_0/reset_out:CLK
+  To:                          system_clock_inst_0/l_time[10]:CLR
+  Delay (ns):                  5.044
+  Slack (ns):                  -0.500
+  Arrival (ns):                9.267
+  Required (ns):               8.767
+  Recovery (ns):               0.297
+  Minimum Period (ns):         11.000
+  Skew (ns):                   0.159
+
+Path 5
+  From:                        UART_reset_monitor_inst_0/reset_out:CLK
+  To:                          system_clock_inst_0/l_time[11]:CLR
+  Delay (ns):                  5.033
+  Slack (ns):                  -0.498
+  Arrival (ns):                9.256
+  Required (ns):               8.758
+  Recovery (ns):               0.297
+  Minimum Period (ns):         10.996
+  Skew (ns):                   0.168
+
+
+Expanded Path 1
+  From: UART_reset_monitor_inst_0/reset_out:CLK
+  To: system_clock_inst_0/l_time[5]:CLR
+  data required time                             8.766
+  data arrival time                          -   9.267
+  slack                                          -0.501
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        CU_TOP|CLK
+               +     0.000          Clock source
+  0.000                        CLK (r)
+               +     0.000          net: CLK
+  0.000                        CLK_pad/U0/U0:PAD (r)
+               +     1.001          cell: ADLIB:IOPAD_IN
+  1.001                        CLK_pad/U0/U0:Y (r)
+               +     0.000          net: CLK_pad/U0/NET1
+  1.001                        CLK_pad/U0/U1:YIN (r)
+               +     0.043          cell: ADLIB:IOIN_IB
+  1.044                        CLK_pad/U0/U1:Y (r)
+               +     1.743          net: CLK_c
+  2.787                        CLKINT_0:A (r)
+               +     0.747          cell: ADLIB:CLKINT
+  3.534                        CLKINT_0:Y (r)
+               +     0.689          net: CLKINT_0_Y
+  4.223                        UART_reset_monitor_inst_0/reset_out:CLK (r)
+               +     0.737          cell: ADLIB:DFN1E0C1
+  4.960                        UART_reset_monitor_inst_0/reset_out:Q (f)
+               +     0.323          net: LED1_net_0
+  5.283                        OR2_0:B (f)
+               +     0.647          cell: ADLIB:OR2
+  5.930                        OR2_0:Y (f)
+               +     1.846          net: OR2_0
+  7.776                        OR2_0_RNI20Q6:A (f)
+               +     0.767          cell: ADLIB:CLKINT
+  8.543                        OR2_0_RNI20Q6:Y (f)
+               +     0.724          net: OR2_0_Y
+  9.267                        system_clock_inst_0/l_time[5]:CLR (f)
+                                    
+  9.267                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  5.000                        CU_TOP|CLK
+               +     0.000          Clock source
+  5.000                        CLK (f)
+               +     0.000          net: CLK
+  5.000                        CLK_pad/U0/U0:PAD (f)
+               +     0.688          cell: ADLIB:IOPAD_IN
+  5.688                        CLK_pad/U0/U0:Y (f)
+               +     0.000          net: CLK_pad/U0/NET1
+  5.688                        CLK_pad/U0/U1:YIN (f)
+               +     0.040          cell: ADLIB:IOIN_IB
+  5.728                        CLK_pad/U0/U1:Y (f)
+               +     1.841          net: CLK_c
+  7.569                        CLKINT_0:A (f)
+               +     0.767          cell: ADLIB:CLKINT
+  8.336                        CLKINT_0:Y (f)
+               +     0.727          net: CLKINT_0_Y
+  9.063                        system_clock_inst_0/l_time[5]:CLK (f)
+               -     0.297          Library recovery time: ADLIB:DFN0C1
+  8.766                        system_clock_inst_0/l_time[5]:CLR
+                                    
+  8.766                        data required time
+
 
 END SET Register to Asynchronous
 
@@ -393,60 +519,60 @@ SET External Recovery
 
 Path 1
   From:                        PWRONRESET
-  To:                          system_clock_inst_0/l_time[1]:CLR
-  Delay (ns):                  4.139
+  To:                          system_clock_inst_0/l_time[5]:CLR
+  Delay (ns):                  7.918
   Slack (ns):
-  Arrival (ns):                4.139
+  Arrival (ns):                7.918
   Required (ns):
   Recovery (ns):               0.297
-  External Recovery (ns):      0.363
+  External Recovery (ns):      4.152
 
 Path 2
   From:                        PWRONRESET
-  To:                          system_clock_inst_0/l_time[4]:CLR
-  Delay (ns):                  4.139
+  To:                          system_clock_inst_0/l_time[1]:CLR
+  Delay (ns):                  7.918
   Slack (ns):
-  Arrival (ns):                4.139
+  Arrival (ns):                7.918
   Required (ns):
   Recovery (ns):               0.297
-  External Recovery (ns):      0.363
+  External Recovery (ns):      4.152
 
 Path 3
   From:                        PWRONRESET
   To:                          system_clock_inst_0/l_time[6]:CLR
-  Delay (ns):                  4.139
+  Delay (ns):                  7.918
   Slack (ns):
-  Arrival (ns):                4.139
+  Arrival (ns):                7.918
   Required (ns):
   Recovery (ns):               0.297
-  External Recovery (ns):      0.339
+  External Recovery (ns):      4.152
 
 Path 4
   From:                        PWRONRESET
-  To:                          system_clock_inst_0/l_time[3]:CLR
-  Delay (ns):                  4.139
+  To:                          system_clock_inst_0/l_time[10]:CLR
+  Delay (ns):                  7.918
   Slack (ns):
-  Arrival (ns):                4.139
+  Arrival (ns):                7.918
   Required (ns):
   Recovery (ns):               0.297
-  External Recovery (ns):      0.339
+  External Recovery (ns):      4.151
 
 Path 5
   From:                        PWRONRESET
-  To:                          system_clock_inst_0/l_time[14]:CLR
-  Delay (ns):                  4.139
+  To:                          system_clock_inst_0/l_time[11]:CLR
+  Delay (ns):                  7.907
   Slack (ns):
-  Arrival (ns):                4.139
+  Arrival (ns):                7.907
   Required (ns):
   Recovery (ns):               0.297
-  External Recovery (ns):      0.339
+  External Recovery (ns):      4.149
 
 
 Expanded Path 1
   From: PWRONRESET
-  To: system_clock_inst_0/l_time[1]:CLR
+  To: system_clock_inst_0/l_time[5]:CLR
   data required time                             N/C
-  data arrival time                          -   4.139
+  data arrival time                          -   7.918
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -463,10 +589,18 @@ Expanded Path 1
   2.618                        CLKINT_1:A (f)
                +     0.767          cell: ADLIB:CLKINT
   3.385                        CLKINT_1:Y (f)
-               +     0.754          net: CLKINT_1_Y
-  4.139                        system_clock_inst_0/l_time[1]:CLR (f)
+               +     0.688          net: CLKINT_1_Y
+  4.073                        OR2_0:A (f)
+               +     0.508          cell: ADLIB:OR2
+  4.581                        OR2_0:Y (f)
+               +     1.846          net: OR2_0
+  6.427                        OR2_0_RNI20Q6:A (f)
+               +     0.767          cell: ADLIB:CLKINT
+  7.194                        OR2_0_RNI20Q6:Y (f)
+               +     0.724          net: OR2_0_Y
+  7.918                        system_clock_inst_0/l_time[5]:CLR (f)
                                     
-  4.139                        data arrival time
+  7.918                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          CU_TOP|CLK
@@ -484,10 +618,10 @@ Expanded Path 1
   N/C                          CLKINT_0:A (f)
                +     0.767          cell: ADLIB:CLKINT
   N/C                          CLKINT_0:Y (f)
-               +     0.737          net: CLKINT_0_Y
-  N/C                          system_clock_inst_0/l_time[1]:CLK (f)
+               +     0.727          net: CLKINT_0_Y
+  N/C                          system_clock_inst_0/l_time[5]:CLK (f)
                -     0.297          Library recovery time: ADLIB:DFN0C1
-  N/C                          system_clock_inst_0/l_time[1]:CLR
+  N/C                          system_clock_inst_0/l_time[5]:CLR
 
 
 END SET External Recovery
@@ -507,104 +641,104 @@ Clock Domain system_clock_inst_0/s_time_0[7]:Q
 SET Register to Register
 
 Path 1
-  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLK
-  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[8]:D
-  Delay (ns):                  9.319
+  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[2]:CLK
+  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[9]:D
+  Delay (ns):                  9.547
   Slack (ns):
-  Arrival (ns):                11.573
+  Arrival (ns):                11.787
   Required (ns):
   Setup (ns):                  0.539
-  Minimum Period (ns):         10.187
+  Minimum Period (ns):         9.861
 
 Path 2
-  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLK
-  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[10]:E
-  Delay (ns):                  9.305
+  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[2]:CLK
+  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[8]:D
+  Delay (ns):                  8.729
   Slack (ns):
-  Arrival (ns):                11.559
+  Arrival (ns):                10.969
   Required (ns):
-  Setup (ns):                  0.435
-  Minimum Period (ns):         9.791
+  Setup (ns):                  0.539
+  Minimum Period (ns):         9.758
 
 Path 3
-  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLK
-  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[9]:D
-  Delay (ns):                  9.474
+  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[2]:CLK
+  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[7]:D
+  Delay (ns):                  8.571
   Slack (ns):
-  Arrival (ns):                11.728
+  Arrival (ns):                10.811
   Required (ns):
   Setup (ns):                  0.539
-  Minimum Period (ns):         9.578
+  Minimum Period (ns):         9.658
 
 Path 4
-  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLK
-  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[7]:D
-  Delay (ns):                  8.804
+  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[2]:CLK
+  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[5]:D
+  Delay (ns):                  8.531
   Slack (ns):
-  Arrival (ns):                11.058
+  Arrival (ns):                10.771
   Required (ns):
   Setup (ns):                  0.539
-  Minimum Period (ns):         9.456
+  Minimum Period (ns):         9.605
 
 Path 5
-  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLK
-  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[5]:D
-  Delay (ns):                  7.846
+  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[2]:CLK
+  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[6]:D
+  Delay (ns):                  8.223
   Slack (ns):
-  Arrival (ns):                10.100
+  Arrival (ns):                10.463
   Required (ns):
   Setup (ns):                  0.539
-  Minimum Period (ns):         8.390
+  Minimum Period (ns):         9.209
 
 
 Expanded Path 1
-  From: WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLK
-  To: WOLF_CONTROLLER_inst_0/sec_since_res[8]:D
+  From: WOLF_CONTROLLER_inst_0/sec_since_res[2]:CLK
+  To: WOLF_CONTROLLER_inst_0/sec_since_res[9]:D
   data required time                             N/C
-  data arrival time                          -   11.573
+  data arrival time                          -   11.787
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
   0.000                        system_clock_inst_0/s_time_0[7]:Q
                +     0.000          Clock source
   0.000                        system_clock_inst_0/s_time_0[7]:Q (r)
-               +     2.254          net: m_time[25]
-  2.254                        WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLK (r)
+               +     2.240          net: m_time[25]
+  2.240                        WOLF_CONTROLLER_inst_0/sec_since_res[2]:CLK (r)
                +     0.581          cell: ADLIB:DFN1C1
-  2.835                        WOLF_CONTROLLER_inst_0/sec_since_res[0]:Q (r)
-               +     2.781          net: WOLF_CONTROLLER_inst_0/sec_since_res[0]
-  5.616                        WOLF_CONTROLLER_inst_0/sec_since_res_RNIPI6E1[1]:B (r)
-               +     0.624          cell: ADLIB:OR3C
-  6.240                        WOLF_CONTROLLER_inst_0/sec_since_res_RNIPI6E1[1]:Y (f)
-               +     1.367          net: WOLF_CONTROLLER_inst_0/N_38
-  7.607                        WOLF_CONTROLLER_inst_0/sec_since_res_RNI4F0D2[4]:C (f)
+  2.821                        WOLF_CONTROLLER_inst_0/sec_since_res[2]:Q (r)
+               +     3.446          net: WOLF_CONTROLLER_inst_0/sec_since_res[2]
+  6.267                        WOLF_CONTROLLER_inst_0/sec_since_res_RNIPI6E1[0]:A (r)
+               +     0.525          cell: ADLIB:OR3C
+  6.792                        WOLF_CONTROLLER_inst_0/sec_since_res_RNIPI6E1[0]:Y (f)
+               +     0.930          net: WOLF_CONTROLLER_inst_0/N_34
+  7.722                        WOLF_CONTROLLER_inst_0/sec_since_res_RNI4F0D2[4]:C (f)
                +     0.666          cell: ADLIB:OR3B
-  8.273                        WOLF_CONTROLLER_inst_0/sec_since_res_RNI4F0D2[4]:Y (f)
-               +     0.406          net: WOLF_CONTROLLER_inst_0/N_40
-  8.679                        WOLF_CONTROLLER_inst_0/sec_since_res_RNIJFQB3[6]:C (f)
+  8.388                        WOLF_CONTROLLER_inst_0/sec_since_res_RNI4F0D2[4]:Y (f)
+               +     0.362          net: WOLF_CONTROLLER_inst_0/N_36
+  8.750                        WOLF_CONTROLLER_inst_0/sec_since_res_RNIJFQB3[5]:C (f)
                +     0.666          cell: ADLIB:OR3B
-  9.345                        WOLF_CONTROLLER_inst_0/sec_since_res_RNIJFQB3[6]:Y (f)
-               +     0.334          net: WOLF_CONTROLLER_inst_0/N_42
-  9.679                        WOLF_CONTROLLER_inst_0/sec_since_res_RNICH7R3[7]:B (f)
-               +     0.650          cell: ADLIB:OR2A
-  10.329                       WOLF_CONTROLLER_inst_0/sec_since_res_RNICH7R3[7]:Y (f)
-               +     0.387          net: WOLF_CONTROLLER_inst_0/N_43
-  10.716                       WOLF_CONTROLLER_inst_0/sec_since_res_RNO[8]:A (f)
+  9.416                        WOLF_CONTROLLER_inst_0/sec_since_res_RNIJFQB3[5]:Y (f)
+               +     0.530          net: WOLF_CONTROLLER_inst_0/N_38
+  9.946                        WOLF_CONTROLLER_inst_0/sec_since_res_RNO_0[9]:C (f)
+               +     0.666          cell: ADLIB:OR3B
+  10.612                       WOLF_CONTROLLER_inst_0/sec_since_res_RNO_0[9]:Y (f)
+               +     0.318          net: WOLF_CONTROLLER_inst_0/N_41
+  10.930                       WOLF_CONTROLLER_inst_0/sec_since_res_RNO[9]:A (f)
                +     0.523          cell: ADLIB:XNOR2
-  11.239                       WOLF_CONTROLLER_inst_0/sec_since_res_RNO[8]:Y (f)
-               +     0.334          net: WOLF_CONTROLLER_inst_0/N_74_i
-  11.573                       WOLF_CONTROLLER_inst_0/sec_since_res[8]:D (f)
+  11.453                       WOLF_CONTROLLER_inst_0/sec_since_res_RNO[9]:Y (f)
+               +     0.334          net: WOLF_CONTROLLER_inst_0/N_67_i
+  11.787                       WOLF_CONTROLLER_inst_0/sec_since_res[9]:D (f)
                                     
-  11.573                       data arrival time
+  11.787                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          system_clock_inst_0/s_time_0[7]:Q
                +     0.000          Clock source
   N/C                          system_clock_inst_0/s_time_0[7]:Q (r)
-               +     1.925          net: m_time[25]
-  N/C                          WOLF_CONTROLLER_inst_0/sec_since_res[8]:CLK (r)
+               +     2.465          net: m_time[25]
+  N/C                          WOLF_CONTROLLER_inst_0/sec_since_res[9]:CLK (r)
                -     0.539          Library setup time: ADLIB:DFN1C1
-  N/C                          WOLF_CONTROLLER_inst_0/sec_since_res[8]:D
+  N/C                          WOLF_CONTROLLER_inst_0/sec_since_res[9]:D
 
 
 END SET Register to Register
@@ -639,60 +773,60 @@ SET External Recovery
 
 Path 1
   From:                        PWRONRESET
-  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[8]:CLR
-  Delay (ns):                  4.098
+  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLR
+  Delay (ns):                  7.877
   Slack (ns):
-  Arrival (ns):                4.098
+  Arrival (ns):                7.877
   Required (ns):
   Recovery (ns):               0.297
-  External Recovery (ns):      2.470
+  External Recovery (ns):      6.765
 
 Path 2
   From:                        PWRONRESET
   To:                          WOLF_CONTROLLER_inst_0/sec_since_res[7]:CLR
-  Delay (ns):                  4.076
+  Delay (ns):                  7.932
   Slack (ns):
-  Arrival (ns):                4.076
+  Arrival (ns):                7.932
   Required (ns):
   Recovery (ns):               0.297
-  External Recovery (ns):      2.232
+  External Recovery (ns):      6.537
 
 Path 3
   From:                        PWRONRESET
-  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[10]:CLR
-  Delay (ns):                  4.054
+  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[8]:CLR
+  Delay (ns):                  7.932
   Slack (ns):
-  Arrival (ns):                4.054
+  Arrival (ns):                7.932
   Required (ns):
   Recovery (ns):               0.297
-  External Recovery (ns):      2.148
+  External Recovery (ns):      6.479
 
 Path 4
   From:                        PWRONRESET
   To:                          WOLF_CONTROLLER_inst_0/sec_since_res[5]:CLR
-  Delay (ns):                  4.098
+  Delay (ns):                  7.883
   Slack (ns):
-  Arrival (ns):                4.098
+  Arrival (ns):                7.883
   Required (ns):
   Recovery (ns):               0.297
-  External Recovery (ns):      2.146
+  External Recovery (ns):      6.475
 
 Path 5
   From:                        PWRONRESET
-  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLR
-  Delay (ns):                  4.071
+  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[6]:CLR
+  Delay (ns):                  7.932
   Slack (ns):
-  Arrival (ns):                4.071
+  Arrival (ns):                7.932
   Required (ns):
   Recovery (ns):               0.297
-  External Recovery (ns):      2.114
+  External Recovery (ns):      6.436
 
 
 Expanded Path 1
   From: PWRONRESET
-  To: WOLF_CONTROLLER_inst_0/sec_since_res[8]:CLR
+  To: WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLR
   data required time                             N/C
-  data arrival time                          -   4.098
+  data arrival time                          -   7.877
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -709,19 +843,27 @@ Expanded Path 1
   2.618                        CLKINT_1:A (f)
                +     0.767          cell: ADLIB:CLKINT
   3.385                        CLKINT_1:Y (f)
-               +     0.713          net: CLKINT_1_Y
-  4.098                        WOLF_CONTROLLER_inst_0/sec_since_res[8]:CLR (f)
+               +     0.688          net: CLKINT_1_Y
+  4.073                        OR2_0:A (f)
+               +     0.508          cell: ADLIB:OR2
+  4.581                        OR2_0:Y (f)
+               +     1.846          net: OR2_0
+  6.427                        OR2_0_RNI20Q6:A (f)
+               +     0.767          cell: ADLIB:CLKINT
+  7.194                        OR2_0_RNI20Q6:Y (f)
+               +     0.683          net: OR2_0_Y
+  7.877                        WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLR (f)
                                     
-  4.098                        data arrival time
+  7.877                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          system_clock_inst_0/s_time_0[7]:Q
                +     0.000          Clock source
   N/C                          system_clock_inst_0/s_time_0[7]:Q (r)
-               +     1.925          net: m_time[25]
-  N/C                          WOLF_CONTROLLER_inst_0/sec_since_res[8]:CLK (r)
+               +     1.409          net: m_time[25]
+  N/C                          WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLK (r)
                -     0.297          Library recovery time: ADLIB:DFN1C1
-  N/C                          WOLF_CONTROLLER_inst_0/sec_since_res[8]:CLR
+  N/C                          WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLR
 
 
 END SET External Recovery

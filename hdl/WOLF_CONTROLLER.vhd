@@ -58,12 +58,12 @@ architecture architecture_WOLF_CONTROLLER of WOLF_CONTROLLER is
 --####################### Constants #####################################
 
 --Cutter	
-constant sec_cutter_enable      : integer := 6;    -- Seconds cutter should be enabled
-constant sec_to_cutter_enable   : integer := 5;     -- Seconds from ejection to enable cutter.
+constant sec_cutter_enable      : integer := 2;    -- Seconds cutter should be enabled
+constant sec_to_cutter_enable   : integer := 2;     -- Seconds from ejection to enable cutter.
 constant cutter_duty            : integer := 50;    -- Cutter PWM duty cycle, controls current through heating filament(255 => More current, 0 => Less current)
 
 --Uart
-constant uart_baud_val_int      : integer := 212;   -- baudval = (mclk / (16 * baudrate)) - 1; set for 115 200 baud
+constant uart_baud_val_int      : integer := 212;   -- baudval = (mclk / (16 * baudrate)) - 1; set for 9600 baud
 
 --####################### Signals   #####################################	
 ----------------------------------------------------------------------------------------------------------------------
@@ -140,13 +140,10 @@ begin
                 uart_next_state <= IDLE;
             when IDLE => -- Wait for receving command
                 uart_ready <= '1';
-                led1 <= '0';
                 if(uart_rxrdy = '1') then
-                    led1 <= '1';
                     uart_ready <= '0';
                     uart_next_state <= RECEIVE;
                 elsif(main_uart_transmit_flag='1') then
-                    led1 <= '1';
                     uart_ready <= '0';
                     uart_data_out <= main_uart_data_out;
                     uart_next_state <= TRANSMIT;
@@ -159,7 +156,6 @@ begin
                 uart_next_state <= RESPONSE;
             
             when RESPONSE => 
-                uart_oen <= '1';
                 uart_data_out <= uart_data_buffer_in;
                 uart_next_state <= TRANSMIT;
 
@@ -242,10 +238,6 @@ begin
         -- SLEEP state, do nothing
         when SLEEP =>
             main_uart_transmit_flag <= '0';   
-            main_next_state <= main_current_state;
-        -- Error go to sleep
-        when others =>
-            main_next_state <= SLEEP;
         end case;
     end if;
 end process main_state_machine;

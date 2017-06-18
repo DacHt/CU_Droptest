@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Sun Jun 18 10:51:46 2017 ***************************************************************************
+                          Sun Jun 18 20:21:18 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.8
 Version: 11.8.0.26
 File Name: C:\Users\rozen\Gitrepos\CU_Droptest\designer\impl1\CU_TOP.adb
 Design Name: CU_TOP  Design State: compile
-Last Saved: Sun Jun 18 10:37:02 2017
+Last Saved: Sun Jun 18 20:19:31 2017
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Sun Jun 18 10:51:43 2017:
+Source File(s) Imported on Sun Jun 18 20:21:15 2017:
         C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.edn
         C:\Users\rozen\Gitrepos\CU_Droptest\constraint\CU_Droptest.pdc
         C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP_sdc.sdc
@@ -89,9 +89,9 @@ Optimized macros:
   - Buffers:                0
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        5
+  - Logic combining:        7
 
-    Total macros optimized  5
+    Total macros optimized  7
 
 There were 0 error(s) and 0 warning(s) in this design.
 =====================================================================
@@ -112,10 +112,10 @@ There were 0 error(s) and 0 warning(s).
 Compile report:
 ===============
 
-    CORE                       Used:    479  Total:   6144   (7.80%)
+    CORE                       Used:    502  Total:   6144   (8.17%)
     IO (W/ clocks)             Used:     12  Total:     68   (17.65%)
     Differential IO            Used:      0  Total:     13   (0.00%)
-    GLOBAL (Chip+Quadrant)     Used:      2  Total:     18   (11.11%)
+    GLOBAL (Chip+Quadrant)     Used:      3  Total:     18   (16.67%)
     PLL                        Used:      0  Total:      1   (0.00%)
     RAM/FIFO                   Used:      0  Total:      8   (0.00%)
     Low Static ICC             Used:      0  Total:      1   (0.00%)
@@ -126,7 +126,7 @@ Global Information:
 
     Type            | Used   | Total
     ----------------|--------|--------------
-    Chip global     | 2      | 6  (33.33%)*
+    Chip global     | 3      | 6  (50.00%)*
     Quadrant global | 0      | 12 (0.00%)
 
     (*) Chip globals may be assigned to Quadrant globals using the Multi-View Navigator (MVN)
@@ -137,8 +137,8 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 307          | 307
-    SEQ     | 172          | 172
+    COMB    | 321          | 321
+    SEQ     | 181          | 181
 
 I/O Function:
 
@@ -170,11 +170,14 @@ Net information report:
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    164     SET/RESET_NET Net   : CLKINT_1_Y
-                          Driver: CLKINT_1
-                          Source: NETLIST
-    159     CLK_NET       Net   : CLKINT_0_Y
+    168     CLK_NET       Net   : CLKINT_0_Y
                           Driver: CLKINT_0
+                          Source: NETLIST
+    164     SET/RESET_NET Net   : OR2_0_Y
+                          Driver: OR2_0_RNI20Q6
+                          Source: NETLIST
+    9       INT_NET       Net   : CLKINT_1_Y
+                          Driver: CLKINT_1
                           Source: NETLIST
 
 High fanout nets in the post compile netlist:
@@ -184,23 +187,23 @@ High fanout nets in the post compile netlist:
                           Driver: FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int
     16      CLK_NET       Net   : m_time[25]
                           Driver: system_clock_inst_0/s_time_0[7]
-    13      INT_NET       Net   : FPGA_UART/make_RX/N_217_1
+    15      INT_NET       Net   : FPGA_UART/make_RX/N_217_1
                           Driver: FPGA_UART/make_RX/rx_state_RNIT726_0[0]
     12      INT_NET       Net   : FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un4_baud_cntr
                           Driver:
 FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIDA6N4[10]
     12      INT_NET       Net   : FPGA_UART/make_RX/rx_bit_cnte
                           Driver: FPGA_UART/make_RX/receive_count_RNIHM8T[3]
-    10      INT_NET       Net   : LED2_0
+    10      INT_NET       Net   : LED1_2
                           Driver: WOLF_CONTROLLER_inst_0/uart_wen
-    10      INT_NET       Net   : LED2_c
-                          Driver: WOLF_CONTROLLER_inst_0/cutter_en
     10      INT_NET       Net   : FPGA_UART/xmit_pulse
                           Driver: FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock_RNIEFCH
     10      INT_NET       Net   : FPGA_UART/make_TX/N_157
                           Driver: FPGA_UART/make_TX/xmit_state_RNIP3DT[3]
-    10      INT_NET       Net   : WOLF_CONTROLLER_inst_0/uart_current_state[1]
-                          Driver: WOLF_CONTROLLER_inst_0/uart_current_state[1]
+    9       INT_NET       Net   : LED2_net_0
+                          Driver: WOLF_CONTROLLER_inst_0/cutter_en
+    9       INT_NET       Net   : WOLF_CONTROLLER_inst_0/uart_current_state[4]
+                          Driver: WOLF_CONTROLLER_inst_0/uart_current_state[4]
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
@@ -209,22 +212,22 @@ Nets that are candidates for clock assignment and the resulting fanout:
                           Driver: FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int
     16      CLK_NET       Net   : m_time[25]
                           Driver: system_clock_inst_0/s_time_0[7]
-    13      INT_NET       Net   : FPGA_UART/make_RX/N_217_1
+    15      INT_NET       Net   : FPGA_UART/make_RX/N_217_1
                           Driver: FPGA_UART/make_RX/rx_state_RNIT726_0[0]
     12      INT_NET       Net   : FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un4_baud_cntr
                           Driver:
 FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIDA6N4[10]
     12      INT_NET       Net   : FPGA_UART/make_RX/rx_bit_cnte
                           Driver: FPGA_UART/make_RX/receive_count_RNIHM8T[3]
-    10      INT_NET       Net   : LED2_0
+    10      INT_NET       Net   : LED1_2
                           Driver: WOLF_CONTROLLER_inst_0/uart_wen
-    10      INT_NET       Net   : LED2_c
-                          Driver: WOLF_CONTROLLER_inst_0/cutter_en
     10      INT_NET       Net   : FPGA_UART/xmit_pulse
                           Driver: FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/xmit_clock_RNIEFCH
     10      INT_NET       Net   : FPGA_UART/make_TX/N_157
                           Driver: FPGA_UART/make_TX/xmit_state_RNIP3DT[3]
-    10      INT_NET       Net   : WOLF_CONTROLLER_inst_0/uart_current_state[1]
-                          Driver: WOLF_CONTROLLER_inst_0/uart_current_state[1]
+    9       INT_NET       Net   : LED2_net_0
+                          Driver: WOLF_CONTROLLER_inst_0/cutter_en
+    9       INT_NET       Net   : WOLF_CONTROLLER_inst_0/uart_current_state[4]
+                          Driver: WOLF_CONTROLLER_inst_0/uart_current_state[4]
 
 

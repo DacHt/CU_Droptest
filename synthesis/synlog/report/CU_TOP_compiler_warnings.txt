@@ -1,11 +1,11 @@
-@W: CD604 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":247:8:247:21|OTHERS clause is not synthesized 
 @W: CL240 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":53:4:53:7|led2 is not assigned a value (floating) -- simulation mismatch possible. 
-@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(3) to a constant 0
-@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(4) to a constant 0
-@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(5) to a constant 0
-@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(6) to a constant 0
-@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(7) to a constant 0
-@W: CL279 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Pruning register bits 7 to 3 of main_uart_data_out(7 downto 0)  
+@W: CL240 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":52:4:52:7|led1 is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Optimizing register bit main_uart_data_out(3) to a constant 0
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Optimizing register bit main_uart_data_out(4) to a constant 0
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Optimizing register bit main_uart_data_out(5) to a constant 0
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Optimizing register bit main_uart_data_out(6) to a constant 0
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Optimizing register bit main_uart_data_out(7) to a constant 0
+@W: CL279 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Pruning register bits 7 to 3 of main_uart_data_out(7 downto 0)  
 @W: CD434 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":265:21:265:31|Signal rx_dout_reg in the sensitivity list is not used in the process
 @W: CD434 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":265:34:265:49|Signal parity_err_xhdl1 in the sensitivity list is not used in the process
 @W: CD604 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":392:9:392:22|OTHERS clause is not synthesized 
@@ -32,4 +32,6 @@
 @W: CL159 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":45:9:45:19|Input tx_dout_reg is unused
 @W: CL159 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":46:9:46:18|Input fifo_empty is unused
 @W: CL159 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":47:9:47:17|Input fifo_full is unused
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\UART_reset_monitor.vhd":65:4:65:5|Optimizing register bit reset_counter(4) to a constant 0
+@W: CL260 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\UART_reset_monitor.vhd":65:4:65:5|Pruning register bit 4 of reset_counter(4 downto 0)  
 

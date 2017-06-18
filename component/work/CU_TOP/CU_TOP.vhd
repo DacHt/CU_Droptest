@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Fri Jun 16 21:22:33 2017
+-- Created by SmartDesign Sun Jun 18 20:18:40 2017
 -- Version: v11.8 11.8.0.26
 ----------------------------------------------------------------------
 
@@ -101,6 +101,17 @@ component CU_TOP_FPGA_UART_COREUART
         TXRDY             : out std_logic
         );
 end component;
+-- OR2
+component OR2
+    -- Port list
+    port(
+        -- Inputs
+        A : in  std_logic;
+        B : in  std_logic;
+        -- Outputs
+        Y : out std_logic
+        );
+end component;
 -- system_clock
 component system_clock
     -- Port list
@@ -110,6 +121,19 @@ component system_clock
         reset  : in  std_logic;
         -- Outputs
         m_time : out std_logic_vector(25 downto 0)
+        );
+end component;
+-- UART_reset_monitor
+component UART_reset_monitor
+    -- Port list
+    port(
+        -- Inputs
+        data_in   : in  std_logic_vector(7 downto 0);
+        mclk      : in  std_logic;
+        reset_in  : in  std_logic;
+        txrdy     : in  std_logic;
+        -- Outputs
+        reset_out : out std_logic
         );
 end component;
 -- WOLF_CONTROLLER
@@ -140,24 +164,25 @@ end component;
 ----------------------------------------------------------------------
 signal CLKINT_0_Y                         : std_logic;
 signal CLKINT_1_Y                         : std_logic;
-signal COREUART_0_DATA_OUT                : std_logic_vector(7 downto 0);
-signal COREUART_0_TXRDY                   : std_logic;
 signal CUTTER_net_0                       : std_logic_vector(0 to 0);
+signal FPGA_UART_DATA_OUT                 : std_logic_vector(7 downto 0);
 signal FPGA_UART_TX_net_0                 : std_logic;
-signal LED1_net_0                         : std_logic_vector(25 to 25);
+signal FPGA_UART_TXRDY                    : std_logic;
+signal LED1_net_0                         : std_logic;
 signal LED1_0                             : std_logic;
-signal LED1_1                             : std_logic;
+signal LED1_2                             : std_logic;
 signal LED1_3                             : std_logic;
 signal LED2_net_0                         : std_logic;
-signal LED2_0                             : std_logic;
+signal LED2_1                             : std_logic_vector(25 to 25);
+signal OR2_0_Y                            : std_logic;
 signal WOLF_CONTROLLER_cutter_pwm_duty    : std_logic_vector(7 downto 0);
 signal WOLF_CONTROLLER_uart_baud_val      : std_logic_vector(12 downto 0);
 signal WOLF_CONTROLLER_uart_baud_val_frac : std_logic_vector(2 downto 0);
 signal WOLF_CONTROLLER_uart_data_out      : std_logic_vector(7 downto 0);
 signal CUTTER_net_1                       : std_logic;
-signal LED2_net_1                         : std_logic;
+signal LED2_1_net_0                       : std_logic;
 signal FPGA_UART_TX_net_1                 : std_logic;
-signal LED1_net_1                         : std_logic;
+signal LED1_3_net_0                       : std_logic;
 signal m_time_slice_0                     : std_logic_vector(0 to 0);
 signal m_time_slice_1                     : std_logic_vector(10 to 10);
 signal m_time_slice_2                     : std_logic_vector(11 to 11);
@@ -203,7 +228,7 @@ begin
 ----------------------------------------------------------------------
 -- Inversions
 ----------------------------------------------------------------------
- RESET_N_IN_POST_INV0_0 <= NOT CLKINT_1_Y;
+ RESET_N_IN_POST_INV0_0 <= NOT OR2_0_Y;
 ----------------------------------------------------------------------
 -- TieOff assignments
 ----------------------------------------------------------------------
@@ -217,16 +242,16 @@ begin
 ----------------------------------------------------------------------
  CUTTER_net_1       <= CUTTER_net_0(0);
  CUTTER             <= CUTTER_net_1;
- LED2_net_1         <= LED2_net_0;
- LED2               <= LED2_net_1;
+ LED2_1_net_0       <= LED2_1(25);
+ LED2               <= LED2_1_net_0;
  FPGA_UART_TX_net_1 <= FPGA_UART_TX_net_0;
  FPGA_UART_TX       <= FPGA_UART_TX_net_1;
- LED1_net_1         <= LED1_net_0(25);
- LED1               <= LED1_net_1;
+ LED1_3_net_0       <= LED1_3;
+ LED1               <= LED1_3_net_0;
 ----------------------------------------------------------------------
 -- Slices assignments
 ----------------------------------------------------------------------
- LED1_net_0(25)      <= m_time_net_0(25);
+ LED2_1(25)          <= m_time_net_0(25);
  m_time_slice_0(0)   <= m_time_net_0(0);
  m_time_slice_1(10)  <= m_time_net_0(10);
  m_time_slice_2(11)  <= m_time_net_0(11);
@@ -276,7 +301,7 @@ CUTTER_PWM_inst_0 : CUTTER_PWM
     port map( 
         -- Inputs
         mclk     => CLKINT_0_Y,
-        reset    => CLKINT_1_Y,
+        reset    => OR2_0_Y,
         ena      => LED2_net_0,
         duty_wrt => VCC_net,
         duty     => WOLF_CONTROLLER_cutter_pwm_duty,
@@ -298,11 +323,11 @@ FPGA_UART : CU_TOP_FPGA_UART_COREUART
         CLK               => CLKINT_0_Y,
         CSN               => GND_net,
         ODD_N_EVEN        => VCC_net,
-        OEN               => LED1_1,
+        OEN               => LED1_3,
         PARITY_EN         => GND_net,
         RESET_N           => RESET_N_IN_POST_INV0_0,
         RX                => FPGA_UART_RX,
-        WEN               => LED2_0,
+        WEN               => LED1_2,
         BAUD_VAL          => WOLF_CONTROLLER_uart_baud_val,
         DATA_IN           => WOLF_CONTROLLER_uart_data_out,
         BAUD_VAL_FRACTION => WOLF_CONTROLLER_uart_baud_val_frac,
@@ -311,34 +336,54 @@ FPGA_UART : CU_TOP_FPGA_UART_COREUART
         PARITY_ERR        => OPEN,
         RXRDY             => LED1_0,
         TX                => FPGA_UART_TX_net_0,
-        TXRDY             => COREUART_0_TXRDY,
+        TXRDY             => FPGA_UART_TXRDY,
         FRAMING_ERR       => OPEN,
-        DATA_OUT          => COREUART_0_DATA_OUT 
+        DATA_OUT          => FPGA_UART_DATA_OUT 
+        );
+-- OR2_0
+OR2_0 : OR2
+    port map( 
+        -- Inputs
+        A => CLKINT_1_Y,
+        B => LED1_net_0,
+        -- Outputs
+        Y => OR2_0_Y 
         );
 -- system_clock_inst_0
 system_clock_inst_0 : system_clock
     port map( 
         -- Inputs
         mclk   => CLKINT_0_Y,
-        reset  => CLKINT_1_Y,
+        reset  => OR2_0_Y,
         -- Outputs
         m_time => m_time_net_0 
+        );
+-- UART_reset_monitor_inst_0
+UART_reset_monitor_inst_0 : UART_reset_monitor
+    port map( 
+        -- Inputs
+        mclk      => CLKINT_0_Y,
+        reset_in  => CLKINT_1_Y,
+        txrdy     => FPGA_UART_TXRDY,
+        data_in   => FPGA_UART_DATA_OUT,
+        -- Outputs
+        reset_out => LED1_net_0 
         );
 -- WOLF_CONTROLLER_inst_0
 WOLF_CONTROLLER_inst_0 : WOLF_CONTROLLER
     port map( 
         -- Inputs
         mclk               => CLKINT_0_Y,
-        clk_1hz            => LED1_net_0(25),
-        reset              => CLKINT_1_Y,
-        uart_txrdy         => COREUART_0_TXRDY,
+        clk_1hz            => LED2_1(25),
+        reset              => OR2_0_Y,
+        uart_txrdy         => FPGA_UART_TXRDY,
         uart_rxrdy         => LED1_0,
-        uart_data_in       => COREUART_0_DATA_OUT,
+        uart_data_in       => FPGA_UART_DATA_OUT,
         -- Outputs
         cutter_en          => LED2_net_0,
-        uart_wen           => LED2_0,
-        uart_oen           => LED1_1,
-        led1               => LED1_3,
+        uart_wen           => LED1_2,
+        uart_oen           => LED1_3,
+        led1               => OPEN,
         led2               => OPEN,
         cutter_pwm_duty    => WOLF_CONTROLLER_cutter_pwm_duty,
         uart_data_out      => WOLF_CONTROLLER_uart_data_out,

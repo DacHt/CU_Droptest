@@ -219,8 +219,8 @@ SIZE="214"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_Main_fp\CU_Main.pro,pro"
 STATE="utd"
-TIME="1497641333"
-SIZE="2423"
+TIME="1497774958"
+SIZE="2366"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_Main_fp\projectData\CU_Main.pdb,pdb"
 STATE="utd"
@@ -234,37 +234,37 @@ SIZE="55896"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.adb,adb"
 STATE="ood"
-TIME="1497641012"
-SIZE="455680"
+TIME="1497776039"
+SIZE="459264"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.ide_des,ide_des"
 STATE="utd"
-TIME="1497641012"
-SIZE="1276"
+TIME="1497775937"
+SIZE="1181"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.pdb,pdb"
 STATE="ood"
-TIME="1497775937"
+TIME="1497776039"
 SIZE="54475"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_compile_log.rpt,log"
 STATE="utd"
-TIME="1497640980"
-SIZE="9365"
+TIME="1497776039"
+SIZE="9211"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1497775923"
+TIME="1497776039"
 SIZE="2528"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1497775937"
+TIME="1497776039"
 SIZE="665"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1497775927"
+TIME="1497776039"
 SIZE="1130"
 ENDFILE
 VALUE "<project>\designer\impl1\WOLF_CONTROLLER.adb,adb"
@@ -309,28 +309,28 @@ SIZE="238"
 ENDFILE
 VALUE "<project>\synthesis\CU_Main_syn.prj,prj"
 STATE="utd"
-TIME="1496935730"
-SIZE="1988"
+TIME="1497774958"
+SIZE="1874"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP.edn,syn_edn"
 STATE="ood"
-TIME="1497640970"
-SIZE="254904"
+TIME="1497776039"
+SIZE="253677"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP.so,so"
 STATE="utd"
-TIME="1497640970"
-SIZE="236"
+TIME="1497775900"
+SIZE="217"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP_sdc.sdc,syn_sdc"
 STATE="ood"
-TIME="1497640970"
+TIME="1497775900"
 SIZE="395"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP_syn.prj,prj"
 STATE="utd"
-TIME="1497640970"
-SIZE="2941"
+TIME="1497775900"
+SIZE="2713"
 ENDFILE
 VALUE "<project>\synthesis\WOLF_CONTROLLER.edn,syn_edn"
 STATE="ood"
@@ -344,8 +344,8 @@ SIZE="254"
 ENDFILE
 VALUE "<project>\synthesis\WOLF_CONTROLLER_syn.prj,prj"
 STATE="utd"
-TIME="1496827724"
-SIZE="1688"
+TIME="1497774958"
+SIZE="0"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -525,19 +525,15 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Generate Programming Data:CU_TOP_prgdata_log.rpt
 StartPage;StartPage;0
-SmartDesign;CU_TOP;0
-HDL;hdl\WOLF_CONTROLLER.vhd;0
-ACTIVEVIEW;hdl\WOLF_CONTROLLER.vhd
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CU_TOP::work","component\work\CU_TOP\CU_TOP.vhd","TRUE","FALSE"
 SUBBLOCK "CUTTER_PWM::work","hdl\CUTTER_PWM.vhd","FALSE","FALSE"
+SUBBLOCK "WOLF_CONTROLLER::work","hdl\WOLF_CONTROLLER.vhd","FALSE","FALSE"
 SUBBLOCK "system_clock::work","hdl\System_clock.vhd","FALSE","FALSE"
 SUBBLOCK "CU_TOP_FPGA_UART_COREUART::COREUART_LIB","component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd","FALSE","FALSE"
-SUBBLOCK "WOLF_CONTROLLER::work","hdl\WOLF_CONTROLLER.vhd","FALSE","FALSE"
 ENDLIST
 LIST "CUTTER_PWM::work","hdl\CUTTER_PWM.vhd","FALSE","FALSE"
 ENDLIST

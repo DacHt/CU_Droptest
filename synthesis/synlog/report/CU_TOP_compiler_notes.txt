@@ -7,7 +7,10 @@
 @N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":23:7:23:21|Synthesizing work.wolf_controller.architecture_wolf_controller 
 @N: CD231 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":84:16:84:17|Using onehot encoding for type main_state (start="10000")
 @N: CD231 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":88:16:88:17|Using onehot encoding for type uart_state (start="10000")
+@N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\UART_reset_monitor.vhd":23:7:23:24|Synthesizing work.uart_reset_monitor.architecture_uart_reset_monitor 
+@N: CD233 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\UART_reset_monitor.vhd":53:17:53:18|Using sequential encoding for type reset_state
 @N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\System_clock.vhd":44:7:44:18|Synthesizing work.system_clock.behaviour 
+@N: CD630 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\proasic\proasic3.vhd":2198:10:2198:12|Synthesizing proasic3.or2.syn_black_box 
 @N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":34:7:34:31|Synthesizing coreuart_lib.cu_top_fpga_uart_coreuart.translated 
 @N: CD364 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":450:13:450:24|Removed redundant assignment
 @N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":33:7:33:31|Synthesizing coreuart_lib.cu_top_fpga_uart_rx_async.translated 

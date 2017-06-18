@@ -1,11 +1,12 @@
 #--  Synopsys, Inc.
 #--  Version J-2015.03M-SP1-2
 #--  Project file C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\run_options.txt
-#--  Written on Sun Jun 18 10:51:36 2017
+#--  Written on Sun Jun 18 20:21:08 2017
 
 
 #project files
 add_file -vhdl -lib work "C:/Users/rozen/Gitrepos/CU_Droptest/hdl/CUTTER_PWM.vhd"
+add_file -vhdl -lib work "C:/Users/rozen/Gitrepos/CU_Droptest/hdl/UART_reset_monitor.vhd"
 add_file -vhdl -lib work "C:/Users/rozen/Gitrepos/CU_Droptest/hdl/System_clock.vhd"
 add_file -vhdl -lib COREUART_LIB "C:/Users/rozen/Gitrepos/CU_Droptest/component/work/CU_TOP/FPGA_UART/rtl/vhdl/core/Clock_gen.vhd"
 add_file -vhdl -lib COREUART_LIB "C:/Users/rozen/Gitrepos/CU_Droptest/component/work/CU_TOP/FPGA_UART/rtl/vhdl/core/Rx_async.vhd"

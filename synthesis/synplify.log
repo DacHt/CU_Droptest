@@ -4,7 +4,7 @@ sourcing C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\mes
 Starting:    C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\bin64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2
 Hostname:    LAPTOP-UCQD4H1A
-Date:        Sun Jun 18 10:51:36 2017
+Date:        Sun Jun 18 20:21:08 2017
 Version:     J-2015.03M-SP1-2
 
 Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log CU_TOP_syn.tcl

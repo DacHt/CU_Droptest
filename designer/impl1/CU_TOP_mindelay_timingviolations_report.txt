@@ -2,7 +2,7 @@ Timing Violation Report Min Delay Analysis
 
 SmartTime Version v11.8
 Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
-Date: Sun Jun 18 10:52:07 2017
+Date: Sun Jun 18 20:21:42 2017
 
 
 Design: CU_TOP

@@ -4,6 +4,7 @@
 
 #project files
 add_file -vhdl -lib work "C:/Users/rozen/Gitrepos/CU_Droptest/hdl/CUTTER_PWM.vhd"
+add_file -vhdl -lib work "C:/Users/rozen/Gitrepos/CU_Droptest/hdl/UART_reset_monitor.vhd"
 add_file -vhdl -lib work "C:/Users/rozen/Gitrepos/CU_Droptest/hdl/System_clock.vhd"
 add_file -vhdl -lib COREUART_LIB "C:/Users/rozen/Gitrepos/CU_Droptest/component/work/CU_TOP/FPGA_UART/rtl/vhdl/core/Clock_gen.vhd"
 add_file -vhdl -lib COREUART_LIB "C:/Users/rozen/Gitrepos/CU_Droptest/component/work/CU_TOP/FPGA_UART/rtl/vhdl/core/Rx_async.vhd"

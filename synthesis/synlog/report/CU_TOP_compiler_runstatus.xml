@@ -14,11 +14,11 @@ The file contains the job information from compiler to be displayed as part of t
   </job_status>
 <job_info> 
 			<info name="Notes">
-  <data>32</data>
+  <data>35</data>
   <report_link name="more"><data>C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synlog\report\CU_TOP_compiler_notes.txt</data></report_link>
   </info>
 			<info name="Warnings">
-  <data>34</data>
+  <data>36</data>
   <report_link name="more"><data>C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synlog\report\CU_TOP_compiler_warnings.txt</data></report_link>
   </info>
 			<info name="Errors">
@@ -35,7 +35,7 @@ The file contains the job information from compiler to be displayed as part of t
   <data>-</data>
   </info>
 			<info name="Date &amp;Time">
-  <data type="timestamp">1497775897</data>
+  <data type="timestamp">1497810069</data>
   </info>
 			</job_info>
 </job_run_status>

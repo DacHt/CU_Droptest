@@ -3,14 +3,14 @@
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-1 non-gated/non-generated clock tree(s) driving 159 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 168 clock pin(s) of sequential element(s)
 1 gated/generated clock tree(s) driving 13 clock pin(s) of sequential element(s)
 0 instances converted, 13 sequential instances remain driven by gated/generated clocks
 
 ======================================== Non-Gated/Non-Generated Clocks =========================================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                          
 -----------------------------------------------------------------------------------------------------------------
-@K:CKID0002       CLK                 port                   159        WOLF_CONTROLLER_inst_0.uart_next_state[0]
+@K:CKID0002       CLK                 port                   168        WOLF_CONTROLLER_inst_0.uart_next_state[0]
 =================================================================================================================
 ========================================================================================== Gated/Generated Clocks ===========================================================================================
 Clock Tree ID     Driving Element                     Drive Element Type     Fanout     Sample Instance                              Explanation                                                             

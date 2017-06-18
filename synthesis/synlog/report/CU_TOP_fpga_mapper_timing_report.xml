@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synlog\CU_TOP_fpga_mapper.srr</data>
+<data>C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synlog\CU_TOP_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -17,13 +17,13 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>CU_TOP|CLK</data>
 <data>100.0 MHz</data>
-<data>73.7 MHz</data>
-<data>-1.783</data>
+<data>78.8 MHz</data>
+<data>-1.345</data>
 </row>
 <row>
 <data>system_clock|m_time_inferred_clock[25]</data>
 <data>100.0 MHz</data>
-<data>102.1 MHz</data>
-<data>0.205</data>
+<data>112.2 MHz</data>
+<data>1.090</data>
 </row>
 </report_table>

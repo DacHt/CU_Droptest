@@ -20,14 +20,14 @@ KEY IDE_DES_BLOCK_PUBLISH "FALSE"
 KEY IDE_DES_BA_EXPORTED "FALSE"
 KEY IDE_DES_INTERACTIVE "FALSE"
 KEY IDE_DES_ERROR_FOUND "FALSE"
-KEY IDE_DES_ADB_PATH "C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.adb"
+KEY IDE_DES_ADB_PATH "C:\Users\rozen\Gitrepos\CU_Droptest\designer\impl1\CU_TOP.adb"
 LIST SOURCE_FILES
-VALUE "C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP.edn;edn"
-VALUE "C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\constraint\CU_Droptest.pdc;pdc"
-VALUE "C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP_sdc.sdc;sdc"
+VALUE "C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.edn;edn"
+VALUE "C:\Users\rozen\Gitrepos\CU_Droptest\constraint\CU_Droptest.pdc;pdc"
+VALUE "C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP_sdc.sdc;sdc"
 ENDLIST
 LIST OPTIONAL_FILES
-VALUE "C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP_sdc.sdc;Used"
+VALUE "C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP_sdc.sdc;Used"
 ENDLIST
 LIST VCD_FILES
 ENDLIST

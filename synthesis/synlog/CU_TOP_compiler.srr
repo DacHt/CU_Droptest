@@ -7,82 +7,82 @@ Synopsys VHDL Compiler, version comp201503sp1p1, Build 240R, built Dec  1 2015
 Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
 
 @N: CD720 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\vhd2008\std.vhd":146:18:146:21|Setting time resolution to ns
-@N:"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\CU_TOP.vhd":20:7:20:12|Top entity is set to CU_TOP.
+@N:"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\CU_TOP.vhd":20:7:20:12|Top entity is set to CU_TOP.
 Options changed - recompiling
 VHDL syntax check successful!
 Options changed - recompiling
 @N: CD231 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus ('U'="1000000000")
-@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\CU_TOP.vhd":20:7:20:12|Synthesizing work.cu_top.rtl 
-@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":23:7:23:21|Synthesizing work.wolf_controller.architecture_wolf_controller 
-@N: CD231 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":84:16:84:17|Using onehot encoding for type main_state (start="10000")
-@N: CD231 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":88:16:88:17|Using onehot encoding for type uart_state (start="10000")
-@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":247:8:247:21|OTHERS clause is not synthesized 
+@N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\CU_TOP.vhd":20:7:20:12|Synthesizing work.cu_top.rtl 
+@N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":23:7:23:21|Synthesizing work.wolf_controller.architecture_wolf_controller 
+@N: CD231 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":84:16:84:17|Using onehot encoding for type main_state (start="10000")
+@N: CD231 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":88:16:88:17|Using onehot encoding for type uart_state (start="10000")
+@W: CD604 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":247:8:247:21|OTHERS clause is not synthesized 
 Post processing for work.wolf_controller.architecture_wolf_controller
-@W: CL240 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":53:4:53:7|led2 is not assigned a value (floating) -- simulation mismatch possible. 
-@A: CL282 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":124:4:124:5|Feedback mux created for signal led1 -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@A: CL282 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":124:4:124:5|Feedback mux created for signal uart_data_buffer_in[7:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@A: CL282 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Feedback mux created for signal main_current_state[0:4] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@A: CL282 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":124:4:124:5|Feedback mux created for signal uart_current_state[0:4] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(3) to a constant 0
-@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(4) to a constant 0
-@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(5) to a constant 0
-@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(6) to a constant 0
-@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(7) to a constant 0
-@W: CL279 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Pruning register bits 7 to 3 of main_uart_data_out(7 downto 0)  
-@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\System_clock.vhd":44:7:44:18|Synthesizing work.system_clock.behaviour 
+@W: CL240 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":53:4:53:7|led2 is not assigned a value (floating) -- simulation mismatch possible. 
+@A: CL282 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":124:4:124:5|Feedback mux created for signal led1 -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":124:4:124:5|Feedback mux created for signal uart_data_buffer_in[7:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Feedback mux created for signal main_current_state[0:4] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":124:4:124:5|Feedback mux created for signal uart_current_state[0:4] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(3) to a constant 0
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(4) to a constant 0
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(5) to a constant 0
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(6) to a constant 0
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Optimizing register bit main_uart_data_out(7) to a constant 0
+@W: CL279 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":185:4:185:5|Pruning register bits 7 to 3 of main_uart_data_out(7 downto 0)  
+@N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\System_clock.vhd":44:7:44:18|Synthesizing work.system_clock.behaviour 
 Post processing for work.system_clock.behaviour
-@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":34:7:34:31|Synthesizing coreuart_lib.cu_top_fpga_uart_coreuart.translated 
-@W: CD434 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":265:21:265:31|Signal rx_dout_reg in the sensitivity list is not used in the process
-@W: CD434 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":265:34:265:49|Signal parity_err_xhdl1 in the sensitivity list is not used in the process
-@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":392:9:392:22|OTHERS clause is not synthesized 
-@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":450:13:450:24|Removed redundant assignment
-@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":33:7:33:31|Synthesizing coreuart_lib.cu_top_fpga_uart_rx_async.translated 
-@N: CD233 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":64:24:64:25|Using sequential encoding for type receive_states
-@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":233:15:233:29|Removed redundant assignment
-@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":253:21:253:34|OTHERS clause is not synthesized 
-@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":256:19:256:26|Removed redundant assignment
-@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":318:19:318:33|OTHERS clause is not synthesized 
-@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":423:18:423:32|OTHERS clause is not synthesized 
+@N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":34:7:34:31|Synthesizing coreuart_lib.cu_top_fpga_uart_coreuart.translated 
+@W: CD434 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":265:21:265:31|Signal rx_dout_reg in the sensitivity list is not used in the process
+@W: CD434 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":265:34:265:49|Signal parity_err_xhdl1 in the sensitivity list is not used in the process
+@W: CD604 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":392:9:392:22|OTHERS clause is not synthesized 
+@N: CD364 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":450:13:450:24|Removed redundant assignment
+@N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":33:7:33:31|Synthesizing coreuart_lib.cu_top_fpga_uart_rx_async.translated 
+@N: CD233 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":64:24:64:25|Using sequential encoding for type receive_states
+@N: CD364 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":233:15:233:29|Removed redundant assignment
+@W: CD604 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":253:21:253:34|OTHERS clause is not synthesized 
+@N: CD364 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":256:19:256:26|Removed redundant assignment
+@W: CD604 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":318:19:318:33|OTHERS clause is not synthesized 
+@W: CD604 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":423:18:423:32|OTHERS clause is not synthesized 
 Post processing for coreuart_lib.cu_top_fpga_uart_rx_async.translated
-@N: CL177 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":443:6:443:7|Sharing sequential element clear_framing_error_en_i.
-@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":33:7:33:31|Synthesizing coreuart_lib.cu_top_fpga_uart_tx_async.translated 
-@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":311:12:311:20|Removed redundant assignment
+@N: CL177 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":443:6:443:7|Sharing sequential element clear_framing_error_en_i.
+@N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":33:7:33:31|Synthesizing coreuart_lib.cu_top_fpga_uart_tx_async.translated 
+@N: CD364 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":311:12:311:20|Removed redundant assignment
 Post processing for coreuart_lib.cu_top_fpga_uart_tx_async.translated
-@W: CL190 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":134:4:134:5|Optimizing register bit fifo_read_en0 to a constant 1
-@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":134:4:134:5|Pruning register fifo_read_en0  
-@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":35:7:35:32|Synthesizing coreuart_lib.cu_top_fpga_uart_clock_gen.rtl 
-@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":109:43:109:51|Removed redundant assignment
-@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":122:42:122:50|Removed redundant assignment
-@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":135:42:135:50|Removed redundant assignment
-@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":148:42:148:50|Removed redundant assignment
-@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":161:42:161:50|Removed redundant assignment
-@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":174:42:174:50|Removed redundant assignment
-@N: CD364 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":187:42:187:50|Removed redundant assignment
-@W: CD604 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":198:24:198:37|OTHERS clause is not synthesized 
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":134:4:134:5|Optimizing register bit fifo_read_en0 to a constant 1
+@W: CL169 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":134:4:134:5|Pruning register fifo_read_en0  
+@N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":35:7:35:32|Synthesizing coreuart_lib.cu_top_fpga_uart_clock_gen.rtl 
+@N: CD364 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":109:43:109:51|Removed redundant assignment
+@N: CD364 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":122:42:122:50|Removed redundant assignment
+@N: CD364 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":135:42:135:50|Removed redundant assignment
+@N: CD364 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":148:42:148:50|Removed redundant assignment
+@N: CD364 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":161:42:161:50|Removed redundant assignment
+@N: CD364 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":174:42:174:50|Removed redundant assignment
+@N: CD364 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":187:42:187:50|Removed redundant assignment
+@W: CD604 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd":198:24:198:37|OTHERS clause is not synthesized 
 Post processing for coreuart_lib.cu_top_fpga_uart_clock_gen.rtl
 Post processing for coreuart_lib.cu_top_fpga_uart_coreuart.translated
-@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":439:7:439:8|Pruning register overflow_reg_3  
-@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":414:7:414:8|Pruning register rx_dout_reg_empty_5  
-@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":399:6:399:7|Pruning register rx_dout_reg_5(7 downto 0)  
-@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":367:6:367:7|Pruning register rx_state_4(1 downto 0)  
-@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":350:6:350:7|Pruning register clear_framing_error_reg0_3  
-@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":350:6:350:7|Pruning register clear_framing_error_reg_3  
-@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":333:6:333:7|Pruning register clear_parity_reg0_3  
-@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":333:6:333:7|Pruning register clear_parity_reg_3  
-@W: CL169 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":245:6:245:7|Pruning register fifo_write_tx_4  
-@N: CD630 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":23:7:23:16|Synthesizing work.cutter_pwm.logic 
+@W: CL169 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":439:7:439:8|Pruning register overflow_reg_3  
+@W: CL169 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":414:7:414:8|Pruning register rx_dout_reg_empty_5  
+@W: CL169 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":399:6:399:7|Pruning register rx_dout_reg_5(7 downto 0)  
+@W: CL169 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":367:6:367:7|Pruning register rx_state_4(1 downto 0)  
+@W: CL169 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":350:6:350:7|Pruning register clear_framing_error_reg0_3  
+@W: CL169 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":350:6:350:7|Pruning register clear_framing_error_reg_3  
+@W: CL169 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":333:6:333:7|Pruning register clear_parity_reg0_3  
+@W: CL169 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":333:6:333:7|Pruning register clear_parity_reg_3  
+@W: CL169 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd":245:6:245:7|Pruning register fifo_write_tx_4  
+@N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\CUTTER_PWM.vhd":23:7:23:16|Synthesizing work.cutter_pwm.logic 
 Post processing for work.cutter_pwm.logic
-@A: CL282 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Feedback mux created for signal half_duty_new[4:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@A: CL282 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Feedback mux created for signal half_duty_0[4:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Feedback mux created for signal half_duty_new[4:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Feedback mux created for signal half_duty_0[4:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
 @N: CD630 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\proasic\proasic3.vhd":2858:10:2858:15|Synthesizing proasic3.clkint.syn_black_box 
 Post processing for proasic3.clkint.syn_black_box
 Post processing for work.cu_top.rtl
-@W: CL189 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Register bit half_duty_new(4) is always 0, optimizing ...
-@W: CL260 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Pruning register bit 4 of half_duty_new(4 downto 0)  
-@W: CL189 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Register bit half_duty_0(4) is always 0, optimizing ...
-@W: CL260 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Pruning register bit 4 of half_duty_0(4 downto 0)  
-@W: CL246 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd":34:6:34:9|Input port bits 3 to 0 of duty(7 downto 0) are unused 
-@N: CL201 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":134:4:134:5|Trying to extract state machine for register xmit_state
+@W: CL189 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Register bit half_duty_new(4) is always 0, optimizing ...
+@W: CL260 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Pruning register bit 4 of half_duty_new(4 downto 0)  
+@W: CL189 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Register bit half_duty_0(4) is always 0, optimizing ...
+@W: CL260 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\CUTTER_PWM.vhd":48:4:48:5|Pruning register bit 4 of half_duty_0(4 downto 0)  
+@W: CL246 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\CUTTER_PWM.vhd":34:6:34:9|Input port bits 3 to 0 of duty(7 downto 0) are unused 
+@N: CL201 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":134:4:134:5|Trying to extract state machine for register xmit_state
 Extracted state machine for register xmit_state
 State machine has 6 reachable states with original encodings of:
    00000000000000000000000000000000
@@ -91,10 +91,10 @@ State machine has 6 reachable states with original encodings of:
    00000000000000000000000000000011
    00000000000000000000000000000100
    00000000000000000000000000000101
-@W: CL159 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":45:9:45:19|Input tx_dout_reg is unused
-@W: CL159 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":46:9:46:18|Input fifo_empty is unused
-@W: CL159 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":47:9:47:17|Input fifo_full is unused
-@N: CL201 :"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":264:6:264:7|Trying to extract state machine for register rx_state
+@W: CL159 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":45:9:45:19|Input tx_dout_reg is unused
+@W: CL159 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":46:9:46:18|Input fifo_empty is unused
+@W: CL159 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd":47:9:47:17|Input fifo_full is unused
+@N: CL201 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd":264:6:264:7|Trying to extract state machine for register rx_state
 Extracted state machine for register rx_state
 State machine has 4 reachable states with original encodings of:
    00
@@ -105,7 +105,7 @@ State machine has 4 reachable states with original encodings of:
 At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 81MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Jun 16 21:22:46 2017
+# Sun Jun 18 10:36:20 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
@@ -114,7 +114,7 @@ Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Jun 16 21:22:46 2017
+# Sun Jun 18 10:36:20 2017
 
 ###########################################################]
 @END
@@ -122,6 +122,6 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Jun 16 21:22:47 2017
+# Sun Jun 18 10:36:20 2017
 
 ###########################################################]

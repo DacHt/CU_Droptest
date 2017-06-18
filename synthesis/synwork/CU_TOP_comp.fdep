@@ -1,4 +1,4 @@
-#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\rozen\\Dropbox\\EE_BSC_2017\\G8\\vhdl\\CU_Droptest\\synthesis\\synwork\\CU_TOP_comp.srs|-top|work.CU_TOP|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|COREUART_LIB|-lib|COREUART_LIB|-lib|COREUART_LIB|-lib|COREUART_LIB|-lib|COREUART_LIB|-lib|COREUART_LIB|-lib|COREUART_LIB|-lib|work"
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\rozen\\Gitrepos\\CU_Droptest\\synthesis\\synwork\\CU_TOP_comp.srs|-top|work.CU_TOP|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|work|-lib|work|-lib|COREUART_LIB|-lib|COREUART_LIB|-lib|COREUART_LIB|-lib|COREUART_LIB|-lib|COREUART_LIB|-lib|COREUART_LIB|-lib|work|-lib|COREUART_LIB|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\fpga_J-2015.03M-SP1-2\\bin64\\c_vhdl.exe":1449254126
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\fpga_J-2015.03M-SP1-2\\lib\\vhd2008\\location.map":1449254134
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\fpga_J-2015.03M-SP1-2\\lib\\vhd2008\\std.vhd":1449254134
@@ -10,29 +10,29 @@
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\fpga_J-2015.03M-SP1-2\\lib\\vhd2008\\arith.vhd":1449254134
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\fpga_J-2015.03M-SP1-2\\lib\\vhd2008\\unsigned.vhd":1449254134
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\fpga_J-2015.03M-SP1-2\\lib\\vhd\\hyperents.vhd":1449254132
-#CUR:"C:\\Users\\rozen\\Dropbox\\EE_BSC_2017\\G8\\vhdl\\CU_Droptest\\hdl\\CUTTER_PWM.vhd":1497427834
-#CUR:"C:\\Users\\rozen\\Dropbox\\EE_BSC_2017\\G8\\vhdl\\CU_Droptest\\hdl\\WOLF_CONTROLLER.vhd":1497640583
-#CUR:"C:\\Users\\rozen\\Dropbox\\EE_BSC_2017\\G8\\vhdl\\CU_Droptest\\hdl\\System_clock.vhd":1495983442
-#CUR:"C:\\Users\\rozen\\Dropbox\\EE_BSC_2017\\G8\\vhdl\\CU_Droptest\\component\\work\\CU_TOP\\FPGA_UART\\rtl\\vhdl\\core\\Clock_gen.vhd":1497640952
-#CUR:"C:\\Users\\rozen\\Dropbox\\EE_BSC_2017\\G8\\vhdl\\CU_Droptest\\component\\work\\CU_TOP\\FPGA_UART\\rtl\\vhdl\\core\\Rx_async.vhd":1497640952
-#CUR:"C:\\Users\\rozen\\Dropbox\\EE_BSC_2017\\G8\\vhdl\\CU_Droptest\\component\\work\\CU_TOP\\FPGA_UART\\rtl\\vhdl\\core\\Tx_async.vhd":1497640952
-#CUR:"C:\\Users\\rozen\\Dropbox\\EE_BSC_2017\\G8\\vhdl\\CU_Droptest\\component\\work\\CU_TOP\\FPGA_UART\\rtl\\vhdl\\core\\fifo_256x8_pa3.vhd":1497640952
+#CUR:"C:\\Users\\rozen\\Gitrepos\\CU_Droptest\\hdl\\CUTTER_PWM.vhd":1497427834
+#CUR:"C:\\Users\\rozen\\Gitrepos\\CU_Droptest\\hdl\\System_clock.vhd":1495983442
+#CUR:"C:\\Users\\rozen\\Gitrepos\\CU_Droptest\\component\\work\\CU_TOP\\FPGA_UART\\rtl\\vhdl\\core\\Clock_gen.vhd":1497640952
+#CUR:"C:\\Users\\rozen\\Gitrepos\\CU_Droptest\\component\\work\\CU_TOP\\FPGA_UART\\rtl\\vhdl\\core\\Rx_async.vhd":1497640952
+#CUR:"C:\\Users\\rozen\\Gitrepos\\CU_Droptest\\component\\work\\CU_TOP\\FPGA_UART\\rtl\\vhdl\\core\\Tx_async.vhd":1497640952
+#CUR:"C:\\Users\\rozen\\Gitrepos\\CU_Droptest\\component\\work\\CU_TOP\\FPGA_UART\\rtl\\vhdl\\core\\fifo_256x8_pa3.vhd":1497640952
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\fpga_J-2015.03M-SP1-2\\lib\\proasic\\proasic3.vhd":1449254128
-#CUR:"C:\\Users\\rozen\\Dropbox\\EE_BSC_2017\\G8\\vhdl\\CU_Droptest\\component\\work\\CU_TOP\\FPGA_UART\\rtl\\vhdl\\core\\coreuart_pkg.vhd":1497640952
-#CUR:"C:\\Users\\rozen\\Dropbox\\EE_BSC_2017\\G8\\vhdl\\CU_Droptest\\component\\work\\CU_TOP\\FPGA_UART\\rtl\\vhdl\\core\\components.vhd":1497640952
-#CUR:"C:\\Users\\rozen\\Dropbox\\EE_BSC_2017\\G8\\vhdl\\CU_Droptest\\component\\work\\CU_TOP\\FPGA_UART\\rtl\\vhdl\\core\\CoreUART.vhd":1497640952
-#CUR:"C:\\Users\\rozen\\Dropbox\\EE_BSC_2017\\G8\\vhdl\\CU_Droptest\\component\\work\\CU_TOP\\CU_TOP.vhd":1497640953
-0			"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\CUTTER_PWM.vhd" vhdl
-1			"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\WOLF_CONTROLLER.vhd" vhdl
-2			"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\hdl\System_clock.vhd" vhdl
-3			"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd" vhdl
-4			"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd" vhdl
-5			"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd" vhdl
-6			"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\fifo_256x8_pa3.vhd" vhdl
-7			"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\coreuart_pkg.vhd" vhdl
-8			"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd" vhdl
-9			"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\components.vhd" vhdl
-10			"C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\component\work\CU_TOP\CU_TOP.vhd" vhdl
+#CUR:"C:\\Users\\rozen\\Gitrepos\\CU_Droptest\\component\\work\\CU_TOP\\FPGA_UART\\rtl\\vhdl\\core\\coreuart_pkg.vhd":1497640952
+#CUR:"C:\\Users\\rozen\\Gitrepos\\CU_Droptest\\hdl\\WOLF_CONTROLLER.vhd":1497774966
+#CUR:"C:\\Users\\rozen\\Gitrepos\\CU_Droptest\\component\\work\\CU_TOP\\FPGA_UART\\rtl\\vhdl\\core\\components.vhd":1497640952
+#CUR:"C:\\Users\\rozen\\Gitrepos\\CU_Droptest\\component\\work\\CU_TOP\\FPGA_UART\\rtl\\vhdl\\core\\CoreUART.vhd":1497640952
+#CUR:"C:\\Users\\rozen\\Gitrepos\\CU_Droptest\\component\\work\\CU_TOP\\CU_TOP.vhd":1497640953
+0			"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\CUTTER_PWM.vhd" vhdl
+1			"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\System_clock.vhd" vhdl
+2			"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd" vhdl
+3			"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd" vhdl
+4			"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd" vhdl
+5			"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\fifo_256x8_pa3.vhd" vhdl
+6			"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\coreuart_pkg.vhd" vhdl
+7			"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd" vhdl
+8			"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd" vhdl
+9			"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\components.vhd" vhdl
+10			"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\CU_TOP.vhd" vhdl
 #Dependency Lists(Uses List)
 0 -1
 1 -1
@@ -41,40 +41,40 @@
 4 -1
 5 -1
 6 -1
-7 -1
-8 7 6 4 5 3
+7 6 5 3 4 2
+8 -1
 9 -1
-10 9 1 2 8 0
+10 9 8 1 7 0
 #Dependency Lists(Users Of)
 0 10
 1 10
-2 10
-3 8
-4 8
-5 8
-6 8
-7 8
+2 7
+3 7
+4 7
+5 7
+6 7
+7 10
 8 10
 9 10
 10 -1
 #Design Unit to File Association
 module work cu_top 10
 arch work cu_top rtl 10
-module coreuart_lib cu_top_fpga_uart_coreuart 8
-arch coreuart_lib cu_top_fpga_uart_coreuart translated 8
-module coreuart_lib cu_top_fpga_uart_fifo_256x8 6
-arch coreuart_lib cu_top_fpga_uart_fifo_256x8 translated 6
-module coreuart_lib cu_top_fpga_uart_fifo_256x8_pa3 6
-arch coreuart_lib cu_top_fpga_uart_fifo_256x8_pa3 translated 6
-module coreuart_lib cu_top_fpga_uart_tx_async 5
-arch coreuart_lib cu_top_fpga_uart_tx_async translated 5
-module coreuart_lib cu_top_fpga_uart_rx_async 4
-arch coreuart_lib cu_top_fpga_uart_rx_async translated 4
-module coreuart_lib cu_top_fpga_uart_clock_gen 3
-arch coreuart_lib cu_top_fpga_uart_clock_gen rtl 3
-module work system_clock 2
-arch work system_clock behaviour 2
-module work wolf_controller 1
-arch work wolf_controller architecture_wolf_controller 1
+module work wolf_controller 8
+arch work wolf_controller architecture_wolf_controller 8
+module coreuart_lib cu_top_fpga_uart_coreuart 7
+arch coreuart_lib cu_top_fpga_uart_coreuart translated 7
+module coreuart_lib cu_top_fpga_uart_fifo_256x8 5
+arch coreuart_lib cu_top_fpga_uart_fifo_256x8 translated 5
+module coreuart_lib cu_top_fpga_uart_fifo_256x8_pa3 5
+arch coreuart_lib cu_top_fpga_uart_fifo_256x8_pa3 translated 5
+module coreuart_lib cu_top_fpga_uart_tx_async 4
+arch coreuart_lib cu_top_fpga_uart_tx_async translated 4
+module coreuart_lib cu_top_fpga_uart_rx_async 3
+arch coreuart_lib cu_top_fpga_uart_rx_async translated 3
+module coreuart_lib cu_top_fpga_uart_clock_gen 2
+arch coreuart_lib cu_top_fpga_uart_clock_gen rtl 2
+module work system_clock 1
+arch work system_clock behaviour 1
 module work cutter_pwm 0
 arch work cutter_pwm logic 0

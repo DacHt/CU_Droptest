@@ -5,11 +5,11 @@ The file contains the area information from mapper to be displayed as part of th
 *******************************************************************************************-->
 <report_table display_priority="1" name="Area Summary">
 <report_link name="Detailed report">
-<data>C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synlog\report\CU_TOP_fpga_mapper_resourceusage.rpt</data>
+<data>C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synlog\report\CU_TOP_fpga_mapper_resourceusage.rpt</data>
 <title>Report for cell</title>
 </report_link>
 <parameter tooltip="Total Core Cells used" name="Core Cells">
-<data>486</data>
+<data>475</data>
 </parameter>
 <parameter tooltip="Total IO Cells used" name="IO Cells">
 <data>12</data>

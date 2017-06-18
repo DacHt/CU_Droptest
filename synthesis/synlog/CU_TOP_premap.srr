@@ -2,10 +2,10 @@ Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1659R, Built De
 Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
 Product Version J-2015.03M-SP1-2
 
-Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
 
-@L: C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP_scck.rpt 
-Printing clock  summary report in "C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP_scck.rpt" file 
+@L: C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP_scck.rpt 
+Printing clock  summary report in "C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled 
 
@@ -14,16 +14,16 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
 
-@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":443:6:443:7|Removing sequential instance fifo_write_xhdl6 of view:PrimLib.dffs(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
-@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\hdl\wolf_controller.vhd":124:4:124:5|Removing sequential instance led1 of view:PrimLib.dffe(prim) in hierarchy view:work.WOLF_CONTROLLER(architecture_wolf_controller) because there are no references to its outputs 
-@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":443:6:443:7|Removing sequential instance clear_parity_en_xhdl3 of view:PrimLib.dffr(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
-@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":194:6:194:7|Removing sequential instance overflow_xhdl1 of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
-@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":399:6:399:7|Removing sequential instance parity_err_xhdl2 of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
-@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":218:6:218:7|Removing sequential instance framing_error_i of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
-@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":264:6:264:7|Removing sequential instance overflow_int of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
-@N: BN362 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":264:6:264:7|Removing sequential instance framing_error_int of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
+@N: BN362 :"c:\users\rozen\gitrepos\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":443:6:443:7|Removing sequential instance fifo_write_xhdl6 of view:PrimLib.dffs(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
+@N: BN362 :"c:\users\rozen\gitrepos\cu_droptest\hdl\wolf_controller.vhd":124:4:124:5|Removing sequential instance led1 of view:PrimLib.dffe(prim) in hierarchy view:work.WOLF_CONTROLLER(architecture_wolf_controller) because there are no references to its outputs 
+@N: BN362 :"c:\users\rozen\gitrepos\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":443:6:443:7|Removing sequential instance clear_parity_en_xhdl3 of view:PrimLib.dffr(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
+@N: BN362 :"c:\users\rozen\gitrepos\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":194:6:194:7|Removing sequential instance overflow_xhdl1 of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
+@N: BN362 :"c:\users\rozen\gitrepos\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":399:6:399:7|Removing sequential instance parity_err_xhdl2 of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
+@N: BN362 :"c:\users\rozen\gitrepos\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":218:6:218:7|Removing sequential instance framing_error_i of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
+@N: BN362 :"c:\users\rozen\gitrepos\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":264:6:264:7|Removing sequential instance overflow_int of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
+@N: BN362 :"c:\users\rozen\gitrepos\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":264:6:264:7|Removing sequential instance framing_error_int of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
 
 
 
@@ -37,16 +37,16 @@ CU_TOP|CLK                                 100.0 MHz     10.000        inferred 
 system_clock|m_time_inferred_clock[25]     100.0 MHz     10.000        inferred     Inferred_clkgroup_1
 =======================================================================================================
 
-@W: MT530 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\hdl\cutter_pwm.vhd":48:4:48:5|Found inferred clock CU_TOP|CLK which controls 173 sequential elements including CUTTER_PWM_inst_0.pwm_out[0]. This clock has no specified timing constraint which may adversely impact design performance. 
-@W: MT530 :"c:\users\rozen\dropbox\ee_bsc_2017\g8\vhdl\cu_droptest\hdl\wolf_controller.vhd":108:4:108:5|Found inferred clock system_clock|m_time_inferred_clock[25] which controls 13 sequential elements including WOLF_CONTROLLER_inst_0.sec_since_res[12:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\rozen\gitrepos\cu_droptest\hdl\cutter_pwm.vhd":48:4:48:5|Found inferred clock CU_TOP|CLK which controls 173 sequential elements including CUTTER_PWM_inst_0.pwm_out[0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\rozen\gitrepos\cu_droptest\hdl\wolf_controller.vhd":108:4:108:5|Found inferred clock system_clock|m_time_inferred_clock[25] which controls 13 sequential elements including WOLF_CONTROLLER_inst_0.sec_since_res[12:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
-@N: BN225 |Writing default property annotation file C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP.sap.
+@N: BN225 |Writing default property annotation file C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.sap.
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 46MB peak: 110MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 46MB peak: 109MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Jun 16 21:22:48 2017
+# Sun Jun 18 10:36:22 2017
 
 ###########################################################]

@@ -4,7 +4,7 @@ sourcing C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\mes
 Starting:    C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\bin64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2
 Hostname:    LAPTOP-UCQD4H1A
-Date:        Fri Jun 16 21:22:46 2017
+Date:        Sun Jun 18 10:36:20 2017
 Version:     J-2015.03M-SP1-2
 
 Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log CU_TOP_syn.tcl
@@ -18,9 +18,9 @@ License Option: actel_oem
 Running in Vendor Mode
 
 
-auto_infer_blackbox is not supported in current product.
+Implementation not found: synthesis
 
-log file: "C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP.srr"
+log file: "C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.srr"
 
 Running: synthesis in foreground
 
@@ -37,33 +37,33 @@ Running: compile_flow (Compile Process) on CU_TOP_syn|synthesis
 
 Running: compiler (Compile Input) on CU_TOP_syn|synthesis
 
-Copied C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synwork\CU_TOP_comp.srs to C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP.srs
+Copied C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_comp.srs to C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.srs
 
 
 compiler Completed
 Return Code: 0
-Run Time:0h:00m:02s
+Run Time:0h:00m:01s
 
 
 Running: multi_srs_gen (Multi-srs Generator) on CU_TOP_syn|synthesis
 
-Copied C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synwork\CU_TOP_comp.srs to C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synwork\CU_TOP_s.srs
+Copied C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_comp.srs to C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_s.srs
 
 
 multi_srs_gen Completed
 Return Code: 0
-Run Time:0h:00m:00s
+Run Time:0h:00m:01s
 
-Copied C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synwork\CU_TOP_mult.srs to C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP.srs
+Copied C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_mult.srs to C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.srs
 
 Complete: Compile Process on CU_TOP_syn|synthesis
 
 
 Running: premap (Pre-mapping) on CU_TOP_syn|synthesis
 
-Copied C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP.sap to C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synwork\CU_TOP_s.sap
+Copied C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.sap to C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_s.sap
 
-Copied C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP.fse to C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synwork\CU_TOP_s.fse
+Copied C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.fse to C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_s.fse
 
 
 premap Completed with warnings
@@ -78,12 +78,12 @@ Running: map (Map) on CU_TOP_syn|synthesis
 
 Running: fpga_mapper (Map & Optimize) on CU_TOP_syn|synthesis
 
-Copied C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\synwork\CU_TOP_m.srm to C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP.srm
+Copied C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_m.srm to C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.srm
 
 
 fpga_mapper Completed with warnings
 Return Code: 1
-Run Time:0h:00m:01s
+Run Time:0h:00m:02s
 
 Complete: Map on CU_TOP_syn|synthesis
 

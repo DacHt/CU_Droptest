@@ -30,7 +30,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest"
+KEY ProjectLocation "C:\Users\rozen\Gitrepos\CU_Droptest"
 KEY ProjectDescription "Simple test program to be used during droptest of CU. The program activates to cutter for a specified number of seconds, after the rocket pin has been removed. After that it goes in to sleep mode."
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VHDL"
@@ -219,7 +219,7 @@ SIZE="214"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_Main_fp\CU_Main.pro,pro"
 STATE="utd"
-TIME="1497538997"
+TIME="1497641333"
 SIZE="2423"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_Main_fp\projectData\CU_Main.pdb,pdb"
@@ -229,28 +229,28 @@ SIZE="38897"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_Main_fp\projectData\CU_TOP.pdb,pdb"
 STATE="utd"
-TIME="1497538997"
-SIZE="55058"
+TIME="1497641333"
+SIZE="55896"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.adb,adb"
 STATE="utd"
-TIME="1497605947"
-SIZE="442368"
+TIME="1497641012"
+SIZE="455680"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.ide_des,ide_des"
 STATE="utd"
-TIME="1497605947"
+TIME="1497641012"
 SIZE="1276"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.pdb,pdb"
 STATE="utd"
-TIME="1497641012"
-SIZE="55799"
+TIME="1497641075"
+SIZE="55896"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_compile_log.rpt,log"
 STATE="utd"
-TIME="1497605911"
-SIZE="9445"
+TIME="1497640980"
+SIZE="9365"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_placeroute_log.rpt,log"
 STATE="utd"
@@ -314,22 +314,22 @@ SIZE="1988"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP.edn,syn_edn"
 STATE="utd"
-TIME="1497605900"
-SIZE="254181"
+TIME="1497640970"
+SIZE="254904"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP.so,so"
 STATE="utd"
-TIME="1497605900"
+TIME="1497640970"
 SIZE="236"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1497605900"
+TIME="1497640970"
 SIZE="395"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP_syn.prj,prj"
 STATE="utd"
-TIME="1497605900"
+TIME="1497640970"
 SIZE="2941"
 ENDFILE
 VALUE "<project>\synthesis\WOLF_CONTROLLER.edn,syn_edn"
@@ -388,6 +388,18 @@ VALUE "<project>\component\Actel\DirectCore\COREUART\5.6.102\rtl\vhdl\test\commo
 VALUE "<project>\component\Actel\DirectCore\COREUART\5.6.102\rtl\vhdl\test\common\textio.vhd,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\COREUART\5.6.102\rtl\vhdl\test\common\tbpack.vhd,tb_hdl"
 VALUE "<project>\component\work\CU_TOP\FPGA_UART\rtl\vhdl\test\user\testbnch.vhd,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -523,6 +535,18 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "CU_TOP_FPGA_UART_COREUART::COREUART_LIB"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -536,12 +560,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Generate Programming Data:CU_TOP_prgdata_log.rpt
 StartPage;StartPage;0
-SmartDesign;CU_TOP;0
-HDL;hdl\WOLF_CONTROLLER.vhd;0
-ACTIVEVIEW;hdl\WOLF_CONTROLLER.vhd
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CU_TOP::work","component\work\CU_TOP\CU_TOP.vhd","TRUE","FALSE"

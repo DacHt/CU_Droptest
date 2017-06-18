@@ -4,68 +4,64 @@ Report for cell CU_TOP.rtl
               cell count     area count*area
               AND2     1      1.0        1.0
               AND3     7      1.0        7.0
-               AO1     3      1.0        3.0
+               AO1     2      1.0        2.0
               AO13     2      1.0        2.0
-              AO1A     8      1.0        8.0
-              AO1D     1      1.0        1.0
-              AOI1     4      1.0        4.0
-             AOI1B     8      1.0        8.0
-               AX1     7      1.0        7.0
+              AO1A     9      1.0        9.0
+              AOI1     2      1.0        2.0
+             AOI1B     7      1.0        7.0
+               AX1     6      1.0        6.0
               AX1B     6      1.0        6.0
-              AX1C     7      1.0        7.0
-              AX1E     1      1.0        1.0
-             AXOI4     1      1.0        1.0
+              AX1C    10      1.0       10.0
             CLKINT     2      0.0        0.0
                GND     8      0.0        0.0
-               INV    12      1.0       12.0
-               MX2    13      1.0       13.0
+               INV    10      1.0       10.0
+               MX2    15      1.0       15.0
               MX2A     2      1.0        2.0
               MX2B     3      1.0        3.0
               MX2C     2      1.0        2.0
               NOR2    11      1.0       11.0
              NOR2A    29      1.0       29.0
-             NOR2B    44      1.0       44.0
-              NOR3     4      1.0        4.0
-             NOR3A     4      1.0        4.0
-             NOR3B    10      1.0       10.0
-             NOR3C    21      1.0       21.0
-               OA1     2      1.0        2.0
+             NOR2B    43      1.0       43.0
+              NOR3     2      1.0        2.0
+             NOR3A     9      1.0        9.0
+             NOR3B     8      1.0        8.0
+             NOR3C    24      1.0       24.0
+               OA1     4      1.0        4.0
               OA1A     1      1.0        1.0
               OA1B     1      1.0        1.0
               OA1C     2      1.0        2.0
-              OAI1     1      1.0        1.0
-               OR2    20      1.0       20.0
-              OR2A    11      1.0       11.0
-              OR2B     7      1.0        7.0
-               OR3     6      1.0        6.0
-              OR3A     3      1.0        3.0
-              OR3B     2      1.0        2.0
-              OR3C     6      1.0        6.0
+              OAI1     2      1.0        2.0
+               OR2    19      1.0       19.0
+              OR2A     9      1.0        9.0
+              OR2B     6      1.0        6.0
+               OR3     3      1.0        3.0
+              OR3A     1      1.0        1.0
+              OR3C     4      1.0        4.0
                VCC     8      0.0        0.0
                XA1     1      1.0        1.0
-              XA1B     3      1.0        3.0
-              XA1C     1      1.0        1.0
+              XA1B     4      1.0        4.0
+              XA1C     3      1.0        3.0
              XAI1A     1      1.0        1.0
-             XNOR2     9      1.0        9.0
+             XNOR2     4      1.0        4.0
                XO1     2      1.0        2.0
               XO1A     3      1.0        3.0
-              XOR2    21      1.0       21.0
+              XOR2    23      1.0       23.0
 
 
             DFN0C1    10      1.0       10.0
           DFN0E0C1     7      1.0        7.0
           DFN0E1C1     8      1.0        8.0
               DFN1     2      1.0        2.0
-            DFN1C1    42      1.0       42.0
+            DFN1C1    43      1.0       43.0
             DFN1E0    10      1.0       10.0
-          DFN1E0C1    30      1.0       30.0
+          DFN1E0C1    29      1.0       29.0
           DFN1E0P1     4      1.0        4.0
             DFN1E1    10      1.0       10.0
           DFN1E1C1    42      1.0       42.0
           DFN1E1P1     1      1.0        1.0
             DFN1P1     6      1.0        6.0
                    -----          ----------
-             TOTAL   504               486.0
+             TOTAL   493               475.0
 
 
   IO Cell usage:
@@ -76,7 +72,7 @@ Report for cell CU_TOP.rtl
              TOTAL    12
 
 
-Core Cells         : 486 of 6144 (8%)
+Core Cells         : 475 of 6144 (8%)
 IO Cells           : 12
 
   RAM/ROM Usage Summary

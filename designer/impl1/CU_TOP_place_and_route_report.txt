@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Fri Jun 16 21:23:15 2017 ***************************************************************************
+                          Sun Jun 18 10:36:46 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.8
 Version: 11.8.0.26
-File Name: C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.adb
+File Name: C:\Users\rozen\Gitrepos\CU_Droptest\designer\impl1\CU_TOP.adb
 Design Name: CU_TOP  Design State: layout
-Last Saved: Fri Jun 16 21:22:59 2017
+Last Saved: Sun Jun 18 10:36:31 2017
 
 ***** Device Data **************************************************
 
@@ -22,10 +22,10 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Fri Jun 16 21:22:54 2017:
-        C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP.edn
-        C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\constraint\CU_Droptest.pdc
-        C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP_sdc.sdc
+Source File(s) Imported on Sun Jun 18 10:36:26 2017:
+        C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.edn
+        C:\Users\rozen\Gitrepos\CU_Droptest\constraint\CU_Droptest.pdc
+        C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP_sdc.sdc
 
 
 ***** CAE Variables ************************************************
@@ -51,9 +51,9 @@ Parameters used to run compile:
 Family      : ProASIC3
 Device      : A3P250
 Package     : 100 VQFP
-Source      : C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP.edn
-              C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\constraint\CU_Droptest.pdc
-              C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\synthesis\CU_TOP_sdc.sdc
+Source      : C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.edn
+              C:\Users\rozen\Gitrepos\CU_Droptest\constraint\CU_Droptest.pdc
+              C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP_sdc.sdc
 Format      : EDIF
 Topcell     : CU_TOP
 Speed grade : STD
@@ -89,9 +89,9 @@ Optimized macros:
   - Buffers:                0
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        9
+  - Logic combining:        7
 
-    Total macros optimized  9
+    Total macros optimized  7
 
 There were 0 error(s) and 0 warning(s) in this design.
 =====================================================================
@@ -112,7 +112,7 @@ There were 0 error(s) and 0 warning(s).
 Compile report:
 ===============
 
-    CORE                       Used:    477  Total:   6144   (7.76%)
+    CORE                       Used:    468  Total:   6144   (7.62%)
     IO (W/ clocks)             Used:     12  Total:     68   (17.65%)
     Differential IO            Used:      0  Total:     13   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      2  Total:     18   (11.11%)
@@ -137,7 +137,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 305          | 305
+    COMB    | 296          | 296
     SEQ     | 172          | 172
 
 I/O Function:
@@ -180,17 +180,17 @@ The following nets have been assigned to a chip global resource:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    21      INT_NET       Net   : FPGA_UART/baud_clock
+    20      INT_NET       Net   : FPGA_UART/baud_clock
                           Driver: FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int
     16      CLK_NET       Net   : m_time[25]
                           Driver: system_clock_inst_0/s_time_0[7]
-    15      INT_NET       Net   : FPGA_UART/make_RX/N_217_1
-                          Driver: FPGA_UART/make_RX/rx_state_RNIT726_0[0]
     12      INT_NET       Net   : FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un4_baud_cntr
                           Driver:
 FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIDA6N4[10]
     12      INT_NET       Net   : FPGA_UART/make_RX/rx_bit_cnte
                           Driver: FPGA_UART/make_RX/receive_count_RNIHM8T[3]
+    11      INT_NET       Net   : FPGA_UART/make_RX/N_125
+                          Driver: FPGA_UART/make_RX/rx_state_RNIT726_0[0]
     10      INT_NET       Net   : LED2_0
                           Driver: WOLF_CONTROLLER_inst_0/uart_wen
     10      INT_NET       Net   : LED2_c
@@ -205,17 +205,17 @@ FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIDA6N4[10]
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    21      INT_NET       Net   : FPGA_UART/baud_clock
+    20      INT_NET       Net   : FPGA_UART/baud_clock
                           Driver: FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int
     16      CLK_NET       Net   : m_time[25]
                           Driver: system_clock_inst_0/s_time_0[7]
-    15      INT_NET       Net   : FPGA_UART/make_RX/N_217_1
-                          Driver: FPGA_UART/make_RX/rx_state_RNIT726_0[0]
     12      INT_NET       Net   : FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/un4_baud_cntr
                           Driver:
 FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIDA6N4[10]
     12      INT_NET       Net   : FPGA_UART/make_RX/rx_bit_cnte
                           Driver: FPGA_UART/make_RX/receive_count_RNIHM8T[3]
+    11      INT_NET       Net   : FPGA_UART/make_RX/N_125
+                          Driver: FPGA_UART/make_RX/rx_state_RNIT726_0[0]
     10      INT_NET       Net   : LED2_0
                           Driver: WOLF_CONTROLLER_inst_0/uart_wen
     10      INT_NET       Net   : LED2_c
@@ -250,16 +250,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Fri Jun 16 21:23:03 2017
+Timing-driven Placer Started: Sun Jun 18 10:36:35 2017
 
-Placer Finished: Fri Jun 16 21:23:06 2017
+Placer Finished: Sun Jun 18 10:36:38 2017
 Total Placer CPU Time:     00:00:03
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: CU_TOP                          Started: Fri Jun 16 21:23:07 2017
+Design: CU_TOP                          Started: Sun Jun 18 10:36:39 2017
 
  
 Iterative improvement...
@@ -267,9 +267,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: CU_TOP                          
-Finished: Fri Jun 16 21:23:13 2017
-Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:06
-Total Memory Usage: 169.7 Mbytes
+Finished: Sun Jun 18 10:36:44 2017
+Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:05
+Total Memory Usage: 168.0 Mbytes
                         o - o - o - o - o - o
 
 

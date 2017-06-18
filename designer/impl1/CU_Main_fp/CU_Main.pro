@@ -1,6 +1,6 @@
 <project name="CU_Main" version="1.1">
     <ProjectDirectory>
-        C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_Main_fp
+        C:\Users\rozen\Gitrepos\CU_Droptest\designer\impl1\CU_Main_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_Main_fp\CU_Main.log
+        C:\Users\rozen\Gitrepos\CU_Droptest\designer\impl1\CU_Main_fp\CU_Main.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                C:\Users\rozen\Dropbox\EE_BSC_2017\G8\vhdl\CU_Droptest\designer\impl1\CU_TOP.pdb
+                C:\Users\rozen\Gitrepos\CU_Droptest\designer\impl1\CU_TOP.pdb
             </filename>
             <local>
                 projectData\CU_TOP.pdb

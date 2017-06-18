@@ -7,7 +7,7 @@
 @N: BN362 :"c:\users\rozen\gitrepos\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":333:6:333:7|Removing sequential instance rx_shift[8] of view:PrimLib.dffr(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
 @N: MF238 :"c:\users\rozen\gitrepos\cu_droptest\hdl\system_clock.vhd":94:26:94:35|Found 8-bit incrementor, 'un1_s_time_0[7:0]'
 @N: MF238 :"c:\users\rozen\gitrepos\cu_droptest\hdl\system_clock.vhd":94:26:94:35|Found 7-bit incrementor, 'un1_s_time[6:0]'
-@N: FP130 |Promoting Net OR2_0_Y on CLKINT  I_11 
+@N: FP130 |Promoting Net OR2_0_Y on CLKINT  I_13 
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 @N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.

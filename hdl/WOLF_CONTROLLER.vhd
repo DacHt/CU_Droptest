@@ -137,9 +137,7 @@ begin
                 uart_wen <= '1';
                 uart_oen <= '1';
                 uart_ready <= '0';
-                if (sec_since_res >= To_unsigned(1, sec_since_res'length)) then --Wait one second to let the UART init
-                    uart_next_state <= IDLE;
-                end if;
+                uart_next_state <= IDLE;
             when IDLE => -- Wait for receving command
                 uart_ready <= '1';
                 if(uart_rxrdy = '1') then

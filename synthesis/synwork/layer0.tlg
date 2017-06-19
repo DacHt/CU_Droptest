@@ -7,14 +7,14 @@ Post processing for work.wolf_controller.architecture_wolf_controller
 @W: CL240 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":53:4:53:7|led2 is not assigned a value (floating) -- simulation mismatch possible. 
 @W: CL240 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":52:4:52:7|led1 is not assigned a value (floating) -- simulation mismatch possible. 
 @A: CL282 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":124:4:124:5|Feedback mux created for signal uart_data_buffer_in[7:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@A: CL282 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":183:4:183:5|Feedback mux created for signal main_current_state[0:4] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Feedback mux created for signal main_current_state[0:4] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
 @A: CL282 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":124:4:124:5|Feedback mux created for signal uart_current_state[0:4] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":183:4:183:5|Optimizing register bit main_uart_data_out(3) to a constant 0
-@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":183:4:183:5|Optimizing register bit main_uart_data_out(4) to a constant 0
-@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":183:4:183:5|Optimizing register bit main_uart_data_out(5) to a constant 0
-@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":183:4:183:5|Optimizing register bit main_uart_data_out(6) to a constant 0
-@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":183:4:183:5|Optimizing register bit main_uart_data_out(7) to a constant 0
-@W: CL279 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":183:4:183:5|Pruning register bits 7 to 3 of main_uart_data_out(7 downto 0)  
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Optimizing register bit main_uart_data_out(3) to a constant 0
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Optimizing register bit main_uart_data_out(4) to a constant 0
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Optimizing register bit main_uart_data_out(5) to a constant 0
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Optimizing register bit main_uart_data_out(6) to a constant 0
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Optimizing register bit main_uart_data_out(7) to a constant 0
+@W: CL279 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Pruning register bits 7 to 3 of main_uart_data_out(7 downto 0)  
 @N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\UART_reset_monitor.vhd":23:7:23:24|Synthesizing work.uart_reset_monitor.architecture_uart_reset_monitor 
 @N: CD233 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\UART_reset_monitor.vhd":53:17:53:18|Using sequential encoding for type reset_state
 Post processing for work.uart_reset_monitor.architecture_uart_reset_monitor

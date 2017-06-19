@@ -2,7 +2,7 @@ Timing Report Min Delay Analysis
 
 SmartTime Version v11.8
 Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
-Date: Sun Jun 18 20:41:06 2017
+Date: Mon Jun 19 10:28:44 2017
 
 
 Design: CU_TOP
@@ -24,18 +24,18 @@ Scenario for Timing Analysis: Primary
 SUMMARY
 
 Clock Domain:               CU_TOP|CLK
-Period (ns):                10.696
-Frequency (MHz):            93.493
+Period (ns):                11.002
+Frequency (MHz):            90.893
 Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
-External Setup (ns):        5.794
-External Hold (ns):         1.108
-Min Clock-To-Out (ns):      3.170
-Max Clock-To-Out (ns):      12.035
+External Setup (ns):        6.081
+External Hold (ns):         1.163
+Min Clock-To-Out (ns):      2.830
+Max Clock-To-Out (ns):      12.049
 
 Clock Domain:               system_clock_inst_0/s_time_0[7]:Q
-Period (ns):                13.104
-Frequency (MHz):            76.313
+Period (ns):                9.861
+Frequency (MHz):            101.410
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
 External Setup (ns):        N/A
@@ -55,57 +55,57 @@ Clock Domain CU_TOP|CLK
 SET Register to Register
 
 Path 1
-  From:                        WOLF_CONTROLLER_inst_0/uart_next_state[0]:CLK
-  To:                          WOLF_CONTROLLER_inst_0/uart_current_state[0]:D
+  From:                        FPGA_UART/tx_hold_reg[1]:CLK
+  To:                          FPGA_UART/make_TX/tx_byte[1]:D
   Delay (ns):                  0.324
-  Slack (ns):                  0.271
-  Arrival (ns):                1.813
+  Slack (ns):                  0.276
+  Arrival (ns):                1.818
   Required (ns):               1.542
   Hold (ns):                   0.000
 
 Path 2
-  From:                        WOLF_CONTROLLER_inst_0/uart_data_out[6]:CLK
-  To:                          FPGA_UART/tx_hold_reg[6]:D
-  Delay (ns):                  0.327
-  Slack (ns):                  0.294
-  Arrival (ns):                1.853
-  Required (ns):               1.559
+  From:                        WOLF_CONTROLLER_inst_0/main_next_state[1]:CLK
+  To:                          WOLF_CONTROLLER_inst_0/main_current_state[1]:D
+  Delay (ns):                  0.324
+  Slack (ns):                  0.290
+  Arrival (ns):                1.817
+  Required (ns):               1.527
   Hold (ns):                   0.000
 
 Path 3
   From:                        WOLF_CONTROLLER_inst_0/uart_next_state[4]:CLK
   To:                          WOLF_CONTROLLER_inst_0/uart_current_state[4]:D
   Delay (ns):                  0.319
-  Slack (ns):                  0.295
-  Arrival (ns):                1.837
-  Required (ns):               1.542
+  Slack (ns):                  0.296
+  Arrival (ns):                1.835
+  Required (ns):               1.539
   Hold (ns):                   0.000
 
 Path 4
-  From:                        WOLF_CONTROLLER_inst_0/uart_data_out[4]:CLK
-  To:                          FPGA_UART/tx_hold_reg[4]:D
+  From:                        FPGA_UART/tx_hold_reg[5]:CLK
+  To:                          FPGA_UART/make_TX/tx_byte[5]:D
   Delay (ns):                  0.324
   Slack (ns):                  0.298
-  Arrival (ns):                1.850
-  Required (ns):               1.552
+  Arrival (ns):                1.840
+  Required (ns):               1.542
   Hold (ns):                   0.000
 
 Path 5
-  From:                        WOLF_CONTROLLER_inst_0/uart_next_state[1]:CLK
-  To:                          WOLF_CONTROLLER_inst_0/uart_current_state[1]:D
-  Delay (ns):                  0.324
-  Slack (ns):                  0.300
-  Arrival (ns):                1.842
-  Required (ns):               1.542
+  From:                        UART_reset_monitor_inst_0/reset_next_state[1]:CLK
+  To:                          UART_reset_monitor_inst_0/reset_current_state[1]:D
+  Delay (ns):                  0.319
+  Slack (ns):                  0.298
+  Arrival (ns):                1.824
+  Required (ns):               1.526
   Hold (ns):                   0.000
 
 
 Expanded Path 1
-  From: WOLF_CONTROLLER_inst_0/uart_next_state[0]:CLK
-  To: WOLF_CONTROLLER_inst_0/uart_current_state[0]:D
-  data arrival time                              1.813
+  From: FPGA_UART/tx_hold_reg[1]:CLK
+  To: FPGA_UART/make_TX/tx_byte[1]:D
+  data arrival time                              1.818
   data required time                         -   1.542
-  slack                                          0.271
+  slack                                          0.276
   ________________________________________________________
   Data arrival time calculation
   0.000                        CU_TOP|CLK
@@ -123,14 +123,14 @@ Expanded Path 1
   0.965                        CLKINT_0:A (r)
                +     0.260          cell: ADLIB:CLKINT
   1.225                        CLKINT_0:Y (r)
-               +     0.264          net: CLKINT_0_Y
-  1.489                        WOLF_CONTROLLER_inst_0/uart_next_state[0]:CLK (r)
+               +     0.269          net: CLKINT_0_Y
+  1.494                        FPGA_UART/tx_hold_reg[1]:CLK (r)
                +     0.202          cell: ADLIB:DFN1E0C1
-  1.691                        WOLF_CONTROLLER_inst_0/uart_next_state[0]:Q (r)
-               +     0.122          net: WOLF_CONTROLLER_inst_0/uart_next_state[0]
-  1.813                        WOLF_CONTROLLER_inst_0/uart_current_state[0]:D (r)
+  1.696                        FPGA_UART/tx_hold_reg[1]:Q (r)
+               +     0.122          net: FPGA_UART/tx_hold_reg[1]
+  1.818                        FPGA_UART/make_TX/tx_byte[1]:D (r)
                                     
-  1.813                        data arrival time
+  1.818                        data arrival time
   ________________________________________________________
   Data required time calculation
   0.000                        CU_TOP|CLK
@@ -149,9 +149,9 @@ Expanded Path 1
                +     0.260          cell: ADLIB:CLKINT
   1.225                        CLKINT_0:Y (r)
                +     0.317          net: CLKINT_0_Y
-  1.542                        WOLF_CONTROLLER_inst_0/uart_current_state[0]:CLK (r)
-               +     0.000          Library hold time: ADLIB:DFN1E0
-  1.542                        WOLF_CONTROLLER_inst_0/uart_current_state[0]:D
+  1.542                        FPGA_UART/make_TX/tx_byte[1]:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1E0C1
+  1.542                        FPGA_UART/make_TX/tx_byte[1]:D
                                     
   1.542                        data required time
 
@@ -165,58 +165,58 @@ SET External Hold
 Path 1
   From:                        FPGA_UART_RX
   To:                          FPGA_UART/make_RX/samples[2]:D
-  Delay (ns):                  0.773
+  Delay (ns):                  0.721
   Slack (ns):
-  Arrival (ns):                0.773
+  Arrival (ns):                0.721
   Required (ns):
   Hold (ns):                   0.000
-  External Hold (ns):          1.108
+  External Hold (ns):          1.163
 
 Path 2
   From:                        PWRONRESET
   To:                          UART_reset_monitor_inst_0/reset_current_state[1]:E
-  Delay (ns):                  1.444
+  Delay (ns):                  1.442
   Slack (ns):
-  Arrival (ns):                1.444
+  Arrival (ns):                1.442
   Required (ns):
   Hold (ns):                   0.000
-  External Hold (ns):          0.431
+  External Hold (ns):          0.443
 
 Path 3
   From:                        PWRONRESET
   To:                          UART_reset_monitor_inst_0/reset_current_state[0]:E
-  Delay (ns):                  1.444
+  Delay (ns):                  1.441
   Slack (ns):
-  Arrival (ns):                1.444
+  Arrival (ns):                1.441
   Required (ns):
   Hold (ns):                   0.000
-  External Hold (ns):          0.431
+  External Hold (ns):          0.426
 
 Path 4
   From:                        PWRONRESET
-  To:                          UART_reset_monitor_inst_0/reset_next_state[0]:E
-  Delay (ns):                  1.831
+  To:                          UART_reset_monitor_inst_0/reset_next_state[1]:E
+  Delay (ns):                  1.828
   Slack (ns):
-  Arrival (ns):                1.831
+  Arrival (ns):                1.828
   Required (ns):
   Hold (ns):                   0.000
-  External Hold (ns):          0.044
+  External Hold (ns):          0.057
 
 Path 5
   From:                        PWRONRESET
-  To:                          UART_reset_monitor_inst_0/reset_next_state[1]:E
-  Delay (ns):                  1.831
+  To:                          UART_reset_monitor_inst_0/reset_next_state[0]:E
+  Delay (ns):                  1.828
   Slack (ns):
-  Arrival (ns):                1.831
+  Arrival (ns):                1.828
   Required (ns):
   Hold (ns):                   0.000
-  External Hold (ns):          0.044
+  External Hold (ns):          0.039
 
 
 Expanded Path 1
   From: FPGA_UART_RX
   To: FPGA_UART/make_RX/samples[2]:D
-  data arrival time                              0.773
+  data arrival time                              0.721
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -230,10 +230,10 @@ Expanded Path 1
   0.218                        FPGA_UART_RX_pad/U0/U1:YIN (f)
                +     0.014          cell: ADLIB:IOIN_IB
   0.232                        FPGA_UART_RX_pad/U0/U1:Y (f)
-               +     0.541          net: FPGA_UART_RX_c
-  0.773                        FPGA_UART/make_RX/samples[2]:D (f)
+               +     0.489          net: FPGA_UART_RX_c
+  0.721                        FPGA_UART/make_RX/samples[2]:D (f)
                                     
-  0.773                        data arrival time
+  0.721                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          CU_TOP|CLK
@@ -251,7 +251,7 @@ Expanded Path 1
   N/C                          CLKINT_0:A (r)
                +     0.327          cell: ADLIB:CLKINT
   N/C                          CLKINT_0:Y (r)
-               +     0.343          net: CLKINT_0_Y
+               +     0.346          net: CLKINT_0_Y
   N/C                          FPGA_UART/make_RX/samples[2]:CLK (r)
                +     0.000          Library hold time: ADLIB:DFN1E1P1
   N/C                          FPGA_UART/make_RX/samples[2]:D
@@ -266,34 +266,34 @@ SET Clock to Output
 Path 1
   From:                        FPGA_UART/make_TX/tx_xhdl2:CLK
   To:                          FPGA_UART_TX
-  Delay (ns):                  1.670
+  Delay (ns):                  1.339
   Slack (ns):
-  Arrival (ns):                3.170
+  Arrival (ns):                2.830
   Required (ns):
-  Clock to Out (ns):           3.170
+  Clock to Out (ns):           2.830
 
 Path 2
   From:                        system_clock_inst_0/s_time_0[7]:CLK
   To:                          LED2
-  Delay (ns):                  1.766
+  Delay (ns):                  1.765
   Slack (ns):
-  Arrival (ns):                3.194
+  Arrival (ns):                3.205
   Required (ns):
-  Clock to Out (ns):           3.194
+  Clock to Out (ns):           3.205
 
 Path 3
   From:                        CUTTER_PWM_inst_0/pwm_out[0]:CLK
   To:                          CUTTER
-  Delay (ns):                  1.897
+  Delay (ns):                  2.068
   Slack (ns):
-  Arrival (ns):                3.386
+  Arrival (ns):                3.562
   Required (ns):
-  Clock to Out (ns):           3.386
+  Clock to Out (ns):           3.562
 
 Path 4
   From:                        WOLF_CONTROLLER_inst_0/uart_oen:CLK
   To:                          LED1
-  Delay (ns):                  2.312
+  Delay (ns):                  2.331
   Slack (ns):
   Arrival (ns):                3.844
   Required (ns):
@@ -303,7 +303,7 @@ Path 4
 Expanded Path 1
   From: FPGA_UART/make_TX/tx_xhdl2:CLK
   To: FPGA_UART_TX
-  data arrival time                              3.170
+  data arrival time                              2.830
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -323,22 +323,22 @@ Expanded Path 1
   0.965                        CLKINT_0:A (r)
                +     0.260          cell: ADLIB:CLKINT
   1.225                        CLKINT_0:Y (r)
-               +     0.275          net: CLKINT_0_Y
-  1.500                        FPGA_UART/make_TX/tx_xhdl2:CLK (r)
+               +     0.266          net: CLKINT_0_Y
+  1.491                        FPGA_UART/make_TX/tx_xhdl2:CLK (r)
                +     0.202          cell: ADLIB:DFN1E0P1
-  1.702                        FPGA_UART/make_TX/tx_xhdl2:Q (r)
-               +     0.450          net: FPGA_UART_TX_c
-  2.152                        FPGA_UART_TX_pad/U0/U1:D (r)
+  1.693                        FPGA_UART/make_TX/tx_xhdl2:Q (r)
+               +     0.119          net: FPGA_UART_TX_c
+  1.812                        FPGA_UART_TX_pad/U0/U1:D (r)
                +     0.209          cell: ADLIB:IOTRI_OB_EB
-  2.361                        FPGA_UART_TX_pad/U0/U1:DOUT (r)
+  2.021                        FPGA_UART_TX_pad/U0/U1:DOUT (r)
                +     0.000          net: FPGA_UART_TX_pad/U0/NET1
-  2.361                        FPGA_UART_TX_pad/U0/U0:D (r)
+  2.021                        FPGA_UART_TX_pad/U0/U0:D (r)
                +     0.809          cell: ADLIB:IOPAD_TRI
-  3.170                        FPGA_UART_TX_pad/U0/U0:PAD (r)
+  2.830                        FPGA_UART_TX_pad/U0/U0:PAD (r)
                +     0.000          net: FPGA_UART_TX
-  3.170                        FPGA_UART_TX (r)
+  2.830                        FPGA_UART_TX (r)
                                     
-  3.170                        data arrival time
+  2.830                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          CU_TOP|CLK
@@ -356,61 +356,61 @@ SET Register to Asynchronous
 
 Path 1
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          FPGA_UART/make_RX/rx_byte_xhdl5[1]:CLR
-  Delay (ns):                  1.659
-  Slack (ns):                  1.590
-  Arrival (ns):                3.149
-  Required (ns):               1.559
+  To:                          WOLF_CONTROLLER_inst_0/uart_data_out[0]:CLR
+  Delay (ns):                  1.777
+  Slack (ns):                  1.735
+  Arrival (ns):                3.274
+  Required (ns):               1.539
   Removal (ns):                0.000
-  Skew (ns):                   -0.069
+  Skew (ns):                   -0.042
 
 Path 2
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          FPGA_UART/make_RX/rx_byte_xhdl5[0]:CLR
-  Delay (ns):                  1.659
-  Slack (ns):                  1.590
-  Arrival (ns):                3.149
-  Required (ns):               1.559
+  To:                          WOLF_CONTROLLER_inst_0/uart_data_out[5]:CLR
+  Delay (ns):                  1.777
+  Slack (ns):                  1.735
+  Arrival (ns):                3.274
+  Required (ns):               1.539
   Removal (ns):                0.000
-  Skew (ns):                   -0.069
+  Skew (ns):                   -0.042
 
 Path 3
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          FPGA_UART/tx_hold_reg[2]:CLR
-  Delay (ns):                  1.659
-  Slack (ns):                  1.590
-  Arrival (ns):                3.149
-  Required (ns):               1.559
+  To:                          WOLF_CONTROLLER_inst_0/uart_ready:CLR
+  Delay (ns):                  1.777
+  Slack (ns):                  1.735
+  Arrival (ns):                3.274
+  Required (ns):               1.539
   Removal (ns):                0.000
-  Skew (ns):                   -0.069
+  Skew (ns):                   -0.042
 
 Path 4
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          FPGA_UART/make_RX/rx_byte_xhdl5[6]:CLR
-  Delay (ns):                  1.659
-  Slack (ns):                  1.590
-  Arrival (ns):                3.149
-  Required (ns):               1.559
+  To:                          WOLF_CONTROLLER_inst_0/uart_data_out[3]:CLR
+  Delay (ns):                  1.778
+  Slack (ns):                  1.738
+  Arrival (ns):                3.275
+  Required (ns):               1.537
   Removal (ns):                0.000
-  Skew (ns):                   -0.069
+  Skew (ns):                   -0.040
 
 Path 5
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          WOLF_CONTROLLER_inst_0/uart_oen:PRE
-  Delay (ns):                  1.671
-  Slack (ns):                  1.602
-  Arrival (ns):                3.161
-  Required (ns):               1.559
+  To:                          FPGA_UART/make_TX/txrdy_int:PRE
+  Delay (ns):                  1.784
+  Slack (ns):                  1.739
+  Arrival (ns):                3.281
+  Required (ns):               1.542
   Removal (ns):                0.000
-  Skew (ns):                   -0.069
+  Skew (ns):                   -0.045
 
 
 Expanded Path 1
   From: UART_reset_monitor_inst_0/reset_out:CLK
-  To: FPGA_UART/make_RX/rx_byte_xhdl5[1]:CLR
-  data arrival time                              3.149
-  data required time                         -   1.559
-  slack                                          1.590
+  To: WOLF_CONTROLLER_inst_0/uart_data_out[0]:CLR
+  data arrival time                              3.274
+  data required time                         -   1.539
+  slack                                          1.735
   ________________________________________________________
   Data arrival time calculation
   0.000                        CU_TOP|CLK
@@ -428,22 +428,22 @@ Expanded Path 1
   0.965                        CLKINT_0:A (r)
                +     0.260          cell: ADLIB:CLKINT
   1.225                        CLKINT_0:Y (r)
-               +     0.265          net: CLKINT_0_Y
-  1.490                        UART_reset_monitor_inst_0/reset_out:CLK (r)
+               +     0.272          net: CLKINT_0_Y
+  1.497                        UART_reset_monitor_inst_0/reset_out:CLK (r)
                +     0.252          cell: ADLIB:DFN1E0C1
-  1.742                        UART_reset_monitor_inst_0/reset_out:Q (f)
+  1.749                        UART_reset_monitor_inst_0/reset_out:Q (f)
                +     0.116          net: LED1_net_0
-  1.858                        OR2_0:B (f)
+  1.865                        OR2_0:B (f)
                +     0.221          cell: ADLIB:OR2
-  2.079                        OR2_0:Y (f)
-               +     0.539          net: OR2_0
-  2.618                        OR2_0_RNI20Q6:A (f)
+  2.086                        OR2_0:Y (f)
+               +     0.661          net: OR2_0
+  2.747                        OR2_0_RNI20Q6:A (f)
                +     0.262          cell: ADLIB:CLKINT
-  2.880                        OR2_0_RNI20Q6:Y (f)
-               +     0.269          net: OR2_0_Y
-  3.149                        FPGA_UART/make_RX/rx_byte_xhdl5[1]:CLR (f)
+  3.009                        OR2_0_RNI20Q6:Y (f)
+               +     0.265          net: OR2_0_Y
+  3.274                        WOLF_CONTROLLER_inst_0/uart_data_out[0]:CLR (f)
                                     
-  3.149                        data arrival time
+  3.274                        data arrival time
   ________________________________________________________
   Data required time calculation
   0.000                        CU_TOP|CLK
@@ -461,12 +461,12 @@ Expanded Path 1
   0.965                        CLKINT_0:A (r)
                +     0.260          cell: ADLIB:CLKINT
   1.225                        CLKINT_0:Y (r)
-               +     0.334          net: CLKINT_0_Y
-  1.559                        FPGA_UART/make_RX/rx_byte_xhdl5[1]:CLK (r)
-               +     0.000          Library removal time: ADLIB:DFN1E1C1
-  1.559                        FPGA_UART/make_RX/rx_byte_xhdl5[1]:CLR
+               +     0.314          net: CLKINT_0_Y
+  1.539                        WOLF_CONTROLLER_inst_0/uart_data_out[0]:CLK (r)
+               +     0.000          Library removal time: ADLIB:DFN1E0C1
+  1.539                        WOLF_CONTROLLER_inst_0/uart_data_out[0]:CLR
                                     
-  1.559                        data required time
+  1.539                        data required time
 
 
 END SET Register to Asynchronous
@@ -477,45 +477,35 @@ SET External Removal
 
 Path 1
   From:                        PWRONRESET
-  To:                          UART_reset_monitor_inst_0/reset_counter[1]:CLR
+  To:                          UART_reset_monitor_inst_0/reset_counter[0]:CLR
   Delay (ns):                  1.434
   Slack (ns):
   Arrival (ns):                1.434
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       0.462
+
+Path 2
+  From:                        PWRONRESET
+  To:                          UART_reset_monitor_inst_0/reset_counter[2]:CLR
+  Delay (ns):                  1.438
+  Slack (ns):
+  Arrival (ns):                1.438
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       0.439
+
+Path 3
+  From:                        PWRONRESET
+  To:                          UART_reset_monitor_inst_0/reset_counter[1]:CLR
+  Delay (ns):                  1.436
+  Slack (ns):
+  Arrival (ns):                1.436
   Required (ns):
   Removal (ns):                0.000
   External Removal (ns):       0.438
 
-Path 2
-  From:                        PWRONRESET
-  To:                          UART_reset_monitor_inst_0/reset_counter[0]:CLR
-  Delay (ns):                  1.436
-  Slack (ns):
-  Arrival (ns):                1.436
-  Required (ns):
-  Removal (ns):                0.000
-  External Removal (ns):       0.436
-
-Path 3
-  From:                        PWRONRESET
-  To:                          UART_reset_monitor_inst_0/reset_counter[2]:CLR
-  Delay (ns):                  1.436
-  Slack (ns):
-  Arrival (ns):                1.436
-  Required (ns):
-  Removal (ns):                0.000
-  External Removal (ns):       0.436
-
 Path 4
-  From:                        PWRONRESET
-  To:                          UART_reset_monitor_inst_0/reset_out:CLR
-  Delay (ns):                  1.434
-  Slack (ns):
-  Arrival (ns):                1.434
-  Required (ns):
-  Removal (ns):                0.000
-  External Removal (ns):       0.432
-
-Path 5
   From:                        PWRONRESET
   To:                          UART_reset_monitor_inst_0/reset_counter[3]:CLR
   Delay (ns):                  1.436
@@ -523,12 +513,22 @@ Path 5
   Arrival (ns):                1.436
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       0.430
+  External Removal (ns):       0.438
+
+Path 5
+  From:                        PWRONRESET
+  To:                          UART_reset_monitor_inst_0/reset_out:CLR
+  Delay (ns):                  1.440
+  Slack (ns):
+  Arrival (ns):                1.440
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       0.434
 
 
 Expanded Path 1
   From: PWRONRESET
-  To: UART_reset_monitor_inst_0/reset_counter[1]:CLR
+  To: UART_reset_monitor_inst_0/reset_counter[0]:CLR
   data arrival time                              1.434
   data required time                         -   N/C
   slack                                          N/C
@@ -548,7 +548,7 @@ Expanded Path 1
                +     0.262          cell: ADLIB:CLKINT
   1.170                        CLKINT_1:Y (f)
                +     0.264          net: CLKINT_1_Y
-  1.434                        UART_reset_monitor_inst_0/reset_counter[1]:CLR (f)
+  1.434                        UART_reset_monitor_inst_0/reset_counter[0]:CLR (f)
                                     
   1.434                        data arrival time
   ________________________________________________________
@@ -568,10 +568,10 @@ Expanded Path 1
   N/C                          CLKINT_0:A (r)
                +     0.327          cell: ADLIB:CLKINT
   N/C                          CLKINT_0:Y (r)
-               +     0.334          net: CLKINT_0_Y
-  N/C                          UART_reset_monitor_inst_0/reset_counter[1]:CLK (r)
+               +     0.358          net: CLKINT_0_Y
+  N/C                          UART_reset_monitor_inst_0/reset_counter[0]:CLK (r)
                +     0.000          Library removal time: ADLIB:DFN1E0C1
-  N/C                          UART_reset_monitor_inst_0/reset_counter[1]:CLR
+  N/C                          UART_reset_monitor_inst_0/reset_counter[0]:CLR
 
 
 END SET External Removal
@@ -591,55 +591,55 @@ Clock Domain system_clock_inst_0/s_time_0[7]:Q
 SET Register to Register
 
 Path 1
-  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[10]:CLK
-  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[11]:E
-  Delay (ns):                  0.680
+  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLK
+  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[1]:D
+  Delay (ns):                  0.637
   Slack (ns):
-  Arrival (ns):                1.189
+  Arrival (ns):                1.151
   Required (ns):
   Hold (ns):                   0.000
 
 Path 2
   From:                        WOLF_CONTROLLER_inst_0/sec_since_res[3]:CLK
   To:                          WOLF_CONTROLLER_inst_0/sec_since_res[4]:D
-  Delay (ns):                  0.720
+  Delay (ns):                  0.751
   Slack (ns):
-  Arrival (ns):                1.368
+  Arrival (ns):                1.464
   Required (ns):
   Hold (ns):                   0.000
 
 Path 3
-  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[9]:CLK
+  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[7]:CLK
   To:                          WOLF_CONTROLLER_inst_0/sec_since_res[9]:D
-  Delay (ns):                  0.560
+  Delay (ns):                  1.029
   Slack (ns):
-  Arrival (ns):                1.151
+  Arrival (ns):                1.647
   Required (ns):
   Hold (ns):                   0.000
 
 Path 4
-  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[11]:CLK
-  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[12]:E
-  Delay (ns):                  0.987
+  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[6]:CLK
+  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[6]:D
+  Delay (ns):                  0.579
   Slack (ns):
-  Arrival (ns):                1.685
+  Arrival (ns):                1.233
   Required (ns):
   Hold (ns):                   0.000
 
 Path 5
-  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLK
-  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[0]:D
-  Delay (ns):                  0.569
+  From:                        WOLF_CONTROLLER_inst_0/sec_since_res[10]:CLK
+  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[10]:D
+  Delay (ns):                  0.610
   Slack (ns):
-  Arrival (ns):                1.128
+  Arrival (ns):                1.680
   Required (ns):
   Hold (ns):                   0.000
 
 
 Expanded Path 1
-  From: WOLF_CONTROLLER_inst_0/sec_since_res[10]:CLK
-  To: WOLF_CONTROLLER_inst_0/sec_since_res[11]:E
-  data arrival time                              1.189
+  From: WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLK
+  To: WOLF_CONTROLLER_inst_0/sec_since_res[1]:D
+  data arrival time                              1.151
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -647,27 +647,27 @@ Expanded Path 1
   0.000                        system_clock_inst_0/s_time_0[7]:Q
                +     0.000          Clock source
   0.000                        system_clock_inst_0/s_time_0[7]:Q (r)
-               +     0.509          net: m_time[25]
-  0.509                        WOLF_CONTROLLER_inst_0/sec_since_res[10]:CLK (r)
+               +     0.514          net: m_time[25]
+  0.514                        WOLF_CONTROLLER_inst_0/sec_since_res[0]:CLK (r)
                +     0.202          cell: ADLIB:DFN1C1
-  0.711                        WOLF_CONTROLLER_inst_0/sec_since_res[10]:Q (r)
-               +     0.171          net: WOLF_CONTROLLER_inst_0/sec_since_res[10]
-  0.882                        WOLF_CONTROLLER_inst_0/sec_since_res_RNI4R865[10]:B (r)
-               +     0.176          cell: ADLIB:OR2B
-  1.058                        WOLF_CONTROLLER_inst_0/sec_since_res_RNI4R865[10]:Y (f)
-               +     0.131          net: WOLF_CONTROLLER_inst_0/N_79
-  1.189                        WOLF_CONTROLLER_inst_0/sec_since_res[11]:E (f)
+  0.716                        WOLF_CONTROLLER_inst_0/sec_since_res[0]:Q (r)
+               +     0.193          net: WOLF_CONTROLLER_inst_0/sec_since_res[0]
+  0.909                        WOLF_CONTROLLER_inst_0/sec_since_res_RNO[1]:A (r)
+               +     0.120          cell: ADLIB:XOR2
+  1.029                        WOLF_CONTROLLER_inst_0/sec_since_res_RNO[1]:Y (r)
+               +     0.122          net: WOLF_CONTROLLER_inst_0/N_57_i
+  1.151                        WOLF_CONTROLLER_inst_0/sec_since_res[1]:D (r)
                                     
-  1.189                        data arrival time
+  1.151                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          system_clock_inst_0/s_time_0[7]:Q
                +     0.000          Clock source
   N/C                          system_clock_inst_0/s_time_0[7]:Q (r)
-               +     0.875          net: m_time[25]
-  N/C                          WOLF_CONTROLLER_inst_0/sec_since_res[11]:CLK (r)
-               +     0.000          Library hold time: ADLIB:DFN1E0C1
-  N/C                          WOLF_CONTROLLER_inst_0/sec_since_res[11]:E
+               +     0.840          net: m_time[25]
+  N/C                          WOLF_CONTROLLER_inst_0/sec_since_res[1]:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1C1
+  N/C                          WOLF_CONTROLLER_inst_0/sec_since_res[1]:D
 
 
 END SET Register to Register
@@ -702,59 +702,59 @@ SET External Removal
 
 Path 1
   From:                        PWRONRESET
-  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[12]:CLR
-  Delay (ns):                  2.678
+  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[10]:CLR
+  Delay (ns):                  2.818
   Slack (ns):
-  Arrival (ns):                2.678
+  Arrival (ns):                2.818
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -1.554
+  External Removal (ns):       -1.474
 
 Path 2
   From:                        PWRONRESET
-  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[4]:CLR
-  Delay (ns):                  2.688
+  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[9]:CLR
+  Delay (ns):                  2.818
   Slack (ns):
-  Arrival (ns):                2.688
+  Arrival (ns):                2.818
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -1.711
+  External Removal (ns):       -1.689
 
 Path 3
   From:                        PWRONRESET
-  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[11]:CLR
-  Delay (ns):                  2.681
+  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[2]:CLR
+  Delay (ns):                  2.818
   Slack (ns):
-  Arrival (ns):                2.681
+  Arrival (ns):                2.818
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -1.806
+  External Removal (ns):       -1.792
 
 Path 4
   From:                        PWRONRESET
-  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[7]:CLR
-  Delay (ns):                  2.691
+  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[4]:CLR
+  Delay (ns):                  2.811
   Slack (ns):
-  Arrival (ns):                2.691
+  Arrival (ns):                2.811
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -1.823
+  External Removal (ns):       -1.837
 
 Path 5
   From:                        PWRONRESET
-  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[5]:CLR
-  Delay (ns):                  2.688
+  To:                          WOLF_CONTROLLER_inst_0/sec_since_res[11]:CLR
+  Delay (ns):                  2.809
   Slack (ns):
-  Arrival (ns):                2.688
+  Arrival (ns):                2.809
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -1.833
+  External Removal (ns):       -1.865
 
 
 Expanded Path 1
   From: PWRONRESET
-  To: WOLF_CONTROLLER_inst_0/sec_since_res[12]:CLR
-  data arrival time                              2.678
+  To: WOLF_CONTROLLER_inst_0/sec_since_res[10]:CLR
+  data arrival time                              2.818
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -772,27 +772,27 @@ Expanded Path 1
   0.908                        CLKINT_1:A (f)
                +     0.262          cell: ADLIB:CLKINT
   1.170                        CLKINT_1:Y (f)
-               +     0.273          net: CLKINT_1_Y
-  1.443                        OR2_0:A (f)
+               +     0.272          net: CLKINT_1_Y
+  1.442                        OR2_0:A (f)
                +     0.173          cell: ADLIB:OR2
-  1.616                        OR2_0:Y (f)
-               +     0.539          net: OR2_0
-  2.155                        OR2_0_RNI20Q6:A (f)
+  1.615                        OR2_0:Y (f)
+               +     0.661          net: OR2_0
+  2.276                        OR2_0_RNI20Q6:A (f)
                +     0.262          cell: ADLIB:CLKINT
-  2.417                        OR2_0_RNI20Q6:Y (f)
-               +     0.261          net: OR2_0_Y
-  2.678                        WOLF_CONTROLLER_inst_0/sec_since_res[12]:CLR (f)
+  2.538                        OR2_0_RNI20Q6:Y (f)
+               +     0.280          net: OR2_0_Y
+  2.818                        WOLF_CONTROLLER_inst_0/sec_since_res[10]:CLR (f)
                                     
-  2.678                        data arrival time
+  2.818                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          system_clock_inst_0/s_time_0[7]:Q
                +     0.000          Clock source
   N/C                          system_clock_inst_0/s_time_0[7]:Q (r)
-               +     1.124          net: m_time[25]
-  N/C                          WOLF_CONTROLLER_inst_0/sec_since_res[12]:CLK (r)
-               +     0.000          Library removal time: ADLIB:DFN1E0C1
-  N/C                          WOLF_CONTROLLER_inst_0/sec_since_res[12]:CLR
+               +     1.344          net: m_time[25]
+  N/C                          WOLF_CONTROLLER_inst_0/sec_since_res[10]:CLK (r)
+               +     0.000          Library removal time: ADLIB:DFN1C1
+  N/C                          WOLF_CONTROLLER_inst_0/sec_since_res[10]:CLR
 
 
 END SET External Removal

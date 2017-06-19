@@ -61,28 +61,28 @@ original code -> new code
 @N:"c:\users\rozen\gitrepos\cu_droptest\hdl\uart_reset_monitor.vhd":65:4:65:5|Found counter in view:work.UART_reset_monitor(architecture_uart_reset_monitor) inst reset_counter[3:0]
 @N:"c:\users\rozen\gitrepos\cu_droptest\hdl\wolf_controller.vhd":108:4:108:5|Found counter in view:work.WOLF_CONTROLLER(architecture_wolf_controller) inst sec_since_res[12:0]
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 111MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 111MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 111MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 112MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 112MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 112MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 112MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 112MB)
 
 
 High Fanout Net Report
@@ -93,9 +93,9 @@ Driver Instance / Pin Name     Fanout, notes
 OR2_0 / Y                      164 : 150 asynchronous set/reset
 ===============================================================
 
-@N: FP130 |Promoting Net OR2_0_Y on CLKINT  I_13 
+@N: FP130 |Promoting Net OR2_0_Y on CLKINT  I_11 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 112MB)
 
 
 Added 0 Buffers
@@ -103,7 +103,7 @@ Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 112MB)
 
 
 
@@ -114,11 +114,11 @@ Clock optimization not enabled
 1 gated/generated clock tree(s) driving 13 clock pin(s) of sequential element(s)
 0 instances converted, 13 sequential instances remain driven by gated/generated clocks
 
-========================================== Non-Gated/Non-Generated Clocks ===========================================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                              
----------------------------------------------------------------------------------------------------------------------
-@K:CKID0002       CLK                 port                   168        WOLF_CONTROLLER_inst_0.uart_data_buffer_in[7]
-=====================================================================================================================
+======================================== Non-Gated/Non-Generated Clocks =========================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                          
+-----------------------------------------------------------------------------------------------------------------
+@K:CKID0002       CLK                 port                   168        WOLF_CONTROLLER_inst_0.uart_next_state[0]
+=================================================================================================================
 ========================================================================================== Gated/Generated Clocks ===========================================================================================
 Clock Tree ID     Driving Element                     Drive Element Type     Fanout     Sample Instance                              Explanation                                                             
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -150,7 +150,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Jun 18 20:40:38 2017
+# Timing Report written on Mon Jun 19 10:25:12 2017
 #
 
 
@@ -172,13 +172,13 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -1.345
+Worst slack in design: -1.783
 
                                            Requested     Estimated     Requested     Estimated                Clock        Clock              
 Starting Clock                             Frequency     Frequency     Period        Period        Slack      Type         Group              
 ----------------------------------------------------------------------------------------------------------------------------------------------
-CU_TOP|CLK                                 100.0 MHz     78.8 MHz      10.000        12.690        -1.345     inferred     Inferred_clkgroup_0
-system_clock|m_time_inferred_clock[25]     100.0 MHz     97.8 MHz      10.000        10.221        -0.221     inferred     Inferred_clkgroup_1
+CU_TOP|CLK                                 100.0 MHz     73.7 MHz      10.000        13.566        -1.783     inferred     Inferred_clkgroup_0
+system_clock|m_time_inferred_clock[25]     100.0 MHz     109.7 MHz     10.000        9.114         0.886      inferred     Inferred_clkgroup_1
 ==============================================================================================================================================
 
 
@@ -192,9 +192,9 @@ Clocks                                                                          
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Starting                                Ending                                  |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-CU_TOP|CLK                              CU_TOP|CLK                              |  10.000      -1.148  |  10.000      0.789  |  5.000       2.016  |  5.000       -1.345
+CU_TOP|CLK                              CU_TOP|CLK                              |  10.000      -1.148  |  10.000      1.088  |  5.000       2.016  |  5.000       -1.783
 system_clock|m_time_inferred_clock[25]  CU_TOP|CLK                              |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -     
-system_clock|m_time_inferred_clock[25]  system_clock|m_time_inferred_clock[25]  |  10.000      -0.221  |  No paths    -      |  No paths    -      |  No paths    -     
+system_clock|m_time_inferred_clock[25]  system_clock|m_time_inferred_clock[25]  |  10.000      0.886   |  No paths    -      |  No paths    -      |  No paths    -     
 ========================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -221,37 +221,37 @@ Starting Points with Worst Slack
 Instance                                                   Reference      Type         Pin     Net              Time        Slack 
                                                            Clock                                                                  
 ----------------------------------------------------------------------------------------------------------------------------------
-system_clock_inst_0.l_time[8]                              CU_TOP|CLK     DFN0E0C1     Q       m_time[8]        0.653       -1.345
-system_clock_inst_0.l_time[7]                              CU_TOP|CLK     DFN0E0C1     Q       m_time[7]        0.653       -1.232
-system_clock_inst_0.l_time[10]                             CU_TOP|CLK     DFN0C1       Q       m_time[10]       0.653       -1.185
+system_clock_inst_0.l_time[6]                              CU_TOP|CLK     DFN0C1       Q       m_time[6]        0.653       -1.783
+system_clock_inst_0.l_time[5]                              CU_TOP|CLK     DFN0C1       Q       m_time[5]        0.653       -1.670
+system_clock_inst_0.l_time[9]                              CU_TOP|CLK     DFN0E0C1     Q       m_time[9]        0.653       -1.295
 FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[1]     CU_TOP|CLK     DFN1C1       Q       baud_cntr[1]     0.737       -1.148
+system_clock_inst_0.l_time[1]                              CU_TOP|CLK     DFN0C1       Q       m_time[1]        0.653       -1.052
 FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[0]     CU_TOP|CLK     DFN1C1       Q       baud_cntr[0]     0.737       -1.009
-system_clock_inst_0.l_time[12]                             CU_TOP|CLK     DFN0C1       Q       m_time[12]       0.653       -0.921
-system_clock_inst_0.l_time[3]                              CU_TOP|CLK     DFN0C1       Q       m_time[3]        0.653       -0.898
-system_clock_inst_0.l_time[1]                              CU_TOP|CLK     DFN0C1       Q       m_time[1]        0.653       -0.779
-system_clock_inst_0.l_time[4]                              CU_TOP|CLK     DFN0C1       Q       m_time[4]        0.527       -0.655
-system_clock_inst_0.l_time[5]                              CU_TOP|CLK     DFN0C1       Q       m_time[5]        0.653       -0.554
+system_clock_inst_0.l_time[3]                              CU_TOP|CLK     DFN0C1       Q       m_time[3]        0.653       -1.003
+system_clock_inst_0.l_time[11]                             CU_TOP|CLK     DFN0C1       Q       m_time[11]       0.653       -0.787
+FPGA_UART.make_RX.rx_state[1]                              CU_TOP|CLK     DFN1E1C1     Q       rx_state[1]      0.737       -0.739
+FPGA_UART.make_RX.rx_state[0]                              CU_TOP|CLK     DFN1E1C1     Q       rx_state[0]      0.737       -0.600
 ==================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                                            Starting                                                     Required           
-Instance                                                    Reference      Type         Pin     Net                      Time         Slack 
-                                                            Clock                                                                           
---------------------------------------------------------------------------------------------------------------------------------------------
-system_clock_inst_0.flag                                    CU_TOP|CLK     DFN1C1       D       flag_RNO                 4.426        -1.345
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[12]     CU_TOP|CLK     DFN1C1       D       baud_cntr_RNO[12]        9.427        -1.148
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[1]      CU_TOP|CLK     DFN1C1       D       baud_cntr_RNO[1]         9.461        -0.182
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[11]     CU_TOP|CLK     DFN1C1       D       baud_cntr_RNO[11]        9.427        -0.172
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[3]      CU_TOP|CLK     DFN1C1       D       baud_cntr_RNO[3]         9.427        0.019 
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[5]      CU_TOP|CLK     DFN1C1       D       baud_cntr_RNO[5]         9.427        0.019 
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[9]      CU_TOP|CLK     DFN1C1       D       baud_cntr_RNO[9]         9.427        0.019 
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[10]     CU_TOP|CLK     DFN1C1       D       baud_cntr_RNO[10]        9.427        0.019 
-FPGA_UART.make_RX.receive_count[1]                          CU_TOP|CLK     DFN1C1       D       receive_count_RNO[1]     9.427        0.175 
-FPGA_UART.make_RX.rx_bit_cnt[0]                             CU_TOP|CLK     DFN1E1C1     E       rx_bit_cnte              9.600        0.386 
-============================================================================================================================================
+                                                            Starting                                                   Required           
+Instance                                                    Reference      Type       Pin     Net                      Time         Slack 
+                                                            Clock                                                                         
+------------------------------------------------------------------------------------------------------------------------------------------
+system_clock_inst_0.flag                                    CU_TOP|CLK     DFN1C1     D       flag_RNO                 4.426        -1.783
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[12]     CU_TOP|CLK     DFN1C1     D       baud_cntr_RNO[12]        9.427        -1.148
+FPGA_UART.make_RX.receive_count[0]                          CU_TOP|CLK     DFN1C1     D       receive_count_RNO[0]     9.427        -0.739
+FPGA_UART.make_RX.receive_count[1]                          CU_TOP|CLK     DFN1C1     D       receive_count_RNO[1]     9.461        -0.494
+FPGA_UART.make_RX.receive_count[2]                          CU_TOP|CLK     DFN1C1     D       N_30                     9.461        -0.494
+FPGA_UART.make_RX.receive_count[3]                          CU_TOP|CLK     DFN1C1     D       N_28                     9.461        -0.494
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[1]      CU_TOP|CLK     DFN1C1     D       baud_cntr_RNO[1]         9.461        -0.182
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[11]     CU_TOP|CLK     DFN1C1     D       baud_cntr_RNO[11]        9.427        -0.172
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[3]      CU_TOP|CLK     DFN1C1     D       baud_cntr_RNO[3]         9.427        0.019 
+FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[5]      CU_TOP|CLK     DFN1C1     D       baud_cntr_RNO[5]         9.427        0.019 
+==========================================================================================================================================
 
 
 
@@ -265,36 +265,36 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         4.426
 
-    - Propagation time:                      5.772
+    - Propagation time:                      6.210
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -1.345
+    = Slack (critical) :                     -1.783
 
     Number of logic level(s):                4
-    Starting point:                          system_clock_inst_0.l_time[8] / Q
+    Starting point:                          system_clock_inst_0.l_time[6] / Q
     Ending point:                            system_clock_inst_0.flag / D
     The start point is clocked by            CU_TOP|CLK [falling] on pin CLK
     The end   point is clocked by            CU_TOP|CLK [rising] on pin CLK
 
-Instance / Net                                          Pin      Pin               Arrival     No. of    
-Name                                       Type         Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------
-system_clock_inst_0.l_time[8]              DFN0E0C1     Q        Out     0.653     0.653       -         
-m_time[8]                                  Net          -        -       1.279     -           5         
-system_clock_inst_0.l_time_RNI726U[7]      NOR2B        B        In      -         1.933       -         
-system_clock_inst_0.l_time_RNI726U[7]      NOR2B        Y        Out     0.627     2.560       -         
-l_m5_0_a2_3                                Net          -        -       0.386     -           2         
-system_clock_inst_0.l_time_RNIQ01H1[9]     NOR3C        C        In      -         2.946       -         
-system_clock_inst_0.l_time_RNIQ01H1[9]     NOR3C        Y        Out     0.641     3.587       -         
-l_m6_0_a2_7_6                              Net          -        -       0.322     -           1         
-system_clock_inst_0.l_time_RNIPOUI2[5]     NOR2B        A        In      -         3.909       -         
-system_clock_inst_0.l_time_RNIPOUI2[5]     NOR2B        Y        Out     0.514     4.423       -         
-l_m6_0_a2_7                                Net          -        -       0.386     -           2         
-system_clock_inst_0.flag_RNO               NOR3B        A        In      -         4.809       -         
-system_clock_inst_0.flag_RNO               NOR3B        Y        Out     0.641     5.450       -         
-flag_RNO                                   Net          -        -       0.322     -           1         
-system_clock_inst_0.flag                   DFN1C1       D        In      -         5.772       -         
-=========================================================================================================
-Total path delay (propagation time + setup) of 6.345 is 3.651(57.5%) logic and 2.694(42.5%) route.
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                        Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+system_clock_inst_0.l_time[6]               DFN0C1     Q        Out     0.653     0.653       -         
+m_time[6]                                   Net        -        -       1.184     -           4         
+system_clock_inst_0.l_time_RNI3U5U[5]       NOR2B      B        In      -         1.837       -         
+system_clock_inst_0.l_time_RNI3U5U[5]       NOR2B      Y        Out     0.627     2.464       -         
+l_m5_0_a2_2                                 Net        -        -       0.806     -           3         
+system_clock_inst_0.l_time_RNIVNT11[12]     NOR3C      C        In      -         3.271       -         
+system_clock_inst_0.l_time_RNIVNT11[12]     NOR3C      Y        Out     0.641     3.912       -         
+l_m6_0_a2_7_5                               Net        -        -       0.322     -           1         
+system_clock_inst_0.l_time_RNIPOUI2[12]     NOR2B      B        In      -         4.234       -         
+system_clock_inst_0.l_time_RNIPOUI2[12]     NOR2B      Y        Out     0.627     4.861       -         
+l_m6_0_a2_7                                 Net        -        -       0.386     -           2         
+system_clock_inst_0.flag_RNO                NOR3C      C        In      -         5.247       -         
+system_clock_inst_0.flag_RNO                NOR3C      Y        Out     0.641     5.888       -         
+flag_RNO                                    Net        -        -       0.322     -           1         
+system_clock_inst_0.flag                    DFN1C1     D        In      -         6.210       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 6.783 is 3.764(55.5%) logic and 3.019(44.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -304,36 +304,36 @@ Path information for path number 2:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         4.426
 
-    - Propagation time:                      5.659
+    - Propagation time:                      6.097
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.232
+    = Slack (non-critical) :                 -1.670
 
     Number of logic level(s):                4
-    Starting point:                          system_clock_inst_0.l_time[7] / Q
+    Starting point:                          system_clock_inst_0.l_time[5] / Q
     Ending point:                            system_clock_inst_0.flag / D
     The start point is clocked by            CU_TOP|CLK [falling] on pin CLK
     The end   point is clocked by            CU_TOP|CLK [rising] on pin CLK
 
-Instance / Net                                          Pin      Pin               Arrival     No. of    
-Name                                       Type         Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------
-system_clock_inst_0.l_time[7]              DFN0E0C1     Q        Out     0.653     0.653       -         
-m_time[7]                                  Net          -        -       1.279     -           5         
-system_clock_inst_0.l_time_RNI726U[7]      NOR2B        A        In      -         1.933       -         
-system_clock_inst_0.l_time_RNI726U[7]      NOR2B        Y        Out     0.514     2.447       -         
-l_m5_0_a2_3                                Net          -        -       0.386     -           2         
-system_clock_inst_0.l_time_RNIQ01H1[9]     NOR3C        C        In      -         2.833       -         
-system_clock_inst_0.l_time_RNIQ01H1[9]     NOR3C        Y        Out     0.641     3.474       -         
-l_m6_0_a2_7_6                              Net          -        -       0.322     -           1         
-system_clock_inst_0.l_time_RNIPOUI2[5]     NOR2B        A        In      -         3.796       -         
-system_clock_inst_0.l_time_RNIPOUI2[5]     NOR2B        Y        Out     0.514     4.310       -         
-l_m6_0_a2_7                                Net          -        -       0.386     -           2         
-system_clock_inst_0.flag_RNO               NOR3B        A        In      -         4.696       -         
-system_clock_inst_0.flag_RNO               NOR3B        Y        Out     0.641     5.337       -         
-flag_RNO                                   Net          -        -       0.322     -           1         
-system_clock_inst_0.flag                   DFN1C1       D        In      -         5.659       -         
-=========================================================================================================
-Total path delay (propagation time + setup) of 6.232 is 3.538(56.8%) logic and 2.694(43.2%) route.
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                        Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+system_clock_inst_0.l_time[5]               DFN0C1     Q        Out     0.653     0.653       -         
+m_time[5]                                   Net        -        -       1.184     -           4         
+system_clock_inst_0.l_time_RNI3U5U[5]       NOR2B      A        In      -         1.837       -         
+system_clock_inst_0.l_time_RNI3U5U[5]       NOR2B      Y        Out     0.514     2.351       -         
+l_m5_0_a2_2                                 Net        -        -       0.806     -           3         
+system_clock_inst_0.l_time_RNIVNT11[12]     NOR3C      C        In      -         3.158       -         
+system_clock_inst_0.l_time_RNIVNT11[12]     NOR3C      Y        Out     0.641     3.799       -         
+l_m6_0_a2_7_5                               Net        -        -       0.322     -           1         
+system_clock_inst_0.l_time_RNIPOUI2[12]     NOR2B      B        In      -         4.121       -         
+system_clock_inst_0.l_time_RNIPOUI2[12]     NOR2B      Y        Out     0.627     4.748       -         
+l_m6_0_a2_7                                 Net        -        -       0.386     -           2         
+system_clock_inst_0.flag_RNO                NOR3C      C        In      -         5.134       -         
+system_clock_inst_0.flag_RNO                NOR3C      Y        Out     0.641     5.775       -         
+flag_RNO                                    Net        -        -       0.322     -           1         
+system_clock_inst_0.flag                    DFN1C1     D        In      -         6.097       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 6.670 is 3.651(54.7%) logic and 3.019(45.3%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -343,36 +343,36 @@ Path information for path number 3:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         4.426
 
-    - Propagation time:                      5.612
+    - Propagation time:                      5.721
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.185
+    = Slack (non-critical) :                 -1.295
 
     Number of logic level(s):                4
-    Starting point:                          system_clock_inst_0.l_time[10] / Q
+    Starting point:                          system_clock_inst_0.l_time[9] / Q
     Ending point:                            system_clock_inst_0.flag / D
     The start point is clocked by            CU_TOP|CLK [falling] on pin CLK
     The end   point is clocked by            CU_TOP|CLK [rising] on pin CLK
 
-Instance / Net                                        Pin      Pin               Arrival     No. of    
-Name                                       Type       Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------
-system_clock_inst_0.l_time[10]             DFN0C1     Q        Out     0.653     0.653       -         
-m_time[10]                                 Net        -        -       1.184     -           4         
-system_clock_inst_0.l_time_RNISPN3[12]     NOR2B      A        In      -         1.837       -         
-system_clock_inst_0.l_time_RNISPN3[12]     NOR2B      Y        Out     0.514     2.351       -         
-l_m6_0_a2_7_1                              Net        -        -       0.322     -           1         
-system_clock_inst_0.l_time_RNIVNT11[5]     NOR3C      C        In      -         2.673       -         
-system_clock_inst_0.l_time_RNIVNT11[5]     NOR3C      Y        Out     0.641     3.314       -         
-l_m6_0_a2_7_5                              Net        -        -       0.322     -           1         
-system_clock_inst_0.l_time_RNIPOUI2[5]     NOR2B      B        In      -         3.636       -         
-system_clock_inst_0.l_time_RNIPOUI2[5]     NOR2B      Y        Out     0.627     4.263       -         
-l_m6_0_a2_7                                Net        -        -       0.386     -           2         
-system_clock_inst_0.flag_RNO               NOR3B      A        In      -         4.649       -         
-system_clock_inst_0.flag_RNO               NOR3B      Y        Out     0.641     5.290       -         
-flag_RNO                                   Net        -        -       0.322     -           1         
-system_clock_inst_0.flag                   DFN1C1     D        In      -         5.612       -         
-=======================================================================================================
-Total path delay (propagation time + setup) of 6.185 is 3.651(59.0%) logic and 2.534(41.0%) route.
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                        Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+system_clock_inst_0.l_time[9]               DFN0E0C1     Q        Out     0.653     0.653       -         
+m_time[9]                                   Net          -        -       1.279     -           5         
+system_clock_inst_0.l_time_RNIJUQI[13]      NOR3C        C        In      -         1.933       -         
+system_clock_inst_0.l_time_RNIJUQI[13]      NOR3C        Y        Out     0.641     2.574       -         
+l_m6_0_a2_7_3                               Net          -        -       0.322     -           1         
+system_clock_inst_0.l_time_RNIQ01H1[7]      NOR3C        C        In      -         2.895       -         
+system_clock_inst_0.l_time_RNIQ01H1[7]      NOR3C        Y        Out     0.641     3.537       -         
+l_m6_0_a2_7_6                               Net          -        -       0.322     -           1         
+system_clock_inst_0.l_time_RNIPOUI2[12]     NOR2B        A        In      -         3.858       -         
+system_clock_inst_0.l_time_RNIPOUI2[12]     NOR2B        Y        Out     0.514     4.373       -         
+l_m6_0_a2_7                                 Net          -        -       0.386     -           2         
+system_clock_inst_0.flag_RNO                NOR3C        C        In      -         4.758       -         
+system_clock_inst_0.flag_RNO                NOR3C        Y        Out     0.641     5.400       -         
+flag_RNO                                    Net          -        -       0.322     -           1         
+system_clock_inst_0.flag                    DFN1C1       D        In      -         5.721       -         
+==========================================================================================================
+Total path delay (propagation time + setup) of 6.295 is 3.665(58.2%) logic and 2.629(41.8%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -431,56 +431,38 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 
 
 Path information for path number 5: 
-      Requested Period:                      10.000
-    - Setup time:                            0.573
+      Requested Period:                      5.000
+    - Setup time:                            0.574
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.427
+    = Required time:                         4.426
 
-    - Propagation time:                      10.436
+    - Propagation time:                      5.478
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.009
+    = Slack (non-critical) :                 -1.051
 
-    Number of logic level(s):                9
-    Starting point:                          FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[0] / Q
-    Ending point:                            FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[12] / D
-    The start point is clocked by            CU_TOP|CLK [rising] on pin CLK
+    Number of logic level(s):                3
+    Starting point:                          system_clock_inst_0.l_time[1] / Q
+    Ending point:                            system_clock_inst_0.flag / D
+    The start point is clocked by            CU_TOP|CLK [falling] on pin CLK
     The end   point is clocked by            CU_TOP|CLK [rising] on pin CLK
 
-Instance / Net                                                                  Pin      Pin               Arrival     No. of    
-Name                                                                 Type       Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------------------------------
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[0]               DFN1C1     Q        Out     0.737     0.737       -         
-baud_cntr[0]                                                         Net        -        -       0.386     -           2         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNI5ILP[0]       OR2        A        In      -         1.123       -         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNI5ILP[0]       OR2        Y        Out     0.507     1.630       -         
-baud_cntr_c1                                                         Net        -        -       0.386     -           2         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNIPCG61[2]      OR2        A        In      -         2.016       -         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNIPCG61[2]      OR2        Y        Out     0.507     2.523       -         
-baud_cntr_c2                                                         Net        -        -       0.386     -           2         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNIE8BJ1[3]      OR2        A        In      -         2.909       -         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNIE8BJ1[3]      OR2        Y        Out     0.507     3.417       -         
-baud_cntr_c3                                                         Net        -        -       0.806     -           3         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNIC1N63[7]      NOR2A      B        In      -         4.223       -         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNIC1N63[7]      NOR2A      Y        Out     0.407     4.630       -         
-un4_baud_cntr_10                                                     Net        -        -       0.806     -           3         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNI62IJ3[8]      OR2A       A        In      -         5.436       -         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNI62IJ3[8]      OR2A       Y        Out     0.537     5.973       -         
-baud_cntr_c8                                                         Net        -        -       0.386     -           2         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNI14D04[9]      OR2        A        In      -         6.359       -         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNI14D04[9]      OR2        Y        Out     0.507     6.866       -         
-baud_cntr_c9                                                         Net        -        -       0.386     -           2         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNI45084[10]     OR2        A        In      -         7.252       -         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNI45084[10]     OR2        Y        Out     0.507     7.759       -         
-baud_cntr_c10                                                        Net        -        -       0.386     -           2         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNO_0[12]        OR2        B        In      -         8.145       -         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNO_0[12]        OR2        Y        Out     0.646     8.792       -         
-baud_cntr_26_0                                                       Net        -        -       0.322     -           1         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNO[12]          AX1B       B        In      -         9.113       -         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr_RNO[12]          AX1B       Y        Out     1.001     10.114      -         
-baud_cntr_RNO[12]                                                    Net        -        -       0.322     -           1         
-FPGA_UART.make_CU_TOP_FPGA_UART_Clock_gen.baud_cntr[12]              DFN1C1     D        In      -         10.436      -         
-=================================================================================================================================
-Total path delay (propagation time + setup) of 11.009 is 6.438(58.5%) logic and 4.571(41.5%) route.
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                        Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+system_clock_inst_0.l_time[1]               DFN0C1     Q        Out     0.653     0.653       -         
+m_time[1]                                   Net        -        -       1.184     -           4         
+system_clock_inst_0.l_time_RNIRL5U_0[2]     NOR2B      B        In      -         1.837       -         
+system_clock_inst_0.l_time_RNIRL5U_0[2]     NOR2B      Y        Out     0.627     2.464       -         
+l_m1_0_a2_0                                 Net        -        -       0.322     -           1         
+system_clock_inst_0.l_time_RNIQFBS1[2]      NOR2B      B        In      -         2.786       -         
+system_clock_inst_0.l_time_RNIQFBS1[2]      NOR2B      Y        Out     0.627     3.413       -         
+l_N_3_mux_0                                 Net        -        -       1.279     -           5         
+system_clock_inst_0.flag_RNO                NOR3C      A        In      -         4.692       -         
+system_clock_inst_0.flag_RNO                NOR3C      Y        Out     0.464     5.157       -         
+flag_RNO                                    Net        -        -       0.322     -           1         
+system_clock_inst_0.flag                    DFN1C1     D        In      -         5.478       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 6.051 is 2.946(48.7%) logic and 3.106(51.3%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -495,41 +477,41 @@ Detailed Report for Clock: system_clock|m_time_inferred_clock[25]
 Starting Points with Worst Slack
 ********************************
 
-                                            Starting                                                                           Arrival           
-Instance                                    Reference                                  Type       Pin     Net                  Time        Slack 
-                                            Clock                                                                                                
--------------------------------------------------------------------------------------------------------------------------------------------------
-WOLF_CONTROLLER_inst_0.sec_since_res[1]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[1]     0.580       -0.221
-WOLF_CONTROLLER_inst_0.sec_since_res[0]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[0]     0.580       -0.153
-WOLF_CONTROLLER_inst_0.sec_since_res[2]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[2]     0.580       1.279 
-WOLF_CONTROLLER_inst_0.sec_since_res[4]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[4]     0.580       2.749 
-WOLF_CONTROLLER_inst_0.sec_since_res[3]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[3]     0.580       2.753 
-WOLF_CONTROLLER_inst_0.sec_since_res[5]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[5]     0.580       2.814 
-WOLF_CONTROLLER_inst_0.sec_since_res[8]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[8]     0.580       2.951 
-WOLF_CONTROLLER_inst_0.sec_since_res[7]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[7]     0.580       2.979 
-WOLF_CONTROLLER_inst_0.sec_since_res[6]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[6]     0.580       3.930 
-WOLF_CONTROLLER_inst_0.sec_since_res[9]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[9]     0.580       4.208 
-=================================================================================================================================================
+                                            Starting                                                                           Arrival          
+Instance                                    Reference                                  Type       Pin     Net                  Time        Slack
+                                            Clock                                                                                               
+------------------------------------------------------------------------------------------------------------------------------------------------
+WOLF_CONTROLLER_inst_0.sec_since_res[1]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[1]     0.580       0.886
+WOLF_CONTROLLER_inst_0.sec_since_res[0]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[0]     0.580       1.271
+WOLF_CONTROLLER_inst_0.sec_since_res[2]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[2]     0.580       1.370
+WOLF_CONTROLLER_inst_0.sec_since_res[4]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[4]     0.580       2.828
+WOLF_CONTROLLER_inst_0.sec_since_res[3]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[3]     0.580       2.831
+WOLF_CONTROLLER_inst_0.sec_since_res[8]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[8]     0.737       3.311
+WOLF_CONTROLLER_inst_0.sec_since_res[7]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[7]     0.737       3.328
+WOLF_CONTROLLER_inst_0.sec_since_res[5]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[5]     0.737       4.114
+WOLF_CONTROLLER_inst_0.sec_since_res[6]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[6]     0.737       4.220
+WOLF_CONTROLLER_inst_0.sec_since_res[9]     system_clock|m_time_inferred_clock[25]     DFN1C1     Q       sec_since_res[9]     0.737       4.359
+================================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                             Starting                                                                              Required           
-Instance                                     Reference                                  Type         Pin     Net                   Time         Slack 
-                                             Clock                                                                                                    
-------------------------------------------------------------------------------------------------------------------------------------------------------
-WOLF_CONTROLLER_inst_0.sec_since_res[9]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_103_i               9.427        -0.221
-WOLF_CONTROLLER_inst_0.sec_since_res[8]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_102_i               9.461        0.318 
-WOLF_CONTROLLER_inst_0.sec_since_res[7]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_101_i               9.461        1.351 
-WOLF_CONTROLLER_inst_0.sec_since_res[6]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_95_i                9.427        1.948 
-WOLF_CONTROLLER_inst_0.sec_since_res[5]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_93_i                9.461        2.487 
-WOLF_CONTROLLER_inst_0.sec_since_res[12]     system_clock|m_time_inferred_clock[25]     DFN1E0C1     E       N_92                  9.392        2.814 
-WOLF_CONTROLLER_inst_0.sec_since_res[10]     system_clock|m_time_inferred_clock[25]     DFN1C1       D       sec_since_res_n10     9.461        3.248 
-WOLF_CONTROLLER_inst_0.sec_since_res[4]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_88_i                9.427        3.438 
-WOLF_CONTROLLER_inst_0.sec_since_res[11]     system_clock|m_time_inferred_clock[25]     DFN1E0C1     E       N_79                  9.566        3.710 
-WOLF_CONTROLLER_inst_0.sec_since_res[3]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_87_i                9.461        3.976 
-======================================================================================================================================================
+                                             Starting                                                                                  Required          
+Instance                                     Reference                                  Type         Pin     Net                       Time         Slack
+                                             Clock                                                                                                       
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+WOLF_CONTROLLER_inst_0.sec_since_res[9]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_67_i                    9.461        0.886
+WOLF_CONTROLLER_inst_0.sec_since_res[8]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_66_i                    9.427        1.420
+WOLF_CONTROLLER_inst_0.sec_since_res[7]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_65_i                    9.461        1.959
+WOLF_CONTROLLER_inst_0.sec_since_res[6]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_64_i                    9.427        2.914
+WOLF_CONTROLLER_inst_0.sec_since_res[10]     system_clock|m_time_inferred_clock[25]     DFN1C1       D       sec_since_res_RNO[10]     9.461        3.311
+WOLF_CONTROLLER_inst_0.sec_since_res[5]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_62_i                    9.461        3.453
+WOLF_CONTROLLER_inst_0.sec_since_res[11]     system_clock|m_time_inferred_clock[25]     DFN1C1       D       sec_since_res_n11         9.461        3.728
+WOLF_CONTROLLER_inst_0.sec_since_res[12]     system_clock|m_time_inferred_clock[25]     DFN1E0C1     E       N_61                      9.392        4.143
+WOLF_CONTROLLER_inst_0.sec_since_res[4]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_60_i                    9.427        4.402
+WOLF_CONTROLLER_inst_0.sec_since_res[3]      system_clock|m_time_inferred_clock[25]     DFN1C1       D       N_59_i                    9.461        4.941
+=========================================================================================================================================================
 
 
 
@@ -539,196 +521,16 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      10.000
-    - Setup time:                            0.573
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.427
-
-    - Propagation time:                      9.647
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -0.221
-
-    Number of logic level(s):                6
-    Starting point:                          WOLF_CONTROLLER_inst_0.sec_since_res[1] / Q
-    Ending point:                            WOLF_CONTROLLER_inst_0.sec_since_res[9] / D
-    The start point is clocked by            system_clock|m_time_inferred_clock[25] [rising] on pin CLK
-    The end   point is clocked by            system_clock|m_time_inferred_clock[25] [rising] on pin CLK
-
-Instance / Net                                                  Pin      Pin               Arrival     No. of    
-Name                                                 Type       Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------------------
-WOLF_CONTROLLER_inst_0.sec_since_res[1]              DFN1C1     Q        Out     0.580     0.580       -         
-sec_since_res[1]                                     Net        -        -       1.279     -           5         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI5MPU[0]      OR2B       A        In      -         1.860       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI5MPU[0]      OR2B       Y        Out     0.488     2.348       -         
-N_59                                                 Net        -        -       0.806     -           3         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIPI6E1[2]     OR2A       B        In      -         3.154       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIPI6E1[2]     OR2A       Y        Out     0.646     3.801       -         
-N_60                                                 Net        -        -       0.806     -           3         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI4F0D2[4]     OR3B       C        In      -         4.607       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI4F0D2[4]     OR3B       Y        Out     0.751     5.358       -         
-N_62                                                 Net        -        -       0.806     -           3         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIJFQB3[6]     OR3B       C        In      -         6.164       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIJFQB3[6]     OR3B       Y        Out     0.751     6.915       -         
-N_64                                                 Net        -        -       0.386     -           2         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNICH7R3[7]     OR2A       B        In      -         7.301       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNICH7R3[7]     OR2A       Y        Out     0.646     7.947       -         
-N_65                                                 Net        -        -       0.386     -           2         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNO[9]          AX1        A        In      -         8.333       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNO[9]          AX1        Y        Out     0.992     9.326       -         
-N_103_i                                              Net        -        -       0.322     -           1         
-WOLF_CONTROLLER_inst_0.sec_since_res[9]              DFN1C1     D        In      -         9.647       -         
-=================================================================================================================
-Total path delay (propagation time + setup) of 10.221 is 5.429(53.1%) logic and 4.792(46.9%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 2: 
-      Requested Period:                      10.000
-    - Setup time:                            0.573
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.427
-
-    - Propagation time:                      9.579
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -0.153
-
-    Number of logic level(s):                6
-    Starting point:                          WOLF_CONTROLLER_inst_0.sec_since_res[0] / Q
-    Ending point:                            WOLF_CONTROLLER_inst_0.sec_since_res[9] / D
-    The start point is clocked by            system_clock|m_time_inferred_clock[25] [rising] on pin CLK
-    The end   point is clocked by            system_clock|m_time_inferred_clock[25] [rising] on pin CLK
-
-Instance / Net                                                  Pin      Pin               Arrival     No. of    
-Name                                                 Type       Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------------------
-WOLF_CONTROLLER_inst_0.sec_since_res[0]              DFN1C1     Q        Out     0.580     0.580       -         
-sec_since_res[0]                                     Net        -        -       1.184     -           4         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI5MPU[0]      OR2B       B        In      -         1.764       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI5MPU[0]      OR2B       Y        Out     0.516     2.280       -         
-N_59                                                 Net        -        -       0.806     -           3         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIPI6E1[2]     OR2A       B        In      -         3.087       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIPI6E1[2]     OR2A       Y        Out     0.646     3.733       -         
-N_60                                                 Net        -        -       0.806     -           3         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI4F0D2[4]     OR3B       C        In      -         4.539       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI4F0D2[4]     OR3B       Y        Out     0.751     5.290       -         
-N_62                                                 Net        -        -       0.806     -           3         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIJFQB3[6]     OR3B       C        In      -         6.097       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIJFQB3[6]     OR3B       Y        Out     0.751     6.847       -         
-N_64                                                 Net        -        -       0.386     -           2         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNICH7R3[7]     OR2A       B        In      -         7.233       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNICH7R3[7]     OR2A       Y        Out     0.646     7.880       -         
-N_65                                                 Net        -        -       0.386     -           2         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNO[9]          AX1        A        In      -         8.265       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNO[9]          AX1        Y        Out     0.992     9.258       -         
-N_103_i                                              Net        -        -       0.322     -           1         
-WOLF_CONTROLLER_inst_0.sec_since_res[9]              DFN1C1     D        In      -         9.579       -         
-=================================================================================================================
-Total path delay (propagation time + setup) of 10.153 is 5.457(53.7%) logic and 4.696(46.3%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 3: 
-      Requested Period:                      10.000
     - Setup time:                            0.539
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.461
 
-    - Propagation time:                      9.143
+    - Propagation time:                      8.575
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 0.318
-
-    Number of logic level(s):                6
-    Starting point:                          WOLF_CONTROLLER_inst_0.sec_since_res[1] / Q
-    Ending point:                            WOLF_CONTROLLER_inst_0.sec_since_res[8] / D
-    The start point is clocked by            system_clock|m_time_inferred_clock[25] [rising] on pin CLK
-    The end   point is clocked by            system_clock|m_time_inferred_clock[25] [rising] on pin CLK
-
-Instance / Net                                                  Pin      Pin               Arrival     No. of    
-Name                                                 Type       Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------------------
-WOLF_CONTROLLER_inst_0.sec_since_res[1]              DFN1C1     Q        Out     0.580     0.580       -         
-sec_since_res[1]                                     Net        -        -       1.279     -           5         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI5MPU[0]      OR2B       A        In      -         1.860       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI5MPU[0]      OR2B       Y        Out     0.488     2.348       -         
-N_59                                                 Net        -        -       0.806     -           3         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIPI6E1[2]     OR2A       B        In      -         3.154       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIPI6E1[2]     OR2A       Y        Out     0.646     3.801       -         
-N_60                                                 Net        -        -       0.806     -           3         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI4F0D2[4]     OR3B       C        In      -         4.607       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI4F0D2[4]     OR3B       Y        Out     0.751     5.358       -         
-N_62                                                 Net        -        -       0.806     -           3         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIJFQB3[6]     OR3B       C        In      -         6.164       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIJFQB3[6]     OR3B       Y        Out     0.751     6.915       -         
-N_64                                                 Net        -        -       0.386     -           2         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNICH7R3[7]     OR2A       B        In      -         7.301       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNICH7R3[7]     OR2A       Y        Out     0.646     7.947       -         
-N_65                                                 Net        -        -       0.386     -           2         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNO[8]          XNOR2      A        In      -         8.333       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNO[8]          XNOR2      Y        Out     0.488     8.822       -         
-N_102_i                                              Net        -        -       0.322     -           1         
-WOLF_CONTROLLER_inst_0.sec_since_res[8]              DFN1C1     D        In      -         9.143       -         
-=================================================================================================================
-Total path delay (propagation time + setup) of 9.682 is 4.890(50.5%) logic and 4.792(49.5%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 4: 
-      Requested Period:                      10.000
-    - Setup time:                            0.539
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.461
-
-    - Propagation time:                      9.075
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 0.386
-
-    Number of logic level(s):                6
-    Starting point:                          WOLF_CONTROLLER_inst_0.sec_since_res[0] / Q
-    Ending point:                            WOLF_CONTROLLER_inst_0.sec_since_res[8] / D
-    The start point is clocked by            system_clock|m_time_inferred_clock[25] [rising] on pin CLK
-    The end   point is clocked by            system_clock|m_time_inferred_clock[25] [rising] on pin CLK
-
-Instance / Net                                                  Pin      Pin               Arrival     No. of    
-Name                                                 Type       Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------------------
-WOLF_CONTROLLER_inst_0.sec_since_res[0]              DFN1C1     Q        Out     0.580     0.580       -         
-sec_since_res[0]                                     Net        -        -       1.184     -           4         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI5MPU[0]      OR2B       B        In      -         1.764       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI5MPU[0]      OR2B       Y        Out     0.516     2.280       -         
-N_59                                                 Net        -        -       0.806     -           3         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIPI6E1[2]     OR2A       B        In      -         3.087       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIPI6E1[2]     OR2A       Y        Out     0.646     3.733       -         
-N_60                                                 Net        -        -       0.806     -           3         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI4F0D2[4]     OR3B       C        In      -         4.539       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI4F0D2[4]     OR3B       Y        Out     0.751     5.290       -         
-N_62                                                 Net        -        -       0.806     -           3         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIJFQB3[6]     OR3B       C        In      -         6.097       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIJFQB3[6]     OR3B       Y        Out     0.751     6.847       -         
-N_64                                                 Net        -        -       0.386     -           2         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNICH7R3[7]     OR2A       B        In      -         7.233       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNICH7R3[7]     OR2A       Y        Out     0.646     7.880       -         
-N_65                                                 Net        -        -       0.386     -           2         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNO[8]          XNOR2      A        In      -         8.265       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNO[8]          XNOR2      Y        Out     0.488     8.754       -         
-N_102_i                                              Net        -        -       0.322     -           1         
-WOLF_CONTROLLER_inst_0.sec_since_res[8]              DFN1C1     D        In      -         9.075       -         
-=================================================================================================================
-Total path delay (propagation time + setup) of 9.614 is 4.918(51.2%) logic and 4.696(48.8%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 5: 
-      Requested Period:                      10.000
-    - Setup time:                            0.573
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.427
-
-    - Propagation time:                      8.147
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 1.279
+    = Slack (non-critical) :                 0.886
 
     Number of logic level(s):                5
-    Starting point:                          WOLF_CONTROLLER_inst_0.sec_since_res[2] / Q
+    Starting point:                          WOLF_CONTROLLER_inst_0.sec_since_res[1] / Q
     Ending point:                            WOLF_CONTROLLER_inst_0.sec_since_res[9] / D
     The start point is clocked by            system_clock|m_time_inferred_clock[25] [rising] on pin CLK
     The end   point is clocked by            system_clock|m_time_inferred_clock[25] [rising] on pin CLK
@@ -736,26 +538,26 @@ Path information for path number 5:
 Instance / Net                                                  Pin      Pin               Arrival     No. of    
 Name                                                 Type       Name     Dir     Delay     Time        Fan Out(s)
 -----------------------------------------------------------------------------------------------------------------
-WOLF_CONTROLLER_inst_0.sec_since_res[2]              DFN1C1     Q        Out     0.580     0.580       -         
-sec_since_res[2]                                     Net        -        -       1.184     -           4         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIPI6E1[2]     OR2A       A        In      -         1.764       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIPI6E1[2]     OR2A       Y        Out     0.537     2.301       -         
-N_60                                                 Net        -        -       0.806     -           3         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI4F0D2[4]     OR3B       C        In      -         3.107       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNI4F0D2[4]     OR3B       Y        Out     0.751     3.858       -         
-N_62                                                 Net        -        -       0.806     -           3         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIJFQB3[6]     OR3B       C        In      -         4.665       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNIJFQB3[6]     OR3B       Y        Out     0.751     5.415       -         
-N_64                                                 Net        -        -       0.386     -           2         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNICH7R3[7]     OR2A       B        In      -         5.801       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNICH7R3[7]     OR2A       Y        Out     0.646     6.448       -         
-N_65                                                 Net        -        -       0.386     -           2         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNO[9]          AX1        A        In      -         6.833       -         
-WOLF_CONTROLLER_inst_0.sec_since_res_RNO[9]          AX1        Y        Out     0.992     7.826       -         
-N_103_i                                              Net        -        -       0.322     -           1         
-WOLF_CONTROLLER_inst_0.sec_since_res[9]              DFN1C1     D        In      -         8.147       -         
+WOLF_CONTROLLER_inst_0.sec_since_res[1]              DFN1C1     Q        Out     0.580     0.580       -         
+sec_since_res[1]                                     Net        -        -       1.526     -           7         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNIPI6E1[0]     OR3C       C        In      -         2.106       -         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNIPI6E1[0]     OR3C       Y        Out     0.666     2.772       -         
+N_34                                                 Net        -        -       0.806     -           3         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNI4F0D2[4]     OR3B       C        In      -         3.578       -         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNI4F0D2[4]     OR3B       Y        Out     0.751     4.329       -         
+N_36                                                 Net        -        -       0.806     -           3         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNIJFQB3[5]     OR3B       C        In      -         5.136       -         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNIJFQB3[5]     OR3B       Y        Out     0.751     5.886       -         
+N_38                                                 Net        -        -       0.806     -           3         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNO_0[9]        OR3B       C        In      -         6.693       -         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNO_0[9]        OR3B       Y        Out     0.751     7.444       -         
+N_41                                                 Net        -        -       0.322     -           1         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNO[9]          XNOR2      A        In      -         7.765       -         
+WOLF_CONTROLLER_inst_0.sec_since_res_RNO[9]          XNOR2      Y        Out     0.488     8.253       -         
+N_67_i                                               Net        -        -       0.322     -           1         
+WOLF_CONTROLLER_inst_0.sec_since_res[9]              DFN1C1     D        In      -         8.575       -         
 =================================================================================================================
-Total path delay (propagation time + setup) of 8.721 is 4.831(55.4%) logic and 3.890(44.6%) route.
+Total path delay (propagation time + setup) of 9.114 is 4.525(49.7%) logic and 4.588(50.3%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -775,67 +577,69 @@ Report for cell CU_TOP.rtl
               cell count     area count*area
               AND2     1      1.0        1.0
               AND3     7      1.0        7.0
-               AO1     2      1.0        2.0
+               AO1     1      1.0        1.0
               AO13     2      1.0        2.0
-              AO1A     8      1.0        8.0
+              AO1A    10      1.0       10.0
               AO1B     1      1.0        1.0
-              AOI1     3      1.0        3.0
+              AOI1     5      1.0        5.0
              AOI1B     7      1.0        7.0
                AX1     9      1.0        9.0
               AX1B     6      1.0        6.0
-              AX1C     5      1.0        5.0
+              AX1C     6      1.0        6.0
+              AX1E     1      1.0        1.0
+             AXOI4     1      1.0        1.0
              AXOI5     1      1.0        1.0
             CLKINT     3      0.0        0.0
                GND     9      0.0        0.0
-               INV    13      1.0       13.0
+               INV    12      1.0       12.0
                MX2    13      1.0       13.0
               MX2A     2      1.0        2.0
               MX2B     3      1.0        3.0
-              MX2C     1      1.0        1.0
-              NOR2    16      1.0       16.0
-             NOR2A    28      1.0       28.0
-             NOR2B    43      1.0       43.0
-              NOR3     4      1.0        4.0
-             NOR3A     7      1.0        7.0
-             NOR3B    11      1.0       11.0
-             NOR3C    19      1.0       19.0
-               OA1     5      1.0        5.0
+              MX2C     2      1.0        2.0
+              NOR2    15      1.0       15.0
+             NOR2A    30      1.0       30.0
+             NOR2B    47      1.0       47.0
+              NOR3     2      1.0        2.0
+             NOR3A     5      1.0        5.0
+             NOR3B     8      1.0        8.0
+             NOR3C    22      1.0       22.0
+               OA1     3      1.0        3.0
               OA1A     1      1.0        1.0
               OA1B     1      1.0        1.0
               OA1C     3      1.0        3.0
-              OAI1     2      1.0        2.0
-               OR2    19      1.0       19.0
-              OR2A    17      1.0       17.0
-              OR2B     8      1.0        8.0
-               OR3     7      1.0        7.0
-              OR3A     3      1.0        3.0
-              OR3B     2      1.0        2.0
-              OR3C     4      1.0        4.0
+              OAI1     1      1.0        1.0
+               OR2    20      1.0       20.0
+              OR2A    10      1.0       10.0
+              OR2B     7      1.0        7.0
+               OR3     8      1.0        8.0
+              OR3A     2      1.0        2.0
+              OR3B     3      1.0        3.0
+              OR3C     6      1.0        6.0
                VCC     9      0.0        0.0
-               XA1     3      1.0        3.0
-              XA1B     4      1.0        4.0
-              XA1C     3      1.0        3.0
+               XA1     4      1.0        4.0
+              XA1B     3      1.0        3.0
+              XA1C     1      1.0        1.0
              XAI1A     1      1.0        1.0
-             XNOR2     9      1.0        9.0
+             XNOR2     8      1.0        8.0
                XO1     2      1.0        2.0
               XO1A     3      1.0        3.0
-              XOR2    20      1.0       20.0
+              XOR2    22      1.0       22.0
 
 
             DFN0C1    10      1.0       10.0
           DFN0E0C1     7      1.0        7.0
           DFN0E1C1     8      1.0        8.0
               DFN1     2      1.0        2.0
-            DFN1C1    37      1.0       37.0
+            DFN1C1    42      1.0       42.0
             DFN1E0    14      1.0       14.0
-          DFN1E0C1    41      1.0       41.0
-          DFN1E0P1     5      1.0        5.0
+          DFN1E0C1    35      1.0       35.0
+          DFN1E0P1     3      1.0        3.0
             DFN1E1    10      1.0       10.0
-          DFN1E1C1    41      1.0       41.0
-          DFN1E1P1     1      1.0        1.0
-            DFN1P1     5      1.0        5.0
+          DFN1E1C1    42      1.0       42.0
+          DFN1E1P1     2      1.0        2.0
+            DFN1P1     6      1.0        6.0
                    -----          ----------
-             TOTAL   531               510.0
+             TOTAL   530               509.0
 
 
   IO Cell usage:
@@ -846,7 +650,7 @@ Report for cell CU_TOP.rtl
              TOTAL    12
 
 
-Core Cells         : 510 of 6144 (8%)
+Core Cells         : 509 of 6144 (8%)
 IO Cells           : 12
 
   RAM/ROM Usage Summary
@@ -857,6 +661,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 47MB peak: 112MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Jun 18 20:40:38 2017
+# Mon Jun 19 10:25:12 2017
 
 ###########################################################]

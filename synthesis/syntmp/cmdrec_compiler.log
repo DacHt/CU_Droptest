@@ -1,9 +1,9 @@
 C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\bin64\c_hdl.exe  -osyn  C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_comp.srs  -top  work.CU_TOP  -hdllog  C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synlog\CU_TOP_compiler.srr  -encrypt  -mp  1  -vhdl  -prodtype  synplify_pro  -nram -fixsmult -divnmod  -encrypt  -pro  -dmgen  C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -vhdl2008  -ignore_undefined_lib  -lib work C:\Users\rozen\Gitrepos\CU_Droptest\hdl\CUTTER_PWM.vhd -lib work C:\Users\rozen\Gitrepos\CU_Droptest\hdl\UART_reset_monitor.vhd -lib work C:\Users\rozen\Gitrepos\CU_Droptest\hdl\System_clock.vhd -lib COREUART_LIB C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd -lib COREUART_LIB C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd -lib COREUART_LIB C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd -lib COREUART_LIB C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\fifo_256x8_pa3.vhd -lib COREUART_LIB C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\coreuart_pkg.vhd -lib COREUART_LIB C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd -lib work C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd -lib COREUART_LIB C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\components.vhd -lib work C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\CU_TOP.vhd 
 rc:0 success:1
-C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_comp.srs|o|1497811234|33322
-C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synlog\CU_TOP_compiler.srr|o|1497811234|15839
+C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_comp.srs|o|1497860708|33218
+C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synlog\CU_TOP_compiler.srr|o|1497860708|15261
 C:\Users\rozen\Gitrepos\CU_Droptest\hdl\CUTTER_PWM.vhd|i|1497427834|4490
-C:\Users\rozen\Gitrepos\CU_Droptest\hdl\UART_reset_monitor.vhd|i|1497807545|4685
+C:\Users\rozen\Gitrepos\CU_Droptest\hdl\UART_reset_monitor.vhd|i|1497856821|4685
 C:\Users\rozen\Gitrepos\CU_Droptest\hdl\System_clock.vhd|i|1495983442|2496
 C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd|i|1497809920|12885
 C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd|i|1497809920|21549
@@ -11,8 +11,8 @@ C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\cor
 C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\fifo_256x8_pa3.vhd|i|1497809920|8425
 C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\coreuart_pkg.vhd|i|1497809920|483
 C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd|i|1497809920|22253
-C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd|i|1497811223|10763
+C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd|i|1497860695|10614
 C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\components.vhd|i|1497809920|2704
-C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\CU_TOP.vhd|i|1497809920|15310
+C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\CU_TOP.vhd|i|1497856820|15310
 C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\bin\c_hdl.exe|i|1449254122|1295872
 C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\bin64\c_hdl.exe|i|1449254124|1897472

@@ -100,19 +100,19 @@ PARENT="<project>\component\work\CU_Main_tst\CU_Main_tst.cxf"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\CU_TOP.cxf,actgen_cxf"
 STATE="utd"
-TIME="1497809922"
+TIME="1497856820"
 SIZE="4062"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\CU_TOP.vhd,hdl"
 STATE="utd"
-TIME="1497809920"
+TIME="1497856820"
 SIZE="15310"
 PARENT="<project>\component\work\CU_TOP\CU_TOP.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\FPGA_UART\coreparameters.vhd,tb_hdl"
 STATE="utd"
-TIME="1497809920"
+TIME="1497856820"
 SIZE="761"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\CU_TOP\FPGA_UART\CU_TOP_FPGA_UART_COREUART.cxf"
@@ -234,23 +234,28 @@ SIZE="55896"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.adb,adb"
 STATE="utd"
-TIME="1497776039"
-SIZE="459264"
+TIME="1497856820"
+SIZE="500224"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.ide_des,ide_des"
 STATE="utd"
-TIME="1497775937"
+TIME="1497811277"
 SIZE="1181"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.pdb,pdb"
 STATE="utd"
-TIME="1497811277"
-SIZE="55824"
+TIME="1497860936"
+SIZE="55177"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_compile_log.rpt,log"
 STATE="utd"
-TIME="1497800894"
-SIZE="9215"
+TIME="1497860886"
+SIZE="9354"
+ENDFILE
+VALUE "<project>\designer\impl1\CU_TOP_floorplan_log.rpt,log"
+STATE="utd"
+TIME="1497861454"
+SIZE="342"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_fp\CU_TOP.pro,pro"
 STATE="utd"
@@ -259,17 +264,17 @@ SIZE="2207"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1497811263"
+TIME="1497860903"
 SIZE="2528"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1497811277"
+TIME="1497860936"
 SIZE="665"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1497811267"
+TIME="1497860924"
 SIZE="1130"
 ENDFILE
 VALUE "<project>\designer\impl1\WOLF_CONTROLLER.adb,adb"
@@ -299,13 +304,13 @@ SIZE="2496"
 ENDFILE
 VALUE "<project>\hdl\UART_reset_monitor.vhd,hdl"
 STATE="utd"
-TIME="1497807545"
+TIME="1497856821"
 SIZE="4685"
 ENDFILE
 VALUE "<project>\hdl\WOLF_CONTROLLER.vhd,hdl"
 STATE="utd"
-TIME="1497811223"
-SIZE="10763"
+TIME="1497860695"
+SIZE="10614"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
@@ -324,23 +329,23 @@ SIZE="1874"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP.edn,syn_edn"
 STATE="utd"
-TIME="1497776039"
-SIZE="253677"
+TIME="1497856821"
+SIZE="268642"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP.so,so"
 STATE="utd"
-TIME="1497775900"
+TIME="1497811238"
 SIZE="217"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1497775900"
+TIME="1497811238"
 SIZE="395"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP_syn.prj,prj"
 STATE="utd"
-TIME="1497775900"
-SIZE="2713"
+TIME="1497856821"
+SIZE="2804"
 ENDFILE
 VALUE "<project>\synthesis\WOLF_CONTROLLER.edn,syn_edn"
 STATE="ood"
@@ -398,6 +403,18 @@ VALUE "<project>\component\Actel\DirectCore\COREUART\5.6.102\rtl\vhdl\test\commo
 VALUE "<project>\component\Actel\DirectCore\COREUART\5.6.102\rtl\vhdl\test\common\textio.vhd,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\COREUART\5.6.102\rtl\vhdl\test\common\tbpack.vhd,tb_hdl"
 VALUE "<project>\component\work\CU_TOP\FPGA_UART\rtl\vhdl\test\user\testbnch.vhd,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -533,6 +550,18 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "CU_TOP_FPGA_UART_COREUART::COREUART_LIB"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -551,7 +580,9 @@ ReportsCurrentItem;Generate Programming Data:CU_TOP_prgdata_log.rpt
 HDL;hdl\WOLF_CONTROLLER.vhd;0
 HDL;hdl\UART_reset_monitor.vhd;0
 SmartDesign;CU_TOP;0
-ACTIVEVIEW;Reports
+StartPage;StartPage;0
+HDL;constraint\CU_Droptest.pdc;0
+ACTIVEVIEW;hdl\WOLF_CONTROLLER.vhd
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CU_TOP::work","component\work\CU_TOP\CU_TOP.vhd","TRUE","FALSE"

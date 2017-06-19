@@ -8,13 +8,9 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 
 @N: CD720 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\vhd2008\std.vhd":146:18:146:21|Setting time resolution to ns
 @N:"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\CU_TOP.vhd":20:7:20:12|Top entity is set to CU_TOP.
-File C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\proasic\proasic3.vhd changed - recompiling
-File C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\coreuart_pkg.vhd changed - recompiling
-File C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd changed - recompiling
-File C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd changed - recompiling
-File C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\CU_TOP.vhd changed - recompiling
+Options changed - recompiling
 VHDL syntax check successful!
-File C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd changed - recompiling
+Options changed - recompiling
 @N: CD231 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus ('U'="1000000000")
 @N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\component\work\CU_TOP\CU_TOP.vhd":20:7:20:12|Synthesizing work.cu_top.rtl 
 @N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":23:7:23:21|Synthesizing work.wolf_controller.architecture_wolf_controller 
@@ -24,14 +20,14 @@ Post processing for work.wolf_controller.architecture_wolf_controller
 @W: CL240 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":53:4:53:7|led2 is not assigned a value (floating) -- simulation mismatch possible. 
 @W: CL240 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":52:4:52:7|led1 is not assigned a value (floating) -- simulation mismatch possible. 
 @A: CL282 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":124:4:124:5|Feedback mux created for signal uart_data_buffer_in[7:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@A: CL282 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":183:4:183:5|Feedback mux created for signal main_current_state[0:4] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Feedback mux created for signal main_current_state[0:4] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
 @A: CL282 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":124:4:124:5|Feedback mux created for signal uart_current_state[0:4] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":183:4:183:5|Optimizing register bit main_uart_data_out(3) to a constant 0
-@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":183:4:183:5|Optimizing register bit main_uart_data_out(4) to a constant 0
-@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":183:4:183:5|Optimizing register bit main_uart_data_out(5) to a constant 0
-@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":183:4:183:5|Optimizing register bit main_uart_data_out(6) to a constant 0
-@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":183:4:183:5|Optimizing register bit main_uart_data_out(7) to a constant 0
-@W: CL279 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":183:4:183:5|Pruning register bits 7 to 3 of main_uart_data_out(7 downto 0)  
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Optimizing register bit main_uart_data_out(3) to a constant 0
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Optimizing register bit main_uart_data_out(4) to a constant 0
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Optimizing register bit main_uart_data_out(5) to a constant 0
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Optimizing register bit main_uart_data_out(6) to a constant 0
+@W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Optimizing register bit main_uart_data_out(7) to a constant 0
+@W: CL279 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\WOLF_CONTROLLER.vhd":181:4:181:5|Pruning register bits 7 to 3 of main_uart_data_out(7 downto 0)  
 @N: CD630 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\UART_reset_monitor.vhd":23:7:23:24|Synthesizing work.uart_reset_monitor.architecture_uart_reset_monitor 
 @N: CD233 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\UART_reset_monitor.vhd":53:17:53:18|Using sequential encoding for type reset_state
 Post processing for work.uart_reset_monitor.architecture_uart_reset_monitor
@@ -114,10 +110,10 @@ State machine has 4 reachable states with original encodings of:
 @W: CL190 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\UART_reset_monitor.vhd":65:4:65:5|Optimizing register bit reset_counter(4) to a constant 0
 @W: CL260 :"C:\Users\rozen\Gitrepos\CU_Droptest\hdl\UART_reset_monitor.vhd":65:4:65:5|Pruning register bit 4 of reset_counter(4 downto 0)  
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 81MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 79MB peak: 81MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Jun 18 20:40:34 2017
+# Mon Jun 19 10:25:08 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
@@ -126,7 +122,7 @@ Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Jun 18 20:40:34 2017
+# Mon Jun 19 10:25:08 2017
 
 ###########################################################]
 @END
@@ -134,6 +130,6 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Jun 18 20:40:34 2017
+# Mon Jun 19 10:25:08 2017
 
 ###########################################################]

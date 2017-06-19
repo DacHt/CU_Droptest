@@ -2,7 +2,7 @@ Timing Violation Report Max Delay Analysis
 
 SmartTime Version v11.8
 Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
-Date: Sun Jun 18 20:41:06 2017
+Date: Mon Jun 19 10:28:44 2017
 
 
 Design: CU_TOP
@@ -21,234 +21,274 @@ Scenario for Timing Analysis: Primary
 
 
 Path 1
-  From:                        system_clock_inst_0/l_time[12]:CLK
-  To:                          system_clock_inst_0/flag:D
-  Delay (ns):                  4.986
-  Slack (ns):                  -0.348
-  Arrival (ns):                9.041
-  Required (ns):               8.693
+  From:                        UART_reset_monitor_inst_0/reset_out:CLK
+  To:                          system_clock_inst_0/l_time[5]:CLR
+  Delay (ns):                  5.044
+  Slack (ns):                  -0.501
+  Arrival (ns):                9.267
+  Required (ns):               8.766
 
 Path 2
-  From:                        system_clock_inst_0/l_time[8]:CLK
-  To:                          system_clock_inst_0/flag:D
-  Delay (ns):                  4.805
-  Slack (ns):                  -0.185
-  Arrival (ns):                8.878
-  Required (ns):               8.693
+  From:                        UART_reset_monitor_inst_0/reset_out:CLK
+  To:                          system_clock_inst_0/l_time[1]:CLR
+  Delay (ns):                  5.044
+  Slack (ns):                  -0.501
+  Arrival (ns):                9.267
+  Required (ns):               8.766
 
 Path 3
-  From:                        system_clock_inst_0/l_time[10]:CLK
-  To:                          system_clock_inst_0/flag:D
-  Delay (ns):                  4.796
-  Slack (ns):                  -0.158
-  Arrival (ns):                8.851
-  Required (ns):               8.693
+  From:                        UART_reset_monitor_inst_0/reset_out:CLK
+  To:                          system_clock_inst_0/l_time[6]:CLR
+  Delay (ns):                  5.044
+  Slack (ns):                  -0.501
+  Arrival (ns):                9.267
+  Required (ns):               8.766
 
 Path 4
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/l_time[4]:CLR
-  Delay (ns):                  4.688
-  Slack (ns):                  -0.143
-  Arrival (ns):                8.895
-  Required (ns):               8.752
+  To:                          system_clock_inst_0/l_time[10]:CLR
+  Delay (ns):                  5.044
+  Slack (ns):                  -0.500
+  Arrival (ns):                9.267
+  Required (ns):               8.767
 
 Path 5
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/l_time[3]:CLR
-  Delay (ns):                  4.688
-  Slack (ns):                  -0.143
-  Arrival (ns):                8.895
-  Required (ns):               8.752
+  To:                          system_clock_inst_0/l_time[11]:CLR
+  Delay (ns):                  5.033
+  Slack (ns):                  -0.498
+  Arrival (ns):                9.256
+  Required (ns):               8.758
 
 Path 6
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/l_time[10]:CLR
-  Delay (ns):                  4.688
-  Slack (ns):                  -0.137
-  Arrival (ns):                8.895
-  Required (ns):               8.758
+  To:                          system_clock_inst_0/l_time[4]:CLR
+  Delay (ns):                  5.022
+  Slack (ns):                  -0.482
+  Arrival (ns):                9.245
+  Required (ns):               8.763
 
 Path 7
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/l_time[14]:CLR
-  Delay (ns):                  4.678
-  Slack (ns):                  -0.131
-  Arrival (ns):                8.885
-  Required (ns):               8.754
+  To:                          system_clock_inst_0/l_time[3]:CLR
+  Delay (ns):                  5.022
+  Slack (ns):                  -0.482
+  Arrival (ns):                9.245
+  Required (ns):               8.763
 
 Path 8
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/l_time[12]:CLR
-  Delay (ns):                  4.680
-  Slack (ns):                  -0.129
-  Arrival (ns):                8.887
-  Required (ns):               8.758
+  To:                          system_clock_inst_0/l_time[2]:CLR
+  Delay (ns):                  5.022
+  Slack (ns):                  -0.482
+  Arrival (ns):                9.245
+  Required (ns):               8.763
 
 Path 9
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/l_time[11]:CLR
-  Delay (ns):                  4.680
-  Slack (ns):                  -0.129
-  Arrival (ns):                8.887
-  Required (ns):               8.758
+  To:                          system_clock_inst_0/l_time[12]:CLR
+  Delay (ns):                  5.025
+  Slack (ns):                  -0.481
+  Arrival (ns):                9.248
+  Required (ns):               8.767
 
 Path 10
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/l_time[5]:CLR
-  Delay (ns):                  4.688
-  Slack (ns):                  -0.119
-  Arrival (ns):                8.895
-  Required (ns):               8.776
+  To:                          system_clock_inst_0/l_time[14]:CLR
+  Delay (ns):                  5.025
+  Slack (ns):                  -0.481
+  Arrival (ns):                9.248
+  Required (ns):               8.767
 
 Path 11
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/l_time[6]:CLR
-  Delay (ns):                  4.688
-  Slack (ns):                  -0.119
-  Arrival (ns):                8.895
-  Required (ns):               8.776
+  To:                          system_clock_inst_0/s_time[3]:CLR
+  Delay (ns):                  4.992
+  Slack (ns):                  -0.478
+  Arrival (ns):                9.215
+  Required (ns):               8.737
 
 Path 12
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/l_time[2]:CLR
-  Delay (ns):                  4.699
-  Slack (ns):                  -0.119
-  Arrival (ns):                8.906
-  Required (ns):               8.787
+  To:                          system_clock_inst_0/l_time[13]:CLR
+  Delay (ns):                  5.005
+  Slack (ns):                  -0.470
+  Arrival (ns):                9.228
+  Required (ns):               8.758
 
 Path 13
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/l_time[1]:CLR
-  Delay (ns):                  4.696
-  Slack (ns):                  -0.116
-  Arrival (ns):                8.903
-  Required (ns):               8.787
+  To:                          system_clock_inst_0/l_time[7]:CLR
+  Delay (ns):                  4.997
+  Slack (ns):                  -0.468
+  Arrival (ns):                9.220
+  Required (ns):               8.752
 
 Path 14
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/s_time_0[7]:CLR
-  Delay (ns):                  4.643
-  Slack (ns):                  -0.112
-  Arrival (ns):                8.850
-  Required (ns):               8.738
+  To:                          system_clock_inst_0/l_time[8]:CLR
+  Delay (ns):                  4.997
+  Slack (ns):                  -0.468
+  Arrival (ns):                9.220
+  Required (ns):               8.752
 
 Path 15
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/s_time[3]:CLR
-  Delay (ns):                  4.656
-  Slack (ns):                  -0.111
-  Arrival (ns):                8.863
-  Required (ns):               8.752
+  To:                          system_clock_inst_0/s_time_0[7]:CLR
+  Delay (ns):                  5.010
+  Slack (ns):                  -0.467
+  Arrival (ns):                9.233
+  Required (ns):               8.766
 
 Path 16
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/s_time[0]:CLR
-  Delay (ns):                  4.656
-  Slack (ns):                  -0.111
-  Arrival (ns):                8.863
-  Required (ns):               8.752
+  To:                          system_clock_inst_0/l_time[9]:CLR
+  Delay (ns):                  4.982
+  Slack (ns):                  -0.467
+  Arrival (ns):                9.205
+  Required (ns):               8.738
 
 Path 17
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/s_time[1]:CLR
-  Delay (ns):                  4.658
-  Slack (ns):                  -0.111
-  Arrival (ns):                8.865
-  Required (ns):               8.754
+  To:                          system_clock_inst_0/s_time[4]:CLR
+  Delay (ns):                  5.010
+  Slack (ns):                  -0.467
+  Arrival (ns):                9.233
+  Required (ns):               8.766
 
 Path 18
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/s_time[5]:CLR
-  Delay (ns):                  4.650
-  Slack (ns):                  -0.107
-  Arrival (ns):                8.857
-  Required (ns):               8.750
+  To:                          system_clock_inst_0/s_time[6]:CLR
+  Delay (ns):                  5.010
+  Slack (ns):                  -0.466
+  Arrival (ns):                9.233
+  Required (ns):               8.767
 
 Path 19
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/s_time[6]:CLR
-  Delay (ns):                  4.648
-  Slack (ns):                  -0.105
-  Arrival (ns):                8.855
-  Required (ns):               8.750
+  To:                          system_clock_inst_0/s_time[2]:CLR
+  Delay (ns):                  5.010
+  Slack (ns):                  -0.466
+  Arrival (ns):                9.233
+  Required (ns):               8.767
 
 Path 20
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/l_time[17]:CLR
-  Delay (ns):                  4.651
-  Slack (ns):                  -0.103
-  Arrival (ns):                8.858
-  Required (ns):               8.755
+  To:                          system_clock_inst_0/s_time[5]:CLR
+  Delay (ns):                  5.010
+  Slack (ns):                  -0.466
+  Arrival (ns):                9.233
+  Required (ns):               8.767
 
 Path 21
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
   To:                          system_clock_inst_0/l_time[16]:CLR
-  Delay (ns):                  4.651
-  Slack (ns):                  -0.103
-  Arrival (ns):                8.858
-  Required (ns):               8.755
+  Delay (ns):                  4.992
+  Slack (ns):                  -0.452
+  Arrival (ns):                9.215
+  Required (ns):               8.763
 
 Path 22
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
   To:                          system_clock_inst_0/l_time[15]:CLR
-  Delay (ns):                  4.648
-  Slack (ns):                  -0.100
-  Arrival (ns):                8.855
-  Required (ns):               8.755
+  Delay (ns):                  4.986
+  Slack (ns):                  -0.446
+  Arrival (ns):                9.209
+  Required (ns):               8.763
 
 Path 23
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/l_time[13]:CLR
-  Delay (ns):                  4.651
-  Slack (ns):                  -0.100
-  Arrival (ns):                8.858
-  Required (ns):               8.758
+  To:                          system_clock_inst_0/l_time[17]:CLR
+  Delay (ns):                  4.986
+  Slack (ns):                  -0.446
+  Arrival (ns):                9.209
+  Required (ns):               8.763
 
 Path 24
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/s_time[2]:CLR
-  Delay (ns):                  4.651
-  Slack (ns):                  -0.100
-  Arrival (ns):                8.858
-  Required (ns):               8.758
+  To:                          system_clock_inst_0/s_time[0]:CLR
+  Delay (ns):                  4.985
+  Slack (ns):                  -0.442
+  Arrival (ns):                9.208
+  Required (ns):               8.766
 
 Path 25
   From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/s_time[4]:CLR
-  Delay (ns):                  4.669
-  Slack (ns):                  -0.089
-  Arrival (ns):                8.876
-  Required (ns):               8.787
+  To:                          system_clock_inst_0/s_time[1]:CLR
+  Delay (ns):                  4.985
+  Slack (ns):                  -0.442
+  Arrival (ns):                9.208
+  Required (ns):               8.766
 
 Path 26
-  From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/l_time[9]:CLR
-  Delay (ns):                  4.668
-  Slack (ns):                  -0.088
-  Arrival (ns):                8.875
-  Required (ns):               8.787
+  From:                        system_clock_inst_0/l_time[9]:CLK
+  To:                          system_clock_inst_0/flag:D
+  Delay (ns):                  5.017
+  Slack (ns):                  -0.384
+  Arrival (ns):                9.052
+  Required (ns):               8.668
 
 Path 27
-  From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/l_time[7]:CLR
-  Delay (ns):                  4.668
-  Slack (ns):                  -0.088
-  Arrival (ns):                8.875
-  Required (ns):               8.787
+  From:                        system_clock_inst_0/l_time[11]:CLK
+  To:                          system_clock_inst_0/flag:D
+  Delay (ns):                  4.986
+  Slack (ns):                  -0.373
+  Arrival (ns):                9.041
+  Required (ns):               8.668
 
 Path 28
-  From:                        UART_reset_monitor_inst_0/reset_out:CLK
-  To:                          system_clock_inst_0/l_time[8]:CLR
-  Delay (ns):                  4.655
-  Slack (ns):                  -0.086
-  Arrival (ns):                8.862
-  Required (ns):               8.776
+  From:                        FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[1]:CLK
+  To:                          FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[12]:D
+  Delay (ns):                  9.753
+  Slack (ns):                  -0.337
+  Arrival (ns):                14.024
+  Required (ns):               13.687
 
 Path 29
-  From:                        system_clock_inst_0/l_time[7]:CLK
+  From:                        system_clock_inst_0/l_time[6]:CLK
   To:                          system_clock_inst_0/flag:D
-  Delay (ns):                  4.677
-  Slack (ns):                  -0.068
-  Arrival (ns):                8.761
-  Required (ns):               8.693
+  Delay (ns):                  4.909
+  Slack (ns):                  -0.304
+  Arrival (ns):                8.972
+  Required (ns):               8.668
+
+Path 30
+  From:                        system_clock_inst_0/l_time[13]:CLK
+  To:                          system_clock_inst_0/flag:D
+  Delay (ns):                  4.893
+  Slack (ns):                  -0.245
+  Arrival (ns):                8.948
+  Required (ns):               8.703
+
+Path 31
+  From:                        FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[0]:CLK
+  To:                          FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr[12]:D
+  Delay (ns):                  9.599
+  Slack (ns):                  -0.183
+  Arrival (ns):                13.870
+  Required (ns):               13.687
+
+Path 32
+  From:                        system_clock_inst_0/l_time[5]:CLK
+  To:                          system_clock_inst_0/flag:D
+  Delay (ns):                  4.781
+  Slack (ns):                  -0.176
+  Arrival (ns):                8.844
+  Required (ns):               8.668
+
+Path 33
+  From:                        system_clock_inst_0/l_time[15]:CLK
+  To:                          system_clock_inst_0/flag:D
+  Delay (ns):                  4.749
+  Slack (ns):                  -0.141
+  Arrival (ns):                8.809
+  Required (ns):               8.668
+
+Path 34
+  From:                        system_clock_inst_0/l_time[16]:CLK
+  To:                          system_clock_inst_0/flag:D
+  Delay (ns):                  4.621
+  Slack (ns):                  -0.013
+  Arrival (ns):                8.681
+  Required (ns):               8.668
 

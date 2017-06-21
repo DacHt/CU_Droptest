@@ -100,19 +100,19 @@ PARENT="<project>\component\work\CU_Main_tst\CU_Main_tst.cxf"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\CU_TOP.cxf,actgen_cxf"
 STATE="utd"
-TIME="1497856820"
+TIME="1497861522"
 SIZE="4062"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\CU_TOP.vhd,hdl"
 STATE="utd"
-TIME="1497856820"
+TIME="1497861522"
 SIZE="15310"
 PARENT="<project>\component\work\CU_TOP\CU_TOP.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\FPGA_UART\coreparameters.vhd,tb_hdl"
 STATE="utd"
-TIME="1497856820"
+TIME="1497861522"
 SIZE="761"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\CU_TOP\FPGA_UART\CU_TOP_FPGA_UART_COREUART.cxf"
@@ -234,22 +234,22 @@ SIZE="55896"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.adb,adb"
 STATE="utd"
-TIME="1497856820"
-SIZE="500224"
+TIME="1497861522"
+SIZE="502272"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.ide_des,ide_des"
 STATE="utd"
-TIME="1497811277"
+TIME="1497860936"
 SIZE="1181"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.pdb,pdb"
 STATE="utd"
-TIME="1497860936"
-SIZE="55177"
+TIME="1497861522"
+SIZE="55274"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_compile_log.rpt,log"
 STATE="utd"
-TIME="1497860886"
+TIME="1497861522"
 SIZE="9354"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_floorplan_log.rpt,log"
@@ -264,17 +264,17 @@ SIZE="2207"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1497860903"
+TIME="1497861522"
 SIZE="2528"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1497860936"
+TIME="1497861522"
 SIZE="665"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1497860924"
+TIME="1497861522"
 SIZE="1130"
 ENDFILE
 VALUE "<project>\designer\impl1\WOLF_CONTROLLER.adb,adb"
@@ -304,12 +304,12 @@ SIZE="2496"
 ENDFILE
 VALUE "<project>\hdl\UART_reset_monitor.vhd,hdl"
 STATE="utd"
-TIME="1497856821"
+TIME="1497861522"
 SIZE="4685"
 ENDFILE
 VALUE "<project>\hdl\WOLF_CONTROLLER.vhd,hdl"
 STATE="utd"
-TIME="1497860695"
+TIME="1497861522"
 SIZE="10614"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
@@ -329,22 +329,22 @@ SIZE="1874"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP.edn,syn_edn"
 STATE="utd"
-TIME="1497856821"
-SIZE="268642"
+TIME="1497861522"
+SIZE="268944"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP.so,so"
 STATE="utd"
-TIME="1497811238"
+TIME="1497860712"
 SIZE="217"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1497811238"
+TIME="1497860712"
 SIZE="395"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP_syn.prj,prj"
 STATE="utd"
-TIME="1497856821"
+TIME="1497861522"
 SIZE="2804"
 ENDFILE
 VALUE "<project>\synthesis\WOLF_CONTROLLER.edn,syn_edn"
@@ -381,10 +381,6 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
-ENDLIST
-LIST PinReports
-VALUE "<project>\designer\impl1\CU_TOP_report_pin_byname.txt,log"
-VALUE "<project>\designer\impl1\CU_TOP_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 LIST "CU_TOP_FPGA_UART_COREUART::COREUART_LIB"
@@ -575,22 +571,17 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Generate Programming Data:CU_TOP_prgdata_log.rpt
-HDL;hdl\WOLF_CONTROLLER.vhd;0
-HDL;hdl\UART_reset_monitor.vhd;0
-SmartDesign;CU_TOP;0
 StartPage;StartPage;0
-HDL;constraint\CU_Droptest.pdc;0
-ACTIVEVIEW;hdl\WOLF_CONTROLLER.vhd
+SmartDesign;CU_TOP;0
+ACTIVEVIEW;CU_TOP
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CU_TOP::work","component\work\CU_TOP\CU_TOP.vhd","TRUE","FALSE"
 SUBBLOCK "CUTTER_PWM::work","hdl\CUTTER_PWM.vhd","FALSE","FALSE"
 SUBBLOCK "UART_reset_monitor::work","hdl\UART_reset_monitor.vhd","FALSE","FALSE"
+SUBBLOCK "WOLF_CONTROLLER::work","hdl\WOLF_CONTROLLER.vhd","FALSE","FALSE"
 SUBBLOCK "system_clock::work","hdl\System_clock.vhd","FALSE","FALSE"
 SUBBLOCK "CU_TOP_FPGA_UART_COREUART::COREUART_LIB","component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd","FALSE","FALSE"
-SUBBLOCK "WOLF_CONTROLLER::work","hdl\WOLF_CONTROLLER.vhd","FALSE","FALSE"
 ENDLIST
 LIST "CUTTER_PWM::work","hdl\CUTTER_PWM.vhd","FALSE","FALSE"
 ENDLIST

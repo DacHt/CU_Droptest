@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Sun Jun 18 20:18:40 2017
+-- Created by SmartDesign Thu Jun 22 17:22:48 2017
 -- Version: v11.8 11.8.0.26
 ----------------------------------------------------------------------
 
@@ -30,6 +30,7 @@ entity CU_TOP is
         L1_GPS_PWR      : out std_logic;
         LED1            : out std_logic;
         LED2            : out std_logic;
+        MICRO_CLK       : out std_logic;
         PRESSURE_PWR    : out std_logic;
         SAT_PWR         : out std_logic;
         SENS_MEM_L5_PWR : out std_logic;
@@ -174,6 +175,7 @@ signal LED1_2                             : std_logic;
 signal LED1_3                             : std_logic;
 signal LED2_net_0                         : std_logic;
 signal LED2_1                             : std_logic_vector(25 to 25);
+signal MICRO_CLK_net_0                    : std_logic_vector(1 to 1);
 signal OR2_0_Y                            : std_logic;
 signal WOLF_CONTROLLER_cutter_pwm_duty    : std_logic_vector(7 downto 0);
 signal WOLF_CONTROLLER_uart_baud_val      : std_logic_vector(12 downto 0);
@@ -183,6 +185,7 @@ signal CUTTER_net_1                       : std_logic;
 signal LED2_1_net_0                       : std_logic;
 signal FPGA_UART_TX_net_1                 : std_logic;
 signal LED1_3_net_0                       : std_logic;
+signal MICRO_CLK_net_1                    : std_logic;
 signal m_time_slice_0                     : std_logic_vector(0 to 0);
 signal m_time_slice_1                     : std_logic_vector(10 to 10);
 signal m_time_slice_2                     : std_logic_vector(11 to 11);
@@ -194,20 +197,19 @@ signal m_time_slice_7                     : std_logic_vector(16 to 16);
 signal m_time_slice_8                     : std_logic_vector(17 to 17);
 signal m_time_slice_9                     : std_logic_vector(18 to 18);
 signal m_time_slice_10                    : std_logic_vector(19 to 19);
-signal m_time_slice_11                    : std_logic_vector(1 to 1);
-signal m_time_slice_12                    : std_logic_vector(20 to 20);
-signal m_time_slice_13                    : std_logic_vector(21 to 21);
-signal m_time_slice_14                    : std_logic_vector(22 to 22);
-signal m_time_slice_15                    : std_logic_vector(23 to 23);
-signal m_time_slice_16                    : std_logic_vector(24 to 24);
-signal m_time_slice_17                    : std_logic_vector(2 to 2);
-signal m_time_slice_18                    : std_logic_vector(3 to 3);
-signal m_time_slice_19                    : std_logic_vector(4 to 4);
-signal m_time_slice_20                    : std_logic_vector(5 to 5);
-signal m_time_slice_21                    : std_logic_vector(6 to 6);
-signal m_time_slice_22                    : std_logic_vector(7 to 7);
-signal m_time_slice_23                    : std_logic_vector(8 to 8);
-signal m_time_slice_24                    : std_logic_vector(9 to 9);
+signal m_time_slice_11                    : std_logic_vector(20 to 20);
+signal m_time_slice_12                    : std_logic_vector(21 to 21);
+signal m_time_slice_13                    : std_logic_vector(22 to 22);
+signal m_time_slice_14                    : std_logic_vector(23 to 23);
+signal m_time_slice_15                    : std_logic_vector(24 to 24);
+signal m_time_slice_16                    : std_logic_vector(2 to 2);
+signal m_time_slice_17                    : std_logic_vector(3 to 3);
+signal m_time_slice_18                    : std_logic_vector(4 to 4);
+signal m_time_slice_19                    : std_logic_vector(5 to 5);
+signal m_time_slice_20                    : std_logic_vector(6 to 6);
+signal m_time_slice_21                    : std_logic_vector(7 to 7);
+signal m_time_slice_22                    : std_logic_vector(8 to 8);
+signal m_time_slice_23                    : std_logic_vector(9 to 9);
 signal m_time_net_0                       : std_logic_vector(25 downto 0);
 ----------------------------------------------------------------------
 -- TiedOff Signals
@@ -248,10 +250,13 @@ begin
  FPGA_UART_TX       <= FPGA_UART_TX_net_1;
  LED1_3_net_0       <= LED1_3;
  LED1               <= LED1_3_net_0;
+ MICRO_CLK_net_1    <= MICRO_CLK_net_0(1);
+ MICRO_CLK          <= MICRO_CLK_net_1;
 ----------------------------------------------------------------------
 -- Slices assignments
 ----------------------------------------------------------------------
  LED2_1(25)          <= m_time_net_0(25);
+ MICRO_CLK_net_0(1)  <= m_time_net_0(1);
  m_time_slice_0(0)   <= m_time_net_0(0);
  m_time_slice_1(10)  <= m_time_net_0(10);
  m_time_slice_2(11)  <= m_time_net_0(11);
@@ -263,20 +268,19 @@ begin
  m_time_slice_8(17)  <= m_time_net_0(17);
  m_time_slice_9(18)  <= m_time_net_0(18);
  m_time_slice_10(19) <= m_time_net_0(19);
- m_time_slice_11(1)  <= m_time_net_0(1);
- m_time_slice_12(20) <= m_time_net_0(20);
- m_time_slice_13(21) <= m_time_net_0(21);
- m_time_slice_14(22) <= m_time_net_0(22);
- m_time_slice_15(23) <= m_time_net_0(23);
- m_time_slice_16(24) <= m_time_net_0(24);
- m_time_slice_17(2)  <= m_time_net_0(2);
- m_time_slice_18(3)  <= m_time_net_0(3);
- m_time_slice_19(4)  <= m_time_net_0(4);
- m_time_slice_20(5)  <= m_time_net_0(5);
- m_time_slice_21(6)  <= m_time_net_0(6);
- m_time_slice_22(7)  <= m_time_net_0(7);
- m_time_slice_23(8)  <= m_time_net_0(8);
- m_time_slice_24(9)  <= m_time_net_0(9);
+ m_time_slice_11(20) <= m_time_net_0(20);
+ m_time_slice_12(21) <= m_time_net_0(21);
+ m_time_slice_13(22) <= m_time_net_0(22);
+ m_time_slice_14(23) <= m_time_net_0(23);
+ m_time_slice_15(24) <= m_time_net_0(24);
+ m_time_slice_16(2)  <= m_time_net_0(2);
+ m_time_slice_17(3)  <= m_time_net_0(3);
+ m_time_slice_18(4)  <= m_time_net_0(4);
+ m_time_slice_19(5)  <= m_time_net_0(5);
+ m_time_slice_20(6)  <= m_time_net_0(6);
+ m_time_slice_21(7)  <= m_time_net_0(7);
+ m_time_slice_22(8)  <= m_time_net_0(8);
+ m_time_slice_23(9)  <= m_time_net_0(9);
 ----------------------------------------------------------------------
 -- Component instances
 ----------------------------------------------------------------------

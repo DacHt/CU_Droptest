@@ -22,7 +22,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 @N: BN362 :"c:\users\rozen\gitrepos\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":264:6:264:7|Removing sequential instance overflow_int of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
 @N: BN362 :"c:\users\rozen\gitrepos\cu_droptest\component\work\cu_top\fpga_uart\rtl\vhdl\core\rx_async.vhd":264:6:264:7|Removing sequential instance framing_error_int of view:PrimLib.dffre(prim) in hierarchy view:coreuart_lib.CU_TOP_FPGA_UART_Rx_async(translated) because there are no references to its outputs 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 108MB peak: 109MB)
 
 
 
@@ -43,9 +43,9 @@ Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.sap.
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 46MB peak: 109MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 46MB peak: 109MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Jun 19 10:25:10 2017
+# Thu Jun 22 17:23:11 2017
 
 ###########################################################]

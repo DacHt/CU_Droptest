@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Mon Jun 19 10:28:20 2017 ***************************************************************************
+                          Thu Jun 22 17:23:42 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.8
 Version: 11.8.0.26
 File Name: C:\Users\rozen\Gitrepos\CU_Droptest\designer\impl1\CU_TOP.adb
 Design Name: CU_TOP  Design State: layout
-Last Saved: Mon Jun 19 10:28:06 2017
+Last Saved: Thu Jun 22 17:23:28 2017
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Mon Jun 19 10:28:00 2017:
+Source File(s) Imported on Thu Jun 22 17:23:23 2017:
         C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.edn
         C:\Users\rozen\Gitrepos\CU_Droptest\constraint\CU_Droptest.pdc
         C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP_sdc.sdc
@@ -89,9 +89,9 @@ Optimized macros:
   - Buffers:                0
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        7
+  - Logic combining:        8
 
-    Total macros optimized  7
+    Total macros optimized  8
 
 There were 0 error(s) and 0 warning(s) in this design.
 =====================================================================
@@ -112,8 +112,8 @@ There were 0 error(s) and 0 warning(s).
 Compile report:
 ===============
 
-    CORE                       Used:    502  Total:   6144   (8.17%)
-    IO (W/ clocks)             Used:     12  Total:     68   (17.65%)
+    CORE                       Used:    497  Total:   6144   (8.09%)
+    IO (W/ clocks)             Used:     13  Total:     68   (19.12%)
     Differential IO            Used:      0  Total:     13   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      3  Total:     18   (16.67%)
     PLL                        Used:      0  Total:      1   (0.00%)
@@ -137,7 +137,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 321          | 321
+    COMB    | 316          | 316
     SEQ     | 181          | 181
 
 I/O Function:
@@ -145,7 +145,7 @@ I/O Function:
     Type                                  | w/o register  | w/ register  | w/ DDR register
     --------------------------------------|---------------|--------------|----------------
     Input I/O                             | 3             | 0            | 0
-    Output I/O                            | 9             | 0            | 0
+    Output I/O                            | 10            | 0            | 0
     Bidirectional I/O                     | 0             | 0            | 0
     Differential Input I/O Pairs          | 0             | 0            | 0
     Differential Output I/O Pairs         | 0             | 0            | 0
@@ -156,11 +156,11 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVTTL                           | 3.30v | N/A   | 3     | 9      | 0
+    LVTTL                           | 3.30v | N/A   | 3     | 10     | 0
 
 I/O Placement:
 
-    Locked  :  12 ( 100.00% )
+    Locked  :  13 ( 100.00% )
     Placed  :   0
     UnPlaced:   0
 
@@ -183,7 +183,7 @@ The following nets have been assigned to a chip global resource:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    21      INT_NET       Net   : FPGA_UART/baud_clock
+    20      INT_NET       Net   : FPGA_UART/baud_clock
                           Driver: FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int
     16      CLK_NET       Net   : m_time[25]
                           Driver: system_clock_inst_0/s_time_0[7]
@@ -208,7 +208,7 @@ FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_cntr_RNIDA6N4[10]
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    21      INT_NET       Net   : FPGA_UART/baud_clock
+    20      INT_NET       Net   : FPGA_UART/baud_clock
                           Driver: FPGA_UART/make_CU_TOP_FPGA_UART_Clock_gen/baud_clock_int
     16      CLK_NET       Net   : m_time[25]
                           Driver: system_clock_inst_0/s_time_0[7]
@@ -253,16 +253,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Mon Jun 19 10:28:09 2017
+Timing-driven Placer Started: Thu Jun 22 17:23:31 2017
 
-Placer Finished: Mon Jun 19 10:28:12 2017
+Placer Finished: Thu Jun 22 17:23:34 2017
 Total Placer CPU Time:     00:00:03
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: CU_TOP                          Started: Mon Jun 19 10:28:14 2017
+Design: CU_TOP                          Started: Thu Jun 22 17:23:35 2017
 
  
 Iterative improvement...
@@ -270,9 +270,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: CU_TOP                          
-Finished: Mon Jun 19 10:28:18 2017
-Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:04
-Total Memory Usage: 168.4 Mbytes
+Finished: Thu Jun 22 17:23:40 2017
+Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:05
+Total Memory Usage: 169.6 Mbytes
                         o - o - o - o - o - o
 
 

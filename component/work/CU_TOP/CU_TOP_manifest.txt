@@ -1,6 +1,6 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
 
-Date      :  Sun Jun 18 20:18:42 2017
+Date      :  Thu Jun 22 17:22:51 2017
 Project   :  C:\Users\rozen\Gitrepos\CU_Droptest
 Component :  CU_TOP
 Family    :  ProASIC3

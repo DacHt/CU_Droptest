@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Mon Jun 19 10:28:22 2017 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Thu Jun 22 17:23:44 2017 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.8
 Version: 11.8.0.26
@@ -25,7 +25,7 @@ Number |Port            |Function       |State       |I/O Std |Output Drive (mA)
 13                       GFA0/IO108NPB3  Special
 14                       VCCPLF          Reserved
 15                       GFA1/IO108PPB3  Special
-16                       GFA2/IO107PSB3  Special
+16      MICRO_CLK        GFA2/IO107PSB3  Special      LVTTL    12                 High  None           No    35                No           No
 17                       VCC             Reserved
 18                       VCCIB3          Reserved
 19                       GFC2/IO105PSB3  Special

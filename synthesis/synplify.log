@@ -4,7 +4,7 @@ sourcing C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\lib\mes
 Starting:    C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2\bin64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\fpga_J-2015.03M-SP1-2
 Hostname:    LAPTOP-UCQD4H1A
-Date:        Mon Jun 19 10:25:08 2017
+Date:        Thu Jun 22 17:23:06 2017
 Version:     J-2015.03M-SP1-2
 
 Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log CU_TOP_syn.tcl
@@ -42,7 +42,7 @@ Copied C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_comp.srs to 
 
 compiler Completed
 Return Code: 0
-Run Time:0h:00m:01s
+Run Time:0h:00m:03s
 
 
 Running: multi_srs_gen (Multi-srs Generator) on CU_TOP_syn|synthesis
@@ -68,7 +68,7 @@ Copied C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\CU_TOP.fse to C:\Users\roze
 
 premap Completed with warnings
 Return Code: 1
-Run Time:0h:00m:00s
+Run Time:0h:00m:01s
 
 Complete: Compile on CU_TOP_syn|synthesis
 
@@ -83,7 +83,7 @@ Copied C:\Users\rozen\Gitrepos\CU_Droptest\synthesis\synwork\CU_TOP_m.srm to C:\
 
 fpga_mapper Completed with warnings
 Return Code: 1
-Run Time:0h:00m:02s
+Run Time:0h:00m:05s
 
 Complete: Map on CU_TOP_syn|synthesis
 

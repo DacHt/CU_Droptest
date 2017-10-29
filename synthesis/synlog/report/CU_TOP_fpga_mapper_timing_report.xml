@@ -17,8 +17,8 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>CU_TOP|CLK</data>
 <data>100.0 MHz</data>
-<data>73.7 MHz</data>
-<data>-1.783</data>
+<data>81.0 MHz</data>
+<data>-1.170</data>
 </row>
 <row>
 <data>system_clock|m_time_inferred_clock[25]</data>

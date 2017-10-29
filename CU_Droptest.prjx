@@ -51,7 +51,7 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\COREUART\5.6.102\COREUART.cxf,actgen_cxf"
 STATE="utd"
-TIME="1497809920"
+TIME="1498144968"
 SIZE="1000"
 PARENT="<project>\component\work\CU_TOP\CU_TOP.cxf"
 ENDFILE
@@ -100,19 +100,19 @@ PARENT="<project>\component\work\CU_Main_tst\CU_Main_tst.cxf"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\CU_TOP.cxf,actgen_cxf"
 STATE="utd"
-TIME="1497861522"
-SIZE="4062"
+TIME="1498144971"
+SIZE="4219"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\CU_TOP.vhd,hdl"
 STATE="utd"
-TIME="1497861522"
-SIZE="15310"
+TIME="1498144968"
+SIZE="15493"
 PARENT="<project>\component\work\CU_TOP\CU_TOP.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\FPGA_UART\coreparameters.vhd,tb_hdl"
 STATE="utd"
-TIME="1497861522"
+TIME="1498144968"
 SIZE="761"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\CU_TOP\FPGA_UART\CU_TOP_FPGA_UART_COREUART.cxf"
@@ -120,20 +120,20 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\FPGA_UART\CU_TOP_FPGA_UART_COREUART.cxf,actgen_cxf"
 STATE="utd"
-TIME="1497809920"
+TIME="1498144968"
 SIZE="3075"
 PARENT="<project>\component\work\CU_TOP\CU_TOP.cxf"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\FPGA_UART\mti\scripts\wave_vhdl.do,do"
 STATE="utd"
-TIME="1497809920"
+TIME="1498144967"
 SIZE="651"
 PARENT="<project>\component\work\CU_TOP\FPGA_UART\CU_TOP_FPGA_UART_COREUART.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Clock_gen.vhd,hdl"
 STATE="utd"
-TIME="1497809920"
+TIME="1498144968"
 SIZE="12885"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\CU_TOP\FPGA_UART\CU_TOP_FPGA_UART_COREUART.cxf"
@@ -141,7 +141,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\components.vhd,hdl"
 STATE="utd"
-TIME="1497809920"
+TIME="1498144967"
 SIZE="2704"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\CU_TOP\FPGA_UART\CU_TOP_FPGA_UART_COREUART.cxf"
@@ -149,7 +149,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\CoreUART.vhd,hdl"
 STATE="utd"
-TIME="1497809920"
+TIME="1498144967"
 SIZE="22253"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\CU_TOP\FPGA_UART\CU_TOP_FPGA_UART_COREUART.cxf"
@@ -157,7 +157,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\coreuart_pkg.vhd,hdl"
 STATE="utd"
-TIME="1497809920"
+TIME="1498144968"
 SIZE="483"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\CU_TOP\FPGA_UART\CU_TOP_FPGA_UART_COREUART.cxf"
@@ -165,7 +165,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\fifo_256x8_pa3.vhd,hdl"
 STATE="utd"
-TIME="1497809920"
+TIME="1498144968"
 SIZE="8425"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\CU_TOP\FPGA_UART\CU_TOP_FPGA_UART_COREUART.cxf"
@@ -173,7 +173,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Rx_async.vhd,hdl"
 STATE="utd"
-TIME="1497809920"
+TIME="1498144967"
 SIZE="21549"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\CU_TOP\FPGA_UART\CU_TOP_FPGA_UART_COREUART.cxf"
@@ -181,7 +181,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\FPGA_UART\rtl\vhdl\core\Tx_async.vhd,hdl"
 STATE="utd"
-TIME="1497809920"
+TIME="1498144967"
 SIZE="11192"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\CU_TOP\FPGA_UART\CU_TOP_FPGA_UART_COREUART.cxf"
@@ -189,7 +189,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\CU_TOP\FPGA_UART\rtl\vhdl\test\user\testbnch.vhd,tb_hdl"
 STATE="utd"
-TIME="1497809920"
+TIME="1498144967"
 SIZE="23636"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\CU_TOP\FPGA_UART\CU_TOP_FPGA_UART_COREUART.cxf"
@@ -209,8 +209,8 @@ SIZE="413"
 ENDFILE
 VALUE "<project>\constraint\CU_Droptest.pdc,pdc"
 STATE="utd"
-TIME="1497525158"
-SIZE="2416"
+TIME="1498144680"
+SIZE="2561"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_Mainn.ide_des,ide_des"
 STATE="utd"
@@ -234,22 +234,22 @@ SIZE="55896"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.adb,adb"
 STATE="utd"
-TIME="1497861522"
-SIZE="502272"
+TIME="1498145038"
+SIZE="499712"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.ide_des,ide_des"
 STATE="utd"
-TIME="1497860936"
+TIME="1498145038"
 SIZE="1181"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP.pdb,pdb"
 STATE="utd"
-TIME="1497861522"
-SIZE="55274"
+TIME="1498145055"
+SIZE="52379"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_compile_log.rpt,log"
 STATE="utd"
-TIME="1497861522"
+TIME="1498145008"
 SIZE="9354"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_floorplan_log.rpt,log"
@@ -259,22 +259,22 @@ SIZE="342"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_fp\CU_TOP.pro,pro"
 STATE="utd"
-TIME="1497791594"
-SIZE="2207"
+TIME="1498145537"
+SIZE="2362"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1497861522"
+TIME="1498145024"
 SIZE="2528"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1497861522"
+TIME="1498145038"
 SIZE="665"
 ENDFILE
 VALUE "<project>\designer\impl1\CU_TOP_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1497861522"
+TIME="1498145028"
 SIZE="1130"
 ENDFILE
 VALUE "<project>\designer\impl1\WOLF_CONTROLLER.adb,adb"
@@ -329,22 +329,22 @@ SIZE="1874"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP.edn,syn_edn"
 STATE="utd"
-TIME="1497861522"
-SIZE="268944"
+TIME="1498144996"
+SIZE="267991"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP.so,so"
 STATE="utd"
-TIME="1497860712"
+TIME="1498144996"
 SIZE="217"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1497860712"
+TIME="1498144996"
 SIZE="395"
 ENDFILE
 VALUE "<project>\synthesis\CU_TOP_syn.prj,prj"
 STATE="utd"
-TIME="1497861522"
+TIME="1498144996"
 SIZE="2804"
 ENDFILE
 VALUE "<project>\synthesis\WOLF_CONTROLLER.edn,syn_edn"
@@ -381,6 +381,10 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\CU_TOP_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\CU_TOP_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 LIST "CU_TOP_FPGA_UART_COREUART::COREUART_LIB"
@@ -571,8 +575,11 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Generate Programming Data:CU_TOP_prgdata_log.rpt
 StartPage;StartPage;0
 SmartDesign;CU_TOP;0
+HDL;hdl\System_clock.vhd;0
 ACTIVEVIEW;CU_TOP
 ENDLIST
 LIST ModuleSubBlockList

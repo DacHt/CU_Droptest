@@ -11,7 +11,7 @@
     <hdl-type>VHDL</hdl-type>
     <project-description>Simple test program to be used during droptest of CU. The program activates to cutter for a specified number of seconds, after the rocket pin has been removed. After that it goes in to sleep mode.</project-description>
     <location>C:/Users/rozen/Gitrepos/CU_Droptest/component/work/CU_TOP</location>
-    <state>GENERATED ( Sun Jun 18 20:18:42 2017 )</state>
+    <state>GENERATED ( Thu Jun 22 17:22:50 2017 )</state>
     <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
   </project-settings>
   <site-map>
@@ -75,6 +75,12 @@
   </io>
   <io>
     <port-name>VHF_PWR</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>MICRO_CLK</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>

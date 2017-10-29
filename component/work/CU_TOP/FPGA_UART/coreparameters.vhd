@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by Microsemi SmartDesign Sun Jun 18 20:18:40 2017
+-- Created by Microsemi SmartDesign Thu Jun 22 17:22:48 2017
 -- Parameters for COREUART
 ----------------------------------------------------------------------
 

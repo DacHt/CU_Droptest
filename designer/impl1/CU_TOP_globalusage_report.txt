@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.8
 Version: 11.8.0.26
-Date: Mon Jun 19 10:28:20 2017
+Date: Thu Jun 22 17:23:42 2017
 Design Name: CU_TOP  Family: ProASIC3  Die: A3P250  Package: 100 VQFP
 Design State: Post-Layout
 

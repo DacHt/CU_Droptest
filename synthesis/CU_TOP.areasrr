@@ -8,13 +8,13 @@ Report for cell CU_TOP.rtl
                                 GND         1       0.0        0.0
                               INBUF         3       0.0        0.0
                                 OR2         1       1.0        1.0
-                             OUTBUF         9       0.0        0.0
+                             OUTBUF        10       0.0        0.0
                  UART_reset_monitor         1      29.0       29.0
                                 VCC         1       0.0        0.0
                     WOLF_CONTROLLER         1     138.0      138.0
-                       system_clock         1     102.0      102.0
+                       system_clock         1      98.0       98.0
                             
-                         TOTAL             23                509.0
+                         TOTAL             24                505.0
 ----------------------------------------------------------------------
 Report for cell WOLF_CONTROLLER.netlist
      Instance path:  WOLF_CONTROLLER_inst_0
@@ -90,26 +90,27 @@ Report for cell system_clock.netlist
                                AND2         1       1.0        1.0
                                AND3         7       1.0        7.0
                               AOI1B         7       1.0        7.0
-                                AX1         1       1.0        1.0
-                               AX1C         3       1.0        3.0
-                             DFN0C1        10       1.0       10.0
-                           DFN0E0C1         7       1.0        7.0
+                                AX1         2       1.0        2.0
+                               AX1C         2       1.0        2.0
+                             DFN0C1         9       1.0        9.0
+                           DFN0E0C1         8       1.0        8.0
                            DFN0E1C1         8       1.0        8.0
                              DFN1C1         1       1.0        1.0
                                 GND         1       0.0        0.0
-                                INV         9       1.0        9.0
-                              NOR2B        13       1.0       13.0
+                                INV        10       1.0       10.0
+                              NOR2B         8       1.0        8.0
                               NOR3B         2       1.0        2.0
-                              NOR3C        11       1.0       11.0
+                              NOR3C         9       1.0        9.0
                                 OR2         1       1.0        1.0
-                               OR2A         4       1.0        4.0
+                               OR2A         6       1.0        6.0
                                OR2B         4       1.0        4.0
+                               OR3B         1       1.0        1.0
                                OR3C         1       1.0        1.0
                                 VCC         1       0.0        0.0
                               XNOR2         2       1.0        2.0
-                               XOR2        10       1.0       10.0
+                               XOR2         9       1.0        9.0
                             
-                         TOTAL            104                102.0
+                         TOTAL            100                 98.0
 ----------------------------------------------------------------------
 Report for cell CU_TOP_FPGA_UART_COREUART.netlist
      Instance path:  FPGA_UART
@@ -134,7 +135,7 @@ Report for cell CU_TOP_FPGA_UART_Rx_async.netlist
                                AO13         1       1.0        1.0
                                AO1A         2       1.0        2.0
                                AOI1         4       1.0        4.0
-                               AX1E         1       1.0        1.0
+                               AX1A         1       1.0        1.0
                               AXOI4         1       1.0        1.0
                              DFN1C1         5       1.0        5.0
                            DFN1E1C1        24       1.0       24.0
@@ -144,16 +145,15 @@ Report for cell CU_TOP_FPGA_UART_Rx_async.netlist
                                MX2A         1       1.0        1.0
                                MX2B         3       1.0        3.0
                                MX2C         1       1.0        1.0
-                               NOR2         5       1.0        5.0
-                              NOR2A        16       1.0       16.0
+                               NOR2         6       1.0        6.0
+                              NOR2A        14       1.0       14.0
                               NOR2B        10       1.0       10.0
                               NOR3A         1       1.0        1.0
                               NOR3C         5       1.0        5.0
-                                OR2         1       1.0        1.0
-                               OR2A         1       1.0        1.0
+                                OR2         2       1.0        2.0
+                               OR2B         2       1.0        2.0
                                 OR3         1       1.0        1.0
                                OR3A         1       1.0        1.0
-                               OR3C         1       1.0        1.0
                                 VCC         1       0.0        0.0
                                XA1B         3       1.0        3.0
                                XOR2         3       1.0        3.0

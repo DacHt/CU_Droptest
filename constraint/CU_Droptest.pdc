@@ -14,11 +14,11 @@
 #
 # IO banks setting
 #
-
-#set_iobank Bank0 -vcci 3.00 -fixed no
-#set_iobank Bank1 -vcci 3.00 -fixed no
-#set_iobank Bank2 -vcci 3.30 -fixed no
 #set_iobank Bank3 -vcci 3.00 -fixed no
+#set_iobank Bank2 -vcci 3.00 -fixed no
+#set_iobank Bank1 -vcci 3.00 -fixed no
+#set_iobank Bank0 -vcci 3.00 -fixed no
+
 
 #
 # Local clock constraints
@@ -46,6 +46,9 @@ set_io SAT_PWR              -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -
 set_io PWRONRESET           -iostd LVTTL -REGISTER No -RES_PULL None                                                 -pinname 76 -fixed yes
 set_io FPGA_UART_RX         -iostd LVTTL -REGISTER No -RES_PULL None                                                 -pinname 44 -fixed yes
 set_io FPGA_UART_TX         -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 45 -fixed yes
+set_io MICRO_CLK            -iostd LVTTL -REGISTER No -RES_PULL None                                                 -pinname 16 -fixed yes
+
+
 #set_io ROCKET_PIN           -iostd LVTTL -REGISTER No -RES_PULL None                                                 -pinname 42 -fixed yes
 #
 # Core cell constraints

@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.8
 Version: 11.8.0.26
-Date: Mon Jun 19 10:28:20 2017
+Date: Thu Jun 22 17:23:42 2017
 Design Name: CU_TOP  Family: ProASIC3  Die: A3P250  Package: 100 VQFP
 
 
@@ -14,7 +14,7 @@ I/O Function:
     Type                                  | w/o register  | w/ register  | w/ DDR register
     --------------------------------------|---------------|--------------|----------------
     Input I/O                             | 3             | 0            | 0
-    Output I/O                            | 9             | 0            | 0
+    Output I/O                            | 10            | 0            | 0
     Bidirectional I/O                     | 0             | 0            | 0
     Differential Input I/O Pairs          | 0             | 0            | 0
     Differential Output I/O Pairs         | 0             | 0            | 0
@@ -25,7 +25,7 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVTTL                           | 3.30v | N/A   | 3     | 9      | 0
+    LVTTL                           | 3.30v | N/A   | 3     | 10     | 0
 
 I/O Bank Resource Usage:
 
@@ -36,7 +36,7 @@ I/O Bank Resource Usage:
     Bank0 | 3.30v | N/A   | 3    | 20    | 0     | 0      | N/A  | N/A   | N/A
     Bank1 | 3.30v | N/A   | 2    | 14    | 0     | 6      | N/A  | N/A   | N/A
     Bank2 | 3.30v | N/A   | 6    | 17    | 0     | 0      | N/A  | N/A   | N/A
-    Bank3 | 3.30v | N/A   | 1    | 17    | 0     | 7      | N/A  | N/A   | N/A
+    Bank3 | 3.30v | N/A   | 2    | 17    | 0     | 7      | N/A  | N/A   | N/A
 
 I/O Voltage Usage:
 
@@ -44,5 +44,5 @@ I/O Voltage Usage:
     -------|-------|------|-------
      Vcci  | Vref  | Used | Total
     -------|-------|------|-------
-     3.30v | N/A   | 12   | 68
+     3.30v | N/A   | 13   | 68
 
